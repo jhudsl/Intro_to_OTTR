@@ -1,0 +1,29 @@
+
+# Getting started
+
+```{r child = 'Getting-started.md'}
+```
+
+```{r child = 'Content-creation-tips.md'}
+```
+
+```{r child = 'Start-a-new-course.md'}
+```
+
+```{r child = 'Setting-up-your-repository-files.md'}
+```
+
+```{r child = 'Setting-up-your-repository-settings.md'}
+```
+
+```{r child = 'Setting-up-GitHub-secrets.md'}
+```
+
+```{r child = 'Adding-content-to-a-course.md'}
+```
+
+```{r child = 'About-pull-request-review.md'}
+```
+
+```{r child = 'Setting-up-images-and-graphics.md'}
+```

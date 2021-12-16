@@ -1,0 +1,5 @@
+
+# Automation info and set up
+
+"How-to-set-up-and-customize-GitHub-actions-robots.md",
+"Receiving-template-updates.md",
