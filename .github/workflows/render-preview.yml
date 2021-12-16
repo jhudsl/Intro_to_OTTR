@@ -31,6 +31,7 @@ jobs:
       - name: Run bookdown render
         id: bookdown
         run: |
+          git submodule add https://github.com/jhudsl/DaSL_Course_Template_Bookdown.wiki.git
           git submodule update
           cp -rf DaSL_Course_Template_Bookdown.wiki/* ./
           docker run \
