@@ -1,7 +1,0 @@
-
-# Platform specific set up
-
-"Choosing-publishing-platforms.md",
-"Publishing-with-Bookdown.md",
-"Publishing-on-Leanpub.md",
-"Publishing-on-Coursera.md",
