@@ -1,1 +1,0 @@
-DaSL_Course_Template_Bookdown.wiki/_Sidebar.md

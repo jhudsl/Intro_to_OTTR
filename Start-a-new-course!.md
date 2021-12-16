@@ -1,1 +1,0 @@
-DaSL_Course_Template_Bookdown.wiki/Start-a-new-course!.md

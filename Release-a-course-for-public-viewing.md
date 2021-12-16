@@ -1,1 +1,0 @@
-DaSL_Course_Template_Bookdown.wiki/Release-a-course-for-public-viewing.md

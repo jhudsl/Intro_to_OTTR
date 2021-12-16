@@ -1,1 +1,0 @@
-DaSL_Course_Template_Bookdown.wiki/How-to-set-up-and-customize-GitHub-actions-robots.md
