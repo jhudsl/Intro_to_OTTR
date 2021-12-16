@@ -33,7 +33,7 @@ jobs:
         run: |
           git submodule update
           ls
-          cp -rf ./DaSL_Course_Template_Bookdown.wiki/*.md .
+          find ./DaSL_Course_Template_Bookdown.wiki -name '*.md' -exec cp {} ./ \;
           ls
           docker run \
           --mount type=bind,target=/home/rstudio,source=$PWD \
