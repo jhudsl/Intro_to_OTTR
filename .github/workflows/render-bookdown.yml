@@ -35,14 +35,16 @@ jobs:
 
       # We want a fresh run of the renders each time
       - name: Delete old docs/*
-        run: rm -r docs/*
+        run: |
+          rm -r docs/*
+          git submodule update
+          find ./DaSL_Course_Template_Bookdown.wiki -name '*.md' -exec cp {} ./ \;
+          ls
 
       # Run bookdown rendering
       - name: Run bookdown render
         id: bookdown
         run: |
-          git submodule update
-          find ./DaSL_Course_Template_Bookdown.wiki -name '*.md' -exec cp {} ./ \;
           docker run \
           --mount type=bind,target=/home/rstudio,source=$PWD \
           jhudsl/course_template \
