@@ -38,9 +38,8 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          sudo apt-get install subversion
           rm -r docs/*
-          svn export --force https://github.com/jhudsl/DaSL_Course_Template_Bookdown.wiki.git/trunk/*.md ./
+          svn export --force https://github.com/jhudsl/DaSL_Course_Template_Bookdown.wiki.git/trunk/ ./
 
       # Run bookdown rendering
       - name: Run bookdown render
