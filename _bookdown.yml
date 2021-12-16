@@ -1,17 +1,45 @@
-book_filename: "Intro to OTTR"
-chapter_name: "Chapter "
+book_filename: Intro to OTTR
+chapter_name: 'Chapter '
 repo: https://github.com/jhudsl/Intro_to_OTTR/
-rmd_files: ["index.Rmd",
-            "getting-started-header.Rmd",
-            "tools-in-the-template.Rmd",
-            "platform-specific-set-up.Rmd",
-            "automation-info-and-set-up.Rmd",
-            "finishing-touches.Rmd",
-            "About.Rmd",
-            "References.Rmd"]
-bibliography: [book.bib, packages.bib]
-delete_merged_file: true
+rmd_files:
+- index.Rmd
+- Getting-started.Rmd
+- Content-creation-tips.Rmd
+- Start-a-new-course.Rmd
+- Setting-up-your-repository-files.Rmd
+- Setting-up-your-repository-settings.Rmd
+- Setting-up-GitHub-secrets.Rmd
+- Adding-content-to-a-course.Rmd
+- About-pull-request-review.Rmd
+- Setting-up-images-and-graphics.Rmd
+- Citations.Rmd
+- Using-Docker.Rmd
+- Spell-check.Rmd
+- Leanpub-conversion-tips.Rmd
+- Generate-docx-output.Rmd
+- Choosing-publishing-platforms.Rmd
+- Publishing-with-Bookdown.Rmd
+- Publishing-on-Leanpub.Rmd
+- Publishing-on-Coursera.Rmd
+- How-to-set-up-and-customize-GitHub-actions-robots.Rmd
+- Receiving-template-updates.Rmd
+- Set-up-feedback-method.Rmd
+- Change-Title-and-style.Rmd
+- How-to-give-credits.Rmd
+- Google-Analytics.Rmd
+- Release-a-course-for-public-viewing.Rmd
+- Reviewing-existing-content.Rmd
+- Proposing-new-content.Rmd
+- Writing-new-content.Rmd
+- Fixing-errors-and-bugs.Rmd
+- About.Rmd
+- References.Rmd
+bibliography:
+- book.bib
+- packages.bib
+delete_merged_file: yes
 language:
   ui:
-    chapter_name: "Chapter"
-output_dir: "docs"
+    chapter_name: Chapter
+output_dir: docs
+new_session: yes

@@ -1,4 +1,5 @@
 bookdown::gitbook:
+  nocite: '@*'
   css: assets/style.css
   includes:
     before_body: assets/big-image.html

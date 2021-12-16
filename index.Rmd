@@ -9,8 +9,9 @@ link-citations: yes
 description: "Description about Course/Book."
 favicon: assets/dasl_favicon.ico
 output:
-    bookdown::word_document2:
-      toc: true
+  html_document:
+    toc: TRUE
+nocite: '@*'
 ---
 
 ```{r include=FALSE}
