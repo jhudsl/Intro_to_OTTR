@@ -31,8 +31,8 @@ jobs:
       - name: Run bookdown render
         id: bookdown
         run: |
-          git submodule add https://github.com/jhudsl/DaSL_Course_Template_Bookdown.wiki.git
           git submodule update
+          ls
           cp -rf DaSL_Course_Template_Bookdown.wiki/* ./
           docker run \
           --mount type=bind,target=/home/rstudio,source=$PWD \
