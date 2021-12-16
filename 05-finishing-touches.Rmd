@@ -1,0 +1,17 @@
+
+# Finishing touches
+
+```{r child = 'wiki_pages/Set-up-feedback-method.md'}
+```
+
+```{r child = 'wiki_pages/Change-Title-and-style.md'}
+```
+
+```{r child = 'wiki_pages/How-to-give-credits.md'}
+```
+
+```{r child = 'wiki_pages/Google-Analytics.md'}
+```
+
+```{r child = 'wiki_pages/Release-a-course-for-public-viewing.md'}
+```
