@@ -17,3 +17,10 @@ UE
 UE5
 underserved
 www
+automagic
+Bookdown
+Coursera
+Github
+OTTR
+repo
+RMarkdown
