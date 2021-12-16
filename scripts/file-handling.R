@@ -27,10 +27,10 @@ filenames <- sidebar[!is.na(sidebar)]
 
 # Copy over files
 file.copy(from = file.path(folder_name, paste0(filenames, ".md")), 
-          to =  paste0(filenames, ".Rmd"))
+          to =  paste0(filenames, ".Rmd"), 
+          overwrite = TRUE)
 
 filenames <- paste0(filenames, ".Rmd")
-filenames
 
 bookdown$rmd_files <- c(
   "index.Rmd",

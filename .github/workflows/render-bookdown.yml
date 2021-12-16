@@ -36,7 +36,8 @@ jobs:
         run: |
           rm -r docs/*
           svn export --force https://github.com/jhudsl/DaSL_Course_Template_Bookdown.wiki.git/trunk/ ./
-
+          Rscript -e "scripts/file-handling.R"
+          
       # Run bookdown rendering
       - name: Run bookdown render
         id: bookdown

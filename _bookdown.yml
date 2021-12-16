@@ -1,6 +1,13 @@
 book_filename: Intro to OTTR
-chapter_name: 'Chapter '
 repo: https://github.com/jhudsl/Intro_to_OTTR/
+bibliography:
+- book.bib
+- packages.bib
+delete_merged_file: yes
+language:
+  ui:
+    chapter_name: Chapter
+output_dir: docs
 rmd_files:
 - index.Rmd
 - Getting-started.Rmd
@@ -34,12 +41,3 @@ rmd_files:
 - Fixing-errors-and-bugs.Rmd
 - About.Rmd
 - References.Rmd
-bibliography:
-- book.bib
-- packages.bib
-delete_merged_file: yes
-language:
-  ui:
-    chapter_name: Chapter
-output_dir: docs
-new_session: yes
