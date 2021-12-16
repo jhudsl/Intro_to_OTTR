@@ -2,7 +2,6 @@ book_filename: "Intro to OTTR"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/Intro_to_OTTR/
 rmd_files: ["index.Rmd",
-            "01-intro.Rmd",
             "Getting-started.md",
             "Content-creation-tips.md",
             "Start-a-new-course.md",
