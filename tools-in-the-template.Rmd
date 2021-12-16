@@ -1,0 +1,17 @@
+
+# OTTR Tools
+
+```{r child = 'Citations.md'}
+```
+
+```{r child = 'Using-Docker.md'}
+```
+
+```{r child = 'Spell-check.md'}
+```
+
+```{r child = 'Leanpub-conversion-tips.md'}
+```
+
+```{r child = 'Generate-docx-output.md'}
+```

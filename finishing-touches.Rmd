@@ -1,0 +1,8 @@
+
+# Finishing touches
+
+"Set-up-feedback-method.md",
+"Change-Title-and-style.md",
+"How-to-give-credits.md",
+"Google-Analytics.md",
+"Release-a-course-for-public-viewing.md",
