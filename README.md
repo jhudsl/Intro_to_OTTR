@@ -16,7 +16,7 @@ _This template and guide helps you_:
 
 <img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=gf4fcf6569c_2_29" width="500"/>
 
-## Courses that have been made using this template:
+## Courses that have been made with OTTR:
 - [Documentation and Usability](https://jhudatascience.org/Documentation_and_Usability/)
 - [Leadership for Cancer Informatics Research](https://jhudatascience.org/Informatics_Research_Leadership/)
 
