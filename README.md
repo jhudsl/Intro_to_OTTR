@@ -1,6 +1,6 @@
 <!--Delete this section below upon using the template-->
 
-## OTTR Course Templates
+## OTTR - Open-source Tools for Training Resources
 
 The purpose of this course template and guide is to make course publishing maintenance across multiple different platforms _less painful_.
 
@@ -21,7 +21,7 @@ _This template and guide helps you_:
 - [Leadership for Cancer Informatics Research](https://jhudatascience.org/Informatics_Research_Leadership/)
 
 ## To Get Started
-- Go to the [Wiki page](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started)
+- Go to the [Wiki page](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started) or browse through the [Intro to OTTR course](https://jhudatascience.org/Intro_to_OTTR/).
 - Please take a look at the [code of conduct](./code_of_conduct.md).
 - If you encounter any problems or have ideas for improvements to this template repository or this getting started guide, please [file an issue here](https://github.com/jhudsl/OTTR_Template/issues/new/choose)! Your feedback is very much appreciated.
 
