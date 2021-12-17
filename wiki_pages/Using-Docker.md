@@ -126,7 +126,7 @@ Once the changes are accepted and merged, we'll need to push the updated image t
 docker push jhudsl/<TAG_FOR_COURSE>
 ```
 
-When you file a pull request, the Dockerfile build will be tested automatically by the [GitHub actions](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-set-up-and-customize-GitHub-actions-robots).
+When you file a pull request, the Dockerfile build will be tested automatically by the [GitHub actions](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots).
 
 The Github actions that this repository uses needs four Github secrets set up if you are not a part of the `jhudsl` organization.
 
@@ -134,7 +134,7 @@ It's important that these are set up and named exactly what they are below in or
 
 See [Github Actions section](#github-actions) for how you can customize Github actions which can change the necessity of these secrets.  
 
-![Github secrets](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/git-secrets.png)
+![Github secrets](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/git-secrets.png)
 
 To set up these repository secrets, on your repository's main Github page, go to `Settings` and scroll down to see `Secrets` on the left side menu bar.
 
@@ -152,7 +152,7 @@ If you know for sure that the course you are working on will never require Docke
 However, if you will need to make any change to the Docker image specific to the course you are working on, in the file `.github/render-bookdown.yml` you should uncomment the
 `###### START OF DOCKER UPDATE CHUNK` up to the part that says `###### END OF DOCKER UPDATE CHUNK`.
 
-This will require you to set up the [Github secrets for Docker](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-GitHub-secrets#dockerhub-related-secrets) (see next section).
+This will require you to set up the [Github secrets for Docker](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets#dockerhub-related-secrets) (see next section).
 
 ## Dockerhub related secrets
 

@@ -309,7 +309,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
-<p style="text-align:center;"> <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
 <p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
 </ul>
@@ -354,7 +354,7 @@ You will need to set up your own educator profile and course shell through your 
 </div>
 <div id="converting-your-files-for-upload-to-coursera" class="section level2" number="21.2">
 <h2><span class="header-section-number">21.2</span> Converting your files for upload to Coursera</h2>
-<p>The Github actions set up in the <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/render-bookdown.yml">render-bookdown.yml</a> also render your course material in a format suitable for linking to Coursera.
+<p>The Github actions set up in the <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml">render-bookdown.yml</a> also render your course material in a format suitable for linking to Coursera.
 This Coursera version is identical except that the table of contents bar on the left side has been dropped so as to not confuse Coursera users about navigating the course.
 These files can be previewed in the <code>docs/coursera/</code> folder.
 Click on your chapter htmls to see what it will look like.</p>
@@ -363,19 +363,19 @@ Click on your chapter htmls to see what it will look like.</p>
 <div id="navigating-to-your-course-on-coursera" class="section level2" number="21.3">
 <h2><span class="header-section-number">21.3</span> Navigating to your course on Coursera</h2>
 <p>After your <a href="publishing-on-coursera.html#setting-up-your-coursera-course">course shell has been added to your account</a> you can navigate to it by going to <code>My Courses</code>:</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/profile.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/profile.png" /></p>
 <p>And you should see it listed:</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/my-courses.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/my-courses.png" /></p>
 <p>You can click on <code>Go to Course</code>. And on your main course page click <code>Edit Course</code> in the right corner.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/edit-course-nav.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-course-nav.png" /></p>
 <p>This will bring you to your version page (at this point you should only have a Version 1, so go to that one).</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/versions.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/versions.png" /></p>
 <p>Now you are on the Edit content page and ready to add lessons, modules and quizzes!</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/edit-content.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-content.png" /></p>
 <p>In general, you will want each lesson to contain at least a chapter and a quiz.</p>
 <p>Each module is supposed to take a learner one week, so depending on the length of your chapters and quizzes you may want one or two lessons/chapters/quizzes a module.</p>
 <p>To add a new lesson, click the <code>+ Add Lesson</code> button:</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-lesson.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-lesson.png" /></p>
 <p>Now you are ready to add a chapter!</p>
 <div id="adding-new-chapters-to-coursera" class="section level3" number="21.3.1">
 <h3><span class="header-section-number">21.3.1</span> Adding new chapters to Coursera</h3>
@@ -385,71 +385,71 @@ Click on your chapter htmls to see what it will look like.</p>
 <pre><code>&lt;main-github-pages-url&gt;/coursera/&lt;html_filename&gt;</code></pre>
 <p>If you are unsure what the main url for your Github pages is, in your github repository, go to <code>Settings</code> &gt; <code>Pages</code> and you’ll see <code>Your site is published at:</code></p>
 <p>So for example, the introduction chapter of this template would be linked by using this url:</p>
-<pre><code>https://jhudatascience.org/DaSL_Course_Template_Bookdown/coursera/introduction.html</code></pre>
+<pre><code>https://jhudatascience.org/OTTR_Template/coursera/introduction.html</code></pre>
 <p>To add this URL to Coursera, add a new lesson, click <code>+ More</code> and choose <code>Ungraded Plugin</code>.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-1.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-1.png" /></p>
 <p>This will add an unpublished ungraded plugin to your lesson:
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-2.png" /></p>
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-2.png" /></p>
 <p>Now click the edit button on the new <code>Ungraded Plugin</code>.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-3.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-3.png" /></p>
 <p>This will bring you to the standard example plug in page.
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-4.png" /></p>
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-4.png" /></p>
 <p>Scroll down and click <code>Edit Configuration</code>:</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-5.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-5.png" /></p>
 <p>Replace the example url with the url of your individual chapter we discussed above.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-6.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-6.png" /></p>
 <p>Then click on <code>Save Configuration</code>:</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-7.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-7.png" /></p>
 <p>If the url you provided was correct, you should see a preview of your chapter:</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-8.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-8.png" /></p>
 <p>You may want to edit the title at the top of this page to indicate the material being linked.</p>
 <p>Now click <code>Publish</code> in the left upper corner (don’t worry it’s not actually publishing publicly, its just saving your changes).
 And it will ask you again to really scare you, but yes, click <code>Publish</code>.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-9.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-9.png" /></p>
 <p>Congrats you added a chapter to your course! Now do the same thing for all your chapters!</p>
 </div>
 <div id="adding-new-quizzes-to-coursera" class="section level3" number="21.3.2">
 <h3><span class="header-section-number">21.3.2</span> Adding new quizzes to Coursera</h3>
 <p>To add a new quiz start from your <code>Edit content</code> page and on whatever lesson you would like to add the quiz to and click the <code>+ Quiz</code> button.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-1.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-1.png" /></p>
 <p>Now go to <code>Edit</code> on the new quiz.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-2.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-2.png" /></p>
 <p>If you are choosing to manually enter your quizzes, you can continue to add each question from this page.</p>
 <p>If you are importing a Leanpub converted quiz click the <code>Import Questions</code> button and choose your converted yml files.
 (If you’ve not yet converted your leanpub quizzes, then <a href="#converting-quizzes-from-leanpub-format">refer to that section</a>.)</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-3.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-3.png" /></p>
 <p>Upload your Coursera quiz yml file from your device:</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-4.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-4.png" /></p>
 <p>After you’ve selected the file click <code>Upload</code>:</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-5.png" /></p>
-<p>It will let you know if there are any problems uploading the quiz. If the <code>coursera_quiz_conversion.R</code> script failed to render something properly, please <a href="https://github.com/jhudsl/DaSL_Course_Template_Leanpub/issues">file an issue here</a> describing how it failed and including a file that shows the instance it failed to convert.</p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-5.png" /></p>
+<p>It will let you know if there are any problems uploading the quiz. If the <code>coursera_quiz_conversion.R</code> script failed to render something properly, please <a href="https://github.com/jhudsl/OTTR_Quizzes/issues">file an issue here</a> describing how it failed and including a file that shows the instance it failed to convert.</p>
 <p>Note that images and links are not currently supported in that conversion script. You also cannot have <code>:</code> in your prompts or answers.</p>
 <p>But if the quiz uploads without issue, then click <code>Continue</code>.</p>
 <p>By default quizzes are set to <code>Practice Quiz</code> but you will need at least some of your quizzes to be used for Grading.
 On the left side of quiz editing page, there’s a drop down menu to select <code>Graded Quiz</code>.
 Also in this location you can edit the estimated time it should take to complete the quiz (by default it is set to 15 minutes).</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/quiz-settings.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/quiz-settings.png" /></p>
 <p>You also will want to assign the learning objectives that apply to this quiz. You can do this by clicking on the plus sign underneath the title.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/learning-obj-assigned.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/learning-obj-assigned.png" /></p>
 <p>From here it will suggest the module’s learning objectives. Click all that apply and then <code>Save</code>.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/assign-learning-obj.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/assign-learning-obj.png" /></p>
 <p>You can edit the title of your quiz and then click <code>Publish</code> (don’t worry it’s not actually publishing publicly, its just saving your changes).
 And it will ask you again to really scare you, but yes, click <code>Publish</code>.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-9.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-9.png" /></p>
 <p>Congrats you added a quiz to your course!</p>
 </div>
 </div>
 <div id="add-programmed-messages" class="section level2" number="21.4">
 <h2><span class="header-section-number">21.4</span> Add programmed messages</h2>
 <p>You can click on <code>Go to Course</code>. And on your main course page click <code>Edit Course</code> in the right corner.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/edit-course-nav.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-course-nav.png" /></p>
 <p>This will bring you to your version page.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/versions.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/versions.png" /></p>
 <p>Underneath <code>Content</code>, on the left side bar, at the bottom, there is the <code>Programmed Messages</code>.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/versions.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/versions.png" /></p>
 <p>At the very least you should add a <code>Welcome to the course</code> and a <code>Completion</code> programmed message.
 Click on each of these to edit them. Click <code>Preview</code> and then <code>Publish</code> to save your edits.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/programmed-messages.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/programmed-messages.png" /></p>
 <p>Here are some templated messages to get you started:</p>
 <div id="welcome-template-message" class="section level4" number="21.4.0.1">
 <h4><span class="header-section-number">21.4.0.1</span> Welcome template message:</h4>
@@ -478,11 +478,11 @@ Click <code>Preview</code> and then <code>Publish</code> to save your edits.</p>
 <h2><span class="header-section-number">21.5</span> Grading formula</h2>
 <p>For final grades in the course, you will need to set the Grading Formula.
 To get to this page, you can click on <code>Go to Course</code>. And on your main course page click <code>Edit Course</code> in the right corner.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/edit-course-nav.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-course-nav.png" /></p>
 <p>This will bring you to your version page.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/versions.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/versions.png" /></p>
 <p>Now you can set the percentage that each module’s assignments are worth in the course.</p>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/grading-formula.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/grading-formula.png" /></p>
 </div>
 <div id="content-schedule" class="section level2" number="21.6">
 <h2><span class="header-section-number">21.6</span> Content Schedule</h2>

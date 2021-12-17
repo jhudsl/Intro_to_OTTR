@@ -53,7 +53,7 @@ Please update the text at the bottom to describe the source. If it is not from J
 
 Also please type text describing the image in the notes section of the slide, this can be used to give visually impaired learners audio explanations of the images.
 
-Once complete, you can incorporate slides into your course using the instructions in the [Adding images and graphics in text](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text) below.
+Once complete, you can incorporate slides into your course using the instructions in the [Adding images and graphics in text](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text) below.
 
 
 
@@ -94,7 +94,7 @@ Please update the text at the bottom to describe the source. If it is not from J
 
 Also please type text describing the image in the notes section of the slide, this can be used to give visually impaired learners audio explanations of the images.
 
-Once complete, you can incorporate slides into your course using the instructions in the [Adding images and graphics in text](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text) below.
+Once complete, you can incorporate slides into your course using the instructions in the [Adding images and graphics in text](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text) below.
 
 
 ### Accessibility
@@ -120,7 +120,7 @@ To add images in the text in your Rmd, use the following function within an [R c
 
 You can obtain the <google_slide_url> by viewing the slide with the image you want to add and copying the address from the browser search bar.
 
-![Google slide url](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/slide_url.png)
+![Google slide url](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/slide_url.png)
 
 Also add notes (the same as the `fig.alt` text) to each slide in the google slide presentation describing the text or images of the slide to allow for the content to be accessible to vision impaired individuals, as this can be converted to audio. Note that you can't have any line breaks within the `fig.alt` text. If there are no line breaks the text should appear blue within the code chunk.
 
@@ -136,7 +136,7 @@ You can adjust the size(fig.hight, fig.width, out.width, out.height), alignment 
 
 Google Slides must be **public**. Share settings must be set to "Anyone on the internet with this link can view". Note that "Private" is the default setting when you make a new presentation.
 
-See [Chapter 2](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/02-chapter_of_course.Rmd) of the template course for examples.
+See [Chapter 2](https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd) of the template course for examples.
 
 ### Adding videos in text
 
@@ -154,7 +154,7 @@ To get the appropriate youtube url do the following:
 
 Again, it is important to use the `echo=FALSE` option so that only the video is shown and not the code to generate it.
 
-See [Chapter 2](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/02-chapter_of_course.Rmd) of the template course for examples.
+See [Chapter 2](https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd) of the template course for examples.
 
 ### Adding embedded files to text
 
@@ -169,7 +169,7 @@ To include such a file or website do the following:
 
 Again you will need to include `echo = FALSE` to ensure that the code to generate the preview of the website or file is not included in your course material.
 
-If you want to include a file that is not hosted online, consider hosting it on GitHub using the method described for hosting your Bookdown version of the course. See the [Set up GitHub pages](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Starting-a-new-course-with-this-template#set-up-github-pages) section.
+If you want to include a file that is not hosted online, consider hosting it on GitHub using the method described for hosting your Bookdown version of the course. See the [Set up GitHub pages](https://github.com/jhudsl/OTTR_Template/wiki/Starting-a-new-course-with-this-template#set-up-github-pages) section.
 
 Then you would do the following, where the url is that of your hosted file:
 ````markdown
@@ -177,7 +177,7 @@ Then you would do the following, where the url is that of your hosted file:
 `r ''`knitr::include_url("https://carriewright11.github.io/stringr_RLadies/index.html", height = "800px")
 ````
 
-See [Chapter 2](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/02-chapter_of_course.Rmd) of the template course for examples.
+See [Chapter 2](https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd) of the template course for examples.
 
 ### Learning Objectives Formatting
 
@@ -185,4 +185,4 @@ Each chapter should start with Learning objectives!
 You can use [this website](https://eclearn.emmanuel.edu/courses/1285497/pages/how-to-write-measurable-learning-objectives/) to help you craft learning objectives.
 
 Learning objectives should be stated both in the slides and in the beginning of each bookdown chapter.
-Because of this, you may find it most handy to use the [`List layout`](https://docs.google.com/presentation/d/1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU/export/png?id=1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU&pageid=gcf0c1d8548_0_141) slide for stating your Learning objectives and then embed that in the book from your GoogleSlides [the instructions here](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text).
+Because of this, you may find it most handy to use the [`List layout`](https://docs.google.com/presentation/d/1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU/export/png?id=1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU&pageid=gcf0c1d8548_0_141) slide for stating your Learning objectives and then embed that in the book from your GoogleSlides [the instructions here](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text).

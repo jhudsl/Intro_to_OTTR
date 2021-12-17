@@ -309,7 +309,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
-<p style="text-align:center;"> <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
 <p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
 </ul>
@@ -345,7 +345,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 5</span> Setting up your repository files</h1>
 <p>Now if you go to the <code>Issues</code> on GitHub for your course you will see issues filed that you can follow to set up the new course! Note that this may require you to wait a minute and refresh the page.</p>
 <div class="figure">
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/guides_issues.png" alt="" />
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/guides_issues.png" alt="" />
 <p class="caption">Issues to Guide you through creating the course</p>
 </div>
 <div id="setting-up-the-repository" class="section level2" number="5.1">
@@ -355,31 +355,31 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <div id="picking-a-style" class="section level3" number="5.1.1">
 <h3><span class="header-section-number">5.1.1</span> Picking a style</h3>
-<p>See more <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Change-Title-&amp;-Customize-style">about customizing style on this page in the guide</a>.
+<p>See more <a href="https://github.com/jhudsl/OTTR_Template/wiki/Change-Title-&amp;-Customize-style">about customizing style on this page in the guide</a>.
 By default this course template will use the jhudsl data science lab style. However, you can customize and switch this to another style set.</p>
 <div id="using-a-style-set" class="section level4" number="5.1.1.1">
 <h4><span class="header-section-number">5.1.1.1</span> Using a style set</h4>
-<p><a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Change-Title-&amp;-Customize-style#using-a-style-set">Read more about the style sets here</a>.</p>
+<p><a href="https://github.com/jhudsl/OTTR_Template/wiki/Change-Title-&amp;-Customize-style#using-a-style-set">Read more about the style sets here</a>.</p>
 <ul>
 <li>On a new branch, copy the <code>style-sets/&lt;set-name&gt;/index.Rmd</code> and <code>style-sets/&lt;set-name&gt;/_output.yml</code> to the top of the repository to overwrite the default <code>index.Rmd</code> and <code>_output.yml</code>.</li>
 <li>Copy over all the files in the <code>style-sets/&lt;set-name&gt;/copy-to-assets</code> to the <code>assets</code> folder in the top of the repository.</li>
-<li><a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/About-pull-request-review">Create a pull request</a> with these changes, and double check the rendered preview to make sure that the style is what you are looking for.</li>
+<li><a href="https://github.com/jhudsl/OTTR_Template/wiki/About-pull-request-review">Create a pull request</a> with these changes, and double check the rendered preview to make sure that the style is what you are looking for.</li>
 </ul>
-<p>If you are new to git recall that now you need to push your changes like so <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Adding-content-to-a-course">you may benefit from following the steps described here</a> and <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/About-pull-request-review">here</a> :</p>
+<p>If you are new to git recall that now you need to push your changes like so <a href="https://github.com/jhudsl/OTTR_Template/wiki/Adding-content-to-a-course">you may benefit from following the steps described here</a> and <a href="https://github.com/jhudsl/OTTR_Template/wiki/About-pull-request-review">here</a> :</p>
 <p><code>git commit -m "first changes"</code></p>
 <p><code>git push</code></p>
 <p>This will likely tell you a message if you are doing this in a branch other than main (which we highly suggest you do so that you can make a pull request also called PR). Type what Git tells you to do and hit enter!</p>
 <p>Delete the <code>code_output</code> folder if you do not expect to have any code output (or rename it if you wish to call the folder something else).</p>
 <p>Now, you can go through each of the other files listed in the checklist and make sure that the existing Rmd template files are changed to fit your course. Don’t worry about adding the bulk of your content yet, you can do that later after you learn more about setting up your course, but this checklist will help you get started.</p>
 <p>There are <code>{}</code> in these files to get you started filling out information and should be deleted after you’ve filled them out.</p>
-<p><strong>Remember make your changes in a new branch to enable you to make pull requests with Git.</strong> This will later be very important for the automated tasks that are part of the template. If you are unfamiliar with how to do a pull request, please see the <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Start-a-new-course">previous section</a> about how to do this.</p>
+<p><strong>Remember make your changes in a new branch to enable you to make pull requests with Git.</strong> This will later be very important for the automated tasks that are part of the template. If you are unfamiliar with how to do a pull request, please see the <a href="https://github.com/jhudsl/OTTR_Template/wiki/Start-a-new-course">previous section</a> about how to do this.</p>
 <p>It is likely that you might see something like this with your pull requests which will happen if you have too many new words not in the dictionary:</p>
 <div class="figure">
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/spell_check_fails.png" alt="" />
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/spell_check_fails.png" alt="" />
 <p class="caption">Spelling check fails</p>
 </div>
 <p>We will discuss how to get the spelling results and fix your file in a bit, but for now you can press the merge pull request button.</p>
-<p>Once this is done, you can start on the next issue guide checklist called <code>New Course - Set Repository Settings</code>. We will explain how with the <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-your-repository-settings">next section</a>.</p>
+<p>Once this is done, you can start on the next issue guide checklist called <code>New Course - Set Repository Settings</code>. We will explain how with the <a href="https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-your-repository-settings">next section</a>.</p>
 </div>
 </div>
 </div>

@@ -309,7 +309,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
-<p style="text-align:center;"> <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
 <p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
 </ul>
@@ -361,16 +361,16 @@ You may also find this <a href="https://www.atlassian.com/git/tutorials/atlassia
 <li>Change your directory to be that git repository directory on your computer
 <a href="https://git-scm.com/docs/git-checkout"><code>git checkout -b “name-of-new-branch”</code></a>.</li>
 <li>Start up the Docker image:
-<a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Using-Docker"><code>docker run -it -v $PWD:/home/rstudio -e PASSWORD=CHOOSE_PASSWORD -p 8787:8787 jhudsl/course_template</code></a> But replace <code>CHOOSE_PASSWORD</code> with a password of your choosing.</li>
+<a href="https://github.com/jhudsl/OTTR_Template/wiki/Using-Docker"><code>docker run -it -v $PWD:/home/rstudio -e PASSWORD=CHOOSE_PASSWORD -p 8787:8787 jhudsl/course_template</code></a> But replace <code>CHOOSE_PASSWORD</code> with a password of your choosing.</li>
 <li>Navigate to <code>localhost:8787</code> on your browser (your username is Rstudio and password is whatever you set it to be in the previous step).</li>
 </ol>
 </div>
 <div id="editing-content" class="section level2" number="8.3">
 <h2><span class="header-section-number">8.3</span> Editing content</h2>
 <ol start="6" style="list-style-type: decimal">
-<li>In the RStudio window you just opened, copy the <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/02-chapter_of_course.Rmd"><code>02-chapter_of_course.Rmd</code></a> course and use that as a guide to <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-with-Bookdown">add a new chapter</a>.</li>
-<li>Make your edits. If your edits involve images, graphics, or videos, make sure you follow the set up in <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text">adding images and graphics in text</a></li>
-<li>To preview how your <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-with-Bookdown">edits look in Bookdown</a>, you can run bookdown::serve_book().</li>
+<li>In the RStudio window you just opened, copy the <a href="https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd"><code>02-chapter_of_course.Rmd</code></a> course and use that as a guide to <a href="https://github.com/jhudsl/OTTR_Template/wiki/Publishing-with-Bookdown">add a new chapter</a>.</li>
+<li>Make your edits. If your edits involve images, graphics, or videos, make sure you follow the set up in <a href="https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text">adding images and graphics in text</a></li>
+<li>To preview how your <a href="https://github.com/jhudsl/OTTR_Template/wiki/Publishing-with-Bookdown">edits look in Bookdown</a>, you can run bookdown::serve_book().</li>
 <li>As you’ve made enough edits and want to save them run <a href="https://git-scm.com/docs/git-add"><code>git add filepath</code></a>.</li>
 <li>Now <a href="https://git-scm.com/docs/git-commit"><code>git commit -m “Add a pertinent message here”</code></a> to add your edits to your branch.</li>
 <li>When you are ready to push changes to be online, run <a href="https://git-scm.com/docs/git-push"><code>git push</code></a>.</li>
@@ -392,10 +392,10 @@ title: &quot;Title of Course&quot;
 <li>The pull request will be auto-populated with the template – fill out the pull request prompts and check off the checklist marks by placing an <code>x</code> between the brackets of the items you have completed.</li>
 <li>Look at the <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests"><code>files changed</code></a> tab. Does it show the changes you expected? If not, then continue to make edits following steps 6 - 10 as needed.</li>
 <li>The Github actions will automatically generate a preview of your course and post it to a comment on your pull request like this:
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/gha-preview-comment.png" /></li>
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/gha-preview-comment.png" /></li>
 <li>When you think it is ready for review, <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review">request a reviewer</a> by clicking on <code>Reviewer</code> on the right side and choose an appropriate person to review your changes.</li>
 </ol>
-<p>Have you been requested as a reviewer or just received a review? <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Pull-Request-review-tips">Read this page</a> for advice on reviewing/receiving reviews.</p>
+<p>Have you been requested as a reviewer or just received a review? <a href="https://github.com/jhudsl/OTTR_Template/wiki/Pull-Request-review-tips">Read this page</a> for advice on reviewing/receiving reviews.</p>
 </div>
 <div id="merging-your-pr" class="section level2" number="8.6">
 <h2><span class="header-section-number">8.6</span> Merging your PR</h2>
@@ -404,8 +404,8 @@ title: &quot;Title of Course&quot;
 <li>If any of the checks have failed, click on <code>Details</code> and try to investigate why.</li>
 </ol>
 <ul>
-<li>For failed spell checks follow the <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-set-up-and-customize-GitHub-actions-robots#style-guide">instructions here</a>.</li>
-<li>For failed URL checks follow the <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-set-up-and-customize-GitHub-actions-robots#url-checking">instructions here</a>.</li>
+<li>For failed spell checks follow the <a href="https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots#style-guide">instructions here</a>.</li>
+<li>For failed URL checks follow the <a href="https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots#url-checking">instructions here</a>.</li>
 </ul>
 <ol start="20" style="list-style-type: decimal">
 <li>If the checks have passed, and the reviewer thinks it’s ready, use the down arrow next to the <code>merge</code> button to choose <code>squash and merge</code>.</li>

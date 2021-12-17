@@ -37,7 +37,7 @@ jobs:
           rm -r docs/*
           rm -rf wiki_pages/*
           mkdir -p wiki_pages
-          svn export --force https://github.com/jhudsl/DaSL_Course_Template_Bookdown.wiki.git/trunk/ ./wiki_pages
+          svn export --force https://github.com/jhudsl/OTTR_Template.wiki.git/trunk/ ./wiki_pages
 
       # Run bookdown rendering
       - name: Run bookdown render

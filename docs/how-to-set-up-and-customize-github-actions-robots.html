@@ -309,7 +309,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
-<p style="text-align:center;"> <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
 <p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
 </ul>
@@ -366,12 +366,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="preview-of-render" class="section level3" number="24.0.1">
 <h3><span class="header-section-number">24.0.1</span> Preview of render</h3>
-<p>After you open a pull request, a preview of the renders as they will appear after the pull request is accepted is run and linked to in a comment on the pull request. Upon each commit these previews will re-render and edit the comment with the time of the latest render. These Github Actions are located in <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/tree/main/.github/workflows/render-preview.yml">render-preview.yml</a>.
+<p>After you open a pull request, a preview of the renders as they will appear after the pull request is accepted is run and linked to in a comment on the pull request. Upon each commit these previews will re-render and edit the comment with the time of the latest render. These Github Actions are located in <a href="https://github.com/jhudsl/OTTR_Template/tree/main/.github/workflows/render-preview.yml">render-preview.yml</a>.
 These previews do NOT incorporate any changes influenced by any changes to the Docker image if the Dockerfile is also updated in the same pull request.</p>
 </div>
 <div id="spell-check-1" class="section level3" number="24.0.2">
 <h3><span class="header-section-number">24.0.2</span> Spell check</h3>
-<p>Github actions will automatically <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/style-and-sp-check.yml">run a spell check on all Rmds</a> whenever a pull request to the <code>main</code> branch is filed.
+<p>Github actions will automatically <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml">run a spell check on all Rmds</a> whenever a pull request to the <code>main</code> branch is filed.
 Depending on your preference, you may find it easier to spell check manually on your local computer before pushing to Github.</p>
 <p>It will fail if there are more than 2 spelling errors and you’ll need to resolve those before being able to merge your pull request.</p>
 <p>To resolve those spelling errors, go to this repository’s <code>Actions</code> tab.
@@ -386,7 +386,7 @@ Then commit the changes to <code>resources/dictionary.txt</code> to your branch 
 </div>
 <div id="code-styling" class="section level3" number="24.0.3">
 <h3><span class="header-section-number">24.0.3</span> Code styling</h3>
-<p>Github actions will run the <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/style-and-sp-check.yml"><code>styler</code> package to all style R in all Rmds</a> whenever a pull request to the <code>main</code> branch is filed.
+<p>Github actions will run the <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml"><code>styler</code> package to all style R in all Rmds</a> whenever a pull request to the <code>main</code> branch is filed.
 Style changes will automatically be committed back to your branch.</p>
 </div>
 <div id="url-checking" class="section level3" number="24.0.4">
@@ -406,7 +406,7 @@ Click on <code>check_urls</code> and the specific step of <code>Check URLs</code
 <h3><span class="header-section-number">24.0.6</span> For a course that needs to publish to the Leanpub repository</h3>
 <p><code>transfer-rendered-files.yml</code> is a Github action that will copy over the output <code>docs/</code> files rendered by Bookdown to a parallel <code>Leanpub</code> repository.</p>
 <p>Once <code>build-all</code> is run, the <code>docs/</code> folder where the rendered files are place are copied over to the Leanpub repository and filed as a pull request.</p>
-<p>There are two edits to <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/transfer-rendered-files.yml"><code>.github/workflow/transfer-rendered-files.yml</code></a> that need to be done to turn on the automatic copying of files between these repos:</p>
+<p>There are two edits to <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/transfer-rendered-files.yml"><code>.github/workflow/transfer-rendered-files.yml</code></a> that need to be done to turn on the automatic copying of files between these repos:</p>
 <ol style="list-style-type: decimal">
 <li>Change line 28 to the repository name you would like the <code>docs/</code> files to be transferred to.</li>
 </ol>
@@ -423,12 +423,12 @@ Click on <code>check_urls</code> and the specific step of <code>Check URLs</code
 </div>
 <div id="for-a-course-that-needs-to-publish-to-coursera" class="section level3" number="24.0.7">
 <h3><span class="header-section-number">24.0.7</span> For a course that needs to publish to Coursera</h3>
-<p>The <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/render-bookdown.yml">render-bookdown.yml</a> github action the chapter content for Coursera by using this command within the docker image:</p>
+<p>The <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml">render-bookdown.yml</a> github action the chapter content for Coursera by using this command within the docker image:</p>
 <pre><code>leanbuild::render_coursera()</code></pre>
 <p>You can run this same command locally if you wish to test something.
 This render the chapters without the table of Contents.
 If you do not wish to publish to Coursera and prefer this do not run, you may delete this section (but it shouldn’t hurt anything to keep as is – unless for some reason it causes you some troubles).</p>
-<p>Additionally, the Leanpub companion repository has a <a href="https://github.com/jhudsl/DaSL_Course_Template_Leanpub/blob/main/scripts/coursera_quiz_conversion.R">Leanpub -&gt; Coursera quiz conversion script</a> if you choose to create quizzes and publish on both Leanpub and Coursera.</p>
+<p>Additionally, the Leanpub companion repository has a <a href="https://github.com/jhudsl/OTTR_Quizzes/blob/main/scripts/coursera_quiz_conversion.R">Leanpub -&gt; Coursera quiz conversion script</a> if you choose to create quizzes and publish on both Leanpub and Coursera.</p>
 </div>
 </div>
 <hr>

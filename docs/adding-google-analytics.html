@@ -309,7 +309,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
-<p style="text-align:center;"> <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
 <p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
 </ul>
@@ -348,12 +348,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li>Get a <strong>Google Analytics account</strong> (if you do not already have one): <a href="https://analytics.google.com/analytics">https://analytics.google.com/analytics</a></li>
 </ol>
 <div class="figure">
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_account.png" alt="" />
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_account.png" alt="" />
 <p class="caption">Google Analytics account setup</p>
 </div>
 <p>Note that in creating an account you will need to agree to some terms. Currently it is free to get Google analytics data as long as your course does not exceed a very high user rate. Check to make sure that the terms work for you</p>
 <div class="figure">
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_terms.png" alt="" />
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_terms.png" alt="" />
 <p class="caption">Google Analytics terms</p>
 </div>
 <ol start="2" style="list-style-type: decimal">
@@ -361,57 +361,57 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Set up a new <strong>property</strong> (fill out name and details, select options about tracking traffic for how you intend to use Google Analytics)</p></li>
 </ol>
 <div class="figure">
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_Create_Property.png" alt="" />
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_Create_Property.png" alt="" />
 <p class="caption">Google Analytics Property creation</p>
 </div>
 <div class="figure">
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_Property_setup.png" alt="" />
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_Property_setup.png" alt="" />
 <p class="caption">Google Analytics Property</p>
 </div>
 <div class="figure">
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_property.png" alt="" />
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_property.png" alt="" />
 <p class="caption">Google Analytics Property choices</p>
 </div>
 <ol start="4" style="list-style-type: decimal">
 <li>Add a <strong>stream</strong> to your property, choose the <strong>Web</strong> option.</li>
 </ol>
 <div class="figure">
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_web.png" alt="" />
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_web.png" alt="" />
 <p class="caption">Google Analytics stream options</p>
 </div>
 <ol start="5" style="list-style-type: decimal">
 <li>Fill in your stream information with the <strong>link</strong> for your course (note you may need to remove https as this is part of a pull down menu to the left of where you paste your link)</li>
 </ol>
 <div class="figure">
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_stream_link.png" alt="" />
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_stream_link.png" alt="" />
 <p class="caption">Google Analytics stream</p>
 </div>
 <div class="figure">
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_stream_link_correct.png" alt="" />
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_stream_link_correct.png" alt="" />
 <p class="caption">Google Analytics stream</p>
 </div>
 <ol start="6" style="list-style-type: decimal">
 <li>On the resulting page you will see a <strong>Measurement ID</strong>. Copy this ID and paste it in the GA_Script.Rhtml file in the template replacing the fields that say {MeasurementID} including the curly brackets.</li>
 </ol>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_ID.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_ID.png" /></p>
 <ol start="7" style="list-style-type: decimal">
 <li>Modify the _output.yml file so that the line that starts with <code>before body:</code> is changed to include brackets around the GA_script.Rhtml file before a comma and the name of the hero image html file (which should already be listed). For example, like this:
 <code>before_body: [GA_Script.Rhtml, assets/big-image-itcr.html]</code>
 or this:
 <code>before_body: [GA_Script.Rhtml, assets/big-image.html]</code></li>
 </ol>
-<p><img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/output_file_with_GA.png" /></p>
+<p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/output_file_with_GA.png" /></p>
 <ol start="7" style="list-style-type: decimal">
 <li><p><strong>Rerender</strong> your course by making a change to one of your chapter RMD files in a pull request and pushing and merging the pull request. This will cause new html files to be made for each chapter in the <code>docs</code> folder. The Google Analytics code should now be in each of the html files - you can check by searching for <code>Google Analytics</code>.</p></li>
 <li><p>Go back to <a href="https://analytics.google.com/analytics">Google Analytics</a> and log in if you need to.</p></li>
 <li><p>Check on the <strong>Reports</strong> button on the top of the far left icon menu. The icon looks like a bar chart. If you open up a browser window to your hosted course online, then you should see yourself as 1 user in the last 30 minutes.</p></li>
 </ol>
 <div class="figure">
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_reports.png" alt="" />
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_reports.png" alt="" />
 <p class="caption">Google Analytics Reports</p>
 </div>
 <div class="figure">
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_check.png" alt="" />
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_check.png" alt="" />
 <p class="caption">Check Google Analytics</p>
 </div>
 <ol start="9" style="list-style-type: decimal">

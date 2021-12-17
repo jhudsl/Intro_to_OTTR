@@ -5,6 +5,12 @@
 
 ```
 
+```{r, echo=FALSE, results='asis'}
+cow::borrow_chapter(doc_path = "docs/02-chapter_of_course.md", repo_name = "/jhudsl/OTTR_Template")
+```
+
+```
+
 ```{r child = 'wiki_pages/Content-creation-tips.md'}
 ```
 

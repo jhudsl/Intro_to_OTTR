@@ -5,9 +5,9 @@ The GitHub actions that this repository uses needs three GitHub secrets set up i
 
 It's important that these are set up and named exactly what they are below in order for GitHub actions to work correctly.
 
-See [GitHub Actions section](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-set-up-and-customize-GitHub-actions-robots) for how you can customize Github actions depending on the needs of the course you are working on.
+See [GitHub Actions section](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots) for how you can customize Github actions depending on the needs of the course you are working on.
 
-![GitHub secrets](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/git-secrets.png)
+![GitHub secrets](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/git-secrets.png)
 
 To set up these repository secrets, on your repository's main GitHub page, go to `Settings` and scroll down to see `Secrets` on the left side menu bar.
 

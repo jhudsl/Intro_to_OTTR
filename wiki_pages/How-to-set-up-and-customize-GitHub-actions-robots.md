@@ -29,12 +29,12 @@ If you are only looking to use this template for creating a Bookdown course, thi
 
 ### Preview of render
 
-After you open a pull request, a preview of the renders as they will appear after the pull request is accepted is run and linked to in a comment on the pull request. Upon each commit these previews will re-render and edit the comment with the time of the latest render. These Github Actions are located in [render-preview.yml](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/tree/main/.github/workflows/render-preview.yml).
+After you open a pull request, a preview of the renders as they will appear after the pull request is accepted is run and linked to in a comment on the pull request. Upon each commit these previews will re-render and edit the comment with the time of the latest render. These Github Actions are located in [render-preview.yml](https://github.com/jhudsl/OTTR_Template/tree/main/.github/workflows/render-preview.yml).
 These previews do NOT incorporate any changes influenced by any changes to the Docker image if the Dockerfile is also updated in the same pull request.
 
 ### Spell check
 
-Github actions will automatically [run a spell check on all Rmds](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/style-and-sp-check.yml) whenever a pull request to the `main` branch is filed.
+Github actions will automatically [run a spell check on all Rmds](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml) whenever a pull request to the `main` branch is filed.
 Depending on your preference, you may find it easier to spell check manually on your local computer before pushing to Github.
 
 It will fail if there are more than 2 spelling errors and you'll need to resolve those before being able to merge your pull request.
@@ -53,7 +53,7 @@ Then commit the changes to `resources/dictionary.txt` to your branch and this sh
 
 ### Code styling
 
-Github actions will run the [`styler` package to all style R in all Rmds](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/style-and-sp-check.yml) whenever a pull request to the `main` branch is filed.
+Github actions will run the [`styler` package to all style R in all Rmds](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml) whenever a pull request to the `main` branch is filed.
 Style changes will automatically be committed back to your branch.
 
 ### URL Checking
@@ -78,7 +78,7 @@ However for simplicity purposes there are two sections this Github action that c
 
 Once `build-all` is run, the `docs/` folder where the rendered files are place are copied over to the Leanpub repository and filed as a pull request.
 
-There are two edits to [`.github/workflow/transfer-rendered-files.yml`](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/transfer-rendered-files.yml) that need to be done to turn on the automatic copying of files between these repos:  
+There are two edits to [`.github/workflow/transfer-rendered-files.yml`](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/transfer-rendered-files.yml) that need to be done to turn on the automatic copying of files between these repos:  
 
 1) Change line 28 to the repository name you would like the `docs/` files to be transferred to.
 ```
@@ -97,7 +97,7 @@ repository: jhudsl/Course_Template_Leanpub
 
 ### For a course that needs to publish to Coursera
 
-The [render-bookdown.yml](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/render-bookdown.yml) github action the chapter content for Coursera by using this command within the docker image:
+The [render-bookdown.yml](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml) github action the chapter content for Coursera by using this command within the docker image:
 ```
 leanbuild::render_coursera()
 ```
@@ -105,4 +105,4 @@ You can run this same command locally if you wish to test something.
 This render the chapters without the table of Contents.
 If you do not wish to publish to Coursera and prefer this do not run, you may delete this section (but it shouldn't hurt anything to keep as is -- unless for some reason it causes you some troubles).
 
-Additionally, the Leanpub companion repository has a [Leanpub -> Coursera quiz conversion script](https://github.com/jhudsl/DaSL_Course_Template_Leanpub/blob/main/scripts/coursera_quiz_conversion.R) if you choose to create quizzes and publish on both Leanpub and Coursera.
+Additionally, the Leanpub companion repository has a [Leanpub -> Coursera quiz conversion script](https://github.com/jhudsl/OTTR_Quizzes/blob/main/scripts/coursera_quiz_conversion.R) if you choose to create quizzes and publish on both Leanpub and Coursera.

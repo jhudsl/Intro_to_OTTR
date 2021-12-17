@@ -13,14 +13,14 @@ Depending on your goals and intended audience you may want to publish just one o
 <img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=gf4fcf6569c_2_0" width="500"/>
 
 ## Links to the guides for each platform:
-- [Publishing with Bookdown](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-with-Bookdown)
-- [Publishing with Leanpub](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-on-Leanpub)
-- [Publishing with Coursera](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-on-Coursera)
+- [Publishing with Bookdown](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-with-Bookdown)
+- [Publishing with Leanpub](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Leanpub)
+- [Publishing with Coursera](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Coursera)
 
 
 # Publishing with Bookdown
 
-Bookdown is published using Github pages which you can set up [following the set up repository instructions](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Starting-a-new-course-with-this-template#set-up-github-pages).
+Bookdown is published using Github pages which you can set up [following the set up repository instructions](https://github.com/jhudsl/OTTR_Template/wiki/Starting-a-new-course-with-this-template#set-up-github-pages).
 
 As you modify the names of the chapters of your course and add more chapters (using the `.Rmd` files), you need to update the `_bookdown.yml` file accordingly.
 
@@ -30,7 +30,7 @@ We would update our `_bookdown.yml` to look like this:
 ```yaml
 book_filename: "Course_Name"  
 chapter_name: "Chapter "  
-repo: https://github.com/jhudsl/DaSL_Course_Template_Bookdown/ ##Make sure you update this for your GitHub Repo!!  
+repo: https://github.com/jhudsl/OTTR_Template/ ##Make sure you update this for your GitHub Repo!!  
 rmd_files: ["index.Rmd",  
             "01-intro.Rmd",   
             "02-chapter_of_course.Rmd",   
@@ -62,18 +62,18 @@ Note that When a pull request is merged to main, `bookdown::render_book()` will 
 
 # Publishing on Leanpub
 
-The [_Leanpub template repository](https://github.com/jhudsl/DaSL_Course_Template_Leanpub) includes all of the files that you need to convert your Bookdown course that was set up from a DaSL_Course_Template_Bookdown to a [Leanpub](https://leanpub.com/) course with quizzes.
+The [_Leanpub template repository](https://github.com/jhudsl/OTTR_Quizzes) includes all of the files that you need to convert your Bookdown course that was set up from a OTTR_Template to a [Leanpub](https://leanpub.com/) course with quizzes.
 
 These repositories are separate so that the quizzes and answers can be kept private.
-If you haven't created a _Bookdown repository for your course [template repository's getting started section Wiki](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Getting-started) and start there.
+If you haven't created a _Bookdown repository for your course [template repository's getting started section Wiki](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started) and start there.
 
 <img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=geb00d6af62_0_0" width="500" height="500"/>
 
-If you encounter any problems or have ideas for improvements to this template repository or this getting started Wiki, please [file an issue here](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/issues/new/choose)! Your feedback is very much appreciated.
+If you encounter any problems or have ideas for improvements to this template repository or this getting started Wiki, please [file an issue here](https://github.com/jhudsl/OTTR_Template/issues/new/choose)! Your feedback is very much appreciated.
 
 ## How to use these repositories:
 
-If you don't wish to have quizzes with your material or publish on Leanpub then you do not need the _Leanpub repository template, and the [_Bookdown template repository](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/) should be sufficient for your needs.
+If you don't wish to have quizzes with your material or publish on Leanpub then you do not need the _Leanpub repository template, and the [_Bookdown template repository](https://github.com/jhudsl/OTTR_Template/) should be sufficient for your needs.
 
 <img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=ged277ddb11_3_5" width="500" height="500"/>
 
@@ -81,7 +81,7 @@ The Leanpub repository is where quizzes are stored because it is meant to be kep
 
 Keep in mind that in order to keep your Leanpub and Bookdown versions of your course concurrent, you should not make chapter edits in this repository!
 Only quiz edits should be in your `_Leanpub` repository.
-Chapter changes should be made in your `_Bookdown` repository and the [`transfer-rendered_files.yml`](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/transfer-rendered-files.yml) Github action should be used to copy over the changes here.
+Chapter changes should be made in your `_Bookdown` repository and the [`transfer-rendered_files.yml`](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/transfer-rendered-files.yml) Github action should be used to copy over the changes here.
 
 ## Setting up your Leanpub Github repository
 
@@ -116,16 +116,16 @@ After setting up these new branch items, click `Create` and `Save changes`.
 
 In order to link your _Leanpub and _Bookdown repositories (so you only have to edit material in one place), you need to name your GitHub repository with an identical name to your _Bookdown repository except end it in _Leanpub. So for example, if your Bookdown repository is called: `Cool_Course` or `Cool_Course_Bookdown`; it's Leanpub repository **must** be called `Cool_Course_Leanpub`.
 
-The GitHub actions that are responsible for content transfer is in the `.gihub/workflows/` folder and called [`transfer-rendered-files.yml`](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/transfer-rendered-files.yml)
+The GitHub actions that are responsible for content transfer is in the `.gihub/workflows/` folder and called [`transfer-rendered-files.yml`](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/transfer-rendered-files.yml)
 
-Note if you haven't set a [GH_PAT git secret](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-GitHub-secrets) and you are not a part of `jhudsl` organization, you will need to set that by following [these instructions](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-GitHub-secrets).
+Note if you haven't set a [GH_PAT git secret](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets) and you are not a part of `jhudsl` organization, you will need to set that by following [these instructions](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets).
 
 _Note that any content changes to non-quiz material needs to be done your course's Bookdown repository!
 Do NOT change them in your _Leanpub repository, otherwise your _Bookdown course will not be updated._
 
 ## Setting up quizzes
 
-See and copy this [template quiz](https://github.com/jhudsl/DaSL_Course_Template_Leanpub/blob/main/quizzes/quiz_ch1.md) to get started.
+See and copy this [template quiz](https://github.com/jhudsl/OTTR_Quizzes/blob/main/quizzes/quiz_ch1.md) to get started.
 All quizzes need to be written in the Markua format. Refer to their [documentation](https://leanpub.com/markua/read#leanpub-auto-quizzes-and-exercises) (but note that it is sometimes vague or out of date).
 The example question types in the template are ones that are verified to work.
 
@@ -146,7 +146,7 @@ Note that any `.md` files with an `#` in front of the name in the `Book.txt` fil
 
 ## Leanpub rendering
 
-For convenience purposes the leanbuild package can do most of the formatting of links and etc for you (so long as you followed the formatting prescribed by the [`Setting up images` section of this Wiki](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-images-and-graphics).
+For convenience purposes the leanbuild package can do most of the formatting of links and etc for you (so long as you followed the formatting prescribed by the [`Setting up images` section of this Wiki](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics).
 
 Github actions in this repository will attempt to do the Bookdown to Leanpub conversions for you by running `leanbuild::bookdown_to_leanpub()` function at the top of the repository.
 You can also run this command manually if you wish.
@@ -182,7 +182,7 @@ If you have errors in your course (typically from a quiz formatting issue) the r
 
 ## Converting quizzes from Leanpub to Coursera format
 
-[See more instructions on how to port a course made from these templates to Coursera](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-on-Courseraa).
+[See more instructions on how to port a course made from these templates to Coursera](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Courseraa).
 
 You can convert your quizzes to a nicely upload-able yaml file in this repository by running this command in the docker image
 
@@ -233,7 +233,7 @@ You will need to set up your own educator profile and course shell through your 
 
 ## Converting your files for upload to Coursera
 
-The Github actions set up in the [render-bookdown.yml](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/render-bookdown.yml) also render your course material in a format suitable for linking to Coursera.
+The Github actions set up in the [render-bookdown.yml](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml) also render your course material in a format suitable for linking to Coursera.
 This Coursera version is identical except that the table of contents bar on the left side has been dropped so as to not confuse Coursera users about navigating the course.
 These files can be previewed in the `docs/coursera/` folder.
 Click on  your chapter htmls to see what it will look like.
@@ -244,23 +244,23 @@ In the Leanpub repo, Leanpub-formatted quizzes can be converted to a Coursera ya
 
 After your [course shell has been added to your account](#setting-up-your-coursera-course) you can navigate to it by going to `My Courses`:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/profile.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/profile.png)
 
 And you should see it listed:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/my-courses.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/my-courses.png)
 
 You can click on `Go to Course`. And on your main course page click `Edit Course` in the right corner.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/edit-course-nav.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-course-nav.png)
 
 This will bring you to your version page (at this point you should only have a Version 1, so go to that one).
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/versions.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/versions.png)
 
 Now you are on the Edit content page and ready to add lessons, modules and quizzes!
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/edit-content.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-content.png)
 
 In general, you will want each lesson to contain at least a chapter and a quiz.
 
@@ -268,7 +268,7 @@ Each module is supposed to take a learner one week, so depending on the length o
 
 To add a new lesson, click the `+ Add Lesson` button:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-lesson.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-lesson.png)
 
 Now you are ready to add a chapter!
 
@@ -287,45 +287,45 @@ If you are unsure what the main url for your Github pages is, in your github rep
 So for example, the introduction chapter of this template would be linked by using this url:
 
 ```
-https://jhudatascience.org/DaSL_Course_Template_Bookdown/coursera/introduction.html
+https://jhudatascience.org/OTTR_Template/coursera/introduction.html
 ```
 
 To add this URL to Coursera, add a new lesson, click `+ More` and choose `Ungraded Plugin`.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-1.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-1.png)
 
 This will add an unpublished ungraded plugin to your lesson:
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-2.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-2.png)
 
 Now click the edit button on the new `Ungraded Plugin`.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-3.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-3.png)
 
 This will bring you to the standard example plug in page.
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-4.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-4.png)
 
 Scroll down and click `Edit Configuration`:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-5.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-5.png)
 
 Replace the example url with the url of your individual chapter we discussed above.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-6.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-6.png)
 
 Then click on `Save Configuration`:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-7.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-7.png)
 
 If the url you provided was correct, you should see a preview of your chapter:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-8.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-8.png)
 
 You may want to edit the title at the top of this page to indicate the material being linked.
 
 Now click `Publish` in the left upper corner (don't worry it's not actually publishing publicly, its just saving your changes).
 And it will ask you again to really scare you, but yes, click `Publish`.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-9.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-9.png)
 
 Congrats you added a chapter to your course! Now do the same thing for all your chapters!
 
@@ -333,28 +333,28 @@ Congrats you added a chapter to your course! Now do the same thing for all your 
 
 To add a new quiz start from your `Edit content` page and on whatever lesson you would like to add the quiz to and click the `+ Quiz` button.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-1.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-1.png)
 
 Now go to `Edit` on the new quiz.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-2.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-2.png)
 
 If you are choosing to manually enter your quizzes, you can continue to add each question from this page.
 
 If you are importing a Leanpub converted quiz click the `Import Questions` button and choose your converted yml files.
 (If you've not yet converted your leanpub quizzes, then [refer to that section](#converting-quizzes-from-leanpub-format).)
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-3.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-3.png)
 
 Upload your Coursera quiz yml file from your device:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-4.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-4.png)
 
 After you've selected the file click `Upload`:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-5.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-5.png)
 
-It will let you know if there are any problems uploading the quiz. If the  `coursera_quiz_conversion.R` script failed to render something properly, please [file an issue here](https://github.com/jhudsl/DaSL_Course_Template_Leanpub/issues) describing how it failed and including a file that shows the instance it failed to convert.
+It will let you know if there are any problems uploading the quiz. If the  `coursera_quiz_conversion.R` script failed to render something properly, please [file an issue here](https://github.com/jhudsl/OTTR_Quizzes/issues) describing how it failed and including a file that shows the instance it failed to convert.
 
 Note that images and links are not currently supported in that conversion script. You also cannot have `:` in your prompts or answers.
 
@@ -364,20 +364,20 @@ By default quizzes are set to `Practice Quiz` but you will need at least some of
 On the left side of quiz editing page, there's a drop down menu to select `Graded Quiz`.
 Also in this location you can edit the estimated time it should take to complete the quiz (by default it is set to 15 minutes).
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/quiz-settings.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/quiz-settings.png)
 
 You also will want to assign the learning objectives that apply to this quiz. You can do this by clicking on the plus sign underneath the title.  
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/learning-obj-assigned.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/learning-obj-assigned.png)
 
 From here it will suggest the module's learning objectives. Click all that apply and then `Save`.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/assign-learning-obj.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/assign-learning-obj.png)
 
 You can edit the title of your quiz and then click `Publish` (don't worry it's not actually publishing publicly, its just saving your changes).
 And it will ask you again to really scare you, but yes, click `Publish`.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-9.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-9.png)
 
 Congrats you added a quiz to your course!
 
@@ -385,20 +385,20 @@ Congrats you added a quiz to your course!
 
 You can click on `Go to Course`. And on your main course page click `Edit Course` in the right corner.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/edit-course-nav.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-course-nav.png)
 
 This will bring you to your version page.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/versions.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/versions.png)
 
 Underneath `Content`, on the left side bar, at the bottom, there is the `Programmed Messages`.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/versions.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/versions.png)
 
 At the very least you should add a `Welcome to the course` and a `Completion` programmed message.
 Click on each of these to edit them. Click `Preview` and then `Publish` to save your edits.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/programmed-messages.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/programmed-messages.png)
 
 Here are some templated messages to get you started:
 
@@ -431,15 +431,15 @@ Click `Preview` and then `Publish` to save your edits.
 For final grades in the course, you will need to set the Grading Formula.
 To get to this page, you can click on `Go to Course`. And on your main course page click `Edit Course` in the right corner.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/edit-course-nav.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-course-nav.png)
 
 This will bring you to your version page.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/versions.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/versions.png)
 
 Now you can set the percentage that each module's assignments are worth in the course.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/grading-formula.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/grading-formula.png)
 
 ## Content Schedule
 

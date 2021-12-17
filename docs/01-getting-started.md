@@ -4,9 +4,9 @@
 
 # Getting Started
 
-- Please take a look at the [code of conduct](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/code_of_conduct.md).
+- Please take a look at the [code of conduct](https://github.com/jhudsl/OTTR_Template/blob/main/code_of_conduct.md).
 
-- If you encounter any problems or have ideas for improvements to this template repository or this getting started guide, please [file an issue here](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/issues/new/choose)! Your feedback is very much appreciated.
+- If you encounter any problems or have ideas for improvements to this template repository or this getting started guide, please [file an issue here](https://github.com/jhudsl/OTTR_Template/issues/new/choose)! Your feedback is very much appreciated.
 
 ### Recommended background information
 - If you are not familiar with **Git and Github**, we recommend going through these chapters from our Reproducibility courses for quick orientation:
@@ -19,16 +19,229 @@
 
 ## How to contribute
 
-- If you are looking to write your own course go to: ["Start a new course"](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Start-a-new-course) and start setting up your course repository. After creating your new template, issues will be filed automatically. Follow these issues and the links in them to get going.
+- If you are looking to write your own course go to: ["Start a new course"](https://github.com/jhudsl/OTTR_Template/wiki/Start-a-new-course) and start setting up your course repository. After creating your new template, issues will be filed automatically. Follow these issues and the links in them to get going.
 
 - If you want to contribute in ways that are not your writing your own course, you can help us with our courses by:
-  - [Reviewing existing content](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Reviewing-existing-content)
-  - [Proposing new content](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Proposing-new-content)
-  - [Writing new content](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Writing-new-content)
-  - [Fixing errors and bugs](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Fixing-errors-and-bugs)
+  - [Reviewing existing content](https://github.com/jhudsl/OTTR_Template/wiki/Reviewing-existing-content)
+  - [Proposing new content](https://github.com/jhudsl/OTTR_Template/wiki/Proposing-new-content)
+  - [Writing new content](https://github.com/jhudsl/OTTR_Template/wiki/Writing-new-content)
+  - [Fixing errors and bugs](https://github.com/jhudsl/OTTR_Template/wiki/Fixing-errors-and-bugs)
 
 ## Basic overview of what the publishing process looks like:
 <img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=gf4fcf6569c_2_60" width="500"/>
+
+
+```
+## https://raw.githubusercontent.com//jhudsl/OTTR_Template/main/docs/02-chapter_of_course.md
+```
+
+
+
+*If you haven't yet read the getting started Wiki pages; [start there](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started)
+
+Every chapter needs to start out with this chunk of code:
+
+
+
+## Learning Objectives
+
+*Every chapter also needs Learning objectives that will look like this:  
+
+This chapter will cover:  
+
+- {You can use https://tips.uark.edu/using-blooms-taxonomy/ to define some learning objectives here}
+- {Another learning objective}
+
+## Libraries
+
+For this chapter, we'll need the following packages attached:
+
+*Remember to add [any additional packages you need to your course's own docker image](https://github.com/jhudsl/OTTR_Template/wiki/Using-Docker#starting-a-new-docker-image).
+
+```r
+library(magrittr)
+```
+
+# Topic of Section
+
+You can write all your text in sections like this!
+
+## Subtopic
+
+Here's a subheading and some text in this subsection!
+
+### Code examples
+
+You can demonstrate code like this:
+
+```r
+output_dir <- file.path("resources", "code_output")
+if (!dir.exists(output_dir)) {
+  dir.create(output_dir)
+}
+```
+
+And make plots too:
+
+```r
+hist_plot <- hist(iris$Sepal.Length)
+```
+
+![](resources/images/02-chapter_of_course_files/figure-docx/unnamed-chunk-4-1.png)<!-- -->
+
+You can also save these plots to file:
+
+```r
+png(file.path(output_dir, "test_plot.png"))
+hist_plot
+```
+
+```
+## $breaks
+## [1] 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0
+## 
+## $counts
+## [1]  5 27 27 30 31 18  6  6
+## 
+## $density
+## [1] 0.06666667 0.36000000 0.36000000 0.40000000 0.41333333 0.24000000 0.08000000
+## [8] 0.08000000
+## 
+## $mids
+## [1] 4.25 4.75 5.25 5.75 6.25 6.75 7.25 7.75
+## 
+## $xname
+## [1] "iris$Sepal.Length"
+## 
+## $equidist
+## [1] TRUE
+## 
+## attr(,"class")
+## [1] "histogram"
+```
+
+```r
+dev.off()
+```
+
+```
+## png 
+##   2
+```
+
+### Image example
+
+
+How to include a Google slide. It's simplest to use the `leanbuild` package:
+
+![](resources/images/02-chapter_of_course_files/figure-docx//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png)
+
+But if you have the slide or some other image locally downloaded you can also use html like this:
+
+<img src="resources/images/02-chapter_of_course_files/figure-html//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" style="display: block; margin: auto;" />
+
+
+### Video examples
+
+You can use `knitr::include_url()` like this:
+
+```r
+knitr::include_url("https://www.youtube.com/embed/VOCYL-FNbr0")
+```
+
+```
+## PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.
+```
+
+<iframe src="https://www.youtube.com/embed/VOCYL-FNbr0" width="100%" height="400px"></iframe>
+
+OR this works:
+
+<iframe src="https://www.youtube.com/embed/VOCYL-FNbr0" width="672" height="400px"></iframe>
+
+### Links to files
+
+This works:
+
+<iframe src="https://www.messiah.edu/download/downloads/id/921/Microaggressions_in_the_Classroom.pdf" width="100%" height="800px"></iframe>
+
+Or this:
+
+[This works](https://www.messiah.edu/download/downloads/id/921/Microaggressions_in_the_Classroom.pdf).
+
+Or this:
+
+<iframe src="https://www.messiah.edu/download/downloads/id/921/Microaggressions_in_the_Classroom.pdf" width="672" height="800px"></iframe>
+
+### Links to websites
+
+Examples of including a website link.
+
+This works:
+
+```r
+knitr::include_url("https://yihui.org")
+```
+
+<iframe src="https://yihui.org" width="100%" height="400px"></iframe>
+
+OR this:
+
+![Another link](https://yihui.org)
+
+OR this:
+
+<iframe src="https://yihui.org" width="672" height="400px"></iframe>
+
+### Citation examples
+
+We can put citations at the end of a sentence like this [@rmarkdown2021].
+Or multiple citations [@rmarkdown2021, @Xie2018].
+
+but they need a ; separator [@rmarkdown2021; @Xie2018].
+
+In text, we can put citations like this @rmarkdown2021.
+
+## Print out session info
+
+```r
+sessionInfo()
+```
+
+```
+## R version 4.0.2 (2020-06-22)
+## Platform: x86_64-pc-linux-gnu (64-bit)
+## Running under: Ubuntu 20.04.3 LTS
+## 
+## Matrix products: default
+## BLAS/LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.8.so
+## 
+## locale:
+##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=C             
+##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] magrittr_1.5
+## 
+## loaded via a namespace (and not attached):
+##  [1] knitr_1.33      hms_0.5.3       R6_2.4.1        rlang_0.4.10   
+##  [5] stringr_1.4.0   highr_0.8       httr_1.4.2      tools_4.0.2    
+##  [9] webshot_0.5.2   xfun_0.26       htmltools_0.5.0 ellipsis_0.3.1 
+## [13] yaml_2.2.1      leanbuild_0.1.2 digest_0.6.25   tibble_3.0.3   
+## [17] lifecycle_1.0.0 crayon_1.3.4    bookdown_0.24   readr_1.4.0    
+## [21] vctrs_0.3.4     fs_1.5.0        curl_4.3        evaluate_0.14  
+## [25] rmarkdown_2.10  stringi_1.5.3   compiler_4.0.2  pillar_1.4.6   
+## [29] pkgconfig_2.0.3
+```
+
+```
 
 
 # Content creation tips
@@ -85,7 +298,7 @@ Quizzes are also a great step for assessing if your course is really accomplishi
 
 Here is a great example of a quiz question that requires some higher level learning:
 
-![Quiz question example](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/question_example.png)
+![Quiz question example](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/question_example.png)
 
 Students are taught general information about good documentation. This now requires the students to apply this knowledge in a new context to recognize which option is better.
 
@@ -97,7 +310,7 @@ Consider adding cartoons or other images/graphics that can make your course more
 
 ### Get feedback
 
-If possible find people in your target audience demographic to give you feedback. Especially ask them to try the quizzes to see if your content clearly describes what they need to know to be able to successfully pass the quizzes. This is also a great time to catch any typos! Also consider getting feedback from experts about topics that you are less familiar with.  We hope that using our template will make it easier to incorporate feedback from others over time to allow courses to be living documents that are simple to adapt. Make sure that you give credit to people that give you feedback! Check out our [credits section](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-give-credits) for more information on how to do this.
+If possible find people in your target audience demographic to give you feedback. Especially ask them to try the quizzes to see if your content clearly describes what they need to know to be able to successfully pass the quizzes. This is also a great time to catch any typos! Also consider getting feedback from experts about topics that you are less familiar with.  We hope that using our template will make it easier to incorporate feedback from others over time to allow courses to be living documents that are simple to adapt. Make sure that you give credit to people that give you feedback! Check out our [credits section](https://github.com/jhudsl/OTTR_Template/wiki/How-to-give-credits) for more information on how to do this.
 
 ### Example courses
 Beyond our template, check out these courses we have made using this template for additional examples of how we approached content creation:
@@ -109,11 +322,11 @@ Beyond our template, check out these courses we have made using this template fo
 
 1. In the upper right of the landing page for this repository, click the green `Use this template` button and follow the steps to set up your course's GitHub repository.
 
-![Where is the `Use this template` button?](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/template_button.png)
+![Where is the `Use this template` button?](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/template_button.png)
 
 2. Name your repository and fill in a short description.
 
-![Creating new course repository](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/creating_new_course_repo.png)
+![Creating new course repository](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/creating_new_course_repo.png)
 
 
 3. Clone the repository
@@ -127,26 +340,26 @@ If you are unfamiliar with GitHub, we recommend you go through these two chapter
 <details> <summary> Click here to see more using RStudio for use with Git version control. </summary>
 
 First, to create a new project in RStudio, select File > New Project.
-![Make a new project](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/new_project.png)
+![Make a new project](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/new_project.png)
 
 Select a directory for your course to live. We suggest a new directory.
 
-![Select a directory for your new project](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/select_directory.png)
+![Select a directory for your new project](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/select_directory.png)
 
 Select `New Project` for project type.
 
-![Select project type](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/project_type.png)
+![Select project type](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/project_type.png)
 
 If creating a new directory for your project, name the new directory and decide where it should be.
 
-![New Project Directory](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/project_directory.png)
+![New Project Directory](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/project_directory.png)
 
 
 Go back to your new GitHub repository for the course you are creating and click on the green button on the right corner of the landing page to clone the repository.
 
 This will pop up a window that looks like this:
 
-![Clone the GitHub repo to work on the files on your local machine](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/clone.png)
+![Clone the GitHub repo to work on the files on your local machine](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/clone.png)
 
 Click the button that looks like a clip board to copy the location of your repository on GitHub.
 
@@ -160,7 +373,7 @@ Finally type: `git pull origin main` and you should see the files on GitHub popu
 
 This will give you a message like this:
 
-![cloning messages](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/messages.png)
+![cloning messages](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/messages.png)
 
 Next make a new git branch in the terminal in RStudio by typing the following and replacing `branch_name` with something that makes sense for you like `update_about`: `git checkout -b branch_name`
 
@@ -173,7 +386,7 @@ Now you are ready to start making changes to files for the next section!
 
 To make changes to files, you can open them in Rstudio by clicking on the file name from the file pane (lower right corner).
 
-![Open File in RStudio](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/file_pane.png)
+![Open File in RStudio](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/file_pane.png)
 
 After editing a file, make sure you save it.
 
@@ -197,22 +410,22 @@ You will get a message about your branch the first time - you can type what git 
 
 Click on the green button that says `Compare & pull request`.
 
-![New pull request possible](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/pull_request.png)
+![New pull request possible](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/pull_request.png)
 
 Then fill out the prompt with the information about your pull request. Don't worry if some of the later sections are unclear, we will get to more of that in a bit.
 
-![Submitting pull request](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/pull_request_2.png)
+![Submitting pull request](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/pull_request_2.png)
 
 When you are done click the `Create pull request` button!
 
 The first time you shouldn't have any conflicts with the main branch, thus you should see something like this:
 
-![Pull request output](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/pull_request_3.png)
+![Pull request output](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/pull_request_3.png)
 
 If everything looks good, you can press the `Merge pull request` button.
 </details>
 
-Now you're ready to continue to ["Set up your repository files"](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-your-repository-files)
+Now you're ready to continue to ["Set up your repository files"](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-your-repository-files)
 
 
 
@@ -220,7 +433,7 @@ Now you're ready to continue to ["Set up your repository files"](https://github.
 
 Now if you go to the `Issues` on GitHub for your course you will see issues filed that you can follow to set up the new course! Note that this may require you to wait a minute and refresh the page.
 
-![Issues to Guide you through creating the course](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/guides_issues.png)
+![Issues to Guide you through creating the course](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/guides_issues.png)
 
 ## Setting up the repository
 
@@ -228,19 +441,19 @@ Now if you go to the `Issues` on GitHub for your course you will see issues file
 
 ### Picking a style
 
-See more [about customizing style on this page in the guide](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Change-Title-&-Customize-style).
+See more [about customizing style on this page in the guide](https://github.com/jhudsl/OTTR_Template/wiki/Change-Title-&-Customize-style).
 By default this course template will use the jhudsl data science lab style. However, you can customize and switch this to another style set.
 
 #### Using a style set
 
-[Read more about the style sets here](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Change-Title-&-Customize-style#using-a-style-set).
+[Read more about the style sets here](https://github.com/jhudsl/OTTR_Template/wiki/Change-Title-&-Customize-style#using-a-style-set).
 
 - On a new branch, copy the `style-sets/<set-name>/index.Rmd` and `style-sets/<set-name>/_output.yml` to the top of the repository to overwrite the default `index.Rmd` and `_output.yml`.
 - Copy over all the files in the `style-sets/<set-name>/copy-to-assets` to the `assets` folder in the top of the repository.
-- [Create a pull request](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/About-pull-request-review) with these changes, and double check the rendered preview to make sure that the style is what you are looking for.
+- [Create a pull request](https://github.com/jhudsl/OTTR_Template/wiki/About-pull-request-review) with these changes, and double check the rendered preview to make sure that the style is what you are looking for.
 
 
-If you are new to git recall that now you need to push your changes like so [you may benefit from following the steps described here](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Adding-content-to-a-course) and [here](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/About-pull-request-review) :
+If you are new to git recall that now you need to push your changes like so [you may benefit from following the steps described here](https://github.com/jhudsl/OTTR_Template/wiki/Adding-content-to-a-course) and [here](https://github.com/jhudsl/OTTR_Template/wiki/About-pull-request-review) :
 
 `git commit -m "first changes"`
 
@@ -254,17 +467,17 @@ Now, you can go through each of the other files listed in the checklist and make
 
 There are `{}` in these files to get you started filling out information and should be deleted after you've filled them out.
 
-**Remember make your changes in a new branch to enable you to make pull requests with Git.** This will later be very important for the automated tasks that are part of the template. If you are unfamiliar with how to do a pull request, please see the [previous section](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Start-a-new-course) about how to do this.
+**Remember make your changes in a new branch to enable you to make pull requests with Git.** This will later be very important for the automated tasks that are part of the template. If you are unfamiliar with how to do a pull request, please see the [previous section](https://github.com/jhudsl/OTTR_Template/wiki/Start-a-new-course) about how to do this.
 
 
 It is likely that you might see something like this with your pull requests which will happen if you have too many new words not in the dictionary:
 
-![Spelling check fails](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/spell_check_fails.png)
+![Spelling check fails](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/spell_check_fails.png)
 
 We will discuss how to get the spelling results and fix your file in a bit, but for now you can press the merge pull request button.
 
 
-Once this is done, you can start on the next issue guide checklist called `New Course - Set Repository Settings`. We will explain how with the [next section](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-your-repository-settings).
+Once this is done, you can start on the next issue guide checklist called `New Course - Set Repository Settings`. We will explain how with the [next section](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-your-repository-settings).
 
 
 
@@ -276,31 +489,31 @@ With your course repository set up, there are some settings recommended for deve
 
 Using the issue guide checklist called `New Course - Set Repository Settings`, you can walk through the steps for setting up your repository as we would recommend.
 
-![Next issues checklist for repository settings](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/guides_issues_2.png)
+![Next issues checklist for repository settings](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/guides_issues_2.png)
 
 ### Set up GitHub pages
 
 Go to `Settings` > `Pages`.
 
-![Find pages settings](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/pages_settings.png)
+![Find pages settings](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/pages_settings.png)
 
-![Change pages settings](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/change_pages_settings.png)
+![Change pages settings](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/change_pages_settings.png)
 
 - Under `Source`, pick the drop down menu and pick `main` and `/docs`.  
 - Then click `Save`.  
 - Lastly, check the box that says `Enforce HTTPS` at the bottom of this page.   
 
-![Enforce HTTPS](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/change_https.png)
+![Enforce HTTPS](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/change_https.png)
 
 ### Set up branches
 
 Go to `Settings` > `Branches` and click `Add rule`. This is only possible if you have GitHub Pro, Team, or Enterprise access. We recommend seeing if your organization can give you access if you do not already have access. To get this access through your organization, you will need to transfer ownership of your repo to your organization. See [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository) about how to do this.
 
-![Add branch rule](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/branches.png)
+![Add branch rule](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/branches.png)
 
 For `Branch name pattern`, put `main`.
 
-![Put main for branch name pattern](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/main.png)
+![Put main for branch name pattern](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/main.png)
 
 _Protect the main branch_:  
 Then check the box that says `Require pull requests before merging`.
@@ -309,13 +522,13 @@ _Make sure branches are updated_:
 - Check the box that says `Require status checks to pass before merging`.
 - Underneath this also check the box that says `Require branches to be up to date before merging`.
 
-![Branch settings](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/branch_settings.png)
+![Branch settings](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/branch_settings.png)
 
 After setting up these new branch items, click `Create` and `Save changes`.
 
 After you submit a pull request if you haven't already done so, you will see several automatic checks happening. Don't be alarmed if this image looks slightly different as we make updates to the template:
 
-![Automatic updates](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/automatic_checks.png)
+![Automatic updates](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/automatic_checks.png)
 
 
 These checks will do important things like:
@@ -325,21 +538,21 @@ These checks will do important things like:
 *  create previews of the rendered versions of the course
 
 
-See the [Github Actions page](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-set-up-and-customize-GitHub-actions-robots) for more details on these.
+See the [Github Actions page](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots) for more details on these.
 
 
 If you are a part of JHU DaSL then you can skip the next section and the issue about GitHub secrets and start adding more content!
 
-Otherwise, you will need to do the [next section](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-GitHub-secrets) to set up Git Secrets.
+Otherwise, you will need to do the [next section](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets) to set up Git Secrets.
 
 There is one more issue that you can do to get updates for template files.
-![one more issue](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/guides_issues_4.png)
+![one more issue](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/guides_issues_4.png)
 
 We recommend that you do this but it is optional.
 
-![one more issue](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/issue_enroll.png)
+![one more issue](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/issue_enroll.png)
 
- See [this section](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Receiving-template-updates) to learn more about this or continue following along with the guide which will tell you how to set this up in a bit.
+ See [this section](https://github.com/jhudsl/OTTR_Template/wiki/Receiving-template-updates) to learn more about this or continue following along with the guide which will tell you how to set this up in a bit.
 
 Note that you can comment and close the issues you finish if you click on the issue and scroll down to the comment field to add comments and click the `close issue` button if you are finished.
 
@@ -351,9 +564,9 @@ The GitHub actions that this repository uses needs three GitHub secrets set up i
 
 It's important that these are set up and named exactly what they are below in order for GitHub actions to work correctly.
 
-See [GitHub Actions section](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-set-up-and-customize-GitHub-actions-robots) for how you can customize Github actions depending on the needs of the course you are working on.
+See [GitHub Actions section](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots) for how you can customize Github actions depending on the needs of the course you are working on.
 
-![GitHub secrets](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/git-secrets.png)
+![GitHub secrets](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/git-secrets.png)
 
 To set up these repository secrets, on your repository's main GitHub page, go to `Settings` and scroll down to see `Secrets` on the left side menu bar.
 
@@ -395,13 +608,13 @@ _Note_: The commands in these steps all for running in Terminal/Command Prompt.
 3. Change your directory to be that git repository directory on your computer
 [`git checkout -b “name-of-new-branch”`](https://git-scm.com/docs/git-checkout).
 4. Start up the Docker image:
-[`docker run -it -v $PWD:/home/rstudio -e PASSWORD=CHOOSE_PASSWORD -p 8787:8787 jhudsl/course_template`](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Using-Docker) But replace `CHOOSE_PASSWORD` with a password of your choosing.
+[`docker run -it -v $PWD:/home/rstudio -e PASSWORD=CHOOSE_PASSWORD -p 8787:8787 jhudsl/course_template`](https://github.com/jhudsl/OTTR_Template/wiki/Using-Docker) But replace `CHOOSE_PASSWORD` with a password of your choosing.
 5. Navigate to `localhost:8787` on  your browser (your username is Rstudio and password is whatever you set it to be in the previous step).
 
 ## Editing content
-6. In the RStudio window you just opened, copy the [`02-chapter_of_course.Rmd`](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/02-chapter_of_course.Rmd) course and use that as a guide to [add a new chapter](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-with-Bookdown).
-7. Make your edits. If your edits involve images, graphics, or videos, make sure you follow the set up in [adding images and graphics in text](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text)
-8. To preview how your [edits look in Bookdown](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-with-Bookdown), you can run bookdown::serve_book().
+6. In the RStudio window you just opened, copy the [`02-chapter_of_course.Rmd`](https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd) course and use that as a guide to [add a new chapter](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-with-Bookdown).
+7. Make your edits. If your edits involve images, graphics, or videos, make sure you follow the set up in [adding images and graphics in text](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text)
+8. To preview how your [edits look in Bookdown](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-with-Bookdown), you can run bookdown::serve_book().
 8. As you’ve made enough edits and want to save them run [`git add filepath`](https://git-scm.com/docs/git-add).
 9. Now [`git commit -m “Add a pertinent message here”`](https://git-scm.com/docs/git-commit) to add your edits to your branch.
 10. When you are ready to push changes to be online, run [`git push`](https://git-scm.com/docs/git-push).
@@ -424,16 +637,16 @@ title: "Title of Course"
 14. The pull request will be auto-populated with the template -- fill out the pull request prompts and check off the checklist marks by placing an `x` between the brackets of the items you have completed.
 15. Look at the [`files changed`](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests) tab. Does it show the changes you expected? If not, then continue to make edits following steps 6 - 10 as needed.
 16. The Github actions will automatically generate a preview of your course and post it to a comment on your pull request like this:
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/gha-preview-comment.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/gha-preview-comment.png)
 17. When you think it is ready for review, [request a reviewer](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review) by clicking on `Reviewer` on the right side and choose an appropriate person to review your changes.
 
-Have you been requested as a reviewer or just received a review? [Read this page](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Pull-Request-review-tips) for advice on reviewing/receiving reviews.
+Have you been requested as a reviewer or just received a review? [Read this page](https://github.com/jhudsl/OTTR_Template/wiki/Pull-Request-review-tips) for advice on reviewing/receiving reviews.
 
 ## Merging your PR
 18. When you receive feedback, repeat steps 6 - 10 to make edits and incorporate the feedback, all the while communicating with your reviewer through comments on the pull request.
 19. If any of the checks have failed, click on `Details` and try to investigate why.
- - For failed spell checks follow the [instructions here](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-set-up-and-customize-GitHub-actions-robots#style-guide).
- - For failed URL checks follow the [instructions here](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-set-up-and-customize-GitHub-actions-robots#url-checking).
+ - For failed spell checks follow the [instructions here](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots#style-guide).
+ - For failed URL checks follow the [instructions here](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots#url-checking).
 20. If the checks have passed, and the reviewer thinks it's ready, use the down arrow next to the `merge` button to choose `squash and merge`.
 21. [Close the issues](https://github.blog/2013-05-14-closing-issues-via-pull-requests/) that your changes were addressing. File any new issues during any step to keep track of what you need to do next! Start with step 2 all over again.
 
@@ -547,7 +760,7 @@ Please update the text at the bottom to describe the source. If it is not from J
 
 Also please type text describing the image in the notes section of the slide, this can be used to give visually impaired learners audio explanations of the images.
 
-Once complete, you can incorporate slides into your course using the instructions in the [Adding images and graphics in text](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text) below.
+Once complete, you can incorporate slides into your course using the instructions in the [Adding images and graphics in text](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text) below.
 
 
 
@@ -588,7 +801,7 @@ Please update the text at the bottom to describe the source. If it is not from J
 
 Also please type text describing the image in the notes section of the slide, this can be used to give visually impaired learners audio explanations of the images.
 
-Once complete, you can incorporate slides into your course using the instructions in the [Adding images and graphics in text](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text) below.
+Once complete, you can incorporate slides into your course using the instructions in the [Adding images and graphics in text](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text) below.
 
 
 ### Accessibility
@@ -614,7 +827,7 @@ leanbuild::include_slide(<google_slide_url>)
 
 You can obtain the <google_slide_url> by viewing the slide with the image you want to add and copying the address from the browser search bar.
 
-![Google slide url](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/slide_url.png)
+![Google slide url](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/slide_url.png)
 
 Also add notes (the same as the `fig.alt` text) to each slide in the google slide presentation describing the text or images of the slide to allow for the content to be accessible to vision impaired individuals, as this can be converted to audio. Note that you can't have any line breaks within the `fig.alt` text. If there are no line breaks the text should appear blue within the code chunk.
 
@@ -630,7 +843,7 @@ You can adjust the size(fig.hight, fig.width, out.width, out.height), alignment 
 
 Google Slides must be **public**. Share settings must be set to "Anyone on the internet with this link can view". Note that "Private" is the default setting when you make a new presentation.
 
-See [Chapter 2](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/02-chapter_of_course.Rmd) of the template course for examples.
+See [Chapter 2](https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd) of the template course for examples.
 
 ### Adding videos in text
 
@@ -648,7 +861,7 @@ To get the appropriate youtube url do the following:
 
 Again, it is important to use the `echo=FALSE` option so that only the video is shown and not the code to generate it.
 
-See [Chapter 2](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/02-chapter_of_course.Rmd) of the template course for examples.
+See [Chapter 2](https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd) of the template course for examples.
 
 ### Adding embedded files to text
 
@@ -663,7 +876,7 @@ knitr::include_url("https://www.messiah.edu/download/downloads/id/921/Microaggre
 
 Again you will need to include `echo = FALSE` to ensure that the code to generate the preview of the website or file is not included in your course material.
 
-If you want to include a file that is not hosted online, consider hosting it on GitHub using the method described for hosting your Bookdown version of the course. See the [Set up GitHub pages](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Starting-a-new-course-with-this-template#set-up-github-pages) section.
+If you want to include a file that is not hosted online, consider hosting it on GitHub using the method described for hosting your Bookdown version of the course. See the [Set up GitHub pages](https://github.com/jhudsl/OTTR_Template/wiki/Starting-a-new-course-with-this-template#set-up-github-pages) section.
 
 Then you would do the following, where the url is that of your hosted file:
 ````markdown
@@ -671,7 +884,7 @@ Then you would do the following, where the url is that of your hosted file:
 knitr::include_url("https://carriewright11.github.io/stringr_RLadies/index.html", height = "800px")
 ````
 
-See [Chapter 2](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/02-chapter_of_course.Rmd) of the template course for examples.
+See [Chapter 2](https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd) of the template course for examples.
 
 ### Learning Objectives Formatting
 
@@ -679,4 +892,4 @@ Each chapter should start with Learning objectives!
 You can use [this website](https://eclearn.emmanuel.edu/courses/1285497/pages/how-to-write-measurable-learning-objectives/) to help you craft learning objectives.
 
 Learning objectives should be stated both in the slides and in the beginning of each bookdown chapter.
-Because of this, you may find it most handy to use the [`List layout`](https://docs.google.com/presentation/d/1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU/export/png?id=1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU&pageid=gcf0c1d8548_0_141) slide for stating your Learning objectives and then embed that in the book from your GoogleSlides [the instructions here](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text).
+Because of this, you may find it most handy to use the [`List layout`](https://docs.google.com/presentation/d/1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU/export/png?id=1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU&pageid=gcf0c1d8548_0_141) slide for stating your Learning objectives and then embed that in the book from your GoogleSlides [the instructions here](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text).
