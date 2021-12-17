@@ -28,7 +28,6 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          cp -R assets/* docs/assets/
           rm -r docs/*
           rm -rf wiki_pages/*
           mkdir -p wiki_pages
