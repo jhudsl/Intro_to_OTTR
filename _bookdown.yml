@@ -2,8 +2,11 @@ book_filename: "Course_Name"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/DaSL_Course_Template_Bookdown/
 rmd_files: ["index.Rmd",
-            "01-intro.Rmd",
-            "02-chapter_of_course.Rmd",
+            "01-getting-started.Rmd",
+            "02-tools-in-the-template.Rmd",
+            "03-platform-specific-set-up.Rmd",
+            "04-automation-info-and-set-up.Rmd",
+            "05-finishing-touches.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes

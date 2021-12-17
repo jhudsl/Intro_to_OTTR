@@ -1,0 +1,9 @@
+
+# Automation info and set up
+
+
+```{r child = 'wiki_pages/How-to-set-up-and-customize-GitHub-actions-robots.md'}
+```
+
+```{r child = 'wiki_pages/Receiving-template-updates.md'}
+```

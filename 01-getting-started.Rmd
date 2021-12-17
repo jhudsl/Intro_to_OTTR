@@ -1,0 +1,30 @@
+
+# Getting started
+
+```{r child = 'wiki_pages/Getting-started.md'}
+
+```
+
+```{r child = 'wiki_pages/Content-creation-tips.md'}
+```
+
+```{r child = 'wiki_pages/Start-a-new-course.md'}
+```
+
+```{r child = 'wiki_pages/Setting-up-your-repository-files.md'}
+```
+
+```{r child = 'wiki_pages/Setting-up-your-repository-settings.md'}
+```
+
+```{r child = 'wiki_pages/Setting-up-GitHub-secrets.md'}
+```
+
+```{r child = 'wiki_pages/Adding-content-to-a-course.md'}
+```
+
+```{r child = 'wiki_pages/About-pull-request-review.md'}
+```
+
+```{r child = 'wiki_pages/Setting-up-images-and-graphics.md'}
+```

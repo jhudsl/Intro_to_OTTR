@@ -1,0 +1,14 @@
+
+# Platform specific set up
+
+```{r child = 'wiki_pages/Choosing-publishing-platforms.md'}
+```
+
+```{r child = 'wiki_pages/Publishing-with-Bookdown.md'}
+```
+
+```{r child = 'wiki_pages/Publishing-on-Leanpub.md'}
+```
+
+```{r child = 'wiki_pages/Publishing-on-Coursera.md'}
+```

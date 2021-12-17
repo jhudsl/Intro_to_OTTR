@@ -1,11 +1,7 @@
 
-# This code was originally written by Josh Shapiro and Candace Savonen
-# for the Childhood Cancer Data Lab, an initiative of Alexs Lemonade Stand Foundation.
-# https://github.com/AlexsLemonade/refinebio-examples/blob/33cdeff66d57f9fe8ee4fcb5156aea4ac2dce07f/.github/workflows/style-and-sp-check.yml#L1
+# Candace Savonen Apr 2021
 
-# Adapted for this jhudsl repository by Candace Savonen Apr 2021
-
-name: Render Bookdown and Coursera
+name: Render Bookdown
 
 # Controls when the action will run. Triggers the workflow on push
 # events only for the master branch
@@ -33,43 +29,15 @@ jobs:
           # use github PAT
           token: ${{ secrets.GH_PAT }}
 
-###### If you will be making changes to the Docker image to make specific to the
-###### course, then highlight this chunk and uncomment it. #####################
-###### Recommend using short cut -- Command and / works for some editors.#######
-###### START OF DOCKER UPDATE CHUNK
-      # # Login to Dockerhub
-      # - name: Login to DockerHub
-      #   uses: docker/login-action@v1
-      #   with:
-      #     username: ${{ secrets.DOCKERHUB_USERNAME }}
-      #     password: ${{ secrets.DOCKERHUB_TOKEN }}
-      #
-      # # Set up Docker build
-      # - name: Set up Docker Build
-      #   uses: docker/setup-buildx-action@v1
-      #
-      # - name: Get Token
-      #   run: echo ${{ secrets.GH_PAT }} > docker/git_token.txt
-      #
-      # # Build docker image
-      # - name: Build Docker image
-      #   uses: docker/build-push-action@v2
-      #   with:
-      #     push: false
-      #     load: true
-      #     context: docker
-      #     file: docker/Dockerfile
-      #     tags: jhudsl/course_template
-      #
-      # # Push the Docker image
-      # - name: Push Docker image
-      #   run: docker push jhudsl/course_template
-
-###### END OF DOCKER UPDATE CHUNK ##############################################
-
       # We want a fresh run of the renders each time
       - name: Delete old docs/*
-        run: rm -r docs/*
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          rm -r docs/*
+          rm -rf wiki_pages/*
+          mkdir -p wiki_pages
+          svn export --force https://github.com/jhudsl/DaSL_Course_Template_Bookdown.wiki.git/trunk/ ./wiki_pages
 
       # Run bookdown rendering
       - name: Run bookdown render
@@ -80,25 +48,13 @@ jobs:
           jhudsl/course_template \
           Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all')"
 
-##### If you do not wish to host your course on Coursera, you can delete this section #####
-      # Run Coursera version
-      - name: Run Coursera version of render
-        id: coursera
-        run: |
-          docker run \
-          --mount type=bind,target=/home/rstudio,source=$PWD \
-          jhudsl/course_template \
-          Rscript -e "leanbuild::render_coursera()"
-
-##### End of Coursera rendering section ########################################
 
       # This checks on the steps before it and makes sure that they completed.
       # If the renders didn't complete we don't want to commit the file changes
       - name: Check on render steps
-        if: steps.bookdown.outcome != 'success' || steps.coursera.outcome != 'success'
+        if: steps.bookdown.outcome != 'success'
         run: |
           echo Bookdown status ${{steps.bookdown.outcome}}
-          echo Coursera status ${{steps.coursera.outcome}}
           exit 1
 
       # Commit the rendered bookdown files
