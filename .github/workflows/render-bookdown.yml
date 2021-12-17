@@ -1,11 +1,7 @@
 
-# This code was originally written by Josh Shapiro and Candace Savonen
-# for the Childhood Cancer Data Lab, an initiative of Alexs Lemonade Stand Foundation.
-# https://github.com/AlexsLemonade/refinebio-examples/blob/33cdeff66d57f9fe8ee4fcb5156aea4ac2dce07f/.github/workflows/style-and-sp-check.yml#L1
+# Candace Savonen Apr 2021
 
-# Adapted for this jhudsl repository by Candace Savonen Apr 2021
-
-name: Render Bookdown and Coursera
+name: Render Bookdown
 
 # Controls when the action will run. Triggers the workflow on push
 # events only for the master branch
@@ -56,10 +52,9 @@ jobs:
       # This checks on the steps before it and makes sure that they completed.
       # If the renders didn't complete we don't want to commit the file changes
       - name: Check on render steps
-        if: steps.bookdown.outcome != 'success' || steps.coursera.outcome != 'success'
+        if: steps.bookdown.outcome != 'success'
         run: |
           echo Bookdown status ${{steps.bookdown.outcome}}
-          echo Coursera status ${{steps.coursera.outcome}}
           exit 1
 
       # Commit the rendered bookdown files
