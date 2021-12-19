@@ -32,8 +32,23 @@
 
 
 ```
+## Could not find git credentials, please set by running usethis::create_github_token(),
+##               or directly providing a personal access token using the git_pat argument
+```
+
+```
 ## https://raw.githubusercontent.com//jhudsl/OTTR_Template/main/docs/02-chapter_of_course.md
 ```
+
+```
+## 
+## 
+## processing file: ./resources/other_chapters/02-chapter_of_course.md
+```
+
+  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
+  ordinary text without R code
+
 
 
 

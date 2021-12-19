@@ -40,6 +40,9 @@ The title is specified on the index.Rmd page in the yml header. Modify the yaml 
 title: "Title of Course"
 ---
 ```
+
+Note that if one of the chapter Rmd files has a title in the yml that comes first alphabetically, it will be shown as the title of the course. Hence avoid having yml header titles for the chapter files.
+
 ## Customizing the Style
 
 There are styles/brandings that are available in our library of style sets. However, there are also instructions to customize your own course style following these instructions in the next section.

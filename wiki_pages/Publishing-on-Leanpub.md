@@ -1,10 +1,10 @@
 
 # Publishing on Leanpub
 
-The [_Leanpub template repository](https://github.com/jhudsl/OTTR_Quizzes) includes all of the files that you need to convert your Bookdown course that was set up from a OTTR_Template to a [Leanpub](https://leanpub.com/) course with quizzes.
+The [_Quizzes template repository](https://github.com/jhudsl/OTTR_Quizzes) includes all of the files that you need to convert your Bookdown course that was set up from a OTTR_Template to a [Leanpub](https://leanpub.com/) course with quizzes.
 
 These repositories are separate so that the quizzes and answers can be kept private.
-If you haven't created a _Bookdown repository for your course [template repository's getting started section Wiki](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started) and start there.
+If you haven't created a OTTR_Template course repository for your course [template repository's getting started section Wiki](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started) and start there.
 
 <img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=geb00d6af62_0_0" width="500" height="500"/>
 
@@ -12,15 +12,15 @@ If you encounter any problems or have ideas for improvements to this template re
 
 ## How to use these repositories:
 
-If you don't wish to have quizzes with your material or publish on Leanpub then you do not need the _Leanpub repository template, and the [_Bookdown template repository](https://github.com/jhudsl/OTTR_Template/) should be sufficient for your needs.
+If you don't wish to have quizzes with your material or publish on Leanpub then you do not need the _Quizzes repository template, and the [OTTR_Template course repository](https://github.com/jhudsl/OTTR_Template/) should be sufficient for your needs.
 
 <img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=ged277ddb11_3_5" width="500" height="500"/>
 
 The Leanpub repository is where quizzes are stored because it is meant to be kept private so answers are hidden.
 
 Keep in mind that in order to keep your Leanpub and Bookdown versions of your course concurrent, you should not make chapter edits in this repository!
-Only quiz edits should be in your `_Leanpub` repository.
-Chapter changes should be made in your `_Bookdown` repository and the [`transfer-rendered_files.yml`](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/transfer-rendered-files.yml) Github action should be used to copy over the changes here.
+Only quiz edits should be in your `_Quizzes` repository.
+Chapter changes should be made in your `OTTR_Template` course repository and the [`transfer-rendered_files.yml`](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/transfer-rendered-files.yml) Github action should be used to copy over the changes here.
 
 ## Setting up your Leanpub Github repository
 
@@ -51,16 +51,16 @@ See the [Github Actions section in the Bookdown repository](#github-actions) for
 
 After setting up these new branch items, click `Create` and `Save changes`.
 
-## Linking to your _Bookdown Github repository
+## Linking to your OTTR_Template course Github repository
 
-In order to link your _Leanpub and _Bookdown repositories (so you only have to edit material in one place), you need to name your GitHub repository with an identical name to your _Bookdown repository except end it in _Leanpub. So for example, if your Bookdown repository is called: `Cool_Course` or `Cool_Course_Bookdown`; it's Leanpub repository **must** be called `Cool_Course_Leanpub`.
+In order to link your _Quizzes and OTTR_Template course repositories (so you only have to edit material in one place), you need to name your GitHub repository with an identical name to your OTTR_Template course repository except end it in _Quizzes. So for example, if your Bookdown repository is called: `Cool_Course` or `Cool_CourseOTTR_Template course`; it's Leanpub repository **must** be called `Cool_Course_Quizzes`.
 
 The GitHub actions that are responsible for content transfer is in the `.gihub/workflows/` folder and called [`transfer-rendered-files.yml`](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/transfer-rendered-files.yml)
 
 Note if you haven't set a [GH_PAT git secret](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets) and you are not a part of `jhudsl` organization, you will need to set that by following [these instructions](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets).
 
 _Note that any content changes to non-quiz material needs to be done your course's Bookdown repository!
-Do NOT change them in your _Leanpub repository, otherwise your _Bookdown course will not be updated._
+Do NOT change them in your _Quizzes repository, otherwise your OTTR_Template course course will not be updated._
 
 ## Setting up quizzes
 
@@ -87,7 +87,7 @@ Note that any `.md` files with an `#` in front of the name in the `Book.txt` fil
 
 For convenience purposes the leanbuild package can do most of the formatting of links and etc for you (so long as you followed the formatting prescribed by the [`Setting up images` section of this Wiki](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics).
 
-Github actions in this repository will attempt to do the Bookdown to Leanpub conversions for you by running `leanbuild::bookdown_to_leanpub()` function at the top of the repository.
+Github actions in this repository will attempt to do the Bookdown to Leanpub conversions for you by running `leanbuild::bookdown_to_Quizzes()` function at the top of the repository.
 You can also run this command manually if you wish.
 
 If you encounter issues with the leanbuild package, please file an issue on its [Github repository](https://github.com/jhudsl/leanbuild/issues).
@@ -137,7 +137,7 @@ If you do not wish to publish to Coursera and prefer this do not run, you may de
 
 Additionally, the [`leanbuild`](https://github.com/jhudsl/leanbuild) package has a `leanbuild::convert_quizzes()` function if you choose to create quizzes and publish on both Leanpub and Coursera.
 
-## Setting up the _Leanpub repository checklist:
+## Setting up the _Quizzes repository checklist:
 
 - [ ] Repository is created and set to `private`.
  - [ ] `main` branch has been set up:
@@ -149,8 +149,8 @@ Additionally, the [`leanbuild`](https://github.com/jhudsl/leanbuild) package has
 
 - [ ] This repo has been enrolled in [automatic updates from the original template](#receiving-automatic-mechanic-updates-from-the-original-template).
 
-## Linking the _Bookdown repository to the _Leanpub repository
+## Linking the OTTR_Template course repository to the _Quizzes repository
 
-`transfer-rendered-files.yml` is a Github action that will copy over the output `docs/` files rendered by Bookdown to a parallel `Leanpub` repository and it lives in the _Bookdown repository.
+`transfer-rendered-files.yml` is a Github action that will copy over the output `docs/` files rendered by Bookdown to a parallel `Leanpub` repository and it lives in the OTTR_Template course repository.
 
 Once `build-all` is run, the `docs/` folder where the rendered files are place are copied over to the Leanpub repository and filed as a pull request.

@@ -82,7 +82,7 @@ There are two edits to [`.github/workflow/transfer-rendered-files.yml`](https://
 
 1) Change line 28 to the repository name you would like the `docs/` files to be transferred to.
 ```
-repository: jhudsl/Course_Template_Leanpub
+repository: jhudsl/Course_Template_Quizzes
 ```
 
 2) Uncomment lines 13-18 in this file:

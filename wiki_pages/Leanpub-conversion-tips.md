@@ -10,7 +10,7 @@ Here is the Bookdown version:
 ![Example in bookdown](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/numbering_bookdown.png)
 
 Here is the Leanpub version:
-![Example in Leanpub](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/numbering_leanpub.png)
+![Example in Leanpub](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/numbering_Quizzes.png)
 
 2) Avoid images between numeric list items.
 3) For making empty lines use `&nbsp;` as it is compatible with Leanpub.

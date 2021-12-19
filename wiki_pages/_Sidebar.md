@@ -16,6 +16,7 @@
 - [Spell check](https://github.com/jhudsl/OTTR_Template/wiki/Spell-check)
 - [Leanpub conversion tips](https://github.com/jhudsl/OTTR_Template/wiki/Leanpub-conversion-tips)
 - [Generate docx output](https://github.com/jhudsl/OTTR_Template/wiki/Generate-docx-output)
+- [Borrowing chapters between courses](https://github.com/jhudsl/OTTR_Template/wiki/Borrowing-chapters-between-courses)
 
 ## Platform specific set up
 - [Choosing between platforms](https://github.com/jhudsl/OTTR_Template/wiki/Choosing-publishing-platforms)
