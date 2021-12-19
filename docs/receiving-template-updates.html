@@ -309,7 +309,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
-<p style="text-align:center;"> <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
 <p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
 </ul>
@@ -343,18 +343,18 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="receiving-template-updates" class="section level1" number="25">
 <h1><span class="header-section-number">Chapter 25</span> Receiving template updates</h1>
-<p>This original course template: <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown" class="uri">https://github.com/jhudsl/DaSL_Course_Template_Bookdown</a> is always a work in progress.
-We are working on adding more features and smoothing out bugs as we go (this is also why <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/issues/new/choose">your feedback is greatly appreciated</a>).</p>
+<p>This original course template: <a href="https://github.com/jhudsl/OTTR_Template" class="uri">https://github.com/jhudsl/OTTR_Template</a> is always a work in progress.
+We are working on adding more features and smoothing out bugs as we go (this is also why <a href="https://github.com/jhudsl/OTTR_Template/issues/new/choose">your feedback is greatly appreciated</a>).</p>
 <p>When updates are made to files that aren’t specific to the course content but instead run checks and other processes in the original repository, pull requests are filed automatically to any downstream repositories made from this template.</p>
 <div id="how-to-enroll-a-repository-to-receive-template-updates" class="section level3" number="25.0.1">
 <h3><span class="header-section-number">25.0.1</span> How to enroll a repository to receive template updates</h3>
-<p><strong>To enroll in these automatic update PRs, the new course’s repository name will need to be added to <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/edit/main/.github/sync.yml">this file in the original template</a></strong></p>
+<p><strong>To enroll in these automatic update PRs, the new course’s repository name will need to be added to <a href="https://github.com/jhudsl/OTTR_Template/edit/main/.github/sync.yml">this file in the original template</a></strong></p>
 <ul>
-<li>Use <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/edit/main/.github/sync.yml">this link to edit the file</a>.</li>
+<li>Use <a href="https://github.com/jhudsl/OTTR_Template/edit/main/.github/sync.yml">this link to edit the file</a>.</li>
 <li>Add your repository’s name where it says <code>#NEW REPO HERE#</code>, being careful to indent the same amount as the other repositories listed.
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/edit-sync.yml.png" /></li>
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/edit-sync.yml.png" /></li>
 <li>Choose <code>Create a new branch for this commit and start a pull request.</code> Name the branch what you like.
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/add-repo-sync.png" /></li>
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/add-repo-sync.png" /></li>
 <li>Name the commit <code>Add new repository to sync</code></li>
 <li>Click <code>Propose changes</code>.</li>
 <li>Write a short pull request description describing that you are adding a new repository to the sync.yml file.</li>
@@ -366,21 +366,21 @@ We are working on adding more features and smoothing out bugs as we go (this is 
 </div>
 <div id="how-to-tailor-incoming-sync-changes" class="section level3" number="25.0.2">
 <h3><span class="header-section-number">25.0.2</span> How to tailor incoming sync changes:</h3>
-<p>Upon a new release, a pull request is automatically filed to any repositories that are added to the <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/sync.yml">sync.yml file</a>.
-<strong>Carefully review the latest <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Release-Notes">release notes</a> and the <code>Files changed</code> tab of the sync PR.</strong> And again, tag <code>@cansavvy</code> with any questions.</p>
+<p>Upon a new release, a pull request is automatically filed to any repositories that are added to the <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/sync.yml">sync.yml file</a>.
+<strong>Carefully review the latest <a href="https://github.com/jhudsl/OTTR_Template/wiki/Release-Notes">release notes</a> and the <code>Files changed</code> tab of the sync PR.</strong> And again, tag <code>@cansavvy</code> with any questions.</p>
 <p>It might be that you want some of the changes from the PR but not all of them.
 Each file that is updated in a sync PR is updated in its own commit.</p>
 <ul>
 <li><p>If you don’t want the changes from a particular file, you can always <a href="https://git-scm.com/docs/git-revert">revert that particular commit</a> before merging the sync PR.<br />
-If you will not want any updates on this file in the future, you may want to remove a file from being synced in your repo <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/sync.yml">by reconfiguring the sync file</a>.</p></li>
+If you will not want any updates on this file in the future, you may want to remove a file from being synced in your repo <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/sync.yml">by reconfiguring the sync file</a>.</p></li>
 <li><p>If you want only some changes, but they are not on a whole file basis, you could check out the branch and make manual edits.
 To checkout the branch, navigate to your own repository you should be able to run:<br />
 </p></li>
 </ul>
-<pre><code>git checkout repo-sync/DaSL_Course_Template_Bookdown/default</code></pre>
+<pre><code>git checkout repo-sync/OTTR_Template/default</code></pre>
 <ul>
 <li>If you don’t want any of the changes you can close the PR entirely.
-You may want to unenroll your repository from the <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/sync.yml">sync github actions by deleting your repo name from this file</a> if this will continue to be the case.</li>
+You may want to unenroll your repository from the <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/sync.yml">sync github actions by deleting your repo name from this file</a> if this will continue to be the case.</li>
 </ul>
 
 </div>

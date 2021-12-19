@@ -1,6 +1,6 @@
 # Publishing with Bookdown
 
-Bookdown is published using Github pages which you can set up [following the set up repository instructions](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Starting-a-new-course-with-this-template#set-up-github-pages).
+Bookdown is published using Github pages which you can set up [following the set up repository instructions](https://github.com/jhudsl/OTTR_Template/wiki/Starting-a-new-course-with-this-template#set-up-github-pages).
 
 As you modify the names of the chapters of your course and add more chapters (using the `.Rmd` files), you need to update the `_bookdown.yml` file accordingly.
 
@@ -10,7 +10,7 @@ We would update our `_bookdown.yml` to look like this:
 ```yaml
 book_filename: "Course_Name"  
 chapter_name: "Chapter "  
-repo: https://github.com/jhudsl/DaSL_Course_Template_Bookdown/ ##Make sure you update this for your GitHub Repo!!  
+repo: https://github.com/jhudsl/OTTR_Template/ ##Make sure you update this for your GitHub Repo!!  
 rmd_files: ["index.Rmd",  
             "01-intro.Rmd",   
             "02-chapter_of_course.Rmd",   

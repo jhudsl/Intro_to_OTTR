@@ -29,7 +29,7 @@ To reference the citations in your writing follow the [bookdown instructions](ht
 Items can be cited directly within the documentation using the syntax @key where key is the citation key in the first line of the entry, e.g., @R-base. To put citations in parentheses, use [@key]. To cite multiple entries, separate the keys by semicolons, e.g., [@key-1; @key-2; @key-3]. To suppress the mention of the author, add a minus sign before @, e.g., [-@R-base].
 ```
 
-See [Chapter 2](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/02-chapter_of_course.Rmd) of this template course for examples.
+See [Chapter 2](https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd) of this template course for examples.
 
 
 # Using Docker
@@ -160,7 +160,7 @@ Once the changes are accepted and merged, we'll need to push the updated image t
 docker push jhudsl/<TAG_FOR_COURSE>
 ```
 
-When you file a pull request, the Dockerfile build will be tested automatically by the [GitHub actions](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-set-up-and-customize-GitHub-actions-robots).
+When you file a pull request, the Dockerfile build will be tested automatically by the [GitHub actions](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots).
 
 The Github actions that this repository uses needs four Github secrets set up if you are not a part of the `jhudsl` organization.
 
@@ -168,7 +168,7 @@ It's important that these are set up and named exactly what they are below in or
 
 See [Github Actions section](#github-actions) for how you can customize Github actions which can change the necessity of these secrets.  
 
-![Github secrets](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/git-secrets.png)
+![Github secrets](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/git-secrets.png)
 
 To set up these repository secrets, on your repository's main Github page, go to `Settings` and scroll down to see `Secrets` on the left side menu bar.
 
@@ -186,7 +186,7 @@ If you know for sure that the course you are working on will never require Docke
 However, if you will need to make any change to the Docker image specific to the course you are working on, in the file `.github/render-bookdown.yml` you should uncomment the
 `###### START OF DOCKER UPDATE CHUNK` up to the part that says `###### END OF DOCKER UPDATE CHUNK`.
 
-This will require you to set up the [Github secrets for Docker](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-GitHub-secrets#dockerhub-related-secrets) (see next section).
+This will require you to set up the [Github secrets for Docker](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets#dockerhub-related-secrets) (see next section).
 
 ## Dockerhub related secrets
 
@@ -204,7 +204,7 @@ You can create this by following [these instructions](https://docs.docker.com/do
 
 # Spell check
 
-Github actions will automatically [run a spell check on all Rmds](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/style-and-sp-check.yml) whenever a pull request to the `main` branch is filed.
+Github actions will automatically [run a spell check on all Rmds](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml) whenever a pull request to the `main` branch is filed.
 Depending on your preference, you may find it easier to spell check manually on your local computer before pushing to Github.
 
 It will fail if there are more than 2 spelling errors and you'll need to resolve those before being able to merge your pull request.
@@ -239,10 +239,10 @@ To allow for easy conversion to Leanpub, we suggest the following:
 Here you can see how this list in bookdown made a nice list in Leanpub.
 
 Here is the Bookdown version:
-![Example in bookdown](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/numbering_bookdown.png)
+![Example in bookdown](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/numbering_bookdown.png)
 
 Here is the Leanpub version:
-![Example in Leanpub](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/numbering_leanpub.png)
+![Example in Leanpub](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/numbering_leanpub.png)
 
 2) Avoid images between numeric list items.
 3) For making empty lines use `&nbsp;` as it is compatible with Leanpub.

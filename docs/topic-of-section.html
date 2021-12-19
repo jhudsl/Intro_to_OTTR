@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Topic of Section | Title of Course</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Topic of Section | Title of Course" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Topic of Section | Title of Course" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="getting-started-1.html"/>
+<link rel="next" href="ottr-tools.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="http://jhudatascience.org/"><img src="https://jhudatascience.org/images/dasl.png" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
+<li class="chapter" data-level="1" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting started</a></li>
+<li class="chapter" data-level="2" data-path="getting-started-1.html"><a href="getting-started-1.html"><i class="fa fa-check"></i><b>2</b> Getting Started</a>
+<ul>
+<li class="chapter" data-level="2.0.1" data-path="getting-started-1.html"><a href="getting-started-1.html#recommended-background-information"><i class="fa fa-check"></i><b>2.0.1</b> Recommended background information</a></li>
+<li class="chapter" data-level="2.1" data-path="getting-started-1.html"><a href="getting-started-1.html#how-to-contribute"><i class="fa fa-check"></i><b>2.1</b> How to contribute</a></li>
+<li class="chapter" data-level="2.2" data-path="getting-started-1.html"><a href="getting-started-1.html#basic-overview-of-what-the-publishing-process-looks-like"><i class="fa fa-check"></i><b>2.2</b> Basic overview of what the publishing process looks like:</a></li>
+<li class="chapter" data-level="2.3" data-path="getting-started-1.html"><a href="getting-started-1.html#learning-objectives"><i class="fa fa-check"></i><b>2.3</b> Learning Objectives</a></li>
+<li class="chapter" data-level="2.4" data-path="getting-started-1.html"><a href="getting-started-1.html#libraries"><i class="fa fa-check"></i><b>2.4</b> Libraries</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="topic-of-section.html"><a href="topic-of-section.html"><i class="fa fa-check"></i><b>3</b> Topic of Section</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="topic-of-section.html"><a href="topic-of-section.html#subtopic"><i class="fa fa-check"></i><b>3.1</b> Subtopic</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="topic-of-section.html"><a href="topic-of-section.html#code-examples"><i class="fa fa-check"></i><b>3.1.1</b> Code examples</a></li>
+<li class="chapter" data-level="3.1.2" data-path="topic-of-section.html"><a href="topic-of-section.html#image-example"><i class="fa fa-check"></i><b>3.1.2</b> Image example</a></li>
+<li class="chapter" data-level="3.1.3" data-path="topic-of-section.html"><a href="topic-of-section.html#video-examples"><i class="fa fa-check"></i><b>3.1.3</b> Video examples</a></li>
+<li class="chapter" data-level="3.1.4" data-path="topic-of-section.html"><a href="topic-of-section.html#links-to-files"><i class="fa fa-check"></i><b>3.1.4</b> Links to files</a></li>
+<li class="chapter" data-level="3.1.5" data-path="topic-of-section.html"><a href="topic-of-section.html#links-to-websites"><i class="fa fa-check"></i><b>3.1.5</b> Links to websites</a></li>
+<li class="chapter" data-level="3.1.6" data-path="topic-of-section.html"><a href="topic-of-section.html#citation-examples"><i class="fa fa-check"></i><b>3.1.6</b> Citation examples</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="topic-of-section.html"><a href="topic-of-section.html#print-out-session-info"><i class="fa fa-check"></i><b>3.2</b> Print out session info</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="topic-of-section.html"><a href="topic-of-section.html#themes-for-non-itcr-projects-jhu-users"><i class="fa fa-check"></i><b>3.2.1</b> Themes for non-ITCR projects (JHU users):</a></li>
+<li class="chapter" data-level="3.2.2" data-path="topic-of-section.html"><a href="topic-of-section.html#themes-for-itcr-project-nonjhu-users-and-jhu-users"><i class="fa fa-check"></i><b>3.2.2</b> Themes for ITCR project (nonJHU users and JHU users):</a></li>
+<li class="chapter" data-level="3.2.3" data-path="topic-of-section.html"><a href="topic-of-section.html#accessibility"><i class="fa fa-check"></i><b>3.2.3</b> Accessibility</a></li>
+<li class="chapter" data-level="3.2.4" data-path="topic-of-section.html"><a href="topic-of-section.html#adding-images-and-graphics-in-text"><i class="fa fa-check"></i><b>3.2.4</b> Adding images and graphics in text</a></li>
+<li class="chapter" data-level="3.2.5" data-path="topic-of-section.html"><a href="topic-of-section.html#adding-videos-in-text"><i class="fa fa-check"></i><b>3.2.5</b> Adding videos in text</a></li>
+<li class="chapter" data-level="3.2.6" data-path="topic-of-section.html"><a href="topic-of-section.html#adding-embedded-files-to-text"><i class="fa fa-check"></i><b>3.2.6</b> Adding embedded files to text</a></li>
+<li class="chapter" data-level="3.2.7" data-path="topic-of-section.html"><a href="topic-of-section.html#learning-objectives-formatting"><i class="fa fa-check"></i><b>3.2.7</b> Learning Objectives Formatting</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ottr-tools.html"><a href="ottr-tools.html"><i class="fa fa-check"></i><b>4</b> OTTR Tools</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="ottr-tools.html"><a href="ottr-tools.html#citations"><i class="fa fa-check"></i><b>4.1</b> Citations</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="ottr-tools.html"><a href="ottr-tools.html#starting-a-new-docker-image"><i class="fa fa-check"></i><b>4.1.1</b> Starting a new Docker image</a></li>
+<li class="chapter" data-level="4.1.2" data-path="ottr-tools.html"><a href="ottr-tools.html#adding-packages-to-the-dockerfile"><i class="fa fa-check"></i><b>4.1.2</b> Adding packages to the Dockerfile</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="ottr-tools.html"><a href="ottr-tools.html#for-a-course-that-will-need-changes-to-docker-image"><i class="fa fa-check"></i><b>4.2</b> For a course that will need changes to Docker image</a></li>
+<li class="chapter" data-level="4.3" data-path="ottr-tools.html"><a href="ottr-tools.html#dockerhub-related-secrets"><i class="fa fa-check"></i><b>4.3</b> Dockerhub related secrets</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="ottr-tools.html"><a href="ottr-tools.html#running-locally"><i class="fa fa-check"></i><b>4.3.1</b> Running locally</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="ottr-tools.html"><a href="ottr-tools.html#using-google-docs-to-solicit-feedback"><i class="fa fa-check"></i><b>4.4</b> Using Google Docs to solicit feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html"><i class="fa fa-check"></i><b>5</b> Platform specific set up</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#choosing-publishing-platforms"><i class="fa fa-check"></i><b>5.1</b> Choosing publishing platforms</a></li>
+<li class="chapter" data-level="5.2" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#links-to-the-guides-for-each-platform"><i class="fa fa-check"></i><b>5.2</b> Links to the guides for each platform:</a></li>
+<li class="chapter" data-level="5.3" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#how-to-use-these-repositories"><i class="fa fa-check"></i><b>5.3</b> How to use these repositories:</a></li>
+<li class="chapter" data-level="5.4" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#setting-up-your-leanpub-github-repository"><i class="fa fa-check"></i><b>5.4</b> Setting up your Leanpub Github repository</a></li>
+<li class="chapter" data-level="5.5" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#linking-to-your-_bookdown-github-repository"><i class="fa fa-check"></i><b>5.5</b> Linking to your _Bookdown Github repository</a></li>
+<li class="chapter" data-level="5.6" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#setting-up-quizzes"><i class="fa fa-check"></i><b>5.6</b> Setting up quizzes</a></li>
+<li class="chapter" data-level="5.7" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#leanpub-rendering"><i class="fa fa-check"></i><b>5.7</b> Leanpub rendering</a></li>
+<li class="chapter" data-level="5.8" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#hosting-your-course-on-leanpub"><i class="fa fa-check"></i><b>5.8</b> Hosting your course on Leanpub</a></li>
+<li class="chapter" data-level="5.9" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#converting-quizzes-from-leanpub-to-coursera-format"><i class="fa fa-check"></i><b>5.9</b> Converting quizzes from Leanpub to Coursera format</a></li>
+<li class="chapter" data-level="5.10" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#setting-up-the-_leanpub-repository-checklist"><i class="fa fa-check"></i><b>5.10</b> Setting up the _Leanpub repository checklist:</a></li>
+<li class="chapter" data-level="5.11" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#linking-the-_bookdown-repository-to-the-_leanpub-repository"><i class="fa fa-check"></i><b>5.11</b> Linking the _Bookdown repository to the _Leanpub repository</a></li>
+<li class="chapter" data-level="5.12" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#setting-up-your-coursera-course"><i class="fa fa-check"></i><b>5.12</b> Setting up your Coursera course</a></li>
+<li class="chapter" data-level="5.13" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#converting-your-files-for-upload-to-coursera"><i class="fa fa-check"></i><b>5.13</b> Converting your files for upload to Coursera</a></li>
+<li class="chapter" data-level="5.14" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#navigating-to-your-course-on-coursera"><i class="fa fa-check"></i><b>5.14</b> Navigating to your course on Coursera</a>
+<ul>
+<li class="chapter" data-level="5.14.1" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#adding-new-chapters-to-coursera"><i class="fa fa-check"></i><b>5.14.1</b> Adding new chapters to Coursera</a></li>
+<li class="chapter" data-level="5.14.2" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#adding-new-quizzes-to-coursera"><i class="fa fa-check"></i><b>5.14.2</b> Adding new quizzes to Coursera</a></li>
+</ul></li>
+<li class="chapter" data-level="5.15" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#add-programmed-messages"><i class="fa fa-check"></i><b>5.15</b> Add programmed messages</a></li>
+<li class="chapter" data-level="5.16" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#grading-formula"><i class="fa fa-check"></i><b>5.16</b> Grading formula</a></li>
+<li class="chapter" data-level="5.17" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#content-schedule"><i class="fa fa-check"></i><b>5.17</b> Content Schedule</a></li>
+<li class="chapter" data-level="5.18" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#module-descriptions"><i class="fa fa-check"></i><b>5.18</b> Module Descriptions</a></li>
+<li class="chapter" data-level="5.19" data-path="platform-specific-set-up.html"><a href="platform-specific-set-up.html#landing-page"><i class="fa fa-check"></i><b>5.19</b> Landing Page</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="automation-info-and-set-up.html"><a href="automation-info-and-set-up.html"><i class="fa fa-check"></i><b>6</b> Automation info and set up</a>
+<ul>
+<li class="chapter" data-level="6.0.1" data-path="automation-info-and-set-up.html"><a href="automation-info-and-set-up.html#preview-of-render"><i class="fa fa-check"></i><b>6.0.1</b> Preview of render</a></li>
+<li class="chapter" data-level="6.0.2" data-path="automation-info-and-set-up.html"><a href="automation-info-and-set-up.html#spell-check"><i class="fa fa-check"></i><b>6.0.2</b> Spell check</a></li>
+<li class="chapter" data-level="6.0.3" data-path="automation-info-and-set-up.html"><a href="automation-info-and-set-up.html#code-styling"><i class="fa fa-check"></i><b>6.0.3</b> Code styling</a></li>
+<li class="chapter" data-level="6.0.4" data-path="automation-info-and-set-up.html"><a href="automation-info-and-set-up.html#url-checking"><i class="fa fa-check"></i><b>6.0.4</b> URL Checking</a></li>
+<li class="chapter" data-level="6.0.5" data-path="automation-info-and-set-up.html"><a href="automation-info-and-set-up.html#customizing-render-bookdown.yml"><i class="fa fa-check"></i><b>6.0.5</b> Customizing render-bookdown.yml</a></li>
+<li class="chapter" data-level="6.0.6" data-path="automation-info-and-set-up.html"><a href="automation-info-and-set-up.html#for-a-course-that-needs-to-publish-to-the-leanpub-repository"><i class="fa fa-check"></i><b>6.0.6</b> For a course that needs to publish to the Leanpub repository</a></li>
+<li class="chapter" data-level="6.0.7" data-path="automation-info-and-set-up.html"><a href="automation-info-and-set-up.html#for-a-course-that-needs-to-publish-to-coursera"><i class="fa fa-check"></i><b>6.0.7</b> For a course that needs to publish to Coursera</a></li>
+<li class="chapter" data-level="6.0.8" data-path="automation-info-and-set-up.html"><a href="automation-info-and-set-up.html#how-to-enroll-a-repository-to-receive-template-updates"><i class="fa fa-check"></i><b>6.0.8</b> How to enroll a repository to receive template updates</a></li>
+<li class="chapter" data-level="6.0.9" data-path="automation-info-and-set-up.html"><a href="automation-info-and-set-up.html#how-to-tailor-incoming-sync-changes"><i class="fa fa-check"></i><b>6.0.9</b> How to tailor incoming sync changes:</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="finishing-touches.html"><a href="finishing-touches.html"><i class="fa fa-check"></i><b>7</b> Finishing touches</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="finishing-touches.html"><a href="finishing-touches.html#set-up-feedback-method"><i class="fa fa-check"></i><b>7.1</b> Set up feedback method</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="finishing-touches.html"><a href="finishing-touches.html#step-1-decide-on-a-method-of-feedback-for-your-users-to-use."><i class="fa fa-check"></i><b>7.1.1</b> Step 1) Decide on a method of feedback for your users to use.</a></li>
+<li class="chapter" data-level="7.1.2" data-path="finishing-touches.html"><a href="finishing-touches.html#step-2-add-feedback-button"><i class="fa fa-check"></i><b>7.1.2</b> Step 2) Add feedback button</a></li>
+<li class="chapter" data-level="7.1.3" data-path="finishing-touches.html"><a href="finishing-touches.html#step-3-add-your-updated-_output.yml-to-a-pull-request."><i class="fa fa-check"></i><b>7.1.3</b> Step 3) Add your updated <code>_output.yml</code> to a pull request.</a></li>
+<li class="chapter" data-level="7.1.4" data-path="finishing-touches.html"><a href="finishing-touches.html#changing-title"><i class="fa fa-check"></i><b>7.1.4</b> Changing title</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="finishing-touches.html"><a href="finishing-touches.html#customizing-the-style"><i class="fa fa-check"></i><b>7.2</b> Customizing the Style</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="finishing-touches.html"><a href="finishing-touches.html#using-a-style-set"><i class="fa fa-check"></i><b>7.2.1</b> Using a style set</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="finishing-touches.html"><a href="finishing-touches.html#creating-your-own-style"><i class="fa fa-check"></i><b>7.3</b> Creating your own style</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="finishing-touches.html"><a href="finishing-touches.html#changing-the-favicon"><i class="fa fa-check"></i><b>7.3.1</b> Changing the favicon</a></li>
+<li class="chapter" data-level="7.3.2" data-path="finishing-touches.html"><a href="finishing-touches.html#adding-logos"><i class="fa fa-check"></i><b>7.3.2</b> Adding logos</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="finishing-touches.html"><a href="finishing-touches.html#adding-sections-that-arent-numbered"><i class="fa fa-check"></i><b>7.4</b> Adding sections that aren’t numbered</a></li>
+<li class="chapter" data-level="7.5" data-path="finishing-touches.html"><a href="finishing-touches.html#changing-course-text-colors"><i class="fa fa-check"></i><b>7.5</b> Changing course text colors</a></li>
+<li class="chapter" data-level="7.6" data-path="finishing-touches.html"><a href="finishing-touches.html#modifying-the-image-at-the-top-of-the-course"><i class="fa fa-check"></i><b>7.6</b> Modifying the image at the top of the course</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="finishing-touches.html"><a href="finishing-touches.html#adding-the-credits-table-to-coursera"><i class="fa fa-check"></i><b>7.6.1</b> Adding the Credits table to Coursera</a></li>
+<li class="chapter" data-level="7.6.2" data-path="finishing-touches.html"><a href="finishing-touches.html#adding-the-credits-table-to-leanpub"><i class="fa fa-check"></i><b>7.6.2</b> Adding the Credits table to Leanpub</a></li>
+<li class="chapter" data-level="7.6.3" data-path="finishing-touches.html"><a href="finishing-touches.html#release-coding"><i class="fa fa-check"></i><b>7.6.3</b> Release coding</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
+<p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Title of Course</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+
+
+
+<div class="hero-image-container">
+  <img class= "hero-image" src= "https://github.com/jhudsl/OTTR_Template/raw/main/assets/dasl_thin_main_image.png">
+</div>
+<div id="topic-of-section" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Topic of Section</h1>
+<p>You can write all your text in sections like this!</p>
+<div id="subtopic" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Subtopic</h2>
+<p>Here’s a subheading and some text in this subsection!</p>
+<div id="code-examples" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Code examples</h3>
+<p>You can demonstrate code like this:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="topic-of-section.html#cb3-1" aria-hidden="true" tabindex="-1"></a>output_dir <span class="ot">&lt;-</span> <span class="fu">file.path</span>(<span class="st">&quot;resources&quot;</span>, <span class="st">&quot;code_output&quot;</span>)</span>
+<span id="cb3-2"><a href="topic-of-section.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(output_dir)) {</span>
+<span id="cb3-3"><a href="topic-of-section.html#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dir.create</span>(output_dir)</span>
+<span id="cb3-4"><a href="topic-of-section.html#cb3-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>And make plots too:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="topic-of-section.html#cb4-1" aria-hidden="true" tabindex="-1"></a>hist_plot <span class="ot">&lt;-</span> <span class="fu">hist</span>(iris<span class="sc">$</span>Sepal.Length)</span></code></pre></div>
+<p><img src="resources/images/02-chapter_of_course_files/figure-docx/unnamed-chunk-4-1.png" /><!-- --></p>
+<p>You can also save these plots to file:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="topic-of-section.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">png</span>(<span class="fu">file.path</span>(output_dir, <span class="st">&quot;test_plot.png&quot;</span>))</span>
+<span id="cb5-2"><a href="topic-of-section.html#cb5-2" aria-hidden="true" tabindex="-1"></a>hist_plot</span></code></pre></div>
+<pre><code>## $breaks
+## [1] 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0
+## 
+## $counts
+## [1]  5 27 27 30 31 18  6  6
+## 
+## $density
+## [1] 0.06666667 0.36000000 0.36000000 0.40000000 0.41333333 0.24000000 0.08000000
+## [8] 0.08000000
+## 
+## $mids
+## [1] 4.25 4.75 5.25 5.75 6.25 6.75 7.25 7.75
+## 
+## $xname
+## [1] &quot;iris$Sepal.Length&quot;
+## 
+## $equidist
+## [1] TRUE
+## 
+## attr(,&quot;class&quot;)
+## [1] &quot;histogram&quot;</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="topic-of-section.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<pre><code>## png 
+##   2</code></pre>
+</div>
+<div id="image-example" class="section level3" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Image example</h3>
+<p>How to include a Google slide. It’s simplest to use the <code>leanbuild</code> package:</p>
+<p><img src="resources/images/02-chapter_of_course_files/figure-docx//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" /></p>
+<p>But if you have the slide or some other image locally downloaded you can also use html like this:</p>
+<p><img src="resources/images/02-chapter_of_course_files/figure-html//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" style="display: block; margin: auto;" /></p>
+</div>
+<div id="video-examples" class="section level3" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Video examples</h3>
+<p>You can use <code>knitr::include_url()</code> like this:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="topic-of-section.html#cb9-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_url</span>(<span class="st">&quot;https://www.youtube.com/embed/VOCYL-FNbr0&quot;</span>)</span></code></pre></div>
+<pre><code>## PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.</code></pre>
+<iframe src="https://www.youtube.com/embed/VOCYL-FNbr0" width="100%" height="400px">
+</iframe>
+<p>OR this works:</p>
+<iframe src="https://www.youtube.com/embed/VOCYL-FNbr0" width="672" height="400px">
+</iframe>
+</div>
+<div id="links-to-files" class="section level3" number="3.1.4">
+<h3><span class="header-section-number">3.1.4</span> Links to files</h3>
+<p>This works:</p>
+<iframe src="https://www.messiah.edu/download/downloads/id/921/Microaggressions_in_the_Classroom.pdf" width="100%" height="800px">
+</iframe>
+<p>Or this:</p>
+<p><a href="https://www.messiah.edu/download/downloads/id/921/Microaggressions_in_the_Classroom.pdf">This works</a>.</p>
+<p>Or this:</p>
+<iframe src="https://www.messiah.edu/download/downloads/id/921/Microaggressions_in_the_Classroom.pdf" width="672" height="800px">
+</iframe>
+</div>
+<div id="links-to-websites" class="section level3" number="3.1.5">
+<h3><span class="header-section-number">3.1.5</span> Links to websites</h3>
+<p>Examples of including a website link.</p>
+<p>This works:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="topic-of-section.html#cb11-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_url</span>(<span class="st">&quot;https://yihui.org&quot;</span>)</span></code></pre></div>
+<iframe src="https://yihui.org" width="100%" height="400px">
+</iframe>
+<p>OR this:</p>
+<div class="figure">
+<img src="https://yihui.org" alt="" />
+<p class="caption">Another link</p>
+</div>
+<p>OR this:</p>
+<iframe src="https://yihui.org" width="672" height="400px">
+</iframe>
+</div>
+<div id="citation-examples" class="section level3" number="3.1.6">
+<h3><span class="header-section-number">3.1.6</span> Citation examples</h3>
+<p>We can put citations at the end of a sentence like this <span class="citation">(<a href="#ref-rmarkdown2021" role="doc-biblioref">Allaire et al. 2021</a>)</span>.
+Or multiple citations <span class="citation">Xie, Allaire, and Grolemund (<a href="#ref-Xie2018" role="doc-biblioref">2018</a>)</span>.</p>
+<p>but they need a ; separator <span class="citation">(<a href="#ref-rmarkdown2021" role="doc-biblioref">Allaire et al. 2021</a>; <a href="#ref-Xie2018" role="doc-biblioref">Xie, Allaire, and Grolemund 2018</a>)</span>.</p>
+<p>In text, we can put citations like this <span class="citation">Allaire et al. (<a href="#ref-rmarkdown2021" role="doc-biblioref">2021</a>)</span>.</p>
+</div>
+</div>
+<div id="print-out-session-info" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Print out session info</h2>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="topic-of-section.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
+<pre><code>## R version 4.0.2 (2020-06-22)
+## Platform: x86_64-pc-linux-gnu (64-bit)
+## Running under: Ubuntu 20.04.3 LTS
+## 
+## Matrix products: default
+## BLAS/LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.8.so
+## 
+## locale:
+##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=C             
+##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] magrittr_1.5
+## 
+## loaded via a namespace (and not attached):
+##  [1] knitr_1.33      hms_0.5.3       R6_2.4.1        rlang_0.4.10   
+##  [5] stringr_1.4.0   highr_0.8       httr_1.4.2      tools_4.0.2    
+##  [9] webshot_0.5.2   xfun_0.26       htmltools_0.5.0 ellipsis_0.3.1 
+## [13] yaml_2.2.1      leanbuild_0.1.2 digest_0.6.25   tibble_3.0.3   
+## [17] lifecycle_1.0.0 crayon_1.3.4    bookdown_0.24   readr_1.4.0    
+## [21] vctrs_0.3.4     fs_1.5.0        curl_4.3        evaluate_0.14  
+## [25] rmarkdown_2.10  stringi_1.5.3   compiler_4.0.2  pillar_1.4.6   
+## [29] pkgconfig_2.0.3</code></pre>
+<pre><code>
+
+# Content creation tips
+
+Creating course content is not always as straightforward as it may seem. Here we provide you with some tips about how to stay focused and write content that is useful for your intended audience.
+
+### Consider your motivation
+
+First think about why people need your course. What gap in knowledge or expertise will your course help to fill?
+Think about what is uniquely useful about your course and write this down, as this will help guide you with the additional content creation steps.
+
+### Consider your audience
+
+Think about who needs your course. Is it relatively homogenous group? Or do you have individuals of different backgrounds or expertise levels that might take your course. If this is the case, make sure that you create learning objectives and content that would cover the interests of both groups. For example, if many beginners might be taking your course be sure to be careful to define jargon and provide basic fundamental information. However, if there are are also more advanced learners that might take your course, consider making some content that will help this group of learners stretch beyond what they already know.
+
+
+### Learning objectives
+
+Learning objectives help you to stay focused as you write you course content. These are actionable statements that describe what your students should be able to do after completing a course or chapter. Start each with a verb that is as specific as possible. Consider your audience as you create your learning objectives. Are they appropriate? Are they useful?
+
+This [website](https://eclearn.emmanuel.edu/courses/1285497/pages/how-to-write-measurable-learning-objectives/) has some great descriptions about how to best write learning objectives, as well as examples of verbs that you can use to start objectives.
+
+They point out that there are many levels of learning - with the highest form being the ability to create something new based on what you learn:
+
+![Levels of learning](https://i2.wp.com/wlclassroom.com/wp-content/uploads/2013/03/fx_bloom_new.jpg)
+
+[[source](https://wlclassroom.com/2013/03/12/bloomstaxonomy-2/)]
+
+Although online content often makes higher levels of learning more difficult, it is not necessarily impossible.
+
+For example, take a look at this section of a course about creating documentation:
+https://jhudatascience.org/Documentation_and_Usability/creating-a-smooth-getting-started-section.html
+
+This provides learners with the background knowledge to actually create their own &quot;getting started&quot; documentation material.
+
+### Consider course and chapter length
+
+Often learners prefer smaller chunks of information at a time. Splitting longer chapters into shorter chapters or longer courses into smaller courses can help your learners find the information that they specifically need and keep them from feeling overwhelmed.
+
+### Graphics to emphasize and summarise
+
+Graphics can be really helpful to emphasize specific information or to summarise the take-home messages of a particular section. We suggest that if possible make such summarising graphics for each section of your course.
+
+Here is an example of a graphic to emphasize a particular piece of information:
+![Emphasizing graphic](https://jhudatascience.org/Informatics_Research_Leadership/resources/images/02-team_guidelines_files/figure-html/1OU5qeRgN_fojGbcyu2qEdwlcKpDO6BveWtYW_u1Hqd4_gcd0b5dd2d8_1_34.png)
+
+Here is an example of a graphic to summarise a section:
+![Summarising graphic](https://jhudatascience.org/Informatics_Research_Leadership/resources/images/02-team_guidelines_files/figure-html/1OU5qeRgN_fojGbcyu2qEdwlcKpDO6BveWtYW_u1Hqd4_gcd0b5dd2d8_1_6.png)
+
+
+### Create quizzes with learning objectives in mind
+
+Quizzes are also a great step for assessing if your course is really accomplishing your instruction goals.  As you create your quizzes, take a moment to think about the major take-home messages of your course. Use this as an opportunity to emphasize what you want students to know, especially for concepts that are often misunderstood. Use your quiz creation time to reflect on if your material really captures what you want to teach and emphasize.
+
+Here is a great example of a quiz question that requires some higher level learning:
+
+![Quiz question example](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/question_example.png)
+
+Students are taught general information about good documentation. This now requires the students to apply this knowledge in a new context to recognize which option is better.
+
+Note that this question uses images. This is a feature that is coming soon for the template.
+
+### Make courses engaging
+Consider adding cartoons or other images/graphics that can make your course more relatable and entertaining. This can be really important for keeping learners interested and motivated. Using concrete examples that are relatable can also be very helpful.
+
+
+### Get feedback
+
+If possible find people in your target audience demographic to give you feedback. Especially ask them to try the quizzes to see if your content clearly describes what they need to know to be able to successfully pass the quizzes. This is also a great time to catch any typos! Also consider getting feedback from experts about topics that you are less familiar with.  We hope that using our template will make it easier to incorporate feedback from others over time to allow courses to be living documents that are simple to adapt. Make sure that you give credit to people that give you feedback! Check out our [credits section](https://github.com/jhudsl/OTTR_Template/wiki/How-to-give-credits) for more information on how to do this.
+
+### Example courses
+Beyond our template, check out these courses we have made using this template for additional examples of how we approached content creation:
+1) [Documentation and Usability](https://jhudatascience.org/Documentation_and_Usability/)
+2) [Leadership for Cancer Informatics Research](https://jhudatascience.org/Informatics_Research_Leadership/)
+
+
+# Start a new course
+
+1. In the upper right of the landing page for this repository, click the green `Use this template` button and follow the steps to set up your course&#39;s GitHub repository.
+
+![Where is the `Use this template` button?](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/template_button.png)
+
+2. Name your repository and fill in a short description.
+
+![Creating new course repository](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/creating_new_course_repo.png)
+
+
+3. Clone the repository
+
+We then recommend that you set up a project with RStudio and connect this with your repository on GitHub.
+
+If you are unfamiliar with GitHub, we recommend you go through these two chapters in our Reproducibility courses:
+- [Why GitHub](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/making-your-project-open-source-with-github.html)
+- [Using GitHub](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/using-version-control-with-github.html)
+
+&lt;details&gt; &lt;summary&gt; Click here to see more using RStudio for use with Git version control. &lt;/summary&gt;
+
+First, to create a new project in RStudio, select File &gt; New Project.
+![Make a new project](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/new_project.png)
+
+Select a directory for your course to live. We suggest a new directory.
+
+![Select a directory for your new project](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/select_directory.png)
+
+Select `New Project` for project type.
+
+![Select project type](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/project_type.png)
+
+If creating a new directory for your project, name the new directory and decide where it should be.
+
+![New Project Directory](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/project_directory.png)
+
+
+Go back to your new GitHub repository for the course you are creating and click on the green button on the right corner of the landing page to clone the repository.
+
+This will pop up a window that looks like this:
+
+![Clone the GitHub repo to work on the files on your local machine](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/clone.png)
+
+Click the button that looks like a clip board to copy the location of your repository on GitHub.
+
+In the terminal pane of RStudio, make sure you are in the newly created directory for your project.
+
+Then type: `git init` and press enter.
+
+Then type:`git clone` and paste the location of the repository that you just copied from GitHub and press enter.
+
+Finally type: `git pull origin main` and you should see the files on GitHub populate your directory.
+
+This will give you a message like this:
+
+![cloning messages](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/messages.png)
+
+Next make a new git branch in the terminal in RStudio by typing the following and replacing `branch_name` with something that makes sense for you like `update_about`: `git checkout -b branch_name`
+
+Now you are ready to start making changes to files for the next section!
+
+&lt;/details&gt;
+
+
+&lt;details&gt; &lt;summary&gt;Also see here for more information about how to make changes to your files with pull requests using RStudio and Git.&lt;/summary&gt;
+
+To make changes to files, you can open them in Rstudio by clicking on the file name from the file pane (lower right corner).
+
+![Open File in RStudio](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/file_pane.png)
+
+After editing a file, make sure you save it.
+
+Then in the terminal you can use Git for version control. Again, if you are new to Git please see this [tutorial](https://happygitwithr.com/).
+
+However, as a brief introduction:
+
+After making changes to the `about.Rmd` file. For example, say you add a new line.
+
+You can type: `git add` and the file name to stage it for committing to GitHub. For example `git add about.Rmd`.
+
+Then type a message about what changes you are committing to the copy on GitHub:
+
+For example:
+
+`git commit -m &quot;updating the about file.&quot;`
+
+Then type `git push`.
+
+You will get a message about your branch the first time - you can type what git suggests and press enter. Then on GitHub you should see that new Pull Request is possible.
+
+Click on the green button that says `Compare &amp; pull request`.
+
+![New pull request possible](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/pull_request.png)
+
+Then fill out the prompt with the information about your pull request. Don&#39;t worry if some of the later sections are unclear, we will get to more of that in a bit.
+
+![Submitting pull request](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/pull_request_2.png)
+
+When you are done click the `Create pull request` button!
+
+The first time you shouldn&#39;t have any conflicts with the main branch, thus you should see something like this:
+
+![Pull request output](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/pull_request_3.png)
+
+If everything looks good, you can press the `Merge pull request` button.
+&lt;/details&gt;
+
+Now you&#39;re ready to continue to [&quot;Set up your repository files&quot;](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-your-repository-files)
+
+
+
+# Setting up your repository files
+
+Now if you go to the `Issues` on GitHub for your course you will see issues filed that you can follow to set up the new course! Note that this may require you to wait a minute and refresh the page.
+
+![Issues to Guide you through creating the course](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/guides_issues.png)
+
+## Setting up the repository
+
+1. Start with the issue called `New Course - Templates to Edit`.
+
+### Picking a style
+
+See more [about customizing style on this page in the guide](https://github.com/jhudsl/OTTR_Template/wiki/Change-Title-&amp;-Customize-style).
+By default this course template will use the jhudsl data science lab style. However, you can customize and switch this to another style set.
+
+#### Using a style set
+
+[Read more about the style sets here](https://github.com/jhudsl/OTTR_Template/wiki/Change-Title-&amp;-Customize-style#using-a-style-set).
+
+- On a new branch, copy the `style-sets/&lt;set-name&gt;/index.Rmd` and `style-sets/&lt;set-name&gt;/_output.yml` to the top of the repository to overwrite the default `index.Rmd` and `_output.yml`.
+- Copy over all the files in the `style-sets/&lt;set-name&gt;/copy-to-assets` to the `assets` folder in the top of the repository.
+- [Create a pull request](https://github.com/jhudsl/OTTR_Template/wiki/About-pull-request-review) with these changes, and double check the rendered preview to make sure that the style is what you are looking for.
+
+
+If you are new to git recall that now you need to push your changes like so [you may benefit from following the steps described here](https://github.com/jhudsl/OTTR_Template/wiki/Adding-content-to-a-course) and [here](https://github.com/jhudsl/OTTR_Template/wiki/About-pull-request-review) :
+
+`git commit -m &quot;first changes&quot;`
+
+`git push`
+
+This will likely tell you a message if you are doing this in a branch other than main (which we highly suggest you do so that you can make a pull request also called PR). Type what Git tells you to do and hit enter!
+
+Delete the `code_output` folder if you do not expect to have any code output (or rename it if you wish to call the folder something else).
+
+Now, you can go through each of the other files listed in the checklist and make sure that the existing Rmd template files are changed to fit your course. Don&#39;t worry about adding the bulk of your content yet, you can do that later after you learn more about setting up your course, but this checklist will help you get started.
+
+There are `{}` in these files to get you started filling out information and should be deleted after you&#39;ve filled them out.
+
+**Remember make your changes in a new branch to enable you to make pull requests with Git.** This will later be very important for the automated tasks that are part of the template. If you are unfamiliar with how to do a pull request, please see the [previous section](https://github.com/jhudsl/OTTR_Template/wiki/Start-a-new-course) about how to do this.
+
+
+It is likely that you might see something like this with your pull requests which will happen if you have too many new words not in the dictionary:
+
+![Spelling check fails](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/spell_check_fails.png)
+
+We will discuss how to get the spelling results and fix your file in a bit, but for now you can press the merge pull request button.
+
+
+Once this is done, you can start on the next issue guide checklist called `New Course - Set Repository Settings`. We will explain how with the [next section](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-your-repository-settings).
+
+
+
+# Setting up your repository settings
+
+### Recommended repository settings:
+
+With your course repository set up, there are some settings recommended for development.
+
+Using the issue guide checklist called `New Course - Set Repository Settings`, you can walk through the steps for setting up your repository as we would recommend.
+
+![Next issues checklist for repository settings](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/guides_issues_2.png)
+
+### Set up GitHub pages
+
+Go to `Settings` &gt; `Pages`.
+
+![Find pages settings](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/pages_settings.png)
+
+![Change pages settings](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/change_pages_settings.png)
+
+- Under `Source`, pick the drop down menu and pick `main` and `/docs`.  
+- Then click `Save`.  
+- Lastly, check the box that says `Enforce HTTPS` at the bottom of this page.   
+
+![Enforce HTTPS](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/change_https.png)
+
+### Set up branches
+
+Go to `Settings` &gt; `Branches` and click `Add rule`. This is only possible if you have GitHub Pro, Team, or Enterprise access. We recommend seeing if your organization can give you access if you do not already have access. To get this access through your organization, you will need to transfer ownership of your repo to your organization. See [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository) about how to do this.
+
+![Add branch rule](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/branches.png)
+
+For `Branch name pattern`, put `main`.
+
+![Put main for branch name pattern](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/main.png)
+
+_Protect the main branch_:  
+Then check the box that says `Require pull requests before merging`.
+
+_Make sure branches are updated_:  
+- Check the box that says `Require status checks to pass before merging`.
+- Underneath this also check the box that says `Require branches to be up to date before merging`.
+
+![Branch settings](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/branch_settings.png)
+
+After setting up these new branch items, click `Create` and `Save changes`.
+
+After you submit a pull request if you haven&#39;t already done so, you will see several automatic checks happening. Don&#39;t be alarmed if this image looks slightly different as we make updates to the template:
+
+![Automatic updates](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/automatic_checks.png)
+
+
+These checks will do important things like:
+*  check that the all the urls actually take learners somewhere
+*  check that the code is styled using the `stylr` package
+*  check that the spelling is correct using the `spelling` package
+*  create previews of the rendered versions of the course
+
+
+See the [Github Actions page](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots) for more details on these.
+
+
+If you are a part of JHU DaSL then you can skip the next section and the issue about GitHub secrets and start adding more content!
+
+Otherwise, you will need to do the [next section](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets) to set up Git Secrets.
+
+There is one more issue that you can do to get updates for template files.
+![one more issue](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/guides_issues_4.png)
+
+We recommend that you do this but it is optional.
+
+![one more issue](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/issue_enroll.png)
+
+ See [this section](https://github.com/jhudsl/OTTR_Template/wiki/Receiving-template-updates) to learn more about this or continue following along with the guide which will tell you how to set this up in a bit.
+
+Note that you can comment and close the issues you finish if you click on the issue and scroll down to the comment field to add comments and click the `close issue` button if you are finished.
+
+
+
+# Setting up GitHub secrets
+
+The GitHub actions that this repository uses needs three GitHub secrets set up if you are not a part of the `jhudsl` organization.
+
+It&#39;s important that these are set up and named exactly what they are below in order for GitHub actions to work correctly.
+
+See [GitHub Actions section](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots) for how you can customize Github actions depending on the needs of the course you are working on.
+
+![GitHub secrets](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/git-secrets.png)
+
+To set up these repository secrets, on your repository&#39;s main GitHub page, go to `Settings` and scroll down to see `Secrets` on the left side menu bar.
+
+For each new secret, click the `New repository secret` button and set each as follows, clicking `Add secret` as you fill each in appropriately:  
+
+_Name: `GH_PAT`_:  
+*If you are a part of `jhudsl` organization you do not need to set these.
+For `value`: Create a personal access token [following these instructions](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token#creating-a-token). Underneath `Select scopes`, check both `repo` and `workflow`.
+Then copy the PAT and save as the value.
+
+### Dockerhub related secrets
+
+Note these are not required if [Docker update GitHub actions are not turned on](#about-customizing-render-bookdownyml-also-called-build-all).
+*If you are a part of `jhudsl` organization you do not need to set these.
+
+_Name: `DOCKERHUB_USERNAME`_:  
+For `value`: put your login username for https://hub.docker.com/
+
+_Name: `DOCKERHUB_TOKEN`_:   
+For `value`: put a access token for Dockerhub.
+You can create this by following [these instructions](https://docs.docker.com/docker-hub/access-tokens/#create-an-access-token).
+
+
+
+# Adding content to a course
+
+Here&#39;s a standard workflow for adding new content to your course. If you are new to git, it is recommended you go through [Happy Git and GitHub for the useR](https://happygitwithr.com/). This is not meant to be a complete guide to git but just a summary of the steps you would need to take to add changes to a course.
+
+Also if you do not do so already, it&#39;s recommended you use a git client to help you manage your branches more easily.
+[GitKraken](https://www.gitkraken.com/) is one such git client that is handy for this.
+You may also find this [git cheatsheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet) helpful.
+_Note_: The commands in these steps all for running in Terminal/Command Prompt.
+
+## Getting going with a new course (you only have to do this once)
+1. [git clone](https://git-scm.com/docs/git-clone) the repo you are working on if you don&#39;t have it locally yet.
+
+## Starting up a new set of changes
+2. If you are looking at a particular existing issue you want to address, [assign yourself to it](https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users) so that others know not to be working on it. If there is no existing issue for the changes that need to be made you may want to consider making one so others know not to address that themselves if they have the same idea.
+3. Change your directory to be that git repository directory on your computer
+[`git checkout -b “name-of-new-branch”`](https://git-scm.com/docs/git-checkout).
+4. Start up the Docker image:
+[`docker run -it -v $PWD:/home/rstudio -e PASSWORD=CHOOSE_PASSWORD -p 8787:8787 jhudsl/course_template`](https://github.com/jhudsl/OTTR_Template/wiki/Using-Docker) But replace `CHOOSE_PASSWORD` with a password of your choosing.
+5. Navigate to `localhost:8787` on  your browser (your username is Rstudio and password is whatever you set it to be in the previous step).
+
+## Editing content
+6. In the RStudio window you just opened, copy the [`02-chapter_of_course.Rmd`](https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd) course and use that as a guide to [add a new chapter](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-with-Bookdown).
+7. Make your edits. If your edits involve images, graphics, or videos, make sure you follow the set up in [adding images and graphics in text](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text)
+8. To preview how your [edits look in Bookdown](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-with-Bookdown), you can run bookdown::serve_book().
+8. As you’ve made enough edits and want to save them run [`git add filepath`](https://git-scm.com/docs/git-add).
+9. Now [`git commit -m “Add a pertinent message here”`](https://git-scm.com/docs/git-commit) to add your edits to your branch.
+10. When you are ready to push changes to be online, run [`git push`](https://git-scm.com/docs/git-push).
+11. Repeat 6-10 as needed until you are happy with your changes and think they are ready for review. Keep in mind incremental changes can sometimes be a better strategy, as it is easier to fix things if you realize that something isn&#39;t rendering as expected. It also helps to avoid losing work in case something happens to your computer or work before you are able to push your changes.
+
+## Changing title
+
+The title is specified on the index.Rmd page in the yml header. Follow the directions above and modify the yaml header to change the title for your course.
+</code></pre>
+<pre><code>
+
+## Filing a PR
+12. Now go to your GitHub repository’s website and click on [Pull Requests](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+13. If you pushed your changes recently you will see a prompt to create a pull request as a yellow banner. Click on `Create Pull Request`.
+14. The pull request will be auto-populated with the template -- fill out the pull request prompts and check off the checklist marks by placing an `x` between the brackets of the items you have completed.
+15. Look at the [`files changed`](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests) tab. Does it show the changes you expected? If not, then continue to make edits following steps 6 - 10 as needed.
+16. The Github actions will automatically generate a preview of your course and post it to a comment on your pull request like this:
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/gha-preview-comment.png)
+17. When you think it is ready for review, [request a reviewer](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review) by clicking on `Reviewer` on the right side and choose an appropriate person to review your changes.
+
+Have you been requested as a reviewer or just received a review? [Read this page](https://github.com/jhudsl/OTTR_Template/wiki/Pull-Request-review-tips) for advice on reviewing/receiving reviews.
+
+## Merging your PR
+18. When you receive feedback, repeat steps 6 - 10 to make edits and incorporate the feedback, all the while communicating with your reviewer through comments on the pull request.
+19. If any of the checks have failed, click on `Details` and try to investigate why.
+ - For failed spell checks follow the [instructions here](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots#style-guide).
+ - For failed URL checks follow the [instructions here](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots#url-checking).
+20. If the checks have passed, and the reviewer thinks it&#39;s ready, use the down arrow next to the `merge` button to choose `squash and merge`.
+21. [Close the issues](https://github.blog/2013-05-14-closing-issues-via-pull-requests/) that your changes were addressing. File any new issues during any step to keep track of what you need to do next! Start with step 2 all over again.
+
+Congrats! You did it!
+
+
+
+# About pull request review
+
+Everybody benefits from code and content review: The reviewer, the reviewee and whoever comes to look at the reviewed code and content later!
+
+To quote [Parker 2017](https://peerj.com/preprints/3210v1/):
+
+&gt; Code review will not guarantee an accurate analysis, but it’s one of the most reliable ways of establishing one that is more accurate than before.
+
+### The mechanics of review:
+
+1. A problem is identified
+2. An [issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) is filed that describes that problem
+3. A writer files a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) that contains changes that addresses the problem.
+4. A reviewer [reviews the changes](https://docs.github.com/en/github/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews) on that pull request.
+5. The reviewer [reviews and recommends edits](https://docs.github.com/en/github/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request) to those changes or accepts them as is.
+6. The writer [incorporates those changes](https://docs.github.com/en/github/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request) as best they can.
+7. (Steps 4-6) with comments between the are repeated until the reviewer and writer accept the changes.
+8. Changes are added to the code base by [merging the pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request).
+9. A new problem is identified (and the whole cycle starts again).
+
+That&#39;s the workflow, but how do you get the most out of code review, both as the reviewer and writer?
+Here&#39;s some tips about getting the most out of code review:
+
+### Tips for the writer
+- Put context around the changes you are proposing, linking any relevant issues, prior pull requests, or relevant code/media.
+- Review your own pull request before requesting the review of someone else; check the `Files Changed` tab.
+- If a pull request is still in progress change it to a draft so no one reviews it before you are ready.
+- Try to make sure your pull requests aren&#39;t too long! Code reviewing fatigue is very real.
+- Highlight for the reviewer what kind of feedback you are looking for.
+- Try to explain or ask for help on any peculiar parts of your PR or if there&#39;s any parts you are stuck on.
+- Accept reviews with a helpful frame of mind -- it&#39;s perfectly okay to be wrong!
+
+### Tips for the reviewer
+- Check that the pull request meets the goals that the writer is intending.
+- If you don&#39;t understand, ask more questions!
+- Take careful review of areas that are more complex or seem odd.
+- Give reviews loaded with [empathy and positivity](https://slack.engineering/on-empathy-pull-requests/) !
+- Utilize suggestions where possible.
+- If you are completely lost, don&#39;t be afraid to ask the writer to reconfigure or expound on what they mean.
+
+### Recommended reading:  
+- [Effective code reviews](https://medium.com/@omarmeky/effective-code-reviews-4bca0da61dcc)
+- [9 Tips for Opening a Better Pull Request](https://www.mutuallyhuman.com/blog/9-tips-for-opening-a-better-pull-request/)
+- [Writing proper GitHub issues](https://medium.com/nyc-planning-digital/writing-a-proper-github-issue-97427d62a20f)
+- [On Empathy and Pull Requests](https://slack.engineering/on-empathy-pull-requests/)
+- [Best practices for Code Review](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/)
+- [Writing Great Scientific Code](http://alexanderganderson.github.io/code/2016/10/12/coding_tips.html)
+- [Six Commandments for Writing Good Code](https://www.toptal.com/software/six-commandments-of-good-code)
+
+
+# Setting up images and graphics
+
+To maintain style and attributions for graphics and images, as well as to enable easy updates in the future, please start a new Google Slide document for your course.
+This also allows you to make videos of your slides that can be added to your course.
+
+Each Rmd with images that is a part of your Bookdown needs to have this chunk at the beginning so that images are stored properly for Leanpub conversion:
+
+
+```markdown
+`r &#39;&#39;````{r, include=FALSE}
+`r &#39;&#39;`leanbuild::set_knitr_image_path()
+`r &#39;&#39;````</code></pre>
+<p>Next, import the appropriate theme (see <a href="https://youtu.be/pNbwF263yY8">this video</a> for assistance):</p>
+<p>Note that you will need to <a href="https://support.google.com/drive/answer/2494893?hl=en&amp;co=GENIE.Platform%3DDesktop">change your Google Slide permissions</a> to “Anyone with a link” in order for some functionality to work.</p>
+<div id="themes-for-non-itcr-projects-jhu-users" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Themes for non-ITCR projects (JHU users):</h3>
+<ul>
+<li>If you are not creating a course as part of a larger collaboration but simply just as a DaSL course, import the theme from this <a href="https://docs.google.com/presentation/d/1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ/edit?usp=sharing">template</a>. Once you have done this add a slide with the “Title slide” layout under layouts - and add your course title.</li>
+</ul>
+<p><img src="https://docs.google.com/presentation/d/1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ/export/png?id=1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ&amp;pageid=p" /></p>
+<ul>
+<li>If you are working on a project (more likely) with the <a href="http://jhudatascience.org/">Johns Hopkins Data Science Lab</a> than import the theme from this <a href="https://docs.google.com/presentation/d/1qa3v_zlNedCKHQ6IYF5MM1ZLZLgHUs0U4usgDRRe3W8/edit?usp=sharing">template</a>.</li>
+</ul>
+<p>Add a title slide and update it with your project’s logo.</p>
+<p><img src="https://docs.google.com/presentation/d/1qa3v_zlNedCKHQ6IYF5MM1ZLZLgHUs0U4usgDRRe3W8/export/png?id=1qa3v_zlNedCKHQ6IYF5MM1ZLZLgHUs0U4usgDRRe3W8&amp;pageid=p" /></p>
+<p>In either case:</p>
+<p>Be sure to add a terms of use slide to let people know about our licensing.</p>
+<p><img src="https://docs.google.com/presentation/d/1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ/export/png?id=1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ&amp;pageid=gcc4fbee202_0_153" /></p>
+<p>For any major point, please select this layout:</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1qa3v_zlNedCKHQ6IYF5MM1ZLZLgHUs0U4usgDRRe3W8/export/png?id=1qa3v_zlNedCKHQ6IYF5MM1ZLZLgHUs0U4usgDRRe3W8&amp;pageid=gcf1264c749_0_130" alt="" />
+<p class="caption">Major_point_layout</p>
+</div>
+<p>For itemized lists, please select this layout:</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1qa3v_zlNedCKHQ6IYF5MM1ZLZLgHUs0U4usgDRRe3W8/export/png?id=1qa3v_zlNedCKHQ6IYF5MM1ZLZLgHUs0U4usgDRRe3W8&amp;pageid=gcf1264c749_0_135" alt="" />
+<p class="caption">list_layout</p>
+</div>
+<p>Please select the layout that looks like this for any images/content from outside sources:</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1qa3v_zlNedCKHQ6IYF5MM1ZLZLgHUs0U4usgDRRe3W8/export/png?id=1qa3v_zlNedCKHQ6IYF5MM1ZLZLgHUs0U4usgDRRe3W8&amp;pageid=gcf1264c749_0_140" alt="" />
+<p class="caption">source_layout</p>
+</div>
+<p>Please update the text at the bottom to describe the source. If it is not from JHU, remove the JHU information.</p>
+<p>Also please type text describing the image in the notes section of the slide, this can be used to give visually impaired learners audio explanations of the images.</p>
+<p>Once complete, you can incorporate slides into your course using the instructions in the <a href="https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text">Adding images and graphics in text</a> below.</p>
+</div>
+<div id="themes-for-itcr-project-nonjhu-users-and-jhu-users" class="section level3" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Themes for ITCR project (nonJHU users and JHU users):</h3>
+<ul>
+<li>If you are not part of the <a href="http://jhudatascience.org/">Johns Hopkins Data Science Lab</a>, import the theme from this <a href="https://docs.google.com/presentation/d/1lMNTlY8S21cNG4hL6NoOmXYZBQ30BtCQ4UdUJ7J_Wvs/edit?usp=sharing">template</a>. Once you have done this add a slide with the ITN2 layout - and add your course title and any logos for your organization(s) that may be appropriate like so:</li>
+</ul>
+<p><img src="https://docs.google.com/presentation/d/1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU/export/png?id=1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU&amp;pageid=p" /></p>
+<p>Also be sure to add a terms of use slide to let people know what licensing that you have chosen.
+You can use ours (that looks like the slide below) if you like or create your own with a different license.</p>
+<p><img src="https://docs.google.com/presentation/d/1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU/export/png?id=1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU&amp;pageid=gcf0c1d8548_0_157" /></p>
+<ul>
+<li>If you are part of the <a href="http://jhudatascience.org/">Johns Hopkins Data Science Lab</a> than import the theme from this <a href="https://docs.google.com/presentation/d/1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU/edit?usp=sharing">template</a>.</li>
+</ul>
+<p>Be sure to add a Johns Hopkins terms of use slide.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1lMNTlY8S21cNG4hL6NoOmXYZBQ30BtCQ4UdUJ7J_Wvs/export/png?id=1lMNTlY8S21cNG4hL6NoOmXYZBQ30BtCQ4UdUJ7J_Wvs&amp;pageid=gcc48deaeac_0_399" alt="" />
+<p class="caption">Terms of Use</p>
+</div>
+<p>For any major point, please select this layout:</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU/export/png?id=1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU&amp;pageid=gcf0c1d8548_0_136" alt="" />
+<p class="caption">Major_point_layout</p>
+</div>
+<p>For itemized lists, please select this layout:</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU/export/png?id=1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU&amp;pageid=gcf0c1d8548_0_141" alt="" />
+<p class="caption">list_layout</p>
+</div>
+<p>Please select the layout that looks like this for any images/content from outside sources:</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU/export/png?id=1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU&amp;pageid=gcf0c1d8548_0_146" alt="" />
+<p class="caption">source_layout</p>
+</div>
+<p>Please update the text at the bottom to describe the source. If it is not from JHU, remove the JHU information.</p>
+<p>Also please type text describing the image in the notes section of the slide, this can be used to give visually impaired learners audio explanations of the images.</p>
+<p>Once complete, you can incorporate slides into your course using the instructions in the <a href="https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text">Adding images and graphics in text</a> below.</p>
+</div>
+<div id="accessibility" class="section level3" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Accessibility</h3>
+<p>Each slide and image added to the courses needs to be accessible.
+There are two things to check for each slide:</p>
+<ul class="task-list">
+<li><p><input type="checkbox" disabled="" />
+Each slide is described in the notes of the slide so learners relying on a screen reader can access the content. See <a href="https://lastcallmedia.com/blog/accessible-comics" class="uri">https://lastcallmedia.com/blog/accessible-comics</a> for more guidance on this.</p></li>
+<li><p><input type="checkbox" disabled="" />
+The color palette choices of the slide are contrasted in a way that is friendly to those with color vision deficiencies.
+You can check this using <a href="https://colororacle.org/">Color Oracle</a>.</p></li>
+</ul>
+</div>
+<div id="adding-images-and-graphics-in-text" class="section level3" number="3.2.4">
+<h3><span class="header-section-number">3.2.4</span> Adding images and graphics in text</h3>
+<p>All images should be included in your Google Slides with the captions we discussed above.
+To add images in the text in your Rmd, use the following function within an <a href="https://bookdown.org/yihui/rmarkdown/r-code.html">R code chunk</a>.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb16-1"><a href="topic-of-section.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, fig.alt=&quot;Alternative text&quot;, echo = FALSE, outwidth = &quot;100%&quot;}</span></span>
+<span id="cb16-2"><a href="topic-of-section.html#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="in">leanbuild::include_slide(&lt;google_slide_url&gt;)</span></span>
+<span id="cb16-3"><a href="topic-of-section.html#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<p>You can obtain the <google_slide_url> by viewing the slide with the image you want to add and copying the address from the browser search bar.</p>
+<div class="figure">
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/slide_url.png" alt="" />
+<p class="caption">Google slide url</p>
+</div>
+<p>Also add notes (the same as the <code>fig.alt</code> text) to each slide in the google slide presentation describing the text or images of the slide to allow for the content to be accessible to vision impaired individuals, as this can be converted to audio. Note that you can’t have any line breaks within the <code>fig.alt</code> text. If there are no line breaks the text should appear blue within the code chunk.</p>
+<p>The <code>echo=FALSE</code> ensures that the r code is hidden from your course, while the <code>out.width = "100%"</code> is used to size the image. We generally recommend going with larger images.</p>
+<p><em>You must define <code>fig.alt</code> in the code chunk options/parameters to pass to <code>knitr</code>.</em>
+You can adjust the size(fig.hight, fig.width, out.width, out.height), alignment (fig.align), or caption (fig.cap) of the image you can use these arguments in the code chunk tag:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb17-1"><a href="topic-of-section.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, fig.alt=&quot;Alternative text&quot;, fig.height=4, fig.align=&#39;center&#39;, fig.cap=&#39;...&#39;}</span></span></code></pre></div>
+<p>Google Slides must be <strong>public</strong>. Share settings must be set to “Anyone on the internet with this link can view”. Note that “Private” is the default setting when you make a new presentation.</p>
+<p>See <a href="https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd">Chapter 2</a> of the template course for examples.</p>
+</div>
+<div id="adding-videos-in-text" class="section level3" number="3.2.5">
+<h3><span class="header-section-number">3.2.5</span> Adding videos in text</h3>
+<p>To add a youtube video to your Rmd files use the following:</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb18-1"><a href="topic-of-section.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, fig.align=&quot;center&quot;, fig.alt = &quot;video&quot;, echo=FALSE, out.width=&quot;100%&quot;}</span></span>
+<span id="cb18-2"><a href="topic-of-section.html#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="in">knitr::include_url(&quot;https://www.youtube.com/embed/yiZQaE0q9BY&quot;)</span></span></code></pre></div>
+<p>To get the appropriate youtube url do the following:
+1) click on the <strong>SHARE</strong> button on the lower right corner of the video on youtube
+2) click on the <strong>Embed</strong> option on the far left
+3) copy just the part after <code>"src ="</code> and paste the url into the <code>knitr::include_url()</code> function</p>
+<p>Again, it is important to use the <code>echo=FALSE</code> option so that only the video is shown and not the code to generate it.</p>
+<p>See <a href="https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd">Chapter 2</a> of the template course for examples.</p>
+</div>
+<div id="adding-embedded-files-to-text" class="section level3" number="3.2.6">
+<h3><span class="header-section-number">3.2.6</span> Adding embedded files to text</h3>
+<p>Sometimes it is useful to include an embedded version of a website or file on a website, if there is a particularly important link and you don’t want to rely on learners clicking the link.</p>
+<p>To include such a file or website do the following:</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb19-1"><a href="topic-of-section.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, fig.align=&quot;center&quot;, echo=FALSE}</span></span>
+<span id="cb19-2"><a href="topic-of-section.html#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="in">knitr::include_url(&quot;https://www.messiah.edu/download/downloads/id/921/Microaggressions_in_the_Classroom.pdf&quot;, height = &quot;800px&quot;)</span></span></code></pre></div>
+<p>Again you will need to include <code>echo = FALSE</code> to ensure that the code to generate the preview of the website or file is not included in your course material.</p>
+<p>If you want to include a file that is not hosted online, consider hosting it on GitHub using the method described for hosting your Bookdown version of the course. See the <a href="https://github.com/jhudsl/OTTR_Template/wiki/Starting-a-new-course-with-this-template#set-up-github-pages">Set up GitHub pages</a> section.</p>
+<p>Then you would do the following, where the url is that of your hosted file:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb20-1"><a href="topic-of-section.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, fig.align=&quot;center&quot;, echo=FALSE}</span></span>
+<span id="cb20-2"><a href="topic-of-section.html#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="in">knitr::include_url(&quot;https://carriewright11.github.io/stringr_RLadies/index.html&quot;, height = &quot;800px&quot;)</span></span></code></pre></div>
+<p>See <a href="https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd">Chapter 2</a> of the template course for examples.</p>
+</div>
+<div id="learning-objectives-formatting" class="section level3" number="3.2.7">
+<h3><span class="header-section-number">3.2.7</span> Learning Objectives Formatting</h3>
+<p>Each chapter should start with Learning objectives!
+You can use <a href="https://eclearn.emmanuel.edu/courses/1285497/pages/how-to-write-measurable-learning-objectives/">this website</a> to help you craft learning objectives.</p>
+<p>Learning objectives should be stated both in the slides and in the beginning of each bookdown chapter.
+Because of this, you may find it most handy to use the <a href="https://docs.google.com/presentation/d/1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU/export/png?id=1-7UvgVq5tP1pasTEErUM3bJFH2fU_pilH6i6_81CCXU&amp;pageid=gcf0c1d8548_0_141"><code>List layout</code></a> slide for stating your Learning objectives and then embed that in the book from your GoogleSlides <a href="https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics#adding-images-and-graphics-in-text">the instructions here</a>.</p>
+
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-rmarkdown2021" class="csl-entry">
+Allaire, JJ, Yihui Xie, Jonathan McPherson, Javier Luraschi, Kevin Ushey, Aron Atkins, Hadley Wickham, Joe Cheng, Winston Chang, and Richard Iannone. 2021. <em>Rmarkdown: Dynamic Documents for r</em>. <a href="https://github.com/rstudio/rmarkdown">https://github.com/rstudio/rmarkdown</a>.
+</div>
+<div id="ref-Xie2018" class="csl-entry">
+Xie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. <em>R Markdown: The Definitive Guide</em>. Boca Raton, Florida: Chapman; Hall/CRC. <a href="https://bookdown.org/yihui/rmarkdown">https://bookdown.org/yihui/rmarkdown</a>.
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="getting-started-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ottr-tools.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -52,7 +52,7 @@ Quizzes are also a great step for assessing if your course is really accomplishi
 
 Here is a great example of a quiz question that requires some higher level learning:
 
-![Quiz question example](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/question_example.png)
+![Quiz question example](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/question_example.png)
 
 Students are taught general information about good documentation. This now requires the students to apply this knowledge in a new context to recognize which option is better.
 
@@ -64,7 +64,7 @@ Consider adding cartoons or other images/graphics that can make your course more
 
 ### Get feedback
 
-If possible find people in your target audience demographic to give you feedback. Especially ask them to try the quizzes to see if your content clearly describes what they need to know to be able to successfully pass the quizzes. This is also a great time to catch any typos! Also consider getting feedback from experts about topics that you are less familiar with.  We hope that using our template will make it easier to incorporate feedback from others over time to allow courses to be living documents that are simple to adapt. Make sure that you give credit to people that give you feedback! Check out our [credits section](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-give-credits) for more information on how to do this.
+If possible find people in your target audience demographic to give you feedback. Especially ask them to try the quizzes to see if your content clearly describes what they need to know to be able to successfully pass the quizzes. This is also a great time to catch any typos! Also consider getting feedback from experts about topics that you are less familiar with.  We hope that using our template will make it easier to incorporate feedback from others over time to allow courses to be living documents that are simple to adapt. Make sure that you give credit to people that give you feedback! Check out our [credits section](https://github.com/jhudsl/OTTR_Template/wiki/How-to-give-credits) for more information on how to do this.
 
 ### Example courses
 Beyond our template, check out these courses we have made using this template for additional examples of how we approached content creation:

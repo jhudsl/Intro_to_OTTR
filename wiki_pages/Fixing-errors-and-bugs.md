@@ -14,4 +14,4 @@ Note that if you do not have a GitHub account, GitHub will request that you crea
 Thank you for your help!
 
 ### Addressing a problem with a pull request
-If you'd like to attempt to address the bug or problem yourself you can [follow these instructions to file a pull request](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Adding-content-to-a-course). We also suggest you read about [our advice about filing and review pull requests](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/About-pull-request-review).
+If you'd like to attempt to address the bug or problem yourself you can [follow these instructions to file a pull request](https://github.com/jhudsl/OTTR_Template/wiki/Adding-content-to-a-course). We also suggest you read about [our advice about filing and review pull requests](https://github.com/jhudsl/OTTR_Template/wiki/About-pull-request-review).

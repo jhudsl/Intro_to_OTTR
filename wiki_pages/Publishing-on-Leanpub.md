@@ -1,18 +1,18 @@
 
 # Publishing on Leanpub
 
-The [_Leanpub template repository](https://github.com/jhudsl/DaSL_Course_Template_Leanpub) includes all of the files that you need to convert your Bookdown course that was set up from a DaSL_Course_Template_Bookdown to a [Leanpub](https://leanpub.com/) course with quizzes.
+The [_Leanpub template repository](https://github.com/jhudsl/OTTR_Quizzes) includes all of the files that you need to convert your Bookdown course that was set up from a OTTR_Template to a [Leanpub](https://leanpub.com/) course with quizzes.
 
 These repositories are separate so that the quizzes and answers can be kept private.
-If you haven't created a _Bookdown repository for your course [template repository's getting started section Wiki](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Getting-started) and start there.
+If you haven't created a _Bookdown repository for your course [template repository's getting started section Wiki](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started) and start there.
 
 <img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=geb00d6af62_0_0" width="500" height="500"/>
 
-If you encounter any problems or have ideas for improvements to this template repository or this getting started Wiki, please [file an issue here](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/issues/new/choose)! Your feedback is very much appreciated.
+If you encounter any problems or have ideas for improvements to this template repository or this getting started Wiki, please [file an issue here](https://github.com/jhudsl/OTTR_Template/issues/new/choose)! Your feedback is very much appreciated.
 
 ## How to use these repositories:
 
-If you don't wish to have quizzes with your material or publish on Leanpub then you do not need the _Leanpub repository template, and the [_Bookdown template repository](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/) should be sufficient for your needs.
+If you don't wish to have quizzes with your material or publish on Leanpub then you do not need the _Leanpub repository template, and the [_Bookdown template repository](https://github.com/jhudsl/OTTR_Template/) should be sufficient for your needs.
 
 <img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=ged277ddb11_3_5" width="500" height="500"/>
 
@@ -20,7 +20,7 @@ The Leanpub repository is where quizzes are stored because it is meant to be kep
 
 Keep in mind that in order to keep your Leanpub and Bookdown versions of your course concurrent, you should not make chapter edits in this repository!
 Only quiz edits should be in your `_Leanpub` repository.
-Chapter changes should be made in your `_Bookdown` repository and the [`transfer-rendered_files.yml`](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/transfer-rendered-files.yml) Github action should be used to copy over the changes here.
+Chapter changes should be made in your `_Bookdown` repository and the [`transfer-rendered_files.yml`](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/transfer-rendered-files.yml) Github action should be used to copy over the changes here.
 
 ## Setting up your Leanpub Github repository
 
@@ -55,16 +55,16 @@ After setting up these new branch items, click `Create` and `Save changes`.
 
 In order to link your _Leanpub and _Bookdown repositories (so you only have to edit material in one place), you need to name your GitHub repository with an identical name to your _Bookdown repository except end it in _Leanpub. So for example, if your Bookdown repository is called: `Cool_Course` or `Cool_Course_Bookdown`; it's Leanpub repository **must** be called `Cool_Course_Leanpub`.
 
-The GitHub actions that are responsible for content transfer is in the `.gihub/workflows/` folder and called [`transfer-rendered-files.yml`](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/transfer-rendered-files.yml)
+The GitHub actions that are responsible for content transfer is in the `.gihub/workflows/` folder and called [`transfer-rendered-files.yml`](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/transfer-rendered-files.yml)
 
-Note if you haven't set a [GH_PAT git secret](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-GitHub-secrets) and you are not a part of `jhudsl` organization, you will need to set that by following [these instructions](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-GitHub-secrets).
+Note if you haven't set a [GH_PAT git secret](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets) and you are not a part of `jhudsl` organization, you will need to set that by following [these instructions](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets).
 
 _Note that any content changes to non-quiz material needs to be done your course's Bookdown repository!
 Do NOT change them in your _Leanpub repository, otherwise your _Bookdown course will not be updated._
 
 ## Setting up quizzes
 
-See and copy this [template quiz](https://github.com/jhudsl/DaSL_Course_Template_Leanpub/blob/main/quizzes/quiz_ch1.md) to get started.
+See and copy this [template quiz](https://github.com/jhudsl/OTTR_Quizzes/blob/main/quizzes/quiz_ch1.md) to get started.
 All quizzes need to be written in the Markua format. Refer to their [documentation](https://leanpub.com/markua/read#leanpub-auto-quizzes-and-exercises) (but note that it is sometimes vague or out of date).
 The example question types in the template are ones that are verified to work.
 
@@ -85,7 +85,7 @@ Note that any `.md` files with an `#` in front of the name in the `Book.txt` fil
 
 ## Leanpub rendering
 
-For convenience purposes the leanbuild package can do most of the formatting of links and etc for you (so long as you followed the formatting prescribed by the [`Setting up images` section of this Wiki](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-images-and-graphics).
+For convenience purposes the leanbuild package can do most of the formatting of links and etc for you (so long as you followed the formatting prescribed by the [`Setting up images` section of this Wiki](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics).
 
 Github actions in this repository will attempt to do the Bookdown to Leanpub conversions for you by running `leanbuild::bookdown_to_leanpub()` function at the top of the repository.
 You can also run this command manually if you wish.
@@ -121,7 +121,7 @@ If you have errors in your course (typically from a quiz formatting issue) the r
 
 ## Converting quizzes from Leanpub to Coursera format
 
-[See more instructions on how to port a course made from these templates to Coursera](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-on-Courseraa).
+[See more instructions on how to port a course made from these templates to Coursera](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Courseraa).
 
 You can convert your quizzes to a nicely upload-able yaml file in this repository by running this command in the docker image
 

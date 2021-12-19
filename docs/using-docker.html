@@ -309,7 +309,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
-<p style="text-align:center;"> <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
 <p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
 </ul>
@@ -424,12 +424,12 @@ Take a look at the error messages and see if you can determine the issue with so
 <p>Once it builds successfully, you should file a PR with your Dockerfile changes.
 Once the changes are accepted and merged, we’ll need to push the updated image to Dockerhub using:</p>
 <pre><code>docker push jhudsl/&lt;TAG_FOR_COURSE&gt;</code></pre>
-<p>When you file a pull request, the Dockerfile build will be tested automatically by the <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-set-up-and-customize-GitHub-actions-robots">GitHub actions</a>.</p>
+<p>When you file a pull request, the Dockerfile build will be tested automatically by the <a href="https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots">GitHub actions</a>.</p>
 <p>The Github actions that this repository uses needs four Github secrets set up if you are not a part of the <code>jhudsl</code> organization.</p>
 <p>It’s important that these are set up and named exactly what they are below in order for Github actions to work correctly.</p>
 <p>See <a href="#github-actions">Github Actions section</a> for how you can customize Github actions which can change the necessity of these secrets.</p>
 <div class="figure">
-<img src="https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/git-secrets.png" alt="" />
+<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/git-secrets.png" alt="" />
 <p class="caption">Github secrets</p>
 </div>
 <p>To set up these repository secrets, on your repository’s main Github page, go to <code>Settings</code> and scroll down to see <code>Secrets</code> on the left side menu bar.</p>
@@ -445,7 +445,7 @@ Then copy the PAT and save as the value.</p>
 <p>If you know for sure that the course you are working on will never require Docker updates – this may be the case if the course doesn’t any interactive code as a part of the material, you can delete the Docker updating chunk or keep it commented out.</p>
 <p>However, if you will need to make any change to the Docker image specific to the course you are working on, in the file <code>.github/render-bookdown.yml</code> you should uncomment the
 <code>###### START OF DOCKER UPDATE CHUNK</code> up to the part that says <code>###### END OF DOCKER UPDATE CHUNK</code>.</p>
-<p>This will require you to set up the <a href="https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Setting-up-GitHub-secrets#dockerhub-related-secrets">Github secrets for Docker</a> (see next section).</p>
+<p>This will require you to set up the <a href="https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets#dockerhub-related-secrets">Github secrets for Docker</a> (see next section).</p>
 </div>
 <div id="dockerhub-related-secrets-1" class="section level2" number="13.2">
 <h2><span class="header-section-number">13.2</span> Dockerhub related secrets</h2>

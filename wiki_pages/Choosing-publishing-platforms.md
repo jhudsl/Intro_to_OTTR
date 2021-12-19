@@ -9,6 +9,6 @@ Depending on your goals and intended audience you may want to publish just one o
 <img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=gf4fcf6569c_2_0" width="500"/>
 
 ## Links to the guides for each platform:
-- [Publishing with Bookdown](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-with-Bookdown)
-- [Publishing with Leanpub](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-on-Leanpub)
-- [Publishing with Coursera](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-on-Coursera)
+- [Publishing with Bookdown](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-with-Bookdown)
+- [Publishing with Leanpub](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Leanpub)
+- [Publishing with Coursera](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Coursera)

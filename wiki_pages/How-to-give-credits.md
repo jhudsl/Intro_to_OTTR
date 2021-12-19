@@ -5,9 +5,9 @@ Since so many individuals contribute to our courses in so many ways.  Thus, we d
 
 Here is an example:  
 
-![Credit section from a course that used this template](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/example_credits.png)
+![Credit section from a course that used this template](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/example_credits.png)
 
-Please see the [about section](https://jhudatascience.org/DaSL_Course_Template_Bookdown/about-the-authors.html) of the template for descriptions of how credits should be attributed for the course.
+Please see the [about section](https://jhudatascience.org/OTTR_Template/about-the-authors.html) of the template for descriptions of how credits should be attributed for the course.
 
 This is generated from the About.Rmd file. An About.Rmd file will already be in your course from using our template. You will need to do the following steps to update it for your course:
 
@@ -77,7 +77,7 @@ Additionally, this row should be added for _all ITCR Courses_:
 
 ### Adding the Credits table to Coursera
 
-In Coursera, you can add the credits table URL as an ungraded plugin ([the same as described here for adding chapter content](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-on-Coursera#navigating-to-your-course-on-coursera)). This should be added at the beginning of your course, right after the introduction.
+In Coursera, you can add the credits table URL as an ungraded plugin ([the same as described here for adding chapter content](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Coursera#navigating-to-your-course-on-coursera)). This should be added at the beginning of your course, right after the introduction.
 
 ### Adding the Credits table to Leanpub
 

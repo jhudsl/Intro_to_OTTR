@@ -1,19 +1,19 @@
 # Receiving template updates
 
-This original course template: https://github.com/jhudsl/DaSL_Course_Template_Bookdown is always a work in progress.
-We are working on adding more features and smoothing out bugs as we go (this is also why [your feedback is greatly appreciated](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/issues/new/choose)).
+This original course template: https://github.com/jhudsl/OTTR_Template is always a work in progress.
+We are working on adding more features and smoothing out bugs as we go (this is also why [your feedback is greatly appreciated](https://github.com/jhudsl/OTTR_Template/issues/new/choose)).
 
 When updates are made to files that aren't specific to the course content but instead run checks and other processes in the original repository, pull requests are filed automatically to any downstream repositories made from this template.
 
 ### How to enroll a repository to receive template updates
 
-**To enroll in these automatic update PRs, the new course's repository name will need to be added to [this file in the original template](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/edit/main/.github/sync.yml)**
+**To enroll in these automatic update PRs, the new course's repository name will need to be added to [this file in the original template](https://github.com/jhudsl/OTTR_Template/edit/main/.github/sync.yml)**
 
-- Use [this link to edit the file](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/edit/main/.github/sync.yml).
+- Use [this link to edit the file](https://github.com/jhudsl/OTTR_Template/edit/main/.github/sync.yml).
 - Add your repository's name where it says `#NEW REPO HERE#`, being careful to indent the same amount as the other repositories listed.
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/edit-sync.yml.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/edit-sync.yml.png)
 - Choose `Create a new branch for this commit and start a pull request.` Name the branch what you like.
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/add-repo-sync.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/add-repo-sync.png)
 - Name the commit `Add new repository to sync`
 - Click `Propose changes`.
 - Write a short pull request description describing that you are adding a new repository to the sync.yml file.
@@ -25,20 +25,20 @@ _If you have any questions about the implications of any of these updates or fil
 
 ### How to tailor incoming sync changes:  
 
-Upon a new release, a pull request is automatically filed to any repositories that are added to the [sync.yml file](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/sync.yml).
-**Carefully review the latest [release notes](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Release-Notes) and the `Files changed` tab of the sync PR.** And again, tag `@cansavvy` with any questions.  
+Upon a new release, a pull request is automatically filed to any repositories that are added to the [sync.yml file](https://github.com/jhudsl/OTTR_Template/blob/main/.github/sync.yml).
+**Carefully review the latest [release notes](https://github.com/jhudsl/OTTR_Template/wiki/Release-Notes) and the `Files changed` tab of the sync PR.** And again, tag `@cansavvy` with any questions.  
 
 It might be that you want some of the changes from the PR but not all of them.
 Each file that is updated in a sync PR is updated in its own commit.
 
 - If you don't want the changes from a particular file, you can always [revert that particular commit](https://git-scm.com/docs/git-revert) before merging the sync PR.    
-If you will not want any updates on this file in the future, you may want to remove a file from being synced in your repo [by reconfiguring the sync file](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/sync.yml).
+If you will not want any updates on this file in the future, you may want to remove a file from being synced in your repo [by reconfiguring the sync file](https://github.com/jhudsl/OTTR_Template/blob/main/.github/sync.yml).
 
 - If you want only some changes, but they are not on a whole file basis, you could check out the branch and make manual edits.
 To checkout the branch, navigate to your own repository you should be able to run:  
 ```
-git checkout repo-sync/DaSL_Course_Template_Bookdown/default
+git checkout repo-sync/OTTR_Template/default
 ```
 
 - If you don't want any of the changes you can close the PR entirely.
-You may want to unenroll your repository from the [sync github actions by deleting your repo name from this file](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/sync.yml) if this will continue to be the case.
+You may want to unenroll your repository from the [sync github actions by deleting your repo name from this file](https://github.com/jhudsl/OTTR_Template/blob/main/.github/sync.yml) if this will continue to be the case.

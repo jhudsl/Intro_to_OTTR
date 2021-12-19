@@ -1,7 +1,7 @@
 
 # Spell check
 
-Github actions will automatically [run a spell check on all Rmds](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/style-and-sp-check.yml) whenever a pull request to the `main` branch is filed.
+Github actions will automatically [run a spell check on all Rmds](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml) whenever a pull request to the `main` branch is filed.
 Depending on your preference, you may find it easier to spell check manually on your local computer before pushing to Github.
 
 It will fail if there are more than 2 spelling errors and you'll need to resolve those before being able to merge your pull request.

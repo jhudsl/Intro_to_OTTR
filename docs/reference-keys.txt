@@ -123,3 +123,17 @@ adding-the-credits-table-to-leanpub
 adding-google-analytics
 release-a-course-for-public-viewing
 release-coding
+getting-started-2
+recommended-background-information-1
+how-to-contribute-1
+basic-overview-of-what-the-publishing-process-looks-like-1
+libraries
+topic-of-section
+subtopic
+code-examples
+image-example
+video-examples
+links-to-files
+links-to-websites
+citation-examples
+print-out-session-info

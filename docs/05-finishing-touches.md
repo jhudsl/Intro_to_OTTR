@@ -52,7 +52,7 @@ For example, if you are creating an ITCR course, you will need the files in `sty
 
 1. On a new branch, copy the `style-sets/<set-name>/index.Rmd` and `style-sets/<set-name>/_output.yml` to the top of the repository to overwrite the default `index.Rmd` and `_output.yml`.
 1. Copy over all the files in the `style-sets/<set-name>/copy-to-assets` to the `assets` folder in the top of the repository.
-1. [Create a pull request](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/About-pull-request-review) with these changes, and double check the rendered preview to make sure that the style is what you are looking for.
+1. [Create a pull request](https://github.com/jhudsl/OTTR_Template/wiki/About-pull-request-review) with these changes, and double check the rendered preview to make sure that the style is what you are looking for.
 
 ## Creating your own style
 
@@ -91,7 +91,7 @@ If you are creating a DaSL course for a project other than [ITN](https://www.itc
  - Please modify the lines that link to the http://jhudatascience.org/ with your own website and logo if you are not part of the [jhuDaSL](http://jhudatascience.org/) .
 - Please replace the URL in the line 13 of code with the URL for the GitHub repo for your course. This will allow people to more easily find how out how you created your course. Otherwise, they will be directed to this template.
 - If you wish to create a different color scheme, the font colors can also be modified along with other aspects in the `assets/style.css` file. Take a look at the `assets/style_ITN.css` file to see what was changed for that color scheme from the `assets/style.css` file.
-- You can replace the logo with the appropriate project logo by replacing `https://www.itcrtraining.org/` with the project website link and ` "https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/images/logo.png"` for the project logo image link in line 11.
+- You can replace the logo with the appropriate project logo by replacing `https://www.itcrtraining.org/` with the project website link and ` "https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/images/logo.png"` for the project logo image link in line 11.
 
 
 ## Adding sections that aren't numbered
@@ -125,9 +125,9 @@ Since so many individuals contribute to our courses in so many ways.  Thus, we d
 
 Here is an example:  
 
-![Credit section from a course that used this template](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/example_credits.png)
+![Credit section from a course that used this template](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/example_credits.png)
 
-Please see the [about section](https://jhudatascience.org/DaSL_Course_Template_Bookdown/about-the-authors.html) of the template for descriptions of how credits should be attributed for the course.
+Please see the [about section](https://jhudatascience.org/OTTR_Template/about-the-authors.html) of the template for descriptions of how credits should be attributed for the course.
 
 This is generated from the About.Rmd file. An About.Rmd file will already be in your course from using our template. You will need to do the following steps to update it for your course:
 
@@ -197,7 +197,7 @@ Additionally, this row should be added for _all ITCR Courses_:
 
 ### Adding the Credits table to Coursera
 
-In Coursera, you can add the credits table URL as an ungraded plugin ([the same as described here for adding chapter content](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Publishing-on-Coursera#navigating-to-your-course-on-coursera)). This should be added at the beginning of your course, right after the introduction.
+In Coursera, you can add the credits table URL as an ungraded plugin ([the same as described here for adding chapter content](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Coursera#navigating-to-your-course-on-coursera)). This should be added at the beginning of your course, right after the introduction.
 
 ### Adding the Credits table to Leanpub
 
@@ -211,44 +211,44 @@ If you would like to add Google Analytics to track traffic to your course, you c
 
 1) Get a **Google Analytics account** (if you do not already have one): [https://analytics.google.com/analytics](https://analytics.google.com/analytics)
 
-![Google Analytics account setup](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_account.png)
+![Google Analytics account setup](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_account.png)
 
 Note that in creating an account you will need to agree to some terms. Currently it is free to get Google analytics data as long as your course does not exceed a very high user rate. Check to make sure that the terms work for you
 
-![Google Analytics terms](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_terms.png)
+![Google Analytics terms](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_terms.png)
 
 2) If you already have an account or navigated away from where you started - Go to the **Admin tab** (lower left button that looks like a gear)
 
 3) Set up a new **property** (fill out name and details, select options about tracking traffic for how you intend to use Google Analytics)
 
-![Google Analytics Property creation](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_Create_Property.png)
+![Google Analytics Property creation](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_Create_Property.png)
 
-![Google Analytics Property](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_Property_setup.png)
+![Google Analytics Property](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_Property_setup.png)
 
-![Google Analytics Property choices](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_property.png)
+![Google Analytics Property choices](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_property.png)
 
 4) Add a **stream** to your property, choose the **Web** option.
 
-![Google Analytics stream options](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_web.png)
+![Google Analytics stream options](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_web.png)
 
 
 5) Fill in your stream information with the **link** for your course (note you may need to remove https as this is part of a pull down menu to the left of where you paste your link)
 
-![Google Analytics stream](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_stream_link.png)
+![Google Analytics stream](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_stream_link.png)
 
-![Google Analytics stream](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_stream_link_correct.png)
+![Google Analytics stream](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_stream_link_correct.png)
 
 
 6) On the resulting page you will see a **Measurement ID**. Copy this ID and paste it in the GA_Script.Rhtml file in the template replacing the fields that say {MeasurementID} including the curly brackets.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_ID.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_ID.png)
 
 7) Modify the _output.yml file so that the line that starts with `before body:` is changed to include brackets around the GA_script.Rhtml file before a comma and the name of the hero image html file (which should already be listed). For example, like this:
     `before_body: [GA_Script.Rhtml, assets/big-image-itcr.html]`
 or this:
     `before_body: [GA_Script.Rhtml, assets/big-image.html]`
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/output_file_with_GA.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/output_file_with_GA.png)
 
 7) **Rerender** your course by making a change to one of your chapter RMD files in a pull request and pushing and merging the pull request. This will cause new html files to be made for each chapter in the `docs` folder. The Google Analytics code should now be in each of the html files - you can check by searching for `Google Analytics`.
 
@@ -256,9 +256,9 @@ or this:
 
 9) Check on the **Reports** button on the top of the far left icon menu. The icon looks like a bar chart. If you open up a browser window to your hosted course online, then you should see yourself as 1 user in the last 30 minutes.
 
-![Google Analytics Reports](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_reports.png)
+![Google Analytics Reports](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_reports.png)
 
-![Check Google Analytics](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/screenshots/GA_check.png)
+![Check Google Analytics](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_check.png)
 
 9) Enjoy the data about how people are using your course!
 
@@ -267,7 +267,7 @@ or this:
 
 Congrats, you are most of the way toward publishing your course!
 
-At this point, it is a good idea to [create a release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)! (It's a good idea to [set up Google Analytics](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/Google-Analytics) before completing this step)
+At this point, it is a good idea to [create a release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)! (It's a good idea to [set up Google Analytics](https://github.com/jhudsl/OTTR_Template/wiki/Google-Analytics) before completing this step)
 
 For `jhudsl` courses your release tag signifies your course's readiness for public viewing (and whether or not it will be added to the public version of the [JHU course library](https://docs.google.com/spreadsheets/d/14KYZA2K3J78mHVCiWV6-vkY6it37Ndxnow1Uu7nMa80/edit#gid=0).
 

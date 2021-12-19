@@ -21,7 +21,7 @@ For example, if you are creating an ITCR course, you will need the files in `sty
 
 1. On a new branch, copy the `style-sets/<set-name>/index.Rmd` and `style-sets/<set-name>/_output.yml` to the top of the repository to overwrite the default `index.Rmd` and `_output.yml`.
 1. Copy over all the files in the `style-sets/<set-name>/copy-to-assets` to the `assets` folder in the top of the repository.
-1. [Create a pull request](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/About-pull-request-review) with these changes, and double check the rendered preview to make sure that the style is what you are looking for.
+1. [Create a pull request](https://github.com/jhudsl/OTTR_Template/wiki/About-pull-request-review) with these changes, and double check the rendered preview to make sure that the style is what you are looking for.
 
 ## Creating your own style
 
@@ -60,7 +60,7 @@ If you are creating a DaSL course for a project other than [ITN](https://www.itc
  - Please modify the lines that link to the http://jhudatascience.org/ with your own website and logo if you are not part of the [jhuDaSL](http://jhudatascience.org/) .
 - Please replace the URL in the line 13 of code with the URL for the GitHub repo for your course. This will allow people to more easily find how out how you created your course. Otherwise, they will be directed to this template.
 - If you wish to create a different color scheme, the font colors can also be modified along with other aspects in the `assets/style.css` file. Take a look at the `assets/style_ITN.css` file to see what was changed for that color scheme from the `assets/style.css` file.
-- You can replace the logo with the appropriate project logo by replacing `https://www.itcrtraining.org/` with the project website link and ` "https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/images/logo.png"` for the project logo image link in line 11.
+- You can replace the logo with the appropriate project logo by replacing `https://www.itcrtraining.org/` with the project website link and ` "https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/images/logo.png"` for the project logo image link in line 11.
 
 
 ## Adding sections that aren't numbered

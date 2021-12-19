@@ -14,7 +14,7 @@ You will need to set up your own educator profile and course shell through your 
 
 ## Converting your files for upload to Coursera
 
-The Github actions set up in the [render-bookdown.yml](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/blob/main/.github/workflows/render-bookdown.yml) also render your course material in a format suitable for linking to Coursera.
+The Github actions set up in the [render-bookdown.yml](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml) also render your course material in a format suitable for linking to Coursera.
 This Coursera version is identical except that the table of contents bar on the left side has been dropped so as to not confuse Coursera users about navigating the course.
 These files can be previewed in the `docs/coursera/` folder.
 Click on  your chapter htmls to see what it will look like.
@@ -25,23 +25,23 @@ In the Leanpub repo, Leanpub-formatted quizzes can be converted to a Coursera ya
 
 After your [course shell has been added to your account](#setting-up-your-coursera-course) you can navigate to it by going to `My Courses`:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/profile.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/profile.png)
 
 And you should see it listed:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/my-courses.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/my-courses.png)
 
 You can click on `Go to Course`. And on your main course page click `Edit Course` in the right corner.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/edit-course-nav.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-course-nav.png)
 
 This will bring you to your version page (at this point you should only have a Version 1, so go to that one).
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/versions.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/versions.png)
 
 Now you are on the Edit content page and ready to add lessons, modules and quizzes!
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/edit-content.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-content.png)
 
 In general, you will want each lesson to contain at least a chapter and a quiz.
 
@@ -49,7 +49,7 @@ Each module is supposed to take a learner one week, so depending on the length o
 
 To add a new lesson, click the `+ Add Lesson` button:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-lesson.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-lesson.png)
 
 Now you are ready to add a chapter!
 
@@ -68,45 +68,45 @@ If you are unsure what the main url for your Github pages is, in your github rep
 So for example, the introduction chapter of this template would be linked by using this url:
 
 ```
-https://jhudatascience.org/DaSL_Course_Template_Bookdown/coursera/introduction.html
+https://jhudatascience.org/OTTR_Template/coursera/introduction.html
 ```
 
 To add this URL to Coursera, add a new lesson, click `+ More` and choose `Ungraded Plugin`.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-1.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-1.png)
 
 This will add an unpublished ungraded plugin to your lesson:
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-2.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-2.png)
 
 Now click the edit button on the new `Ungraded Plugin`.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-3.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-3.png)
 
 This will bring you to the standard example plug in page.
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-4.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-4.png)
 
 Scroll down and click `Edit Configuration`:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-5.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-5.png)
 
 Replace the example url with the url of your individual chapter we discussed above.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-6.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-6.png)
 
 Then click on `Save Configuration`:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-7.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-7.png)
 
 If the url you provided was correct, you should see a preview of your chapter:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-8.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-8.png)
 
 You may want to edit the title at the top of this page to indicate the material being linked.
 
 Now click `Publish` in the left upper corner (don't worry it's not actually publishing publicly, its just saving your changes).
 And it will ask you again to really scare you, but yes, click `Publish`.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-9.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-9.png)
 
 Congrats you added a chapter to your course! Now do the same thing for all your chapters!
 
@@ -114,28 +114,28 @@ Congrats you added a chapter to your course! Now do the same thing for all your 
 
 To add a new quiz start from your `Edit content` page and on whatever lesson you would like to add the quiz to and click the `+ Quiz` button.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-1.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-1.png)
 
 Now go to `Edit` on the new quiz.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-2.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-2.png)
 
 If you are choosing to manually enter your quizzes, you can continue to add each question from this page.
 
 If you are importing a Leanpub converted quiz click the `Import Questions` button and choose your converted yml files.
 (If you've not yet converted your leanpub quizzes, then [refer to that section](#converting-quizzes-from-leanpub-format).)
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-3.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-3.png)
 
 Upload your Coursera quiz yml file from your device:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-4.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-4.png)
 
 After you've selected the file click `Upload`:
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-quiz-5.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-5.png)
 
-It will let you know if there are any problems uploading the quiz. If the  `coursera_quiz_conversion.R` script failed to render something properly, please [file an issue here](https://github.com/jhudsl/DaSL_Course_Template_Leanpub/issues) describing how it failed and including a file that shows the instance it failed to convert.
+It will let you know if there are any problems uploading the quiz. If the  `coursera_quiz_conversion.R` script failed to render something properly, please [file an issue here](https://github.com/jhudsl/OTTR_Quizzes/issues) describing how it failed and including a file that shows the instance it failed to convert.
 
 Note that images and links are not currently supported in that conversion script. You also cannot have `:` in your prompts or answers.
 
@@ -145,20 +145,20 @@ By default quizzes are set to `Practice Quiz` but you will need at least some of
 On the left side of quiz editing page, there's a drop down menu to select `Graded Quiz`.
 Also in this location you can edit the estimated time it should take to complete the quiz (by default it is set to 15 minutes).
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/quiz-settings.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/quiz-settings.png)
 
 You also will want to assign the learning objectives that apply to this quiz. You can do this by clicking on the plus sign underneath the title.  
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/learning-obj-assigned.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/learning-obj-assigned.png)
 
 From here it will suggest the module's learning objectives. Click all that apply and then `Save`.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/assign-learning-obj.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/assign-learning-obj.png)
 
 You can edit the title of your quiz and then click `Publish` (don't worry it's not actually publishing publicly, its just saving your changes).
 And it will ask you again to really scare you, but yes, click `Publish`.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/add-chapter-9.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-9.png)
 
 Congrats you added a quiz to your course!
 
@@ -166,20 +166,20 @@ Congrats you added a quiz to your course!
 
 You can click on `Go to Course`. And on your main course page click `Edit Course` in the right corner.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/edit-course-nav.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-course-nav.png)
 
 This will bring you to your version page.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/versions.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/versions.png)
 
 Underneath `Content`, on the left side bar, at the bottom, there is the `Programmed Messages`.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/versions.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/versions.png)
 
 At the very least you should add a `Welcome to the course` and a `Completion` programmed message.
 Click on each of these to edit them. Click `Preview` and then `Publish` to save your edits.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/programmed-messages.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/programmed-messages.png)
 
 Here are some templated messages to get you started:
 
@@ -212,15 +212,15 @@ Click `Preview` and then `Publish` to save your edits.
 For final grades in the course, you will need to set the Grading Formula.
 To get to this page, you can click on `Go to Course`. And on your main course page click `Edit Course` in the right corner.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/edit-course-nav.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-course-nav.png)
 
 This will bring you to your version page.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/versions.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/versions.png)
 
 Now you can set the percentage that each module's assignments are worth in the course.
 
-![](https://raw.githubusercontent.com/jhudsl/DaSL_Course_Template_Bookdown/main/resources/coursera_screenshots/grading-formula.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/grading-formula.png)
 
 ## Content Schedule
 
