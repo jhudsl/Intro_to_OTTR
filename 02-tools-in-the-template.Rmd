@@ -1,18 +1,52 @@
 
 # OTTR Tools
 
-```{r child = 'wiki_pages/Citations.md'}
 
+```{r, echo = FALSE, results='asis', eval = FALSE}
+cow::borrow_chapter(
+  doc_path = "Citations.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r child = 'wiki_pages/Using-Docker.md'}
+```{r, echo = FALSE, results='asis', eval = FALSE}
+cow::borrow_chapter(
+  doc_path = "Using-Docker.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r child = 'wiki_pages/Spell-check.md'}
+```{r, echo = FALSE, results='asis', eval = FALSE}
+cow::borrow_chapter(
+  doc_path = "Publishing-on-Coursera.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r child = 'wiki_pages/Leanpub-conversion-tips.md'}
+```{r, echo = FALSE, results='asis', eval = FALSE}
+cow::borrow_chapter(
+  doc_path = "Spell-check.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r child = 'wiki_pages/Generate-docx-output.md'}
+```{r, echo = FALSE, results='asis', eval = FALSE}
+cow::borrow_chapter(
+  doc_path = "Leanpub-conversion-tips.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
+```
+
+```{r, echo = FALSE, results='asis', eval = FALSE}
+cow::borrow_chapter(
+  doc_path = "Borrowing-chapters-between-courses.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
+```
+
+```{r, echo = FALSE, results='asis', eval = FALSE}
+cow::borrow_chapter(
+  doc_path = "Generate-docx-output.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
