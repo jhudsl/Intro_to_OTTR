@@ -1,4 +1,0 @@
-# ignore nonsense files
-.DS_Store
-.RData
-docker/git_token.txt

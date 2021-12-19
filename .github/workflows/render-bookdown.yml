@@ -34,7 +34,7 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          rm -r docs/*
+          rm -rf docs/*
 
       # Run bookdown rendering
       - name: Run bookdown render
