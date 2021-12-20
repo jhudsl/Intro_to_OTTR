@@ -1,10 +1,6 @@
 
 # OTTR Tools
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(eval = FALSE)
-```
-
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "Citations.md",
@@ -41,6 +37,7 @@ cow::borrow_chapter(
 ```
 
 ```{r, echo = FALSE, results='asis'}
+knitr::opts_chunk$set(eval = FALSE)
 cow::borrow_chapter(
   doc_path = "Borrowing-chapters-between-courses.md",
   repo_name = "wiki/jhudsl/OTTR_Template"

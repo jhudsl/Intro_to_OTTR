@@ -1,10 +1,6 @@
 
 # Platform specific set up
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(eval = FALSE)
-```
-
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "Publishing-on-Coursera.md",
