@@ -1,36 +1,61 @@
 
 # Getting started
 
-```{r child = 'wiki_pages/Getting-started.md'}
+```{r, echo = FALSE, results='asis'}
+knitr::opts_chunk$set(eval = FALSE)
 
+cow::borrow_chapter(
+  doc_path = "Content-creation-tips.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r, echo=FALSE, results='asis'}
-cow::borrow_chapter(doc_path = "docs/02-chapter_of_course.md", repo_name = "/jhudsl/OTTR_Template")
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Start-a-new-course.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Setting-up-your-repository-files.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r child = 'wiki_pages/Content-creation-tips.md'}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Setting-up-your-repository-settings.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r child = 'wiki_pages/Start-a-new-course.md'}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Setting-up-GitHub-secrets.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r child = 'wiki_pages/Setting-up-your-repository-files.md'}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Adding-content-to-a-course.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r child = 'wiki_pages/Setting-up-your-repository-settings.md'}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "About-pull-request-review.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r child = 'wiki_pages/Setting-up-GitHub-secrets.md'}
-```
-
-```{r child = 'wiki_pages/Adding-content-to-a-course.md'}
-```
-
-```{r child = 'wiki_pages/About-pull-request-review.md'}
-```
-
-```{r child = 'wiki_pages/Setting-up-images-and-graphics.md'}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Setting-up-images-and-graphics.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```

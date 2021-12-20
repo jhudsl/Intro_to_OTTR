@@ -1,14 +1,37 @@
 
 # Platform specific set up
 
-```{r child = 'wiki_pages/Choosing-publishing-platforms.md'}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Publishing-on-Coursera.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r child = 'wiki_pages/Publishing-with-Bookdown.md'}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Choosing-publishing-platforms.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r child = 'wiki_pages/Publishing-on-Leanpub.md'}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Publishing-with-Bookdown.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r child = 'wiki_pages/Publishing-on-Coursera.md'}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Publishing-on-Leanpub.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
+```
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Publishing-on-Coursera.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```

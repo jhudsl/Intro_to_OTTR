@@ -1,9 +1,16 @@
 
 # Automation info and set up
 
-
-```{r child = 'wiki_pages/How-to-set-up-and-customize-GitHub-actions-robots.md'}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "How-to-set-up-and-customize-GitHub-actions-robots.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```
 
-```{r child = 'wiki_pages/Receiving-template-updates.md'}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Receiving-template-updates.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
 ```

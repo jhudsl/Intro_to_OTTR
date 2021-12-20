@@ -1,3 +1,0 @@
-If you encounter any problems or have ideas for improvements to this template repository or this getting started guide, please [file an issue here](https://github.com/jhudsl/OTTR_Template/issues/new/choose)! Your feedback is very much appreciated.
-
-_Note all materials in this template are licensed [CC-BY](https://tldrlegal.com/license/creative-commons-attribution-(cc)) and can be repurposed freely with attribution._
