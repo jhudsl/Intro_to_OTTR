@@ -1,6 +1,10 @@
 
 # Automation info and set up
 
+```{r, include = FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "How-to-set-up-and-customize-GitHub-actions-robots.md",

@@ -1,16 +1,8 @@
 
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "Getting-started.md",
-  repo_name = "wiki/jhudsl/OTTR_Template"
-)
-```
+# Getting started
 
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "Getting-started.md",
-  repo_name = "wiki/jhudsl/OTTR_Template"
-)
+```{r, include = FALSE}
+knitr::opts_chunk$set(eval = FALSE)
 ```
 
 ```{r, echo = FALSE, results='asis'}

@@ -1,7 +1,11 @@
 
 # Finishing touches
 
-```{r, echo = FALSE, results='asis'}
+```{r, include = FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+```{r, results='asis'}
 cow::borrow_chapter(
   doc_path = "Set-up-feedback-method.md",
   repo_name = "wiki/jhudsl/OTTR_Template"
