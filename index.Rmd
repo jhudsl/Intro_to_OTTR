@@ -1,5 +1,5 @@
 ---
-title: "Course Name "
+title: "Intro to OTTR - Opensource Tools for Training Resources"
 date: "`r format(Sys.time(), '%B, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -21,3 +21,10 @@ knitr::write_bib(c(
 ```
 
 # About this Course {-}
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Getting-started.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
+```
