@@ -1,3 +1,6 @@
+recommended-background-information
+how-to-contribute
+basic-overview-of-what-the-publishing-process-looks-like
 getting-started
 consider-your-motivation
 consider-your-audience

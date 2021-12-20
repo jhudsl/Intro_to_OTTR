@@ -4,6 +4,7 @@ Here's a summary of the Github actions set up in this repository.
 Note: if you are not a part of jhudsl organization, you will need to set follow these instructions to set up your GitHub secrets before these actions will work.
 
 In summary, here's what the GitHub actions do for you (when set up):
+
 - Re-render Bookdown after merging to main
 - Create a preview of the rendered version with changes you've made on a pull request
 - Re convert files for Coursera

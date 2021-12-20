@@ -1,22 +1,3 @@
----
-title: "Intro to OTTR - Opensource Tools for Training Resources"
-date: "December, 2021"
-site: bookdown::bookdown_site
-documentclass: book
-bibliography: [book.bib, packages.bib]
-biblio-style: apalike
-link-citations: yes
-description: "Description about Course/Book."
-favicon: assets/dasl_favicon.ico
-output:
-    bookdown::word_document2:
-      toc: true
----
-
-
-
-# About this Course {-}
-
 
 - Please take a look at the [code of conduct](https://github.com/jhudsl/OTTR_Template/blob/main/code_of_conduct.md).
 
