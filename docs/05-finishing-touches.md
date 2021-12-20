@@ -1,3 +1,18 @@
+
+# Finishing touches
+
+
+```
+## 
+## 
+## processing file: ./resources/other_chapters/Set-up-feedback-method.md
+```
+
+  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
+  ordinary text without R code
+
+
+
 # Finishing touches
 
 ## Set up feedback method
@@ -23,3 +38,11 @@ Check the preview link and make sure it's what you want. Add to the `main` branc
 
 
 \*For more ideas and discussion on obtaining user feedback see [this course chapter](https://jhudatascience.org/Documentation_and_Usability/obtaining-user-feedback.html).
+
+
+
+
+
+
+
+

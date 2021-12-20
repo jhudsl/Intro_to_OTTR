@@ -1,35 +1,35 @@
 
 # Finishing touches
 
-```{r, echo = FALSE, results='asis', eval = FALSE}
-borrow_chapter(
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
   doc_path = "Set-up-feedback-method.md",
   repo_name = "wiki/jhudsl/OTTR_Template"
 )
 ```
 
-```{r, echo = FALSE, results='asis', eval = FALSE}
+```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "Change-Title-and-style.md",
   repo_name = "wiki/jhudsl/OTTR_Template"
 )
 ```
 
-```{r, echo = FALSE, results='asis', eval = FALSE}
+```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "How-to-give-credits.md",
   repo_name = "wiki/jhudsl/OTTR_Template"
 )
 ```
 
-```{r, echo = FALSE, results='asis', eval = FALSE}
+```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "Google-Analytics.md",
   repo_name = "wiki/jhudsl/OTTR_Template"
 )
 ```
 
-```{r, echo = FALSE, results='asis', eval = FALSE}
+```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "Release-a-course-for-public-viewing.md",
   repo_name = "wiki/jhudsl/OTTR_Template"
