@@ -2,16 +2,13 @@
 # Getting started
 
 ```{r, echo = FALSE, results='asis'}
-knitr::opts_chunk$set(eval = FALSE)
-```
-
-
-```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "Start-a-new-course.md",
   repo_name = "wiki/jhudsl/OTTR_Template"
 )
 ```
+
+# Start editing your course
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
@@ -20,12 +17,16 @@ cow::borrow_chapter(
 )
 ```
 
+# Content creation tips
+
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "Content-creation-tips",
   repo_name = "wiki/jhudsl/OTTR_Template"
 )
 ```
+
+# Setting up images and graphics
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(

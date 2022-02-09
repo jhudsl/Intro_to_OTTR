@@ -1,5 +1,5 @@
 
-# OTTR Tools
+# Citations
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
@@ -8,6 +8,8 @@ cow::borrow_chapter(
 )
 ```
 
+# About Docker
+
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "Using-Docker.md",
@@ -15,12 +17,7 @@ cow::borrow_chapter(
 )
 ```
 
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "Publishing-on-Coursera.md",
-  repo_name = "wiki/jhudsl/OTTR_Template"
-)
-```
+# Spell Check
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
@@ -29,12 +26,7 @@ cow::borrow_chapter(
 )
 ```
 
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "Leanpub-conversion-tips.md",
-  repo_name = "wiki/jhudsl/OTTR_Template"
-)
-```
+# Borrowing chapters between courses
 
 ```{r, echo = FALSE, results='asis'}
 knitr::opts_chunk$set(eval = FALSE)
@@ -44,6 +36,7 @@ cow::borrow_chapter(
 )
 ```
 
+# Using Google Docs
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "Generate-docx-output.md",

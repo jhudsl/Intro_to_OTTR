@@ -1,5 +1,5 @@
 
-# Platform specific set up
+# Choosing Publishing platforms
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
@@ -8,6 +8,8 @@ cow::borrow_chapter(
 )
 ```
 
+# Publishing with Bookdown
+
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "Publishing-with-Bookdown.md",
@@ -15,12 +17,7 @@ cow::borrow_chapter(
 )
 ```
 
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "Publishing-on-Leanpub.md",
-  repo_name = "wiki/jhudsl/OTTR_Template"
-)
-```
+# Publishing with Coursera
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
@@ -29,6 +26,16 @@ cow::borrow_chapter(
 )
 ```
 
+# Publishing with Leanpub
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Publishing-on-Leanpub.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
+```
+
+# Publishing quizzes with answers hiddens
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
