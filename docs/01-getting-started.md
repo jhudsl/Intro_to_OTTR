@@ -98,9 +98,3 @@ Beyond our template, check out these courses we have made using this template fo
 
 
 
-
-
-
-
-
-

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 OTTR Tools | Intro to OTTR - Opensource Tools for Training Resources</title>
+  <title>Chapter 2 Platform specific set up | Intro to OTTR - Opensource Tools for Training Resources</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 OTTR Tools | Intro to OTTR - Opensource Tools for Training Resources" />
+  <meta property="og:title" content="Chapter 2 Platform specific set up | Intro to OTTR - Opensource Tools for Training Resources" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 OTTR Tools | Intro to OTTR - Opensource Tools for Training Resources" />
+  <meta name="twitter:title" content="Chapter 2 Platform specific set up | Intro to OTTR - Opensource Tools for Training Resources" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="platform-specific-set-up-1.html"/>
-<link rel="next" href="automation-info-and-set-up-1.html"/>
+<link rel="prev" href="getting-started-1.html"/>
+<link rel="next" href="ottr-tools.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -289,192 +289,227 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container">
   <img class= "hero-image" src= "https://github.com/jhudsl/OTTR_Template/raw/main/assets/dasl_thin_main_image.png">
 </div>
-<div id="ottr-tools" class="section level1" number="3">
-<h1><span class="header-section-number">Chapter 3</span> OTTR Tools</h1>
+<div id="platform-specific-set-up-1" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Platform specific set up</h1>
+<div id="choosing-publishing-platforms" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Choosing publishing platforms</h2>
+<p>This template helps you prepare material to publish, but there are certain steps that cannot be automated. In those instances we’ve provided step-by-step guides to get you started on getting your material published on the platforms.</p>
+<p>Depending on your goals and intended audience you may want to publish just one or all three of the platforms supported:</p>
+<p><img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=gf4fcf6569c_2_0" width="500"/></p>
+</div>
+<div id="links-to-the-guides-for-each-platform" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Links to the guides for each platform:</h2>
+<ul>
+<li><a href="https://github.com/jhudsl/OTTR_Template/wiki/Publishing-with-Bookdown">Publishing with Bookdown</a></li>
+<li><a href="https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Leanpub">Publishing with Leanpub</a></li>
+<li><a href="https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Coursera">Publishing with Coursera</a></li>
+</ul>
+<p>Bookdown is published using Github pages which you can set up <a href="https://github.com/jhudsl/OTTR_Template/wiki/Starting-a-new-course-with-this-template#set-up-github-pages">following the set up repository instructions</a>.</p>
+<p>As you modify the names of the chapters of your course and add more chapters (using the <code>.Rmd</code> files), you need to update the <code>_bookdown.yml</code> file accordingly.</p>
+<p>For example let’s say that we added another chapter and named the file <code>03-new_chapter_of_course.Rmd</code>.
+We would update our <code>_bookdown.yml</code> to look like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="platform-specific-set-up-1.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">book_filename</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;Course_Name&quot;</span><span class="at">  </span></span>
+<span id="cb1-2"><a href="platform-specific-set-up-1.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chapter_name</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;Chapter &quot;</span><span class="at">  </span></span>
+<span id="cb1-3"><a href="platform-specific-set-up-1.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">repo</span><span class="kw">:</span><span class="at"> https://github.com/jhudsl/OTTR_Template/</span><span class="co"> ##Make sure you update this for your GitHub Repo!!  </span></span>
+<span id="cb1-4"><a href="platform-specific-set-up-1.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">rmd_files</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">&quot;index.Rmd&quot;</span><span class="kw">,</span><span class="at">  </span></span>
+<span id="cb1-5"><a href="platform-specific-set-up-1.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="st">&quot;01-intro.Rmd&quot;</span><span class="kw">,</span><span class="at">   </span></span>
+<span id="cb1-6"><a href="platform-specific-set-up-1.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="st">&quot;02-chapter_of_course.Rmd&quot;</span><span class="kw">,</span><span class="at">   </span></span>
+<span id="cb1-7"><a href="platform-specific-set-up-1.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="st">&quot;03-new_chapter_of_course.Rmd&quot;</span><span class="kw">,</span><span class="co">  ##Only this is new!</span></span>
+<span id="cb1-8"><a href="platform-specific-set-up-1.html#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="st">&quot;about.Rmd&quot;</span><span class="kw">]</span><span class="at">  </span></span>
+<span id="cb1-9"><a href="platform-specific-set-up-1.html#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">new_session</span><span class="kw">:</span><span class="at"> </span><span class="ch">yes</span><span class="at">  </span></span>
+<span id="cb1-10"><a href="platform-specific-set-up-1.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">delete_merged_file</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="at">  </span></span>
+<span id="cb1-11"><a href="platform-specific-set-up-1.html#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">language</span><span class="kw">:</span><span class="at">  </span></span>
+<span id="cb1-12"><a href="platform-specific-set-up-1.html#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">ui</span><span class="kw">:</span><span class="at">  </span></span>
+<span id="cb1-13"><a href="platform-specific-set-up-1.html#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">chapter_name</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;Chapter &quot;</span><span class="at">  </span></span>
+<span id="cb1-14"><a href="platform-specific-set-up-1.html#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">output_dir</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;docs&quot;</span><span class="at">  </span></span></code></pre></div>
+<p>Notice how only one line is different - the one that says <code>03-chapter_of_course.Rmd",</code>
+Be careful about quotation marks: <code>""</code> as well as commas: <code>,</code>!</p>
+<p>Once we do this we can preview the book!</p>
+<p>You can do so by typing:
+<code>bookdown::serve_book()</code> in the RStudio Console.</p>
+<p>Note that when you run <code>bookdown</code> it will create an <code>.rds</code> file; you can generally ignore this file.</p>
+<p>You will then see a live version of your book in your RStudio viewer.</p>
+<p>Note that When a pull request is merged to main, <code>bookdown::render_book()</code> will be re-run by the <a href="#github-actions">GitHub actions</a> and the results added to <code>main</code>.</p>
+<pre><code>## Warning in readLines(dest_file): incomplete final line found on &#39;resources/
+## other_chapters/Publishing-on-Leanpub.md&#39;</code></pre>
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <p><strong>Table of Contents</strong> <em>generated with <a href="https://github.com/thlorenz/doctoc">DocToc</a></em></p>
 <ul>
-<li><a href="ottr-tools.html#citations">Citations</a></li>
+<li><a href="platform-specific-set-up-1.html#leanpub-rendering">Leanpub rendering</a>
+<ul>
+<li><a href="platform-specific-set-up-1.html#setting-up-leanpub-related-github-actions">Setting up Leanpub-related GitHub actions</a></li>
+</ul></li>
+<li><a href="platform-specific-set-up-1.html#hosting-your-course-on-leanpub">Hosting your course on Leanpub</a></li>
+<li><a href="platform-specific-set-up-1.html#setting-up-quizzes">Setting up quizzes</a>
+<ul>
+<li><a href="platform-specific-set-up-1.html#leanpub-quizzes">Leanpub quizzes</a>
+<ul>
+<li><a href="platform-specific-set-up-1.html#standard-multiple-choice">Standard multiple choice:</a></li>
+<li><a href="platform-specific-set-up-1.html#choose-answers">Choose answers</a></li>
+</ul></li>
+<li><a href="platform-specific-set-up-1.html#leanpub-quiz-formatting-rules">Leanpub quiz formatting ‘rules’</a></li>
+</ul></li>
+<li><a href="platform-specific-set-up-1.html#converting-quizzes-from-leanpub-to-coursera-format">Converting quizzes from Leanpub to Coursera format</a></li>
+<li><a href="platform-specific-set-up-1.html#setting-up-the-_quizzes-repository-checklist">Setting up the _Quizzes repository checklist:</a></li>
 </ul>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-<div id="citations" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Citations</h2>
-<p>You can generally follow the <a href="https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html">Bookdown instructions about citations</a>, but you don’t need to add the additional bibliography argument at the top of the Rmds.</p>
-<p>To add a new reference source, add to the <code>book.bib</code> file, keeping your new entry in alphabetical order.</p>
-<p>For articles (or anything with a DOI), go to <a href="https://www.doi2bib.org/">doi2bib.org</a> or <a href="https://zbib.org/">ZoteroBib</a> to get a BibTex-formatted reference that you can copy and paste the reference to the <code>book.bib</code> file.</p>
-<p>You can also use programs like Zotero or Endnote to export a .bib file and either combine with the <code>book.bib</code> or manage your references from there.</p>
-<p>Other sources can be added using this template:</p>
-<pre><code>@website{citekey,
-    author = {First Last},
-    title = {Title},
-    url  = {http://www.someurl.html},
-}</code></pre>
-<p>To reference the citations in your writing follow the <a href="https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html">bookdown instructions</a>:</p>
-<pre><code>Items can be cited directly within the documentation using the syntax @key where key is the citation key in the first line of the entry, e.g., @R-base. To put citations in parentheses, use [@key]. To cite multiple entries, separate the keys by semicolons, e.g., [@key-1; @key-2; @key-3]. To suppress the mention of the author, add a minus sign before @, e.g., [-@R-base].</code></pre>
-<p>See <a href="https://github.com/jhudsl/OTTR_Template/blob/main/02-chapter_of_course.Rmd">Chapter 2</a> of this template course for examples.</p>
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<p><strong>Table of Contents</strong> <em>generated with <a href="https://github.com/thlorenz/doctoc">DocToc</a></em></p>
-<ul>
-<li><a href="ottr-tools.html#using-the-jhudslcourse_template-docker-image">Using the jhudsl/course_template Docker image</a>
-<ul>
-<li><a href="ottr-tools.html#optionally-run-rstudio-from-the-docker-container">Optionally run RStudio from the Docker container</a></li>
-</ul></li>
-<li><a href="ottr-tools.html#starting-a-new-docker-image">Starting a new Docker image</a>
-<ul>
-<li><a href="ottr-tools.html#set-dockerhub-related-secrets">Set Dockerhub related secrets</a></li>
-<li><a href="ottr-tools.html#updating-workflows-for-new-docker-image">Updating workflows for new Docker image</a></li>
-<li><a href="ottr-tools.html#modifying-the-dockerfile-for-a-new-image">Modifying the Dockerfile for a new image</a>
-<ul>
-<li><a href="ottr-tools.html#template-commands-for-adding-packages-to-the-dockerfile">Template commands for adding packages to the Dockerfile</a>
-<ul>
-<li><a href="ottr-tools.html#cran-packages">CRAN Packages:</a></li>
-<li><a href="ottr-tools.html#bioconductor-packages">Bioconductor Packages:</a></li>
-<li><a href="ottr-tools.html#python-packages">Python Packages:</a></li>
-</ul></li>
-</ul></li>
-<li><a href="ottr-tools.html#testing-a-modified-docker-image">Testing a modified Docker image</a>
-<ul>
-<li><a href="ottr-tools.html#pushing-the-docker-image">Pushing the Docker image</a></li>
-</ul></li>
-</ul></li>
+<p>OTTR contains all the files you need to publish your course to <a href="https://leanpub.com/">Leanpub</a>.
+The <a href="https://github.com/jhudsl/ottr"><code>ottr</code> package</a> does the handling and automatic conversion to a rendered version that is ready for Leanpub.</p>
+<p>These converted files are stored in the <code>manuscript</code> folder. As a general rule, don’t edit files in <code>manuscript</code> folder. This folder should be autogenerated by the render ottr<code>GitHub action (in file</code>.github/workflows/render-leanpub.yml`) and you in general shouldn’t make edits to it.</p>
+<p>Note that if you wish your quizzes and their answers to remain hidden, there is a bit more set up involved with this process and you will need to create a separate private OTTR_Quizzes repository to store these quizzes. <a href="https://github.com/jhudsl/OTTR_Template/wiki/Making-quizzes-private">Start with these instructions first if you want your quizzes and answers to be hidden.</a></p>
+</div>
+<div id="leanpub-rendering" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Leanpub rendering</h2>
+<p>The <code>ottr</code> package can do most of the formatting of links and etc for you (so long as you followed the formatting prescribed by the <a href="https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-images-and-graphics"><code>Setting up images</code> section of this Wiki</a>.</p>
+<p>Github actions in this repository will attempt to do the Bookdown to Leanpub conversions for you by running <code>ottr::bookdown_to_leanpub()</code> function at the top of the repository.</p>
+<div id="setting-up-leanpub-related-github-actions" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Setting up Leanpub-related GitHub actions</h3>
+<p>* Note that if you decide to <a href="https://github.com/jhudsl/OTTR_Template/wiki/Making-quizzes-private">make your quizzes private</a> and use the <code>OTTR_Quizzes</code> repo for quiz storage, this step is not relevant to you.</p>
+<p>When you are ready to begin publishing to Leanpub, you will want to turn on a few Github Actions that are included in the template but by default, turned off.</p>
+<ul class="task-list">
+<li><input type="checkbox" disabled="" />
+Uncomment the trigger noted in your <code>.github/workflows/render-leanpub.yml</code> file</li>
+<li><input type="checkbox" disabled="" />
+Uncomment the trigger noted in your <code>.github/workflows/check-quizzes.yml</code> file</li>
 </ul>
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-<p>Particularly for courses that involve running example code, it’s highly recommended that you use a Docker image for development to maintain software version consistency across course developers.</p>
-</div>
-<div id="using-the-jhudslcourse_template-docker-image" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Using the jhudsl/course_template Docker image</h2>
-<p>If your course doesn’t require any additional packages to run, then you do not need to set up Docker locally but <a href="https://hub.docker.com/repository/docker/jhudsl/course_template">this Docker image: jhudsl/course_template</a> will run and re-render all of your changes as you add them.</p>
-<p>If you are new to Docker, you may find it helpful to read this <a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/launching-a-docker-image.html">introduction to Docker</a>.
-- You will need to <a href="https://hub.docker.com/">sign up with a Docker account</a> if you don’t have one.<br />
-- If you haven’t installed Docker desktop (or need to update it), you can do <a href="https://docs.docker.com/get-docker/">so here</a>.</p>
-<p>If your Docker desktop is running, you should see a Docker whale in your tool bar.
-On Macs, this will be on the bar on the top of your screen; in Windows, on the bottom right.</p>
-<p>A Docker image is similar to a virtual machine - it contains preinstalled software in a preconfigured environment.
-Docker images can be downloaded from DockerHub, or you can create your own.</p>
-<p>We have created the <code>course_template</code> image as a starting point; you can download it from <code>jhudsl/course_template</code> on DockerHub using the docker pull command we have below.
-To pull the docker image associated with this template, you can run this command below in your command line.
-This may take a while.</p>
-<pre><code>docker pull jhudsl/course_template</code></pre>
-<p>This pulls the course_template image from Docker Hub and copies it to your computer.
-It will be placed in your local collection of Docker images, managed by Docker (not in your pwd). If you get an error, it may be because you forgot to have your Docker desktop running… see above.</p>
-<p>To use the Docker image associated with the course template, first navigate to the the top of this GitHub repository.
-Now you can start up the Docker container using the command below.</p>
-<p>This runs your local copy of the course_template image (which you downloaded from DockerHub).
-The option <code>-v $PWD:/home/rstudio</code> mounts pwd (this repo) and makes it available at <code>/home/rstudio</code> within the container.
-Replace all of <code>&lt;CHOOSE_PASSWORD&gt;</code> (including the <code>&lt;</code> and <code>&gt;</code>) with a password of your choosing.</p>
-<p><em>On a Mac</em>:</p>
-<pre><code>docker run -it -v $PWD:/home/rstudio -e PASSWORD=&lt;CHOOSE_PASSWORD&gt; -p 8787:8787 jhudsl/course_template</code></pre>
-<p><em>On a Windows</em>:</p>
-<pre><code>docker run -it -v %CD%:/home/rstudio -e PASSWORD=&lt;CHOOSE_PASSWORD&gt; -p 8787:8787 jhudsl/course_template</code></pre>
-<p>Do not close this window, but you can minimize it.
-Open up a new command line window and run the command: <code>docker ps</code>, you should see a container is up and running!</p>
-<p><em>Couple other handy Docker commands:</em></p>
-<ul>
-<li>To stop your Docker container, run <code>docker ps</code> to obtain the docker container ID.
-Then you can use that ID to run <code>docker stop &lt;CONTAINER_ID&gt;</code>.<br />
-</li>
-<li>To remove a docker image (which you may need to do from time to time to clear out space), you can run <code>docker image ls</code> to see all your current images.
-Then you can run either <code>docker image rm &lt;IMAGE_ID&gt;</code>.<br />
-</li>
-<li>If you really need to clear out space, you can follow this <a href="https://stackoverflow.com/questions/44785585/docker-how-to-delete-all-local-docker-images">StackOverflow post</a> on how to remove all images and all containers.</li>
-</ul>
-<p>For more info on how to use Docker, they have very <a href="https://docs.docker.com/">extensive documentation here</a>.</p>
-<div id="optionally-run-rstudio-from-the-docker-container" class="section level4" number="3.2.0.1">
-<h4><span class="header-section-number">3.2.0.1</span> Optionally run RStudio from the Docker container</h4>
-<p>In a web browser navigate to the following to get to an RStudio that is run from your Docker container.</p>
-<pre><code>localhost:8787</code></pre>
-<p>To log in, you’ll need to use <code>rstudio</code> as the username and whatever password you put for <code>&lt;CHOOSE_PASSWORD&gt;</code> in the above command.</p>
+<p>File a pull request with these changes and merge these to main.
+When you file a pull request, the quiz formatting will be checked automatically and reported on in a link on a comment in your pull request.</p>
+<p>If you encounter issues with the <code>ottr</code> package, please file an issue on its <a href="https://github.com/jhudsl/ottr/issues">Github repository</a>.</p>
 </div>
 </div>
-<div id="starting-a-new-docker-image" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Starting a new Docker image</h2>
-<p>Should you find that your course needs additional packages beyond what’s included in the template, you should probably start a new Docker image and you’ll need to do these steps to get this going:</p>
+<div id="hosting-your-course-on-leanpub" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Hosting your course on Leanpub</h2>
+<p>To host your course on Leanpub follow these steps:</p>
 <ol style="list-style-type: decimal">
-<li>Create a <a href="https://hub.docker.com/signup">Dockerhub account</a> if you don’t have one.</li>
-<li>Create a new Docker image on your Dockerhub account. <a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/launching-a-docker-image.html">Follow these instructions if you don’t know how to do that</a>.</li>
-<li><a href="ottr-tools.html#set-dockerhub-related-secrets">Set up Dockerhub secrets in your repository or organization</a>.<br />
-</li>
-<li><a href="ottr-tools.html#updating-workflows-for-new-docker-image">Update the Github actions workflows accordingly</a>.</li>
-<li><a href="ottr-tools.html#modifying-the-dockerfile-for-a-new-image">Edit the Dockerfile in your repository</a>.</li>
+<li><p>Make a Leanpub account here: <a href="https://leanpub.com/" class="uri">https://leanpub.com/</a> if you don’t already have one.</p></li>
+<li><p>Start a course<br />
+</p></li>
 </ol>
-<div id="set-dockerhub-related-secrets" class="section level3" number="3.3.1">
-<h3><span class="header-section-number">3.3.1</span> Set Dockerhub related secrets</h3>
-<p>You only need to do this once as an organization (if this course is under <code>jhudsl</code> you don’t need to do this step).</p>
-<p>To give them permission for all these Docker actions, you need to set a GitHub secret. Go to <code>Settings</code> &gt; <code>Secrets</code> and scroll down to <code>organization secrets</code> or you can set this for each repository by creating a repository secret.</p>
 <ul>
-<li>Click <code>New repository secret</code> button for each of these secrets</li>
-<li>The login information in these GitHub secrets must be from an account that has write permissions to the Docker image you wish to manage).</li>
+<li>Click on the 3 line menu button<br />
+</li>
+<li>Click the author tab on the far left</li>
+<li>Click Courses</li>
+<li>Click the text that says <code>create a new course</code></li>
+<li>Fill out all the necessary information</li>
+<li>Select using Git and GitHub (if you work with us at JHU there is a different protocol and additional settings you need to set which you should follow - <a href="https://docs.google.com/document/d/18UQicXwf8d25ayKGF2BrinvRgB_R2ToVn5EDOUcxyoc/edit?usp=sharing">see this document</a> )</li>
+<li>press the <code>add to plan</code> button</li>
 </ul>
-<p><em>Name: <code>DOCKERHUB_USERNAME</code></em>:<br />
-For <code>value</code>: put your login username for <a href="https://hub.docker.com/" class="uri">https://hub.docker.com/</a></p>
-<p><em>Name: <code>DOCKERHUB_TOKEN</code></em>:<br />
-For <code>value</code>: put an access token for Dockerhub.
-You can create this by following <a href="https://docs.docker.com/docker-hub/access-tokens/#create-an-access-token">these instructions</a>.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Preview a new version</li>
+</ol>
+<ul>
+<li>Click on the 3 line menu button</li>
+<li>Click the author tab on the far left</li>
+<li>Click Courses</li>
+<li>Click on your course name/icon</li>
+<li>Click “Preview New Version”</li>
+<li>Click <code>Create Preview</code> button</li>
+</ul>
+<p>If you have errors in your course (typically from a quiz formatting issue) the render will fail and you will need to fix your quizzes. Also note, that occasionally the preview might fail and you should just try again, as it will work the second time. This might be due to a lag in GitHub and Leanpub communicating.</p>
 </div>
-<div id="updating-workflows-for-new-docker-image" class="section level3" number="3.3.2">
-<h3><span class="header-section-number">3.3.2</span> Updating workflows for new Docker image</h3>
-<p>If you will need to make any change to the Docker image specific to the course you are working on, in the file <code>.github/render-bookdown.yml</code> you should uncomment the
-<code>###### START OF DOCKER UPDATE CHUNK</code> up to the part that says <code>###### END OF DOCKER UPDATE CHUNK</code>.</p>
-<p>Next, we will want to update some workflow files located within the <code>.github/workflows/</code> directory called <code>docker-build-test.yml</code>, the file called <code>render-bookdown.yml</code>, and the file called <code>render-preview.yml</code>.</p>
-<p>We need to change the name of the docker image to reflect the image tag we just created, so that our new docker image is used in our automations instead of the template docker image to render the previews of our course, to render the bookdown version of the course, and for testing new builds of the docker image.</p>
-<p>Thus start a new branch so that you can submit a new pull request with your changes.</p>
-<p>Then in each of the above listed files (<code>docker-build-test.yml</code>, <code>render-bookdown.yml</code> and <code>render-preview.yml</code>) search and replace <code>jhudsl/course_template</code> with your docker image tag.</p>
-<p>Push the pull request and merge it with the main branch.</p>
-<p>Now, when you file a pull request, the Dockerfile build for your docker image will be tested automatically by the <a href="https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots">GitHub actions</a>.</p>
+<div id="setting-up-quizzes" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Setting up quizzes</h2>
+<p>Quizzes need to be stored in the <code>quizzes/</code> directory. Edit and add quizzes to this directory.
+See and copy this <a href="https://github.com/jhudsl/OTTR_Quizzes/blob/main/quizzes/quiz_ch1.md">template quiz</a> to get started.
+All quizzes need to be written in the Markua format.
+Refer to their <a href="https://leanpub.com/markua/read#leanpub-auto-quizzes-and-exercises">documentation</a> (but note that it is sometimes vague or out of date).
+The example question types in the template are ones that are verified to work.</p>
+<p>After you add each new quiz to the <code>quizzes/</code> directory, it’s filename needs to be added in its respective spot in the <code>Book.txt</code> file (remember do not edit the one in <code>manuscript</code> but the one at the top of the repository); this ensures its incorporated by Leanpub in the correct order.</p>
+<p>If you wanted two quizzes (one called <code>quiz_1.md</code> and one called <code>quiz_2.md</code>) you could duplicate and modify <code>quiz_1.md</code> for your needs and then you could make the <code>Book.txt</code> file look like this (assuming you created a chapter called <code>"03-chapter_of_course.Rmd"</code> and you wanted quiz_1 to be after <code>02-chapter-of_course</code> and quiz_2 to be after <code>03_chapter_of_course</code>:</p>
+<pre><code>01-intro.md  
+02-chapter_of_course.md  
+quiz_1.md  
+03-chapter_of_course.md  
+quiz_2.md  
+about.md  </code></pre>
+<p>Note that any <code>.md</code> files with an <code>#</code> in front of the name in the <code>Book.txt</code> file will be ignored by Leanpub. We have included an example of this in the <code>Book.txt</code> file.</p>
+<p>See an <a href="https://github.com/jhudsl/OTTR_Quizzes/blob/main/quizzes/quiz_ch1.md">example quiz here</a> Note that you cannot have two quizzes with the same <code>quiz_id</code>.</p>
+<div id="leanpub-quizzes" class="section level3" number="2.5.1">
+<h3><span class="header-section-number">2.5.1</span> Leanpub quizzes</h3>
+<p>Leanpub is specific about how quizzes should be formatted and it won’t create a preview if any question or quiz doesn’t follow these rules.
+Our GitHub action for checking quizzes (In file, <code>.github/workflows/check-quizzes.yml</code>) will print out a list of errors for you which you can retrieve from a pull request comment that is automatically printed. This check is only run when changes are made to the <code>quizzes/</code>.
+At this time, two types of questions are supported. (Short answers are not yet supported by our checks but will be added in the future).</p>
+<div id="standard-multiple-choice" class="section level5" number="2.5.1.0.1">
+<h5><span class="header-section-number">2.5.1.0.1</span> Standard multiple choice:</h5>
+<p>The answer choices are not randomized. And it looks like this:</p>
+<pre><code>? A question is here
+a) A wrong answer
+B) A correct answer has a capital letter
+c) A wrong answer
+d) A wrong answer</code></pre>
 </div>
-<div id="modifying-the-dockerfile-for-a-new-image" class="section level3" number="3.3.3">
-<h3><span class="header-section-number">3.3.3</span> Modifying the Dockerfile for a new image</h3>
-<p><a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html">Read this chapter for instructions on how to modify Docker images</a></p>
-<p>You will probably want to create your Docker image by using the <code>jhudsl/course_template</code> as your base – this means that all the packages that are in our <code>jhudsl/course_template</code> image will be included in the Docker image you build.</p>
-<pre><code>FROM jhudsl/course_template</code></pre>
-<p>You can take a look at this <a href="https://github.com/jhudsl/OTTR_Template/blob/main/resources/Dockerfile">Dockerfile template we’ve set up here</a> (note that the commands would need to be uncommented and real package names put in place of <code>package_name</code>’s).</p>
-<div id="template-commands-for-adding-packages-to-the-dockerfile" class="section level4" number="3.3.3.1">
-<h4><span class="header-section-number">3.3.3.1</span> Template commands for adding packages to the Dockerfile</h4>
-<p>This section gives you the basics on what it looks like to add new packages to your new Docker image.</p>
-<div id="cran-packages" class="section level5" number="3.3.3.1.1">
-<h5><span class="header-section-number">3.3.3.1.1</span> CRAN Packages:</h5>
-<p>For R packages installed from CRAN, you can add to the running vector list of R packages.</p>
-</div>
-<div id="bioconductor-packages" class="section level5" number="3.3.3.1.2">
-<h5><span class="header-section-number">3.3.3.1.2</span> Bioconductor Packages:</h5>
-<p>To add an R package from Bioconductor, you can follow this kind of format:</p>
-<pre><code>RUN Rscript -e &quot;options(warn = 2); BiocManager::install( \
-  c(&#39;limma&#39;, \
-    &#39;newpackagename&#39;)
-</code></pre>
-</div>
-<div id="python-packages" class="section level5" number="3.3.3.1.3">
-<h5><span class="header-section-number">3.3.3.1.3</span> Python Packages:</h5>
-<p>To add a Python package, you will need to add pip3 to install Python packages using this format:</p>
-<pre><code>RUN pip3 install \
-    &quot;somepackage==0.1.0&quot;</code></pre>
+<div id="choose-answers" class="section level5" number="2.5.1.0.2">
+<h5><span class="header-section-number">2.5.1.0.2</span> Choose answers</h5>
+<p>You can use <code>choose-answers</code> option which will randomize the multiple choices or you can use a standard quiz question that doesn’t randomize.
+The notation for the answer choices are: <code>C)</code> for correct answers <code>m)</code> for mandatory incorrect answers and <code>o)</code> for optional incorrect answers.</p>
+<p>Note that the number given for the number of answers has to be at least equal to the number of correct and mandatory incorrect answers listed.</p>
+<p>Here’s an example:</p>
+<pre><code>{choose-answers: 4}
+? A question is here
+C) The correct answer is signified with a capital C
+m) A mandatory incorrect answer 
+m) A mandatory incorrect answer
+o) An optional incorrect answer
+o) An optional incorrect answer</code></pre>
+<p>Upon merging to the <code>main</code> branch, a GitHub action will automatically run <code>check-quizzes.yml</code> that will use the <code>ottr</code> package to check that your quiz conforms to these rules. It will report the quiz formatting errors on your pull request should there be any problems.</p>
 </div>
 </div>
+<div id="leanpub-quiz-formatting-rules" class="section level3" number="2.5.2">
+<h3><span class="header-section-number">2.5.2</span> Leanpub quiz formatting ‘rules’</h3>
+<ul>
+<li>Quizzes start and end with the {quiz} and {} tags.</li>
+<li>Don’t have exclamation points or colons in answers.</li>
+<li>Make sure there’s at least one right answer.</li>
+<li>Check that the question and quiz attributes used are attributes recognized by Leanpub. -</li>
+<li>Make sure all quizzes are listed in Book.txt</li>
+<li>The number of choose answers is at least as big as the number of mandatory and correct answers listed.</li>
+<li>For choose-answers questions, use <code>C)</code> for correct answers <code>m)</code> for mandatory incorrect answers and <code>o)</code> for optional incorrect answers.</li>
+<li>Check that the question and quiz attributes used are attributes recognized by Leanpub.</li>
+</ul>
 </div>
-<div id="testing-a-modified-docker-image" class="section level3" number="3.3.4">
-<h3><span class="header-section-number">3.3.4</span> Testing a modified Docker image</h3>
-<p><a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html">Read this chapter for instructions on how to modify Docker images</a></p>
-<p>When you’ve added a package to the Dockerfile, you may want to check that it builds successfully before it’s added to your repository. You can include changes to your Dockerfile in a pull request which will trigger an automatic testing of building it.</p>
-<p><a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html">Read this chapter for more tips on how to modify Docker images</a></p>
-<p>OR</p>
-<p>If you prefer to test it locally, then you can follow these steps.</p>
-<p>First create a GITHUB token file by making a token and copying a pasting it into a plain text file named <code>docker/git_token.txt</code>. (<em><strong>Make sure you do not push this to github and possibly delete it after testing your docker image build!</strong></em>)</p>
-<p>Then you’ll need to rebuild the Docker image using this command after you move into the <code>docker</code> directory) (But replace the <code>&lt;TAG_FOR_COURSE&gt;</code> with the tag for your new image including dropping the <code>&lt;</code> and <code>&gt;</code>:</p>
-<pre><code>docker build -f Dockerfile . -t &lt;TAG_FOR_COURSE&gt;</code></pre>
-<p>If it fails, often the issue is a missing dependency.
-Take a look at the error messages and see if you can determine the issue with some Googling. Also be sure that all your directories and files are named correctly.</p>
-<p>Once it builds successfully, run the above command with the new name for your docker image make sure that the tag does not have upper case characters):</p>
-<pre><code>docker build -f Dockerfile . -t jhudsl/&lt;TAG_FOR_COURSE&gt;</code></pre>
-<div id="pushing-the-docker-image" class="section level4" number="3.3.4.1">
-<h4><span class="header-section-number">3.3.4.1</span> Pushing the Docker image</h4>
-<p>Locally, you can push your updated image to Dockerhub using (make sure that the tag does not have upper case characters):</p>
-<pre><code>docker push jhudsl/&lt;TAG_FOR_COURSE&gt;</code></pre>
-<p>OR</p>
-<p>If you prefer to have this done online, you can go to your course’s GitHub repository, go to <code>Actions</code> and then to <code>Test build of Dockerfile</code>.</p>
-<p>Click on <code>run workflow</code> type in <code>true</code> underneath <code>Push to Dockerhub?</code>.</p>
-<p>Then click <code>Run</code>. If your Dockerfile builds an image successfully it will automatically be pushed to Dockerhub.</p>
+</div>
+<div id="converting-quizzes-from-leanpub-to-coursera-format" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> Converting quizzes from Leanpub to Coursera format</h2>
+<p><a href="https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Courseraa">See more instructions on how to port a course made from these templates to Coursera</a>.</p>
+<p>You can convert your quizzes to a nicely upload-able yaml file in this repository by running this command in the docker image</p>
+<pre><code>ottr::convert_quizzes()</code></pre>
+<p>Note that currently images and links are not supported and if your quizzes contain those, you will have to manually add them at this time.</p>
+<p>You can run this same command locally if you wish to test something.
+This render the chapters without the table of Contents.
+If you do not wish to publish to Coursera and prefer this do not run, you may delete this section (but it shouldn’t hurt anything to keep as is – unless for some reason it causes you some troubles).</p>
+<p>Additionally, the <a href="https://github.com/jhudsl/ottr"><code>ottr</code></a> package has a <code>ottr::convert_quizzes()</code> function if you choose to create quizzes and publish on both Leanpub and Coursera.</p>
+</div>
+<div id="setting-up-the-_quizzes-repository-checklist" class="section level2" number="2.7">
+<h2><span class="header-section-number">2.7</span> Setting up the _Quizzes repository checklist:</h2>
+<ul class="task-list">
+<li><p><input type="checkbox" disabled="" />
+A <a href="https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets"><code>GH_PAT</code> has been set in the <code>_Quizzes</code> repository’s GithHub secrets</a>.</p></li>
+<li><p><input type="checkbox" disabled="" />
+<a href="platform-specific-set-up-1.html#hosting-your-course-on-leanpub">Your Leanpub course as been created on Leanpub</a></p><ul class="task-list">
+<li><input type="checkbox" disabled="" />
+Writing mode in this course is set to <code>GitHub</code> and your main OTTR_Template repository is linked.</li>
+</ul></li>
+<li><p><input type="checkbox" disabled="" />
+Repository is created and set to <code>private</code>.</p></li>
+<li><p><input type="checkbox" disabled="" />
+<code>main</code> branch has been set up:</p><ul class="task-list">
+<li><input type="checkbox" disabled="" />
+<code>Require pull request reviews before merging</code> box is checked.</li>
+<li><input type="checkbox" disabled="" />
+<code>Require status checks to pass before merging</code> box is checked.<ul class="task-list">
+<li><input type="checkbox" disabled="" />
+Underneath that <code>Require branches to be up to date before merging</code> box is checked.</li>
+</ul></li>
+</ul></li>
+<li><p><input type="checkbox" disabled="" />
+This repo has been enrolled in <a href="https://github.com/jhudsl/OTTR_Template/wiki/Receiving-template-updates">automatic updates from the original template</a>.</p></li>
+<li><p><input type="checkbox" disabled="" />
+Your Book.txt file is up to date.</p></li>
+<li><p><input type="checkbox" disabled="" />
+The <a href="platform-specific-set-up-1.html#leanpub-rendering"><code>ottr::bookdown_to_leanpub()</code> ran successfully</a>.</p></li>
+</ul>
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <p><strong>Table of Contents</strong> <em>generated with <a href="https://github.com/thlorenz/doctoc">DocToc</a></em></p>
@@ -500,24 +535,22 @@ Take a look at the error messages and see if you can determine the issue with so
 <p>Once your content has been largely developed you may want to add your course to Coursera.</p>
 <p>This guide was prepared specifically for those developing courses for the <a href="https://www.itcrtraining.org/">ITN project</a> at Johns Hopkins University or other Coursera partner institutions. It reflects the needs and goals of ITN course developers. Coursera’s Educator Resource Center is the authoritative source of documentation for using the Coursera platform.</p>
 </div>
-</div>
-</div>
-<div id="setting-up-your-coursera-course-1" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Setting up your Coursera course</h2>
+<div id="setting-up-your-coursera-course" class="section level2" number="2.8">
+<h2><span class="header-section-number">2.8</span> Setting up your Coursera course</h2>
 <p><em>If you are from Johns Hopkins:</em>
 You will need to <a href="https://docs.google.com/document/d/1aZeOSFLkK4hZne4Vb1iaP_0H4zyhIwvbnw9sbdCFq1Y/edit?usp=sharing">follow this document</a> and send information Ira Gooding who will create a course shell for you.</p>
 <p><em>If you are not from Johns Hopkins:</em>
 You will need to set up your own educator profile and course shell through your institution.</p>
 </div>
-<div id="converting-your-files-for-upload-to-coursera-1" class="section level2" number="3.5">
-<h2><span class="header-section-number">3.5</span> Converting your files for upload to Coursera</h2>
+<div id="converting-your-files-for-upload-to-coursera" class="section level2" number="2.9">
+<h2><span class="header-section-number">2.9</span> Converting your files for upload to Coursera</h2>
 <p>The Github actions set up in the <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-coursera.yml">render-coursera.yml</a> render your course material in a format suitable for linking to Coursera. It depends on the successful completion of the <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml">render-bookdown.yml</a>.
 This Coursera version is identical except that the table of contents bar on the left side has been dropped so as to not confuse Coursera users about navigating the course.
 These files can be previewed in the <code>docs/coursera/</code> folder and a link to the Coursera version is printed out in a GitHub comment in your pull request by <code>render-preview.yml</code>.</p>
 <p>In the Leanpub repo, Leanpub-formatted quizzes can be converted to a Coursera yaml format. Or alternatively if you do not wish to have a Leanpub version of your course, you can either manually enter your Coursera quizzes or manually write a Coursera yaml file following the format of our <a href="https://github.com/jhudsl/OTTR_Template/blob/main/coursera_quizzes/quiz_ch1.md.yml">Coursera template quiz</a>.</p>
 </div>
-<div id="navigating-to-your-course-on-coursera-1" class="section level2" number="3.6">
-<h2><span class="header-section-number">3.6</span> Navigating to your course on Coursera</h2>
+<div id="navigating-to-your-course-on-coursera" class="section level2" number="2.10">
+<h2><span class="header-section-number">2.10</span> Navigating to your course on Coursera</h2>
 <p>After your <a href="platform-specific-set-up-1.html#setting-up-your-coursera-course">course shell has been added to your account</a> you can navigate to it by going to <code>My Courses</code>:</p>
 <p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/profile.png" /></p>
 <p>And you should see it listed:</p>
@@ -533,8 +566,8 @@ These files can be previewed in the <code>docs/coursera/</code> folder and a lin
 <p>To add a new lesson, click the <code>+ Add Lesson</code> button:</p>
 <p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-lesson.png" /></p>
 <p>Now you are ready to add a chapter!</p>
-<div id="adding-new-chapters-to-coursera-1" class="section level3" number="3.6.1">
-<h3><span class="header-section-number">3.6.1</span> Adding new chapters to Coursera</h3>
+<div id="adding-new-chapters-to-coursera" class="section level3" number="2.10.1">
+<h3><span class="header-section-number">2.10.1</span> Adding new chapters to Coursera</h3>
 <p>You’ll need to link out each chapters in Coursera by providing a url built from your Github pages.</p>
 <p>You can see a preview of these chapters you will link to in Coursera by going to your <a href="https://guides.github.com/features/pages/">Github pages</a>, but adding <code>/coursera</code> at the end of your url before the chapter file name.</p>
 <p>So the urls for each of your chapters which you will supply to Coursera in the next steps will look like this:</p>
@@ -564,8 +597,8 @@ And it will ask you again to really scare you, but yes, click <code>Publish</cod
 <p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-9.png" /></p>
 <p>Congrats you added a chapter to your course! Now do the same thing for all your chapters!</p>
 </div>
-<div id="adding-new-quizzes-to-coursera-1" class="section level3" number="3.6.2">
-<h3><span class="header-section-number">3.6.2</span> Adding new quizzes to Coursera</h3>
+<div id="adding-new-quizzes-to-coursera" class="section level3" number="2.10.2">
+<h3><span class="header-section-number">2.10.2</span> Adding new quizzes to Coursera</h3>
 <p>To add a new quiz start from your <code>Edit content</code> page and on whatever lesson you would like to add the quiz to and click the <code>+ Quiz</code> button.</p>
 <p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-quiz-1.png" /></p>
 <p>Now go to <code>Edit</code> on the new quiz.</p>
@@ -595,8 +628,8 @@ And it will ask you again to really scare you, but yes, click <code>Publish</cod
 <p>Congrats you added a quiz to your course!</p>
 </div>
 </div>
-<div id="add-programmed-messages-1" class="section level2" number="3.7">
-<h2><span class="header-section-number">3.7</span> Add programmed messages</h2>
+<div id="add-programmed-messages" class="section level2" number="2.11">
+<h2><span class="header-section-number">2.11</span> Add programmed messages</h2>
 <p>You can click on <code>Go to Course</code>. And on your main course page click <code>Edit Course</code> in the right corner.</p>
 <p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-course-nav.png" /></p>
 <p>This will bring you to your version page.</p>
@@ -607,8 +640,8 @@ And it will ask you again to really scare you, but yes, click <code>Publish</cod
 Click on each of these to edit them. Click <code>Preview</code> and then <code>Publish</code> to save your edits.</p>
 <p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/programmed-messages.png" /></p>
 <p>Here are some templated messages to get you started:</p>
-<div id="welcome-template-message-1" class="section level4" number="3.7.0.1">
-<h4><span class="header-section-number">3.7.0.1</span> Welcome template message:</h4>
+<div id="welcome-template-message" class="section level4" number="2.11.0.1">
+<h4><span class="header-section-number">2.11.0.1</span> Welcome template message:</h4>
 <pre><code>Welcome to {Course Name}
 
 We hope this course will {What will they learn?}
@@ -619,8 +652,8 @@ If you ever encounter any problems with the course, have questions or ideas, ple
 <p>Add a link to your feedback form by clicking the link icon.
 Click <code>Preview</code> and then <code>Publish</code> to save your edits.</p>
 </div>
-<div id="completion-template-message-1" class="section level4" number="3.7.0.2">
-<h4><span class="header-section-number">3.7.0.2</span> Completion template message:</h4>
+<div id="completion-template-message" class="section level4" number="2.11.0.2">
+<h4><span class="header-section-number">2.11.0.2</span> Completion template message:</h4>
 <pre><code>Congratulations and thank you for completing {name of course}!
 
 We hope this course has {What do you hope they learned}.
@@ -630,8 +663,8 @@ If you have feedback about our course we&#39;d greatly appreciate you filling ou
 Click <code>Preview</code> and then <code>Publish</code> to save your edits.</p>
 </div>
 </div>
-<div id="grading-formula-1" class="section level2" number="3.8">
-<h2><span class="header-section-number">3.8</span> Grading formula</h2>
+<div id="grading-formula" class="section level2" number="2.12">
+<h2><span class="header-section-number">2.12</span> Grading formula</h2>
 <p>For final grades in the course, you will need to set the Grading Formula.
 To get to this page, you can click on <code>Go to Course</code>. And on your main course page click <code>Edit Course</code> in the right corner.</p>
 <p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/edit-course-nav.png" /></p>
@@ -640,16 +673,16 @@ To get to this page, you can click on <code>Go to Course</code>. And on your mai
 <p>Now you can set the percentage that each module’s assignments are worth in the course.</p>
 <p><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/grading-formula.png" /></p>
 </div>
-<div id="content-schedule-1" class="section level2" number="3.9">
-<h2><span class="header-section-number">3.9</span> Content Schedule</h2>
+<div id="content-schedule" class="section level2" number="2.13">
+<h2><span class="header-section-number">2.13</span> Content Schedule</h2>
 <p>You can find the settings for this under the <code>Content</code> tab. Here you can modify how each of your modules should be assigned to each week of your course.</p>
 </div>
-<div id="module-descriptions-1" class="section level2" number="3.10">
-<h2><span class="header-section-number">3.10</span> Module Descriptions</h2>
+<div id="module-descriptions" class="section level2" number="2.14">
+<h2><span class="header-section-number">2.14</span> Module Descriptions</h2>
 <p>Module descriptions can be found right before learning objectives when you are editing content. Adding these helps learners know a bit more about what to expect.</p>
 </div>
-<div id="landing-page-1" class="section level2" number="3.11">
-<h2><span class="header-section-number">3.11</span> Landing Page</h2>
+<div id="landing-page" class="section level2" number="2.15">
+<h2><span class="header-section-number">2.15</span> Landing Page</h2>
 <p>Add an image for your course and consider adding the following to polish your course:
 * Estimated workload
 * Skills
@@ -659,83 +692,55 @@ To get to this page, you can click on <code>Go to Course</code>. And on your mai
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <p><strong>Table of Contents</strong> <em>generated with <a href="https://github.com/thlorenz/doctoc">DocToc</a></em></p>
 <ul>
-<li><a href="ottr-tools.html#running-locally">Running locally</a></li>
-<li><a href="ottr-tools.html#ignoring-urls">Ignoring URLs</a></li>
+<li><a href="platform-specific-set-up-1.html#how-to-use-these-repositories">How to use these repositories:</a></li>
+<li><a href="platform-specific-set-up-1.html#setting-up-your-ottr_quizzes-github-repository">Setting up your OTTR_Quizzes Github repository</a>
+- <a href="platform-specific-set-up-1.html#set-up-branches">Set up branches</a></li>
+<li><a href="platform-specific-set-up-1.html#linking-to-your-ottr_template-course-github-repository">Linking to your <code>OTTR_Template</code> course Github repository</a></li>
 </ul>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-<p>Github actions will automatically <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml">run a spell check on all Rmds</a> whenever a pull request to the <code>main</code> branch is filed.
-Depending on your preference, you may find it easier to spell check manually on your local computer before pushing to Github.</p>
-<p>It will fail if there are more than 3 spelling errors and you’ll need to resolve those before being able to merge your pull request.</p>
-<p>Click on the GitHub comment that has the download link to spelling errors.
-This will download a zip file with a TSV. Open up this zip and look at the TSV to see all the spelling errors that need to be resolved.</p>
-<p>Some of these errors may be things that the spell check doesn’t recognize for example: <code>ITCR</code> or <code>DaSL</code>.
-If it’s a ‘word’ the spell check should recognize, you’ll need to add this to the dictionary.</p>
-<p>Go to the <code>resources/dictionary.txt</code> file.
-Open the file and add the new ‘word’ to its appropriate place (the words are in alphabetical order).
-Then commit the changes to <code>resources/dictionary.txt</code> to your branch and this should make the spell check status check pass.</p>
-<div id="running-locally" class="section level3" number="3.11.1">
-<h3><span class="header-section-number">3.11.1</span> Running locally</h3>
-<p>You can run spell check locally by calling the script from the top of the repository (your main git repository directory) in bash:</p>
-<pre><code>Rscript scripts/spell-check.R</code></pre>
+<p>If you prefer that your quizzes and the answers remain hidden, you can use a companion <a href="https://github.com/jhudsl/OTTR_Quizzes">OTTR_Quizzes</a> repository to store them.</p>
+<p><img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=geb00d6af62_0_0" width="500" height="500"/></p>
 </div>
-<div id="ignoring-urls" class="section level3" number="3.11.2">
-<h3><span class="header-section-number">3.11.2</span> Ignoring URLs</h3>
-<p>If you want to write out a URL without having to add it to the spell check dictionary, you can style the URL as inline code by adding single back ticks, and it will be ignored by spell check:</p>
-<p>Example:</p>
-<pre><code>Visit [`example.com`](https://www.example.com) now.</code></pre>
-<p>Visit <a href="https://www.example.com"><code>example.com</code></a> now.</p>
-<p>To allow for easy conversion to Leanpub, we suggest the following:</p>
-<ol style="list-style-type: decimal">
-<li>When making a list of points, if you make each major heading a separate line, this can avoid numbering issues. This also works better typically then using a bulleted list unless the list items are short (less than one line).</li>
-</ol>
-<p>Here you can see how this list in bookdown made a nice list in Leanpub.</p>
-<p>Here is the Bookdown version:
-<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/numbering_bookdown.png" alt="Example in bookdown" /></p>
-<p>Here is the Leanpub version:
-<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/numbering_Quizzes.png" alt="Example in Leanpub" /></p>
-<ol start="2" style="list-style-type: decimal">
-<li>Avoid images between numeric list items.</li>
-<li>For making empty lines use <code>&amp;nbsp;</code> as it is compatible with Leanpub.</li>
-</ol>
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<p><strong>Table of Contents</strong> <em>generated with <a href="https://github.com/thlorenz/doctoc">DocToc</a></em></p>
-<ul>
-<li><a href="#borrowing-from-a-local-file">Borrowing from a local file</a></li>
-<li><a href="ottr-tools.html#borrowing-from-a-private-repository">Borrowing from a private repository</a></li>
-<li><a href="#removing-an-h1-header">Removing an h1 header</a></li>
-</ul>
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-<p>If you have two courses that the content and topics overlap, you may want to share written material between the two.</p>
-<p>But, if you copy and paste to share material this would create a maintenance problem because if you update one you will need to remember to copy over the other! 😱</p>
-<p>In OTTR, we try to minimize maintenance pains so to get around this, we use <code>cow::borrow_chapter()</code> from the <a href="https://jhudatascience.org/cow/index.html">jhudsl/cow</a> package.
-The <code>cow</code> package is already on the <code>jhudsl/course_template</code> docker image so you do not need to install it if you are using the docker image or if you are have GitHub actions do all the rendering for you.</p>
-<p>To borrow a chapter from another course, create an <code>.Rmd</code> as you normally would, with a <code>ottr::set_knitr_image_path()</code> in a chunk at the beginning of the file and a <a href="https://www.markdownguide.org/basic-syntax/"><code>H1</code> title</a>.</p>
-<p>Then, wherever you would like the borrowed chapter to appear, put an R chunk with this:</p>
-<pre><code>
-The magic of this function is that whenever the course is re-rendered it will knit the latest version of the chapter you are borrowing.
-Note that this chunk cannot be run interactively, just include it in your Rmd and render your course as usual.
-
-### Borrowing from a local file
-
-If for some reason you would like a local file incorporated, just leave off the repo_name argument and `cow::borrow_chapter()` will look for the chapter locally:
-</code></pre>
+<div id="how-to-use-these-repositories" class="section level2" number="2.16">
+<h2><span class="header-section-number">2.16</span> How to use these repositories:</h2>
+<p><img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=ged277ddb11_3_5" width="500" height="500"/></p>
+<p>The Leanpub repository is where quizzes are stored because it is meant to be kept private so answers are hidden.</p>
+<p>Keep in mind that in order to keep your Leanpub and Bookdown versions of your course concurrent, you should not make chapter edits in this repository!
+Only quiz edits should be in your <code>_Quizzes</code> repository.
+Chapter changes should be made in your <code>OTTR_Template</code> course repository and the <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/transfer-rendered-files.yml"><code>transfer-rendered_files.yml</code></a> Github action should be used to copy over the changes here.</p>
 </div>
-<div id="borrowing-from-a-private-repository" class="section level3" number="3.11.3">
-<h3><span class="header-section-number">3.11.3</span> Borrowing from a private repository</h3>
-<p>If you are borrowing from a course in a private repository, you will need to supply <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">GitHub personal access token</a> using a <code>git_pat</code> argument like this:</p>
-<pre><code>
-### Removing an h1 header
-
-If you want to change the title you can use an option `remove_h1` to remove the title from the incoming borrowed chapter.
-
-
-
-
-Some new words after the borrowed chapter content.
-</code></pre>
-
+<div id="setting-up-your-ottr_quizzes-github-repository" class="section level2" number="2.17">
+<h2><span class="header-section-number">2.17</span> Setting up your OTTR_Quizzes Github repository</h2>
+<p>Go to the <a href="https://github.com/jhudsl/OTTR_Quizzes">OTTR_Quizzes repository</a> and click <code>Use this template</code>.
+You must name this repository identical to your main OTTR repository but ending in <code>_Quizzes</code> if you would like them to be linked.
+For example, the <code>jhudsl/Documentation_and_Usability</code> course has a corresponding quiz repository named <code>jhudsl/Documentation_and_Usability_Quizzes</code>.</p>
+<p>Make sure to set your new repository to <code>Private</code> so your quiz answers will be hidden.</p>
+<div id="set-up-branches" class="section level5" number="2.17.0.0.1">
+<h5><span class="header-section-number">2.17.0.0.1</span> Set up branches</h5>
+<p>*These settings are the same as we used in the Bookdown repository so we will need to set them up in the same way.</p>
+<p>Go to <code>Settings</code> &gt; <code>Branches</code> and click <code>Add rule</code>.
+For <code>Branch name pattern</code>, put <code>main</code>.</p>
+<p><em>Protect the main branch</em>:<br />
+Then check the box that says <code>Require pull request reviews before merging</code>.</p>
+<p><em>Make sure branches are updated</em>:<br />
+- Check the box that says <code>Require status checks to pass before merging</code>.
+- Underneath this also check the box that says <code>Require branches to be up to date before merging</code>.</p>
+<p><em>Use automatic spell and URL checks</em>:<br />
+After the first pull request, a couple of checks will automatically happen and then appear here in settings.
+Then, you can require these checks to pass before merging pull requests by returning here and selecting them - they are <code>url_check</code> and <code>sp-check</code> they will check that the urls work and that the quizzes do not have spelling errors.
+See the <a href="#github-actions">Github Actions section in the Bookdown repository</a> for more details on these.</p>
+<p>After setting up these new branch items, click <code>Create</code> and <code>Save changes</code>.</p>
 </div>
+</div>
+<div id="linking-to-your-ottr_template-course-github-repository" class="section level2" number="2.18">
+<h2><span class="header-section-number">2.18</span> Linking to your <code>OTTR_Template</code> course Github repository</h2>
+<p>In order to link your _Quizzes and OTTR_Template course repositories (so you only have to edit material in one place), you need to name your GitHub repository with an identical name to your OTTR_Template course repository except end it in _Quizzes. So for example, if your Bookdown repository is called: <code>Cool_Course</code>; it’s Leanpub quiz repository <strong>must</strong> be called <code>Cool_Course_Quizzes</code>.</p>
+<p>The GitHub actions that are responsible for content transfer is in the <code>.gihub/workflows/</code> folder and called <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/transfer-rendered-files.yml"><code>transfer-rendered-files.yml</code></a></p>
+<p>Once <code>build-all</code> is run, the <code>docs/</code> folder where the rendered files are place are copied over to the Leanpub repository and filed as a pull request. When you are sure that you want the changes from your main <code>OTTR_Template</code> repository, you can merge that pull request.</p>
+<p>Note if you haven’t set a <a href="https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets">GH_PAT git secret</a> and you are not a part of <code>jhudsl</code> organization, you will need to set that by following <a href="https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets">these instructions</a>.</p>
+<p>_Note that any content changes to non-quiz material needs to be done your course’s Bookdown repository!
+Do NOT change them in your <em>Quizzes repository, otherwise your <code>OTTR_Template</code> course will not be updated.</em></p>
+
 </div>
 </div>
 <hr>
@@ -751,8 +756,8 @@ Some new words after the borrowed chapter content.
           </div>
         </div>
       </div>
-<a href="platform-specific-set-up-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="automation-info-and-set-up-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="getting-started-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ottr-tools.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
