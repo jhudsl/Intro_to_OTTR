@@ -3,13 +3,6 @@
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "Publishing-on-Coursera.md",
-  repo_name = "wiki/jhudsl/OTTR_Template"
-)
-```
-
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
   doc_path = "Choosing-publishing-platforms.md",
   repo_name = "wiki/jhudsl/OTTR_Template"
 )
@@ -32,6 +25,14 @@ cow::borrow_chapter(
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "Publishing-on-Coursera.md",
+  repo_name = "wiki/jhudsl/OTTR_Template"
+)
+```
+
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "Making-quizzes-private.md",
   repo_name = "wiki/jhudsl/OTTR_Template"
 )
 ```

@@ -3,8 +3,8 @@ chapter_name: "Chapter "
 repo: https://github.com/jhudsl/OTTR_Template/
 rmd_files: ["index.Rmd",
             "01-getting-started.Rmd",
-            "02-tools-in-the-template.Rmd",
-            "03-platform-specific-set-up.Rmd",
+            "02-platform-specific-set-up.Rmd",
+            "03-tools-in-the-template.Rmd",
             "04-automation-info-and-set-up.Rmd",
             "05-finishing-touches.Rmd",
             "About.Rmd",

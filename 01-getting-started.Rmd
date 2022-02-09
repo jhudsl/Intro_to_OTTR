@@ -20,35 +20,14 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "Setting-up-your-repository-files.md",
+  doc_path = "Start-editing-your-course.md",
   repo_name = "wiki/jhudsl/OTTR_Template"
 )
 ```
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "Setting-up-your-repository-settings.md",
-  repo_name = "wiki/jhudsl/OTTR_Template"
-)
-```
-
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "Setting-up-GitHub-secrets.md",
-  repo_name = "wiki/jhudsl/OTTR_Template"
-)
-```
-
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "Adding-content-to-a-course.md",
-  repo_name = "wiki/jhudsl/OTTR_Template"
-)
-```
-
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "About-pull-request-review.md",
+  doc_path = "Content-creation-tips",
   repo_name = "wiki/jhudsl/OTTR_Template"
 )
 ```
