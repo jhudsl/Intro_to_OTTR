@@ -21,7 +21,7 @@ cow::borrow_chapter(
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "Content-creation-tips",
+  doc_path = "Content-creation-tips.md",
   repo_name = "wiki/jhudsl/OTTR_Template"
 )
 ```
