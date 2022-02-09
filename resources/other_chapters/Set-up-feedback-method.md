@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Set up feedback method](#set-up-feedback-method)
+  - [Step 1) Decide on a method of feedback for your users to use.](#step-1-decide-on-a-method-of-feedback-for-your-users-to-use)
+  - [Step 2) Add feedback button](#step-2-add-feedback-button)
+  - [Step 3) Add your updated `_output.yml` to a pull request.](#step-3-add-your-updated-_outputyml-to-a-pull-request)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## Set up feedback method
 

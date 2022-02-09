@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Setting up your Coursera course](#setting-up-your-coursera-course)
+- [Converting your files for upload to Coursera](#converting-your-files-for-upload-to-coursera)
+- [Navigating to your course on Coursera](#navigating-to-your-course-on-coursera)
+  - [Adding new chapters to Coursera](#adding-new-chapters-to-coursera)
+  - [Adding new quizzes to Coursera](#adding-new-quizzes-to-coursera)
+- [Add programmed messages](#add-programmed-messages)
+    - [Welcome template message:](#welcome-template-message)
+    - [Completion template message:](#completion-template-message)
+- [Grading formula](#grading-formula)
+- [Content Schedule](#content-schedule)
+- [Module Descriptions](#module-descriptions)
+- [Landing Page](#landing-page)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 Once your content has been largely developed you may want to add your course to Coursera.
 
@@ -13,12 +32,11 @@ You will need to set up your own educator profile and course shell through your 
 
 ## Converting your files for upload to Coursera
 
-The Github actions set up in the [render-bookdown.yml](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml) also render your course material in a format suitable for linking to Coursera.
+The Github actions set up in the [render-coursera.yml](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-coursera.yml) render your course material in a format suitable for linking to Coursera. It depends on the successful completion of the [render-bookdown.yml](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml).
 This Coursera version is identical except that the table of contents bar on the left side has been dropped so as to not confuse Coursera users about navigating the course.
-These files can be previewed in the `docs/coursera/` folder.
-Click on  your chapter htmls to see what it will look like.
+These files can be previewed in the `docs/coursera/` folder and a link to the Coursera version is printed out in a GitHub comment in your pull request by `render-preview.yml`. 
 
-In the Leanpub repo, Leanpub-formatted quizzes can be converted to a Coursera yaml format. Or alternatively if you do not wish to have a Leanpub version of your course, you can either manually enter your Coursera quizzes or manually write a Coursera yaml file following the format of our [Coursera template quiz]().
+In the Leanpub repo, Leanpub-formatted quizzes can be converted to a Coursera yaml format. Or alternatively if you do not wish to have a Leanpub version of your course, you can either manually enter your Coursera quizzes or manually write a Coursera yaml file following the format of our [Coursera template quiz](https://github.com/jhudsl/OTTR_Template/blob/main/coursera_quizzes/quiz_ch1.md.yml).
 
 ## Navigating to your course on Coursera
 

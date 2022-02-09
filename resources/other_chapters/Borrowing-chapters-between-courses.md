@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Borrowing from a local file](#borrowing-from-a-local-file)
+- [Borrowing from a private repository](#borrowing-from-a-private-repository)
+- [Removing an h1 header](#removing-an-h1-header)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 If you have two courses that the content and topics overlap, you may want to share written material between the two.
 
@@ -6,7 +16,7 @@ But, if you copy and paste to share material this would create a maintenance pro
 In OTTR, we try to minimize maintenance pains so to get around this, we use `cow::borrow_chapter()` from the [jhudsl/cow](https://jhudatascience.org/cow/index.html) package.
 The `cow` package is already on the `jhudsl/course_template` docker image  so you do not need to install it if you are using the docker image or if you are have GitHub actions do all the rendering for you.
 
-To borrow a chapter from another course, create an `.Rmd` as you normally would, with a `` in a chunk at the beginning of the file and a [`H1` title](https://www.markdownguide.org/basic-syntax/).
+To borrow a chapter from another course, create an `.Rmd` as you normally would, with a `ottr::set_knitr_image_path()` in a chunk at the beginning of the file and a [`H1` title](https://www.markdownguide.org/basic-syntax/).
 
 Then, wherever you would like the borrowed chapter to appear, put an R chunk with this:
 

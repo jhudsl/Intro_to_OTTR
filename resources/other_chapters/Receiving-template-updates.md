@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [How to enroll a repository to receive template updates](#how-to-enroll-a-repository-to-receive-template-updates)
+- [How to tailor incoming sync changes:](#how-to-tailor-incoming-sync-changes)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 This original course template: https://github.com/jhudsl/OTTR_Template is always a work in progress.
 We are working on adding more features and smoothing out bugs as we go (this is also why [your feedback is greatly appreciated](https://github.com/jhudsl/OTTR_Template/issues/new/choose)).

@@ -2,6 +2,18 @@
 # Finishing touches
 
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Set up feedback method](#set-up-feedback-method)
+  - [Step 1) Decide on a method of feedback for your users to use.](#step-1-decide-on-a-method-of-feedback-for-your-users-to-use)
+  - [Step 2) Add feedback button](#step-2-add-feedback-button)
+  - [Step 3) Add your updated `_output.yml` to a pull request.](#step-3-add-your-updated-_outputyml-to-a-pull-request)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Set up feedback method
 
 Before you release your course to the public, you will want to set up a method to allow users to give you feedback about the course. This is useful so users can allow you to know if anything is broken or if they have an idea for improvements!  
@@ -25,6 +37,23 @@ Check the preview link and make sure it's what you want. Add to the `main` branc
 
 
 \*For more ideas and discussion on obtaining user feedback see [this course chapter](https://jhudatascience.org/Documentation_and_Usability/obtaining-user-feedback.html).
+
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [Changing title](#changing-title)
+- [Customizing the Style](#customizing-the-style)
+  - [Using a style set](#using-a-style-set)
+- [Creating your own style](#creating-your-own-style)
+  - [Changing the favicon](#changing-the-favicon)
+  - [Adding logos](#adding-logos)
+- [Adding sections that aren't numbered](#adding-sections-that-arent-numbered)
+- [Changing course text colors](#changing-course-text-colors)
+- [Modifying the image at the top of the course](#modifying-the-image-at-the-top-of-the-course)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
 ### Changing title
@@ -66,7 +95,7 @@ Here you can see that by default the Data Science Lab (dasl) favicon will be use
 ```
 ---
 title: "Course Name "
-date: "December, 2021"
+date: "February, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -117,6 +146,17 @@ If you would like to change the image at the top of the Bookdown version of the 
 * Modify the `assets/big-image.html` file on line 11. Change out `src = "assets/dasl_thin_main_image.png"` so that `dasl_thin_main_image.png` is replaced with the name of your image file.
 
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Adding the Credits table to Coursera](#adding-the-credits-table-to-coursera)
+- [Adding the Credits table to Leanpub](#adding-the-credits-table-to-leanpub)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Adding Credits
+
 Since so many individuals contribute to our courses in so many ways.  Thus, we decided to make a table of credits to make it clear who did what.
 
 Here is an example:  
@@ -157,7 +197,7 @@ These rows should be included for _all courses_:
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright]|
 |Publishing Maintenance Engineer|[Candace Savonen]|
 |Technical Publishing Stylists|[Carrie Wright], [Candace Savonen]|
-|Package Developers[Leanbuild]|[John Muschelli], [Candace Savonen], [Carrie Wright]|
+|Package Developers[ottr]|[John Muschelli], [Candace Savonen], [Carrie Wright]|
 
 <!-- Author information -->
 
@@ -167,7 +207,7 @@ These rows should be included for _all courses_:
 
 <!-- Links -->
 
-[Leanbuild]: https://github.com/jhudsl/leanbuild
+[ottr]: https://github.com/jhudsl/ottr
 ```
 
 These rows should be added to all _Johns Hopkins_ courses:
