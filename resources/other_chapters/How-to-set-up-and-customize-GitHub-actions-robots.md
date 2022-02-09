@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Preview of render](#preview-of-render)
+- [Spell check](#spell-check)
+- [Code styling](#code-styling)
+- [URL Checking](#url-checking)
+- [Customizing render-bookdown.yml](#customizing-render-bookdownyml)
+- [For a course that needs to publish to the Leanpub repository](#for-a-course-that-needs-to-publish-to-the-leanpub-repository)
+- [For a course that needs to publish to Coursera](#for-a-course-that-needs-to-publish-to-coursera)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 Here's a summary of the Github actions set up in this repository.
 
@@ -22,8 +36,6 @@ Here's a diagram to summarize:
 These Github actions also work across repositories to support converting Bookdown content into formats ready for publishing on Coursera or Leanpub.
 
 If you are only looking to use this template for creating a Bookdown course, this diagram is not as pertinent.
-
-![Summary of publishing process](https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=ged277ddb11_3_5)
 
 ### Preview of render
 
@@ -97,7 +109,7 @@ repository: jhudsl/Course_Template_Quizzes
 
 The [render-bookdown.yml](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml) github action the chapter content for Coursera by using this command within the docker image:
 ```
-leanbuild::render_coursera()
+ottr::render_coursera()
 ```
 You can run this same command locally if you wish to test something.
 This render the chapters without the table of Contents.

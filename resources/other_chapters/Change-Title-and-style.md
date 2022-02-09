@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [Changing title](#changing-title)
+- [Customizing the Style](#customizing-the-style)
+  - [Using a style set](#using-a-style-set)
+- [Creating your own style](#creating-your-own-style)
+  - [Changing the favicon](#changing-the-favicon)
+  - [Adding logos](#adding-logos)
+- [Adding sections that aren't numbered](#adding-sections-that-arent-numbered)
+- [Changing course text colors](#changing-course-text-colors)
+- [Modifying the image at the top of the course](#modifying-the-image-at-the-top-of-the-course)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ### Changing title
 

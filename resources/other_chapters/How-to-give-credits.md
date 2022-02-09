@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Adding the Credits table to Coursera](#adding-the-credits-table-to-coursera)
+- [Adding the Credits table to Leanpub](#adding-the-credits-table-to-leanpub)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Adding Credits
 
 Since so many individuals contribute to our courses in so many ways.  Thus, we decided to make a table of credits to make it clear who did what.
 
@@ -39,7 +49,7 @@ These rows should be included for _all courses_:
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright]|
 |Publishing Maintenance Engineer|[Candace Savonen]|
 |Technical Publishing Stylists|[Carrie Wright], [Candace Savonen]|
-|Package Developers[Leanbuild]|[John Muschelli], [Candace Savonen], [Carrie Wright]|
+|Package Developers[ottr]|[John Muschelli], [Candace Savonen], [Carrie Wright]|
 
 <!-- Author information -->
 
@@ -49,7 +59,7 @@ These rows should be included for _all courses_:
 
 <!-- Links -->
 
-[Leanbuild]: https://github.com/jhudsl/leanbuild
+[ottr]: https://github.com/jhudsl/ottr
 ```
 
 These rows should be added to all _Johns Hopkins_ courses:

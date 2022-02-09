@@ -2,6 +2,21 @@
 # Automation info and set up
 
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Preview of render](#preview-of-render)
+- [Spell check](#spell-check)
+- [Code styling](#code-styling)
+- [URL Checking](#url-checking)
+- [Customizing render-bookdown.yml](#customizing-render-bookdownyml)
+- [For a course that needs to publish to the Leanpub repository](#for-a-course-that-needs-to-publish-to-the-leanpub-repository)
+- [For a course that needs to publish to Coursera](#for-a-course-that-needs-to-publish-to-coursera)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 Here's a summary of the Github actions set up in this repository.
 
 Note: if you are not a part of jhudsl organization, you will need to set follow these instructions to set up your GitHub secrets before these actions will work.
@@ -25,8 +40,6 @@ Here's a diagram to summarize:
 These Github actions also work across repositories to support converting Bookdown content into formats ready for publishing on Coursera or Leanpub.
 
 If you are only looking to use this template for creating a Bookdown course, this diagram is not as pertinent.
-
-![Summary of publishing process](https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=ged277ddb11_3_5)
 
 ### Preview of render
 
@@ -100,13 +113,23 @@ repository: jhudsl/Course_Template_Quizzes
 
 The [render-bookdown.yml](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml) github action the chapter content for Coursera by using this command within the docker image:
 ```
-leanbuild::render_coursera()
+ottr::render_coursera()
 ```
 You can run this same command locally if you wish to test something.
 This render the chapters without the table of Contents.
 If you do not wish to publish to Coursera and prefer this do not run, you may delete this section (but it shouldn't hurt anything to keep as is -- unless for some reason it causes you some troubles).
 
 Additionally, the Leanpub companion repository has a [Leanpub -> Coursera quiz conversion script](https://github.com/jhudsl/OTTR_Quizzes/blob/main/scripts/coursera_quiz_conversion.R) if you choose to create quizzes and publish on both Leanpub and Coursera.
+
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [How to enroll a repository to receive template updates](#how-to-enroll-a-repository-to-receive-template-updates)
+- [How to tailor incoming sync changes:](#how-to-tailor-incoming-sync-changes)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
 This original course template: https://github.com/jhudsl/OTTR_Template is always a work in progress.

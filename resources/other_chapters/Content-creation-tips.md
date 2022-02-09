@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Consider your motivation](#consider-your-motivation)
+- [Consider your audience](#consider-your-audience)
+- [Learning objectives](#learning-objectives)
+- [Consider course and chapter length](#consider-course-and-chapter-length)
+- [Graphics to emphasize and summarise](#graphics-to-emphasize-and-summarise)
+- [Create quizzes with learning objectives in mind](#create-quizzes-with-learning-objectives-in-mind)
+- [Make courses engaging](#make-courses-engaging)
+- [Get feedback](#get-feedback)
+- [Example courses](#example-courses)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 Creating course content is not always as straightforward as it may seem. Here we provide you with some tips about how to stay focused and write content that is useful for your intended audience.
 

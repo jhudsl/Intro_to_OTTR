@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Running locally](#running-locally)
+- [Ignoring URLs](#ignoring-urls)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 Github actions will automatically [run a spell check on all Rmds](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml) whenever a pull request to the `main` branch is filed.
 Depending on your preference, you may find it easier to spell check manually on your local computer before pushing to Github.
