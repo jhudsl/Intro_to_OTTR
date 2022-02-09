@@ -3,11 +3,6 @@
 
 ```{r, echo = FALSE, results='asis'}
 knitr::opts_chunk$set(eval = FALSE)
-
-cow::borrow_chapter(
-  doc_path = "Content-creation-tips.md",
-  repo_name = "wiki/jhudsl/OTTR_Template"
-)
 ```
 
 
