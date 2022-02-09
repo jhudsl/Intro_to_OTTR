@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 11 About Docker | Intro to OTTR - Opensource Tools for Training Resources</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 11 About Docker | Intro to OTTR - Opensource Tools for Training Resources" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 11 About Docker | Intro to OTTR - Opensource Tools for Training Resources" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="citations.html"/>
+<link rel="next" href="spell-check.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="http://jhudatascience.org/"><img src="https://jhudatascience.org/images/dasl.png" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#recommended-background-information"><i class="fa fa-check"></i><b>0.1</b> Recommended background information</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#how-to-contribute"><i class="fa fa-check"></i><b>0.2</b> How to contribute</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#basic-overview-of-what-the-publishing-process-looks-like"><i class="fa fa-check"></i><b>0.3</b> Basic overview of what the publishing process looks like:</a></li>
+<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#table-of-contents"><i class="fa fa-check"></i><b>0.4</b> Table of contents</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="getting-started-1.html"><a href="getting-started-1.html"><i class="fa fa-check"></i><b>1</b> Getting started</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="getting-started-1.html"><a href="getting-started-1.html#create-a-repository-from-this-template"><i class="fa fa-check"></i><b>1.0.1</b> 1. Create a repository from this template</a></li>
+<li class="chapter" data-level="1.0.2" data-path="getting-started-1.html"><a href="getting-started-1.html#name-your-repository-and-fill-in-a-short-description."><i class="fa fa-check"></i><b>1.0.2</b> 2. Name your repository and fill in a short description.</a></li>
+<li class="chapter" data-level="1.0.3" data-path="getting-started-1.html"><a href="getting-started-1.html#your-course-must-be-set-to-public-for-github-actions-to-work."><i class="fa fa-check"></i><b>1.0.3</b> 3. Your course must be set to <code>public</code> for Github actions to work.</a></li>
+<li class="chapter" data-level="1.0.4" data-path="getting-started-1.html"><a href="getting-started-1.html#set-up-a-git-client"><i class="fa fa-check"></i><b>1.0.4</b> 4. Set up a Git client</a></li>
+<li class="chapter" data-level="1.0.5" data-path="getting-started-1.html"><a href="getting-started-1.html#add-jhudsl-robot-as-a-collaborator"><i class="fa fa-check"></i><b>1.0.5</b> 5. Add jhudsl-robot as a collaborator</a></li>
+<li class="chapter" data-level="1.0.6" data-path="getting-started-1.html"><a href="getting-started-1.html#set-up-your-github-personal-access-token"><i class="fa fa-check"></i><b>1.0.6</b> 6. Set up your Github Personal access token</a></li>
+<li class="chapter" data-level="1.0.7" data-path="getting-started-1.html"><a href="getting-started-1.html#set-up-github-pages"><i class="fa fa-check"></i><b>1.0.7</b> 7. Set up GitHub pages</a></li>
+<li class="chapter" data-level="1.0.8" data-path="getting-started-1.html"><a href="getting-started-1.html#set-up-branch-rules"><i class="fa fa-check"></i><b>1.0.8</b> 8. Set up branch rules</a></li>
+<li class="chapter" data-level="1.0.9" data-path="getting-started-1.html"><a href="getting-started-1.html#enroll-your-repository-for-ottr-updates"><i class="fa fa-check"></i><b>1.0.9</b> 9. Enroll your repository for OTTR updates</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html"><i class="fa fa-check"></i><b>2</b> Start editing your course</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#file-changes-to-be-made"><i class="fa fa-check"></i><b>2.1</b> File changes to be made</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#files-that-need-edited-upon-creating-a-new-course."><i class="fa fa-check"></i><b>2.1.1</b> Files that need edited upon creating a new course.</a></li>
+<li class="chapter" data-level="2.1.2" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#files-that-need-to-be-edited-upon-adding-each-new-chapter-including-upon-creating-a-new-course"><i class="fa fa-check"></i><b>2.1.2</b> Files that need to be edited upon adding each new chapter (including upon creating a new course):</a></li>
+<li class="chapter" data-level="2.1.3" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#files-that-need-to-be-edited-upon-adding-new-packages-that-the-books-code-uses"><i class="fa fa-check"></i><b>2.1.3</b> Files that need to be edited upon adding new packages that the book’s code uses:</a></li>
+<li class="chapter" data-level="2.1.4" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#picking-a-style"><i class="fa fa-check"></i><b>2.1.4</b> Picking a style</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#getting-started-with-the-github-workflow"><i class="fa fa-check"></i><b>2.2</b> Getting started with the Github workflow</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#git-clone"><i class="fa fa-check"></i><b>2.2.1</b> git clone</a></li>
+<li class="chapter" data-level="2.2.2" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#create-a-branch"><i class="fa fa-check"></i><b>2.2.2</b> Create a branch</a></li>
+<li class="chapter" data-level="2.2.3" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#checks-on-the-pull-requests"><i class="fa fa-check"></i><b>2.2.3</b> Checks on the pull requests</a></li>
+<li class="chapter" data-level="2.2.4" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#more-resources-for-learning-github"><i class="fa fa-check"></i><b>2.2.4</b> More resources for learning GitHub</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="content-creation-tips.html"><a href="content-creation-tips.html"><i class="fa fa-check"></i><b>3</b> Content creation tips</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="content-creation-tips.html"><a href="content-creation-tips.html#consider-your-motivation"><i class="fa fa-check"></i><b>3.0.1</b> Consider your motivation</a></li>
+<li class="chapter" data-level="3.0.2" data-path="content-creation-tips.html"><a href="content-creation-tips.html#consider-your-audience"><i class="fa fa-check"></i><b>3.0.2</b> Consider your audience</a></li>
+<li class="chapter" data-level="3.0.3" data-path="content-creation-tips.html"><a href="content-creation-tips.html#learning-objectives"><i class="fa fa-check"></i><b>3.0.3</b> Learning objectives</a></li>
+<li class="chapter" data-level="3.0.4" data-path="content-creation-tips.html"><a href="content-creation-tips.html#consider-course-and-chapter-length"><i class="fa fa-check"></i><b>3.0.4</b> Consider course and chapter length</a></li>
+<li class="chapter" data-level="3.0.5" data-path="content-creation-tips.html"><a href="content-creation-tips.html#graphics-to-emphasize-and-summarise"><i class="fa fa-check"></i><b>3.0.5</b> Graphics to emphasize and summarise</a></li>
+<li class="chapter" data-level="3.0.6" data-path="content-creation-tips.html"><a href="content-creation-tips.html#create-quizzes-with-learning-objectives-in-mind"><i class="fa fa-check"></i><b>3.0.6</b> Create quizzes with learning objectives in mind</a></li>
+<li class="chapter" data-level="3.0.7" data-path="content-creation-tips.html"><a href="content-creation-tips.html#make-courses-engaging"><i class="fa fa-check"></i><b>3.0.7</b> Make courses engaging</a></li>
+<li class="chapter" data-level="3.0.8" data-path="content-creation-tips.html"><a href="content-creation-tips.html#get-feedback"><i class="fa fa-check"></i><b>3.0.8</b> Get feedback</a></li>
+<li class="chapter" data-level="3.0.9" data-path="content-creation-tips.html"><a href="content-creation-tips.html#example-courses"><i class="fa fa-check"></i><b>3.0.9</b> Example courses</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html"><i class="fa fa-check"></i><b>4</b> Setting up images and graphics</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#themes-for-non-itcr-projects-jhu-users"><i class="fa fa-check"></i><b>4.0.1</b> Themes for non-ITCR projects (JHU users):</a></li>
+<li class="chapter" data-level="4.0.2" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#themes-for-itcr-project-nonjhu-users-and-jhu-users"><i class="fa fa-check"></i><b>4.0.2</b> Themes for ITCR project (nonJHU users and JHU users):</a></li>
+<li class="chapter" data-level="4.0.3" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#accessibility"><i class="fa fa-check"></i><b>4.0.3</b> Accessibility</a></li>
+<li class="chapter" data-level="4.0.4" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#adding-images-and-graphics-in-text"><i class="fa fa-check"></i><b>4.0.4</b> Adding images and graphics in text</a></li>
+<li class="chapter" data-level="4.0.5" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#adding-videos-in-text"><i class="fa fa-check"></i><b>4.0.5</b> Adding videos in text</a></li>
+<li class="chapter" data-level="4.0.6" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#adding-embedded-files-to-text"><i class="fa fa-check"></i><b>4.0.6</b> Adding embedded files to text</a></li>
+<li class="chapter" data-level="4.0.7" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#learning-objectives-formatting"><i class="fa fa-check"></i><b>4.0.7</b> Learning Objectives Formatting</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="choosing-publishing-platforms.html"><a href="choosing-publishing-platforms.html"><i class="fa fa-check"></i><b>5</b> Choosing Publishing platforms</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="choosing-publishing-platforms.html"><a href="choosing-publishing-platforms.html#choosing-publishing-platforms-1"><i class="fa fa-check"></i><b>5.1</b> Choosing publishing platforms</a></li>
+<li class="chapter" data-level="5.2" data-path="choosing-publishing-platforms.html"><a href="choosing-publishing-platforms.html#links-to-the-guides-for-each-platform"><i class="fa fa-check"></i><b>5.2</b> Links to the guides for each platform:</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="publishing-with-bookdown.html"><a href="publishing-with-bookdown.html"><i class="fa fa-check"></i><b>6</b> Publishing with Bookdown</a></li>
+<li class="chapter" data-level="7" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html"><i class="fa fa-check"></i><b>7</b> Publishing with Coursera</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#setting-up-your-coursera-course"><i class="fa fa-check"></i><b>7.1</b> Setting up your Coursera course</a></li>
+<li class="chapter" data-level="7.2" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#converting-your-files-for-upload-to-coursera"><i class="fa fa-check"></i><b>7.2</b> Converting your files for upload to Coursera</a></li>
+<li class="chapter" data-level="7.3" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#navigating-to-your-course-on-coursera"><i class="fa fa-check"></i><b>7.3</b> Navigating to your course on Coursera</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#adding-new-chapters-to-coursera"><i class="fa fa-check"></i><b>7.3.1</b> Adding new chapters to Coursera</a></li>
+<li class="chapter" data-level="7.3.2" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#adding-new-quizzes-to-coursera"><i class="fa fa-check"></i><b>7.3.2</b> Adding new quizzes to Coursera</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#add-programmed-messages"><i class="fa fa-check"></i><b>7.4</b> Add programmed messages</a></li>
+<li class="chapter" data-level="7.5" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#grading-formula"><i class="fa fa-check"></i><b>7.5</b> Grading formula</a></li>
+<li class="chapter" data-level="7.6" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#content-schedule"><i class="fa fa-check"></i><b>7.6</b> Content Schedule</a></li>
+<li class="chapter" data-level="7.7" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#module-descriptions"><i class="fa fa-check"></i><b>7.7</b> Module Descriptions</a></li>
+<li class="chapter" data-level="7.8" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#landing-page"><i class="fa fa-check"></i><b>7.8</b> Landing Page</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html"><i class="fa fa-check"></i><b>8</b> Publishing with Leanpub</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#leanpub-rendering"><i class="fa fa-check"></i><b>8.1</b> Leanpub rendering</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#setting-up-leanpub-related-github-actions"><i class="fa fa-check"></i><b>8.1.1</b> Setting up Leanpub-related GitHub actions</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#hosting-your-course-on-leanpub"><i class="fa fa-check"></i><b>8.2</b> Hosting your course on Leanpub</a></li>
+<li class="chapter" data-level="8.3" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#setting-up-quizzes"><i class="fa fa-check"></i><b>8.3</b> Setting up quizzes</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#leanpub-quizzes"><i class="fa fa-check"></i><b>8.3.1</b> Leanpub quizzes</a></li>
+<li class="chapter" data-level="8.3.2" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#leanpub-quiz-formatting-rules"><i class="fa fa-check"></i><b>8.3.2</b> Leanpub quiz formatting ‘rules’</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#converting-quizzes-from-leanpub-to-coursera-format"><i class="fa fa-check"></i><b>8.4</b> Converting quizzes from Leanpub to Coursera format</a></li>
+<li class="chapter" data-level="8.5" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#setting-up-the-_quizzes-repository-checklist"><i class="fa fa-check"></i><b>8.5</b> Setting up the _Quizzes repository checklist:</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="publishing-quizzes-with-answers-hiddens.html"><a href="publishing-quizzes-with-answers-hiddens.html"><i class="fa fa-check"></i><b>9</b> Publishing quizzes with answers hiddens</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="publishing-quizzes-with-answers-hiddens.html"><a href="publishing-quizzes-with-answers-hiddens.html#how-to-use-these-repositories"><i class="fa fa-check"></i><b>9.1</b> How to use these repositories:</a></li>
+<li class="chapter" data-level="9.2" data-path="publishing-quizzes-with-answers-hiddens.html"><a href="publishing-quizzes-with-answers-hiddens.html#setting-up-your-ottr_quizzes-github-repository"><i class="fa fa-check"></i><b>9.2</b> Setting up your OTTR_Quizzes Github repository</a></li>
+<li class="chapter" data-level="9.3" data-path="publishing-quizzes-with-answers-hiddens.html"><a href="publishing-quizzes-with-answers-hiddens.html#linking-to-your-ottr_template-course-github-repository"><i class="fa fa-check"></i><b>9.3</b> Linking to your <code>OTTR_Template</code> course Github repository</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="citations.html"><a href="citations.html"><i class="fa fa-check"></i><b>10</b> Citations</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="citations.html"><a href="citations.html#citations-1"><i class="fa fa-check"></i><b>10.1</b> Citations</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="about-docker.html"><a href="about-docker.html"><i class="fa fa-check"></i><b>11</b> About Docker</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="about-docker.html"><a href="about-docker.html#using-the-jhudslcourse_template-docker-image"><i class="fa fa-check"></i><b>11.1</b> Using the jhudsl/course_template Docker image</a></li>
+<li class="chapter" data-level="11.2" data-path="about-docker.html"><a href="about-docker.html#starting-a-new-docker-image"><i class="fa fa-check"></i><b>11.2</b> Starting a new Docker image</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="about-docker.html"><a href="about-docker.html#set-dockerhub-related-secrets"><i class="fa fa-check"></i><b>11.2.1</b> Set Dockerhub related secrets</a></li>
+<li class="chapter" data-level="11.2.2" data-path="about-docker.html"><a href="about-docker.html#updating-workflows-for-new-docker-image"><i class="fa fa-check"></i><b>11.2.2</b> Updating workflows for new Docker image</a></li>
+<li class="chapter" data-level="11.2.3" data-path="about-docker.html"><a href="about-docker.html#modifying-the-dockerfile-for-a-new-image"><i class="fa fa-check"></i><b>11.2.3</b> Modifying the Dockerfile for a new image</a></li>
+<li class="chapter" data-level="11.2.4" data-path="about-docker.html"><a href="about-docker.html#testing-a-modified-docker-image"><i class="fa fa-check"></i><b>11.2.4</b> Testing a modified Docker image</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="spell-check.html"><a href="spell-check.html"><i class="fa fa-check"></i><b>12</b> Spell Check</a>
+<ul>
+<li class="chapter" data-level="12.0.1" data-path="spell-check.html"><a href="spell-check.html#running-locally"><i class="fa fa-check"></i><b>12.0.1</b> Running locally</a></li>
+<li class="chapter" data-level="12.0.2" data-path="spell-check.html"><a href="spell-check.html#ignoring-urls"><i class="fa fa-check"></i><b>12.0.2</b> Ignoring URLs</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="borrowing-chapters-between-courses.html"><a href="borrowing-chapters-between-courses.html"><i class="fa fa-check"></i><b>13</b> Borrowing chapters between courses</a>
+<ul>
+<li class="chapter" data-level="13.0.1" data-path="borrowing-chapters-between-courses.html"><a href="borrowing-chapters-between-courses.html#borrowing-from-a-private-repository"><i class="fa fa-check"></i><b>13.0.1</b> Borrowing from a private repository</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="using-google-docs.html"><a href="using-google-docs.html"><i class="fa fa-check"></i><b>14</b> Using Google Docs</a></li>
+<li class="chapter" data-level="15" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html"><i class="fa fa-check"></i><b>15</b> Automation info and set up</a>
+<ul>
+<li class="chapter" data-level="15.0.1" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#preview-of-render"><i class="fa fa-check"></i><b>15.0.1</b> Preview of render</a></li>
+<li class="chapter" data-level="15.0.2" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#spell-check-1"><i class="fa fa-check"></i><b>15.0.2</b> Spell check</a></li>
+<li class="chapter" data-level="15.0.3" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#code-styling"><i class="fa fa-check"></i><b>15.0.3</b> Code styling</a></li>
+<li class="chapter" data-level="15.0.4" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#url-checking"><i class="fa fa-check"></i><b>15.0.4</b> URL Checking</a></li>
+<li class="chapter" data-level="15.0.5" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#customizing-render-bookdown.yml"><i class="fa fa-check"></i><b>15.0.5</b> Customizing render-bookdown.yml</a></li>
+<li class="chapter" data-level="15.0.6" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#for-a-course-that-needs-to-publish-to-the-leanpub-repository"><i class="fa fa-check"></i><b>15.0.6</b> For a course that needs to publish to the Leanpub repository</a></li>
+<li class="chapter" data-level="15.0.7" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#for-a-course-that-needs-to-publish-to-coursera"><i class="fa fa-check"></i><b>15.0.7</b> For a course that needs to publish to Coursera</a></li>
+<li class="chapter" data-level="15.0.8" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#how-to-enroll-a-repository-to-receive-template-updates"><i class="fa fa-check"></i><b>15.0.8</b> How to enroll a repository to receive template updates</a></li>
+<li class="chapter" data-level="15.0.9" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#how-to-tailor-incoming-sync-changes"><i class="fa fa-check"></i><b>15.0.9</b> How to tailor incoming sync changes:</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html"><i class="fa fa-check"></i><b>16</b> Finishing touches</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#set-up-feedback-method"><i class="fa fa-check"></i><b>16.1</b> Set up feedback method</a>
+<ul>
+<li class="chapter" data-level="16.1.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#step-1-decide-on-a-method-of-feedback-for-your-users-to-use."><i class="fa fa-check"></i><b>16.1.1</b> Step 1) Decide on a method of feedback for your users to use.</a></li>
+<li class="chapter" data-level="16.1.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#step-2-add-feedback-button"><i class="fa fa-check"></i><b>16.1.2</b> Step 2) Add feedback button</a></li>
+<li class="chapter" data-level="16.1.3" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#step-3-add-your-updated-_output.yml-to-a-pull-request."><i class="fa fa-check"></i><b>16.1.3</b> Step 3) Add your updated <code>_output.yml</code> to a pull request.</a></li>
+<li class="chapter" data-level="16.1.4" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#changing-title"><i class="fa fa-check"></i><b>16.1.4</b> Changing title</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#customizing-the-style"><i class="fa fa-check"></i><b>16.2</b> Customizing the Style</a>
+<ul>
+<li class="chapter" data-level="16.2.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#using-a-style-set-1"><i class="fa fa-check"></i><b>16.2.1</b> Using a style set</a></li>
+</ul></li>
+<li class="chapter" data-level="16.3" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#creating-your-own-style"><i class="fa fa-check"></i><b>16.3</b> Creating your own style</a>
+<ul>
+<li class="chapter" data-level="16.3.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#changing-the-favicon"><i class="fa fa-check"></i><b>16.3.1</b> Changing the favicon</a></li>
+<li class="chapter" data-level="16.3.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-logos"><i class="fa fa-check"></i><b>16.3.2</b> Adding logos</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-sections-that-arent-numbered"><i class="fa fa-check"></i><b>16.4</b> Adding sections that aren’t numbered</a></li>
+<li class="chapter" data-level="16.5" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#changing-course-text-colors"><i class="fa fa-check"></i><b>16.5</b> Changing course text colors</a></li>
+<li class="chapter" data-level="16.6" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#modifying-the-image-at-the-top-of-the-course"><i class="fa fa-check"></i><b>16.6</b> Modifying the image at the top of the course</a></li>
+<li class="chapter" data-level="16.7" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-credits"><i class="fa fa-check"></i><b>16.7</b> Adding Credits</a>
+<ul>
+<li class="chapter" data-level="16.7.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-the-credits-table-to-coursera"><i class="fa fa-check"></i><b>16.7.1</b> Adding the Credits table to Coursera</a></li>
+<li class="chapter" data-level="16.7.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-the-credits-table-to-leanpub"><i class="fa fa-check"></i><b>16.7.2</b> Adding the Credits table to Leanpub</a></li>
+<li class="chapter" data-level="16.7.3" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#release-coding"><i class="fa fa-check"></i><b>16.7.3</b> Release coding</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
+<p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Intro to OTTR - Opensource Tools for Training Resources</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+
+
+
+<div class="hero-image-container">
+  <img class= "hero-image" src= "https://github.com/jhudsl/OTTR_Template/raw/main/assets/dasl_thin_main_image.png">
+</div>
+<div id="about-docker" class="section level1" number="11">
+<h1><span class="header-section-number">Chapter 11</span> About Docker</h1>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<p><strong>Table of Contents</strong> <em>generated with <a href="https://github.com/thlorenz/doctoc">DocToc</a></em></p>
+<ul>
+<li><a href="about-docker.html#using-the-jhudslcourse_template-docker-image">Using the jhudsl/course_template Docker image</a>
+<ul>
+<li><a href="about-docker.html#optionally-run-rstudio-from-the-docker-container">Optionally run RStudio from the Docker container</a></li>
+</ul></li>
+<li><a href="about-docker.html#starting-a-new-docker-image">Starting a new Docker image</a>
+<ul>
+<li><a href="about-docker.html#set-dockerhub-related-secrets">Set Dockerhub related secrets</a></li>
+<li><a href="about-docker.html#updating-workflows-for-new-docker-image">Updating workflows for new Docker image</a></li>
+<li><a href="about-docker.html#modifying-the-dockerfile-for-a-new-image">Modifying the Dockerfile for a new image</a>
+<ul>
+<li><a href="about-docker.html#template-commands-for-adding-packages-to-the-dockerfile">Template commands for adding packages to the Dockerfile</a>
+<ul>
+<li><a href="about-docker.html#cran-packages">CRAN Packages:</a></li>
+<li><a href="about-docker.html#bioconductor-packages">Bioconductor Packages:</a></li>
+<li><a href="about-docker.html#python-packages">Python Packages:</a></li>
+</ul></li>
+</ul></li>
+<li><a href="about-docker.html#testing-a-modified-docker-image">Testing a modified Docker image</a>
+<ul>
+<li><a href="about-docker.html#pushing-the-docker-image">Pushing the Docker image</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<p>Particularly for courses that involve running example code, it’s highly recommended that you use a Docker image for development to maintain software version consistency across course developers.</p>
+<div id="using-the-jhudslcourse_template-docker-image" class="section level2" number="11.1">
+<h2><span class="header-section-number">11.1</span> Using the jhudsl/course_template Docker image</h2>
+<p>If your course doesn’t require any additional packages to run, then you do not need to set up Docker locally but <a href="https://hub.docker.com/repository/docker/jhudsl/course_template">this Docker image: jhudsl/course_template</a> will run and re-render all of your changes as you add them.</p>
+<p>If you are new to Docker, you may find it helpful to read this <a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/launching-a-docker-image.html">introduction to Docker</a>.
+- You will need to <a href="https://hub.docker.com/">sign up with a Docker account</a> if you don’t have one.<br />
+- If you haven’t installed Docker desktop (or need to update it), you can do <a href="https://docs.docker.com/get-docker/">so here</a>.</p>
+<p>If your Docker desktop is running, you should see a Docker whale in your tool bar.
+On Macs, this will be on the bar on the top of your screen; in Windows, on the bottom right.</p>
+<p>A Docker image is similar to a virtual machine - it contains preinstalled software in a preconfigured environment.
+Docker images can be downloaded from DockerHub, or you can create your own.</p>
+<p>We have created the <code>course_template</code> image as a starting point; you can download it from <code>jhudsl/course_template</code> on DockerHub using the docker pull command we have below.
+To pull the docker image associated with this template, you can run this command below in your command line.
+This may take a while.</p>
+<pre><code>docker pull jhudsl/course_template</code></pre>
+<p>This pulls the course_template image from Docker Hub and copies it to your computer.
+It will be placed in your local collection of Docker images, managed by Docker (not in your pwd). If you get an error, it may be because you forgot to have your Docker desktop running… see above.</p>
+<p>To use the Docker image associated with the course template, first navigate to the the top of this GitHub repository.
+Now you can start up the Docker container using the command below.</p>
+<p>This runs your local copy of the course_template image (which you downloaded from DockerHub).
+The option <code>-v $PWD:/home/rstudio</code> mounts pwd (this repo) and makes it available at <code>/home/rstudio</code> within the container.
+Replace all of <code>&lt;CHOOSE_PASSWORD&gt;</code> (including the <code>&lt;</code> and <code>&gt;</code>) with a password of your choosing.</p>
+<p><em>On a Mac</em>:</p>
+<pre><code>docker run -it -v $PWD:/home/rstudio -e PASSWORD=&lt;CHOOSE_PASSWORD&gt; -p 8787:8787 jhudsl/course_template</code></pre>
+<p><em>On a Windows</em>:</p>
+<pre><code>docker run -it -v %CD%:/home/rstudio -e PASSWORD=&lt;CHOOSE_PASSWORD&gt; -p 8787:8787 jhudsl/course_template</code></pre>
+<p>Do not close this window, but you can minimize it.
+Open up a new command line window and run the command: <code>docker ps</code>, you should see a container is up and running!</p>
+<p><em>Couple other handy Docker commands:</em></p>
+<ul>
+<li>To stop your Docker container, run <code>docker ps</code> to obtain the docker container ID.
+Then you can use that ID to run <code>docker stop &lt;CONTAINER_ID&gt;</code>.<br />
+</li>
+<li>To remove a docker image (which you may need to do from time to time to clear out space), you can run <code>docker image ls</code> to see all your current images.
+Then you can run either <code>docker image rm &lt;IMAGE_ID&gt;</code>.<br />
+</li>
+<li>If you really need to clear out space, you can follow this <a href="https://stackoverflow.com/questions/44785585/docker-how-to-delete-all-local-docker-images">StackOverflow post</a> on how to remove all images and all containers.</li>
+</ul>
+<p>For more info on how to use Docker, they have very <a href="https://docs.docker.com/">extensive documentation here</a>.</p>
+<div id="optionally-run-rstudio-from-the-docker-container" class="section level4" number="11.1.0.1">
+<h4><span class="header-section-number">11.1.0.1</span> Optionally run RStudio from the Docker container</h4>
+<p>In a web browser navigate to the following to get to an RStudio that is run from your Docker container.</p>
+<pre><code>localhost:8787</code></pre>
+<p>To log in, you’ll need to use <code>rstudio</code> as the username and whatever password you put for <code>&lt;CHOOSE_PASSWORD&gt;</code> in the above command.</p>
+</div>
+</div>
+<div id="starting-a-new-docker-image" class="section level2" number="11.2">
+<h2><span class="header-section-number">11.2</span> Starting a new Docker image</h2>
+<p>Should you find that your course needs additional packages beyond what’s included in the template, you should probably start a new Docker image and you’ll need to do these steps to get this going:</p>
+<ol style="list-style-type: decimal">
+<li>Create a <a href="https://hub.docker.com/signup">Dockerhub account</a> if you don’t have one.</li>
+<li>Create a new Docker image on your Dockerhub account. <a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/launching-a-docker-image.html">Follow these instructions if you don’t know how to do that</a>.</li>
+<li><a href="about-docker.html#set-dockerhub-related-secrets">Set up Dockerhub secrets in your repository or organization</a>.<br />
+</li>
+<li><a href="about-docker.html#updating-workflows-for-new-docker-image">Update the Github actions workflows accordingly</a>.</li>
+<li><a href="about-docker.html#modifying-the-dockerfile-for-a-new-image">Edit the Dockerfile in your repository</a>.</li>
+</ol>
+<div id="set-dockerhub-related-secrets" class="section level3" number="11.2.1">
+<h3><span class="header-section-number">11.2.1</span> Set Dockerhub related secrets</h3>
+<p>You only need to do this once as an organization (if this course is under <code>jhudsl</code> you don’t need to do this step).</p>
+<p>To give them permission for all these Docker actions, you need to set a GitHub secret. Go to <code>Settings</code> &gt; <code>Secrets</code> and scroll down to <code>organization secrets</code> or you can set this for each repository by creating a repository secret.</p>
+<ul>
+<li>Click <code>New repository secret</code> button for each of these secrets</li>
+<li>The login information in these GitHub secrets must be from an account that has write permissions to the Docker image you wish to manage).</li>
+</ul>
+<p><em>Name: <code>DOCKERHUB_USERNAME</code></em>:<br />
+For <code>value</code>: put your login username for <a href="https://hub.docker.com/" class="uri">https://hub.docker.com/</a></p>
+<p><em>Name: <code>DOCKERHUB_TOKEN</code></em>:<br />
+For <code>value</code>: put an access token for Dockerhub.
+You can create this by following <a href="https://docs.docker.com/docker-hub/access-tokens/#create-an-access-token">these instructions</a>.</p>
+</div>
+<div id="updating-workflows-for-new-docker-image" class="section level3" number="11.2.2">
+<h3><span class="header-section-number">11.2.2</span> Updating workflows for new Docker image</h3>
+<p>If you will need to make any change to the Docker image specific to the course you are working on, in the file <code>.github/render-bookdown.yml</code> you should uncomment the
+<code>###### START OF DOCKER UPDATE CHUNK</code> up to the part that says <code>###### END OF DOCKER UPDATE CHUNK</code>.</p>
+<p>Next, we will want to update some workflow files located within the <code>.github/workflows/</code> directory called <code>docker-build-test.yml</code>, the file called <code>render-bookdown.yml</code>, and the file called <code>render-preview.yml</code>.</p>
+<p>We need to change the name of the docker image to reflect the image tag we just created, so that our new docker image is used in our automations instead of the template docker image to render the previews of our course, to render the bookdown version of the course, and for testing new builds of the docker image.</p>
+<p>Thus start a new branch so that you can submit a new pull request with your changes.</p>
+<p>Then in each of the above listed files (<code>docker-build-test.yml</code>, <code>render-bookdown.yml</code> and <code>render-preview.yml</code>) search and replace <code>jhudsl/course_template</code> with your docker image tag.</p>
+<p>Push the pull request and merge it with the main branch.</p>
+<p>Now, when you file a pull request, the Dockerfile build for your docker image will be tested automatically by the <a href="https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots">GitHub actions</a>.</p>
+</div>
+<div id="modifying-the-dockerfile-for-a-new-image" class="section level3" number="11.2.3">
+<h3><span class="header-section-number">11.2.3</span> Modifying the Dockerfile for a new image</h3>
+<p><a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html">Read this chapter for instructions on how to modify Docker images</a></p>
+<p>You will probably want to create your Docker image by using the <code>jhudsl/course_template</code> as your base – this means that all the packages that are in our <code>jhudsl/course_template</code> image will be included in the Docker image you build.</p>
+<pre><code>FROM jhudsl/course_template</code></pre>
+<p>You can take a look at this <a href="https://github.com/jhudsl/OTTR_Template/blob/main/resources/Dockerfile">Dockerfile template we’ve set up here</a> (note that the commands would need to be uncommented and real package names put in place of <code>package_name</code>’s).</p>
+<div id="template-commands-for-adding-packages-to-the-dockerfile" class="section level4" number="11.2.3.1">
+<h4><span class="header-section-number">11.2.3.1</span> Template commands for adding packages to the Dockerfile</h4>
+<p>This section gives you the basics on what it looks like to add new packages to your new Docker image.</p>
+<div id="cran-packages" class="section level5" number="11.2.3.1.1">
+<h5><span class="header-section-number">11.2.3.1.1</span> CRAN Packages:</h5>
+<p>For R packages installed from CRAN, you can add to the running vector list of R packages.</p>
+</div>
+<div id="bioconductor-packages" class="section level5" number="11.2.3.1.2">
+<h5><span class="header-section-number">11.2.3.1.2</span> Bioconductor Packages:</h5>
+<p>To add an R package from Bioconductor, you can follow this kind of format:</p>
+<pre><code>RUN Rscript -e &quot;options(warn = 2); BiocManager::install( \
+  c(&#39;limma&#39;, \
+    &#39;newpackagename&#39;)
+</code></pre>
+</div>
+<div id="python-packages" class="section level5" number="11.2.3.1.3">
+<h5><span class="header-section-number">11.2.3.1.3</span> Python Packages:</h5>
+<p>To add a Python package, you will need to add pip3 to install Python packages using this format:</p>
+<pre><code>RUN pip3 install \
+    &quot;somepackage==0.1.0&quot;</code></pre>
+</div>
+</div>
+</div>
+<div id="testing-a-modified-docker-image" class="section level3" number="11.2.4">
+<h3><span class="header-section-number">11.2.4</span> Testing a modified Docker image</h3>
+<p><a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html">Read this chapter for instructions on how to modify Docker images</a></p>
+<p>When you’ve added a package to the Dockerfile, you may want to check that it builds successfully before it’s added to your repository. You can include changes to your Dockerfile in a pull request which will trigger an automatic testing of building it.</p>
+<p><a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html">Read this chapter for more tips on how to modify Docker images</a></p>
+<p>OR</p>
+<p>If you prefer to test it locally, then you can follow these steps.</p>
+<p>First create a GITHUB token file by making a token and copying a pasting it into a plain text file named <code>docker/git_token.txt</code>. (<em><strong>Make sure you do not push this to github and possibly delete it after testing your docker image build!</strong></em>)</p>
+<p>Then you’ll need to rebuild the Docker image using this command after you move into the <code>docker</code> directory) (But replace the <code>&lt;TAG_FOR_COURSE&gt;</code> with the tag for your new image including dropping the <code>&lt;</code> and <code>&gt;</code>:</p>
+<pre><code>docker build -f Dockerfile . -t &lt;TAG_FOR_COURSE&gt;</code></pre>
+<p>If it fails, often the issue is a missing dependency.
+Take a look at the error messages and see if you can determine the issue with some Googling. Also be sure that all your directories and files are named correctly.</p>
+<p>Once it builds successfully, run the above command with the new name for your docker image make sure that the tag does not have upper case characters):</p>
+<pre><code>docker build -f Dockerfile . -t jhudsl/&lt;TAG_FOR_COURSE&gt;</code></pre>
+<div id="pushing-the-docker-image" class="section level4" number="11.2.4.1">
+<h4><span class="header-section-number">11.2.4.1</span> Pushing the Docker image</h4>
+<p>Locally, you can push your updated image to Dockerhub using (make sure that the tag does not have upper case characters):</p>
+<pre><code>docker push jhudsl/&lt;TAG_FOR_COURSE&gt;</code></pre>
+<p>OR</p>
+<p>If you prefer to have this done online, you can go to your course’s GitHub repository, go to <code>Actions</code> and then to <code>Test build of Dockerfile</code>.</p>
+<p>Click on <code>run workflow</code> type in <code>true</code> underneath <code>Push to Dockerhub?</code>.</p>
+<p>Then click <code>Run</code>. If your Dockerfile builds an image successfully it will automatically be pushed to Dockerhub.</p>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="citations.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="spell-check.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

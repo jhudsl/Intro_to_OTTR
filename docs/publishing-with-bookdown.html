@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Publishing with Bookdown | Intro to OTTR - Opensource Tools for Training Resources</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Publishing with Bookdown | Intro to OTTR - Opensource Tools for Training Resources" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Publishing with Bookdown | Intro to OTTR - Opensource Tools for Training Resources" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="choosing-publishing-platforms.html"/>
+<link rel="next" href="publishing-with-coursera.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="http://jhudatascience.org/"><img src="https://jhudatascience.org/images/dasl.png" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#recommended-background-information"><i class="fa fa-check"></i><b>0.1</b> Recommended background information</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#how-to-contribute"><i class="fa fa-check"></i><b>0.2</b> How to contribute</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#basic-overview-of-what-the-publishing-process-looks-like"><i class="fa fa-check"></i><b>0.3</b> Basic overview of what the publishing process looks like:</a></li>
+<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#table-of-contents"><i class="fa fa-check"></i><b>0.4</b> Table of contents</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="getting-started-1.html"><a href="getting-started-1.html"><i class="fa fa-check"></i><b>1</b> Getting started</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="getting-started-1.html"><a href="getting-started-1.html#create-a-repository-from-this-template"><i class="fa fa-check"></i><b>1.0.1</b> 1. Create a repository from this template</a></li>
+<li class="chapter" data-level="1.0.2" data-path="getting-started-1.html"><a href="getting-started-1.html#name-your-repository-and-fill-in-a-short-description."><i class="fa fa-check"></i><b>1.0.2</b> 2. Name your repository and fill in a short description.</a></li>
+<li class="chapter" data-level="1.0.3" data-path="getting-started-1.html"><a href="getting-started-1.html#your-course-must-be-set-to-public-for-github-actions-to-work."><i class="fa fa-check"></i><b>1.0.3</b> 3. Your course must be set to <code>public</code> for Github actions to work.</a></li>
+<li class="chapter" data-level="1.0.4" data-path="getting-started-1.html"><a href="getting-started-1.html#set-up-a-git-client"><i class="fa fa-check"></i><b>1.0.4</b> 4. Set up a Git client</a></li>
+<li class="chapter" data-level="1.0.5" data-path="getting-started-1.html"><a href="getting-started-1.html#add-jhudsl-robot-as-a-collaborator"><i class="fa fa-check"></i><b>1.0.5</b> 5. Add jhudsl-robot as a collaborator</a></li>
+<li class="chapter" data-level="1.0.6" data-path="getting-started-1.html"><a href="getting-started-1.html#set-up-your-github-personal-access-token"><i class="fa fa-check"></i><b>1.0.6</b> 6. Set up your Github Personal access token</a></li>
+<li class="chapter" data-level="1.0.7" data-path="getting-started-1.html"><a href="getting-started-1.html#set-up-github-pages"><i class="fa fa-check"></i><b>1.0.7</b> 7. Set up GitHub pages</a></li>
+<li class="chapter" data-level="1.0.8" data-path="getting-started-1.html"><a href="getting-started-1.html#set-up-branch-rules"><i class="fa fa-check"></i><b>1.0.8</b> 8. Set up branch rules</a></li>
+<li class="chapter" data-level="1.0.9" data-path="getting-started-1.html"><a href="getting-started-1.html#enroll-your-repository-for-ottr-updates"><i class="fa fa-check"></i><b>1.0.9</b> 9. Enroll your repository for OTTR updates</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html"><i class="fa fa-check"></i><b>2</b> Start editing your course</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#file-changes-to-be-made"><i class="fa fa-check"></i><b>2.1</b> File changes to be made</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#files-that-need-edited-upon-creating-a-new-course."><i class="fa fa-check"></i><b>2.1.1</b> Files that need edited upon creating a new course.</a></li>
+<li class="chapter" data-level="2.1.2" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#files-that-need-to-be-edited-upon-adding-each-new-chapter-including-upon-creating-a-new-course"><i class="fa fa-check"></i><b>2.1.2</b> Files that need to be edited upon adding each new chapter (including upon creating a new course):</a></li>
+<li class="chapter" data-level="2.1.3" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#files-that-need-to-be-edited-upon-adding-new-packages-that-the-books-code-uses"><i class="fa fa-check"></i><b>2.1.3</b> Files that need to be edited upon adding new packages that the book’s code uses:</a></li>
+<li class="chapter" data-level="2.1.4" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#picking-a-style"><i class="fa fa-check"></i><b>2.1.4</b> Picking a style</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#getting-started-with-the-github-workflow"><i class="fa fa-check"></i><b>2.2</b> Getting started with the Github workflow</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#git-clone"><i class="fa fa-check"></i><b>2.2.1</b> git clone</a></li>
+<li class="chapter" data-level="2.2.2" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#create-a-branch"><i class="fa fa-check"></i><b>2.2.2</b> Create a branch</a></li>
+<li class="chapter" data-level="2.2.3" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#checks-on-the-pull-requests"><i class="fa fa-check"></i><b>2.2.3</b> Checks on the pull requests</a></li>
+<li class="chapter" data-level="2.2.4" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html#more-resources-for-learning-github"><i class="fa fa-check"></i><b>2.2.4</b> More resources for learning GitHub</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="content-creation-tips.html"><a href="content-creation-tips.html"><i class="fa fa-check"></i><b>3</b> Content creation tips</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="content-creation-tips.html"><a href="content-creation-tips.html#consider-your-motivation"><i class="fa fa-check"></i><b>3.0.1</b> Consider your motivation</a></li>
+<li class="chapter" data-level="3.0.2" data-path="content-creation-tips.html"><a href="content-creation-tips.html#consider-your-audience"><i class="fa fa-check"></i><b>3.0.2</b> Consider your audience</a></li>
+<li class="chapter" data-level="3.0.3" data-path="content-creation-tips.html"><a href="content-creation-tips.html#learning-objectives"><i class="fa fa-check"></i><b>3.0.3</b> Learning objectives</a></li>
+<li class="chapter" data-level="3.0.4" data-path="content-creation-tips.html"><a href="content-creation-tips.html#consider-course-and-chapter-length"><i class="fa fa-check"></i><b>3.0.4</b> Consider course and chapter length</a></li>
+<li class="chapter" data-level="3.0.5" data-path="content-creation-tips.html"><a href="content-creation-tips.html#graphics-to-emphasize-and-summarise"><i class="fa fa-check"></i><b>3.0.5</b> Graphics to emphasize and summarise</a></li>
+<li class="chapter" data-level="3.0.6" data-path="content-creation-tips.html"><a href="content-creation-tips.html#create-quizzes-with-learning-objectives-in-mind"><i class="fa fa-check"></i><b>3.0.6</b> Create quizzes with learning objectives in mind</a></li>
+<li class="chapter" data-level="3.0.7" data-path="content-creation-tips.html"><a href="content-creation-tips.html#make-courses-engaging"><i class="fa fa-check"></i><b>3.0.7</b> Make courses engaging</a></li>
+<li class="chapter" data-level="3.0.8" data-path="content-creation-tips.html"><a href="content-creation-tips.html#get-feedback"><i class="fa fa-check"></i><b>3.0.8</b> Get feedback</a></li>
+<li class="chapter" data-level="3.0.9" data-path="content-creation-tips.html"><a href="content-creation-tips.html#example-courses"><i class="fa fa-check"></i><b>3.0.9</b> Example courses</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html"><i class="fa fa-check"></i><b>4</b> Setting up images and graphics</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#themes-for-non-itcr-projects-jhu-users"><i class="fa fa-check"></i><b>4.0.1</b> Themes for non-ITCR projects (JHU users):</a></li>
+<li class="chapter" data-level="4.0.2" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#themes-for-itcr-project-nonjhu-users-and-jhu-users"><i class="fa fa-check"></i><b>4.0.2</b> Themes for ITCR project (nonJHU users and JHU users):</a></li>
+<li class="chapter" data-level="4.0.3" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#accessibility"><i class="fa fa-check"></i><b>4.0.3</b> Accessibility</a></li>
+<li class="chapter" data-level="4.0.4" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#adding-images-and-graphics-in-text"><i class="fa fa-check"></i><b>4.0.4</b> Adding images and graphics in text</a></li>
+<li class="chapter" data-level="4.0.5" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#adding-videos-in-text"><i class="fa fa-check"></i><b>4.0.5</b> Adding videos in text</a></li>
+<li class="chapter" data-level="4.0.6" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#adding-embedded-files-to-text"><i class="fa fa-check"></i><b>4.0.6</b> Adding embedded files to text</a></li>
+<li class="chapter" data-level="4.0.7" data-path="setting-up-images-and-graphics.html"><a href="setting-up-images-and-graphics.html#learning-objectives-formatting"><i class="fa fa-check"></i><b>4.0.7</b> Learning Objectives Formatting</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="choosing-publishing-platforms.html"><a href="choosing-publishing-platforms.html"><i class="fa fa-check"></i><b>5</b> Choosing Publishing platforms</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="choosing-publishing-platforms.html"><a href="choosing-publishing-platforms.html#choosing-publishing-platforms-1"><i class="fa fa-check"></i><b>5.1</b> Choosing publishing platforms</a></li>
+<li class="chapter" data-level="5.2" data-path="choosing-publishing-platforms.html"><a href="choosing-publishing-platforms.html#links-to-the-guides-for-each-platform"><i class="fa fa-check"></i><b>5.2</b> Links to the guides for each platform:</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="publishing-with-bookdown.html"><a href="publishing-with-bookdown.html"><i class="fa fa-check"></i><b>6</b> Publishing with Bookdown</a></li>
+<li class="chapter" data-level="7" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html"><i class="fa fa-check"></i><b>7</b> Publishing with Coursera</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#setting-up-your-coursera-course"><i class="fa fa-check"></i><b>7.1</b> Setting up your Coursera course</a></li>
+<li class="chapter" data-level="7.2" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#converting-your-files-for-upload-to-coursera"><i class="fa fa-check"></i><b>7.2</b> Converting your files for upload to Coursera</a></li>
+<li class="chapter" data-level="7.3" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#navigating-to-your-course-on-coursera"><i class="fa fa-check"></i><b>7.3</b> Navigating to your course on Coursera</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#adding-new-chapters-to-coursera"><i class="fa fa-check"></i><b>7.3.1</b> Adding new chapters to Coursera</a></li>
+<li class="chapter" data-level="7.3.2" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#adding-new-quizzes-to-coursera"><i class="fa fa-check"></i><b>7.3.2</b> Adding new quizzes to Coursera</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#add-programmed-messages"><i class="fa fa-check"></i><b>7.4</b> Add programmed messages</a></li>
+<li class="chapter" data-level="7.5" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#grading-formula"><i class="fa fa-check"></i><b>7.5</b> Grading formula</a></li>
+<li class="chapter" data-level="7.6" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#content-schedule"><i class="fa fa-check"></i><b>7.6</b> Content Schedule</a></li>
+<li class="chapter" data-level="7.7" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#module-descriptions"><i class="fa fa-check"></i><b>7.7</b> Module Descriptions</a></li>
+<li class="chapter" data-level="7.8" data-path="publishing-with-coursera.html"><a href="publishing-with-coursera.html#landing-page"><i class="fa fa-check"></i><b>7.8</b> Landing Page</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html"><i class="fa fa-check"></i><b>8</b> Publishing with Leanpub</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#leanpub-rendering"><i class="fa fa-check"></i><b>8.1</b> Leanpub rendering</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#setting-up-leanpub-related-github-actions"><i class="fa fa-check"></i><b>8.1.1</b> Setting up Leanpub-related GitHub actions</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#hosting-your-course-on-leanpub"><i class="fa fa-check"></i><b>8.2</b> Hosting your course on Leanpub</a></li>
+<li class="chapter" data-level="8.3" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#setting-up-quizzes"><i class="fa fa-check"></i><b>8.3</b> Setting up quizzes</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#leanpub-quizzes"><i class="fa fa-check"></i><b>8.3.1</b> Leanpub quizzes</a></li>
+<li class="chapter" data-level="8.3.2" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#leanpub-quiz-formatting-rules"><i class="fa fa-check"></i><b>8.3.2</b> Leanpub quiz formatting ‘rules’</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#converting-quizzes-from-leanpub-to-coursera-format"><i class="fa fa-check"></i><b>8.4</b> Converting quizzes from Leanpub to Coursera format</a></li>
+<li class="chapter" data-level="8.5" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#setting-up-the-_quizzes-repository-checklist"><i class="fa fa-check"></i><b>8.5</b> Setting up the _Quizzes repository checklist:</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="publishing-quizzes-with-answers-hiddens.html"><a href="publishing-quizzes-with-answers-hiddens.html"><i class="fa fa-check"></i><b>9</b> Publishing quizzes with answers hiddens</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="publishing-quizzes-with-answers-hiddens.html"><a href="publishing-quizzes-with-answers-hiddens.html#how-to-use-these-repositories"><i class="fa fa-check"></i><b>9.1</b> How to use these repositories:</a></li>
+<li class="chapter" data-level="9.2" data-path="publishing-quizzes-with-answers-hiddens.html"><a href="publishing-quizzes-with-answers-hiddens.html#setting-up-your-ottr_quizzes-github-repository"><i class="fa fa-check"></i><b>9.2</b> Setting up your OTTR_Quizzes Github repository</a></li>
+<li class="chapter" data-level="9.3" data-path="publishing-quizzes-with-answers-hiddens.html"><a href="publishing-quizzes-with-answers-hiddens.html#linking-to-your-ottr_template-course-github-repository"><i class="fa fa-check"></i><b>9.3</b> Linking to your <code>OTTR_Template</code> course Github repository</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="citations.html"><a href="citations.html"><i class="fa fa-check"></i><b>10</b> Citations</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="citations.html"><a href="citations.html#citations-1"><i class="fa fa-check"></i><b>10.1</b> Citations</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="about-docker.html"><a href="about-docker.html"><i class="fa fa-check"></i><b>11</b> About Docker</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="about-docker.html"><a href="about-docker.html#using-the-jhudslcourse_template-docker-image"><i class="fa fa-check"></i><b>11.1</b> Using the jhudsl/course_template Docker image</a></li>
+<li class="chapter" data-level="11.2" data-path="about-docker.html"><a href="about-docker.html#starting-a-new-docker-image"><i class="fa fa-check"></i><b>11.2</b> Starting a new Docker image</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="about-docker.html"><a href="about-docker.html#set-dockerhub-related-secrets"><i class="fa fa-check"></i><b>11.2.1</b> Set Dockerhub related secrets</a></li>
+<li class="chapter" data-level="11.2.2" data-path="about-docker.html"><a href="about-docker.html#updating-workflows-for-new-docker-image"><i class="fa fa-check"></i><b>11.2.2</b> Updating workflows for new Docker image</a></li>
+<li class="chapter" data-level="11.2.3" data-path="about-docker.html"><a href="about-docker.html#modifying-the-dockerfile-for-a-new-image"><i class="fa fa-check"></i><b>11.2.3</b> Modifying the Dockerfile for a new image</a></li>
+<li class="chapter" data-level="11.2.4" data-path="about-docker.html"><a href="about-docker.html#testing-a-modified-docker-image"><i class="fa fa-check"></i><b>11.2.4</b> Testing a modified Docker image</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="spell-check.html"><a href="spell-check.html"><i class="fa fa-check"></i><b>12</b> Spell Check</a>
+<ul>
+<li class="chapter" data-level="12.0.1" data-path="spell-check.html"><a href="spell-check.html#running-locally"><i class="fa fa-check"></i><b>12.0.1</b> Running locally</a></li>
+<li class="chapter" data-level="12.0.2" data-path="spell-check.html"><a href="spell-check.html#ignoring-urls"><i class="fa fa-check"></i><b>12.0.2</b> Ignoring URLs</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="borrowing-chapters-between-courses.html"><a href="borrowing-chapters-between-courses.html"><i class="fa fa-check"></i><b>13</b> Borrowing chapters between courses</a>
+<ul>
+<li class="chapter" data-level="13.0.1" data-path="borrowing-chapters-between-courses.html"><a href="borrowing-chapters-between-courses.html#borrowing-from-a-private-repository"><i class="fa fa-check"></i><b>13.0.1</b> Borrowing from a private repository</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="using-google-docs.html"><a href="using-google-docs.html"><i class="fa fa-check"></i><b>14</b> Using Google Docs</a></li>
+<li class="chapter" data-level="15" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html"><i class="fa fa-check"></i><b>15</b> Automation info and set up</a>
+<ul>
+<li class="chapter" data-level="15.0.1" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#preview-of-render"><i class="fa fa-check"></i><b>15.0.1</b> Preview of render</a></li>
+<li class="chapter" data-level="15.0.2" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#spell-check-1"><i class="fa fa-check"></i><b>15.0.2</b> Spell check</a></li>
+<li class="chapter" data-level="15.0.3" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#code-styling"><i class="fa fa-check"></i><b>15.0.3</b> Code styling</a></li>
+<li class="chapter" data-level="15.0.4" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#url-checking"><i class="fa fa-check"></i><b>15.0.4</b> URL Checking</a></li>
+<li class="chapter" data-level="15.0.5" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#customizing-render-bookdown.yml"><i class="fa fa-check"></i><b>15.0.5</b> Customizing render-bookdown.yml</a></li>
+<li class="chapter" data-level="15.0.6" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#for-a-course-that-needs-to-publish-to-the-leanpub-repository"><i class="fa fa-check"></i><b>15.0.6</b> For a course that needs to publish to the Leanpub repository</a></li>
+<li class="chapter" data-level="15.0.7" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#for-a-course-that-needs-to-publish-to-coursera"><i class="fa fa-check"></i><b>15.0.7</b> For a course that needs to publish to Coursera</a></li>
+<li class="chapter" data-level="15.0.8" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#how-to-enroll-a-repository-to-receive-template-updates"><i class="fa fa-check"></i><b>15.0.8</b> How to enroll a repository to receive template updates</a></li>
+<li class="chapter" data-level="15.0.9" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#how-to-tailor-incoming-sync-changes"><i class="fa fa-check"></i><b>15.0.9</b> How to tailor incoming sync changes:</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html"><i class="fa fa-check"></i><b>16</b> Finishing touches</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#set-up-feedback-method"><i class="fa fa-check"></i><b>16.1</b> Set up feedback method</a>
+<ul>
+<li class="chapter" data-level="16.1.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#step-1-decide-on-a-method-of-feedback-for-your-users-to-use."><i class="fa fa-check"></i><b>16.1.1</b> Step 1) Decide on a method of feedback for your users to use.</a></li>
+<li class="chapter" data-level="16.1.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#step-2-add-feedback-button"><i class="fa fa-check"></i><b>16.1.2</b> Step 2) Add feedback button</a></li>
+<li class="chapter" data-level="16.1.3" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#step-3-add-your-updated-_output.yml-to-a-pull-request."><i class="fa fa-check"></i><b>16.1.3</b> Step 3) Add your updated <code>_output.yml</code> to a pull request.</a></li>
+<li class="chapter" data-level="16.1.4" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#changing-title"><i class="fa fa-check"></i><b>16.1.4</b> Changing title</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#customizing-the-style"><i class="fa fa-check"></i><b>16.2</b> Customizing the Style</a>
+<ul>
+<li class="chapter" data-level="16.2.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#using-a-style-set-1"><i class="fa fa-check"></i><b>16.2.1</b> Using a style set</a></li>
+</ul></li>
+<li class="chapter" data-level="16.3" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#creating-your-own-style"><i class="fa fa-check"></i><b>16.3</b> Creating your own style</a>
+<ul>
+<li class="chapter" data-level="16.3.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#changing-the-favicon"><i class="fa fa-check"></i><b>16.3.1</b> Changing the favicon</a></li>
+<li class="chapter" data-level="16.3.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-logos"><i class="fa fa-check"></i><b>16.3.2</b> Adding logos</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-sections-that-arent-numbered"><i class="fa fa-check"></i><b>16.4</b> Adding sections that aren’t numbered</a></li>
+<li class="chapter" data-level="16.5" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#changing-course-text-colors"><i class="fa fa-check"></i><b>16.5</b> Changing course text colors</a></li>
+<li class="chapter" data-level="16.6" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#modifying-the-image-at-the-top-of-the-course"><i class="fa fa-check"></i><b>16.6</b> Modifying the image at the top of the course</a></li>
+<li class="chapter" data-level="16.7" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-credits"><i class="fa fa-check"></i><b>16.7</b> Adding Credits</a>
+<ul>
+<li class="chapter" data-level="16.7.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-the-credits-table-to-coursera"><i class="fa fa-check"></i><b>16.7.1</b> Adding the Credits table to Coursera</a></li>
+<li class="chapter" data-level="16.7.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-the-credits-table-to-leanpub"><i class="fa fa-check"></i><b>16.7.2</b> Adding the Credits table to Leanpub</a></li>
+<li class="chapter" data-level="16.7.3" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#release-coding"><i class="fa fa-check"></i><b>16.7.3</b> Release coding</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
+<p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Intro to OTTR - Opensource Tools for Training Resources</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+
+
+
+<div class="hero-image-container">
+  <img class= "hero-image" src= "https://github.com/jhudsl/OTTR_Template/raw/main/assets/dasl_thin_main_image.png">
+</div>
+<div id="publishing-with-bookdown" class="section level1" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Publishing with Bookdown</h1>
+<p>Bookdown is published using Github pages which you can set up <a href="https://github.com/jhudsl/OTTR_Template/wiki/Starting-a-new-course-with-this-template#set-up-github-pages">following the set up repository instructions</a>.</p>
+<p>As you modify the names of the chapters of your course and add more chapters (using the <code>.Rmd</code> files), you need to update the <code>_bookdown.yml</code> file accordingly.</p>
+<p>For example let’s say that we added another chapter and named the file <code>03-new_chapter_of_course.Rmd</code>.
+We would update our <code>_bookdown.yml</code> to look like this:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb7-1"><a href="publishing-with-bookdown.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">book_filename</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;Course_Name&quot;</span><span class="at">  </span></span>
+<span id="cb7-2"><a href="publishing-with-bookdown.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chapter_name</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;Chapter &quot;</span><span class="at">  </span></span>
+<span id="cb7-3"><a href="publishing-with-bookdown.html#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">repo</span><span class="kw">:</span><span class="at"> https://github.com/jhudsl/OTTR_Template/</span><span class="co"> ##Make sure you update this for your GitHub Repo!!  </span></span>
+<span id="cb7-4"><a href="publishing-with-bookdown.html#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">rmd_files</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">&quot;index.Rmd&quot;</span><span class="kw">,</span><span class="at">  </span></span>
+<span id="cb7-5"><a href="publishing-with-bookdown.html#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="st">&quot;01-intro.Rmd&quot;</span><span class="kw">,</span><span class="at">   </span></span>
+<span id="cb7-6"><a href="publishing-with-bookdown.html#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="st">&quot;02-chapter_of_course.Rmd&quot;</span><span class="kw">,</span><span class="at">   </span></span>
+<span id="cb7-7"><a href="publishing-with-bookdown.html#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="st">&quot;03-new_chapter_of_course.Rmd&quot;</span><span class="kw">,</span><span class="co">  ##Only this is new!</span></span>
+<span id="cb7-8"><a href="publishing-with-bookdown.html#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="st">&quot;about.Rmd&quot;</span><span class="kw">]</span><span class="at">  </span></span>
+<span id="cb7-9"><a href="publishing-with-bookdown.html#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="fu">new_session</span><span class="kw">:</span><span class="at"> </span><span class="ch">yes</span><span class="at">  </span></span>
+<span id="cb7-10"><a href="publishing-with-bookdown.html#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="fu">delete_merged_file</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="at">  </span></span>
+<span id="cb7-11"><a href="publishing-with-bookdown.html#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="fu">language</span><span class="kw">:</span><span class="at">  </span></span>
+<span id="cb7-12"><a href="publishing-with-bookdown.html#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">ui</span><span class="kw">:</span><span class="at">  </span></span>
+<span id="cb7-13"><a href="publishing-with-bookdown.html#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">chapter_name</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;Chapter &quot;</span><span class="at">  </span></span>
+<span id="cb7-14"><a href="publishing-with-bookdown.html#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="fu">output_dir</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;docs&quot;</span><span class="at">  </span></span></code></pre></div>
+<p>Notice how only one line is different - the one that says <code>03-chapter_of_course.Rmd",</code>
+Be careful about quotation marks: <code>""</code> as well as commas: <code>,</code>!</p>
+<p>Once we do this we can preview the book!</p>
+<p>You can do so by typing:
+<code>bookdown::serve_book()</code> in the RStudio Console.</p>
+<p>Note that when you run <code>bookdown</code> it will create an <code>.rds</code> file; you can generally ignore this file.</p>
+<p>You will then see a live version of your book in your RStudio viewer.</p>
+<p>Note that When a pull request is merged to main, <code>bookdown::render_book()</code> will be re-run by the <a href="#github-actions">GitHub actions</a> and the results added to <code>main</code>.</p>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="choosing-publishing-platforms.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="publishing-with-coursera.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
