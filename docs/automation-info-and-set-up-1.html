@@ -30,9 +30,9 @@
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
 <link rel="prev" href="using-google-docs.html"/>
-<link rel="next" href="finishing-touches-1.html"/>
+<link rel="next" href="customizing-automation.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
-<script src="libs/jquery-3.5.0/jquery-3.5.0.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -151,7 +151,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.0.6" data-path="getting-started-1.html"><a href="getting-started-1.html#set-up-your-github-personal-access-token"><i class="fa fa-check"></i><b>1.0.6</b> 6. Set up your Github Personal access token</a></li>
 <li class="chapter" data-level="1.0.7" data-path="getting-started-1.html"><a href="getting-started-1.html#set-up-github-pages"><i class="fa fa-check"></i><b>1.0.7</b> 7. Set up GitHub pages</a></li>
 <li class="chapter" data-level="1.0.8" data-path="getting-started-1.html"><a href="getting-started-1.html#set-up-branch-rules"><i class="fa fa-check"></i><b>1.0.8</b> 8. Set up branch rules</a></li>
-<li class="chapter" data-level="1.0.9" data-path="getting-started-1.html"><a href="getting-started-1.html#enroll-your-repository-for-ottrpal-updates"><i class="fa fa-check"></i><b>1.0.9</b> 9. Enroll your repository for OTTR updates</a></li>
+<li class="chapter" data-level="1.0.9" data-path="getting-started-1.html"><a href="getting-started-1.html#enroll-your-repository-for-ottr-updates"><i class="fa fa-check"></i><b>1.0.9</b> 9. Enroll your repository for OTTR updates</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="start-editing-your-course.html"><a href="start-editing-your-course.html"><i class="fa fa-check"></i><b>2</b> Start editing your course</a>
 <ul>
@@ -228,11 +228,11 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.4" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#converting-quizzes-from-leanpub-to-coursera-format"><i class="fa fa-check"></i><b>8.4</b> Converting quizzes from Leanpub to Coursera format</a></li>
 <li class="chapter" data-level="8.5" data-path="publishing-with-leanpub.html"><a href="publishing-with-leanpub.html#setting-up-the-_quizzes-repository-checklist"><i class="fa fa-check"></i><b>8.5</b> Setting up the _Quizzes repository checklist:</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="publishing-quizzes-with-answers-hiddens.html"><a href="publishing-quizzes-with-answers-hiddens.html"><i class="fa fa-check"></i><b>9</b> Publishing quizzes with answers hiddens</a>
+<li class="chapter" data-level="9" data-path="publishing-quizzes-with-answers-hidden.html"><a href="publishing-quizzes-with-answers-hidden.html"><i class="fa fa-check"></i><b>9</b> Publishing quizzes with answers hidden</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="publishing-quizzes-with-answers-hiddens.html"><a href="publishing-quizzes-with-answers-hiddens.html#how-to-use-these-repositories"><i class="fa fa-check"></i><b>9.1</b> How to use these repositories:</a></li>
-<li class="chapter" data-level="9.2" data-path="publishing-quizzes-with-answers-hiddens.html"><a href="publishing-quizzes-with-answers-hiddens.html#setting-up-your-ottrpal_quizzes-github-repository"><i class="fa fa-check"></i><b>9.2</b> Setting up your OTTR_Quizzes Github repository</a></li>
-<li class="chapter" data-level="9.3" data-path="publishing-quizzes-with-answers-hiddens.html"><a href="publishing-quizzes-with-answers-hiddens.html#linking-to-your-ottrpal_template-course-github-repository"><i class="fa fa-check"></i><b>9.3</b> Linking to your <code>OTTR_Template</code> course Github repository</a></li>
+<li class="chapter" data-level="9.1" data-path="publishing-quizzes-with-answers-hidden.html"><a href="publishing-quizzes-with-answers-hidden.html#how-to-use-these-repositories"><i class="fa fa-check"></i><b>9.1</b> How to use these repositories:</a></li>
+<li class="chapter" data-level="9.2" data-path="publishing-quizzes-with-answers-hidden.html"><a href="publishing-quizzes-with-answers-hidden.html#setting-up-your-ottr_quizzes-github-repository"><i class="fa fa-check"></i><b>9.2</b> Setting up your OTTR_Quizzes Github repository</a></li>
+<li class="chapter" data-level="9.3" data-path="publishing-quizzes-with-answers-hidden.html"><a href="publishing-quizzes-with-answers-hidden.html#linking-to-your-ottr_template-course-github-repository"><i class="fa fa-check"></i><b>9.3</b> Linking to your <code>OTTR_Template</code> course Github repository</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="citations.html"><a href="citations.html"><i class="fa fa-check"></i><b>10</b> Citations</a>
 <ul>
@@ -257,46 +257,55 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13" data-path="borrowing-chapters-between-courses.html"><a href="borrowing-chapters-between-courses.html"><i class="fa fa-check"></i><b>13</b> Borrowing chapters between courses</a>
 <ul>
 <li class="chapter" data-level="13.0.1" data-path="borrowing-chapters-between-courses.html"><a href="borrowing-chapters-between-courses.html#borrowing-from-a-private-repository"><i class="fa fa-check"></i><b>13.0.1</b> Borrowing from a private repository</a></li>
+<li class="chapter" data-level="13.0.2" data-path="borrowing-chapters-between-courses.html"><a href="borrowing-chapters-between-courses.html#linking-between-chapters"><i class="fa fa-check"></i><b>13.0.2</b> Linking between chapters</a></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="using-google-docs.html"><a href="using-google-docs.html"><i class="fa fa-check"></i><b>14</b> Using Google Docs</a></li>
-<li class="chapter" data-level="15" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html"><i class="fa fa-check"></i><b>15</b> Automation info and set up</a>
+<li class="chapter" data-level="15" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html"><i class="fa fa-check"></i><b>15</b> Automation info and set up</a></li>
+<li class="chapter" data-level="16" data-path="customizing-automation.html"><a href="customizing-automation.html"><i class="fa fa-check"></i><b>16</b> Customizing Automation</a>
 <ul>
-<li class="chapter" data-level="15.0.1" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#preview-of-render"><i class="fa fa-check"></i><b>15.0.1</b> Preview of render</a></li>
-<li class="chapter" data-level="15.0.2" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#spell-check-1"><i class="fa fa-check"></i><b>15.0.2</b> Spell check</a></li>
-<li class="chapter" data-level="15.0.3" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#code-styling"><i class="fa fa-check"></i><b>15.0.3</b> Code styling</a></li>
-<li class="chapter" data-level="15.0.4" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#url-checking"><i class="fa fa-check"></i><b>15.0.4</b> URL Checking</a></li>
-<li class="chapter" data-level="15.0.5" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#customizing-render-bookdown.yml"><i class="fa fa-check"></i><b>15.0.5</b> Customizing render-bookdown.yml</a></li>
-<li class="chapter" data-level="15.0.6" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#for-a-course-that-needs-to-publish-to-the-leanpub-repository"><i class="fa fa-check"></i><b>15.0.6</b> For a course that needs to publish to the Leanpub repository</a></li>
-<li class="chapter" data-level="15.0.7" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#for-a-course-that-needs-to-publish-to-coursera"><i class="fa fa-check"></i><b>15.0.7</b> For a course that needs to publish to Coursera</a></li>
-<li class="chapter" data-level="15.0.8" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#how-to-enroll-a-repository-to-receive-template-updates"><i class="fa fa-check"></i><b>15.0.8</b> How to enroll a repository to receive template updates</a></li>
-<li class="chapter" data-level="15.0.9" data-path="automation-info-and-set-up-1.html"><a href="automation-info-and-set-up-1.html#how-to-tailor-incoming-sync-changes"><i class="fa fa-check"></i><b>15.0.9</b> How to tailor incoming sync changes:</a></li>
+<li class="chapter" data-level="16.1" data-path="customizing-automation.html"><a href="customizing-automation.html#pull-request-checks"><i class="fa fa-check"></i><b>16.1</b> Pull request checks:</a>
+<ul>
+<li class="chapter" data-level="16.1.1" data-path="customizing-automation.html"><a href="customizing-automation.html#check-quiz-formatting"><i class="fa fa-check"></i><b>16.1.1</b> Check quiz formatting</a></li>
+<li class="chapter" data-level="16.1.2" data-path="customizing-automation.html"><a href="customizing-automation.html#check-for-broken-urls"><i class="fa fa-check"></i><b>16.1.2</b> Check for broken URLs</a></li>
+<li class="chapter" data-level="16.1.3" data-path="customizing-automation.html"><a href="customizing-automation.html#preview-rendering"><i class="fa fa-check"></i><b>16.1.3</b> Preview rendering</a></li>
+<li class="chapter" data-level="16.1.4" data-path="customizing-automation.html"><a href="customizing-automation.html#spell-checking"><i class="fa fa-check"></i><b>16.1.4</b> Spell checking</a></li>
+<li class="chapter" data-level="16.1.5" data-path="customizing-automation.html"><a href="customizing-automation.html#style-code"><i class="fa fa-check"></i><b>16.1.5</b> Style code</a></li>
+<li class="chapter" data-level="16.1.6" data-path="customizing-automation.html"><a href="customizing-automation.html#docker-testing"><i class="fa fa-check"></i><b>16.1.6</b> Docker testing</a></li>
 </ul></li>
-<li class="chapter" data-level="16" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html"><i class="fa fa-check"></i><b>16</b> Finishing touches</a>
+<li class="chapter" data-level="16.2" data-path="customizing-automation.html"><a href="customizing-automation.html#rendering-actions"><i class="fa fa-check"></i><b>16.2</b> Rendering actions</a></li>
+<li class="chapter" data-level="16.3" data-path="customizing-automation.html"><a href="customizing-automation.html#manually-running-rendering-or-checks"><i class="fa fa-check"></i><b>16.3</b> Manually running rendering or checks</a></li>
+<li class="chapter" data-level="16.4" data-path="customizing-automation.html"><a href="customizing-automation.html#fixing-broken-github-actions"><i class="fa fa-check"></i><b>16.4</b> Fixing broken GitHub Actions</a>
 <ul>
-<li class="chapter" data-level="16.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#set-up-feedback-method"><i class="fa fa-check"></i><b>16.1</b> Set up feedback method</a>
-<ul>
-<li class="chapter" data-level="16.1.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#step-1-decide-on-a-method-of-feedback-for-your-users-to-use."><i class="fa fa-check"></i><b>16.1.1</b> Step 1) Decide on a method of feedback for your users to use.</a></li>
-<li class="chapter" data-level="16.1.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#step-2-add-feedback-button"><i class="fa fa-check"></i><b>16.1.2</b> Step 2) Add feedback button</a></li>
-<li class="chapter" data-level="16.1.3" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#step-3-add-your-updated-_output.yml-to-a-pull-request."><i class="fa fa-check"></i><b>16.1.3</b> Step 3) Add your updated <code>_output.yml</code> to a pull request.</a></li>
-<li class="chapter" data-level="16.1.4" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#changing-title"><i class="fa fa-check"></i><b>16.1.4</b> Changing title</a></li>
+<li class="chapter" data-level="16.4.1" data-path="customizing-automation.html"><a href="customizing-automation.html#how-to-enroll-a-repository-to-receive-template-updates"><i class="fa fa-check"></i><b>16.4.1</b> How to enroll a repository to receive template updates</a></li>
+<li class="chapter" data-level="16.4.2" data-path="customizing-automation.html"><a href="customizing-automation.html#how-to-tailor-incoming-sync-changes"><i class="fa fa-check"></i><b>16.4.2</b> How to tailor incoming sync changes:</a></li>
 </ul></li>
-<li class="chapter" data-level="16.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#customizing-the-style"><i class="fa fa-check"></i><b>16.2</b> Customizing the Style</a>
-<ul>
-<li class="chapter" data-level="16.2.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#using-a-style-set-1"><i class="fa fa-check"></i><b>16.2.1</b> Using a style set</a></li>
 </ul></li>
-<li class="chapter" data-level="16.3" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#creating-your-own-style"><i class="fa fa-check"></i><b>16.3</b> Creating your own style</a>
+<li class="chapter" data-level="17" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html"><i class="fa fa-check"></i><b>17</b> Finishing touches</a>
 <ul>
-<li class="chapter" data-level="16.3.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#changing-the-favicon"><i class="fa fa-check"></i><b>16.3.1</b> Changing the favicon</a></li>
-<li class="chapter" data-level="16.3.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-logos"><i class="fa fa-check"></i><b>16.3.2</b> Adding logos</a></li>
+<li class="chapter" data-level="17.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#set-up-feedback-method"><i class="fa fa-check"></i><b>17.1</b> Set up feedback method</a>
+<ul>
+<li class="chapter" data-level="17.1.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#step-1-decide-on-a-method-of-feedback-for-your-users-to-use."><i class="fa fa-check"></i><b>17.1.1</b> Step 1) Decide on a method of feedback for your users to use.</a></li>
+<li class="chapter" data-level="17.1.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#step-2-add-feedback-button"><i class="fa fa-check"></i><b>17.1.2</b> Step 2) Add feedback button</a></li>
+<li class="chapter" data-level="17.1.3" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#step-3-add-your-updated-_output.yml-to-a-pull-request."><i class="fa fa-check"></i><b>17.1.3</b> Step 3) Add your updated <code>_output.yml</code> to a pull request.</a></li>
+<li class="chapter" data-level="17.1.4" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#changing-title"><i class="fa fa-check"></i><b>17.1.4</b> Changing title</a></li>
 </ul></li>
-<li class="chapter" data-level="16.4" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-sections-that-arent-numbered"><i class="fa fa-check"></i><b>16.4</b> Adding sections that aren’t numbered</a></li>
-<li class="chapter" data-level="16.5" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#changing-course-text-colors"><i class="fa fa-check"></i><b>16.5</b> Changing course text colors</a></li>
-<li class="chapter" data-level="16.6" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#modifying-the-image-at-the-top-of-the-course"><i class="fa fa-check"></i><b>16.6</b> Modifying the image at the top of the course</a></li>
-<li class="chapter" data-level="16.7" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-credits"><i class="fa fa-check"></i><b>16.7</b> Adding Credits</a>
+<li class="chapter" data-level="17.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#customizing-the-style"><i class="fa fa-check"></i><b>17.2</b> Customizing the Style</a>
 <ul>
-<li class="chapter" data-level="16.7.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-the-credits-table-to-coursera"><i class="fa fa-check"></i><b>16.7.1</b> Adding the Credits table to Coursera</a></li>
-<li class="chapter" data-level="16.7.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-the-credits-table-to-leanpub"><i class="fa fa-check"></i><b>16.7.2</b> Adding the Credits table to Leanpub</a></li>
-<li class="chapter" data-level="16.7.3" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#release-coding"><i class="fa fa-check"></i><b>16.7.3</b> Release coding</a></li>
+<li class="chapter" data-level="17.2.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#using-a-style-set-1"><i class="fa fa-check"></i><b>17.2.1</b> Using a style set</a></li>
+</ul></li>
+<li class="chapter" data-level="17.3" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#creating-your-own-style"><i class="fa fa-check"></i><b>17.3</b> Creating your own style</a>
+<ul>
+<li class="chapter" data-level="17.3.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#changing-the-favicon"><i class="fa fa-check"></i><b>17.3.1</b> Changing the favicon</a></li>
+<li class="chapter" data-level="17.3.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-logos"><i class="fa fa-check"></i><b>17.3.2</b> Adding logos</a></li>
+</ul></li>
+<li class="chapter" data-level="17.4" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-sections-that-arent-numbered"><i class="fa fa-check"></i><b>17.4</b> Adding sections that aren’t numbered</a></li>
+<li class="chapter" data-level="17.5" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#changing-course-text-colors"><i class="fa fa-check"></i><b>17.5</b> Changing course text colors</a></li>
+<li class="chapter" data-level="17.6" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#modifying-the-image-at-the-top-of-the-course"><i class="fa fa-check"></i><b>17.6</b> Modifying the image at the top of the course</a></li>
+<li class="chapter" data-level="17.7" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-credits"><i class="fa fa-check"></i><b>17.7</b> Adding Credits</a>
+<ul>
+<li class="chapter" data-level="17.7.1" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-the-credits-table-to-coursera"><i class="fa fa-check"></i><b>17.7.1</b> Adding the Credits table to Coursera</a></li>
+<li class="chapter" data-level="17.7.2" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#adding-the-credits-table-to-leanpub"><i class="fa fa-check"></i><b>17.7.2</b> Adding the Credits table to Leanpub</a></li>
+<li class="chapter" data-level="17.7.3" data-path="finishing-touches-1.html"><a href="finishing-touches-1.html#release-coding"><i class="fa fa-check"></i><b>17.7.3</b> Release coding</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
@@ -336,153 +345,29 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="automation-info-and-set-up-1" class="section level1" number="15">
 <h1><span class="header-section-number">Chapter 15</span> Automation info and set up</h1>
+<pre><code>## Warning in readLines(dest_file): incomplete final line found on &#39;resources/
+## other_chapters/How-to-set-up-and-customize-GitHub-actions-robots.md&#39;</code></pre>
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <p><strong>Table of Contents</strong> <em>generated with <a href="https://github.com/thlorenz/doctoc">DocToc</a></em></p>
 <ul>
-<li><a href="automation-info-and-set-up-1.html#preview-of-render">Preview of render</a></li>
-<li><a href="spell-check.html#spell-check">Spell check</a></li>
-<li><a href="automation-info-and-set-up-1.html#code-styling">Code styling</a></li>
-<li><a href="automation-info-and-set-up-1.html#url-checking">URL Checking</a></li>
-<li><a href="#customizing-render-bookdownyml">Customizing render-bookdown.yml</a></li>
-<li><a href="automation-info-and-set-up-1.html#for-a-course-that-needs-to-publish-to-the-leanpub-repository">For a course that needs to publish to the Leanpub repository</a></li>
-<li><a href="automation-info-and-set-up-1.html#for-a-course-that-needs-to-publish-to-coursera">For a course that needs to publish to Coursera</a></li>
+<li><a href="customizing-automation.html#customizing-automation">Customizing Automation</a>
+<ul>
+<li><a href="customizing-automation.html#pull-request-checks">Pull request checks:</a>
+<ul>
+<li><a href="customizing-automation.html#check-quiz-formatting">Check quiz formatting</a></li>
+<li><a href="customizing-automation.html#check-for-broken-urls">Check for broken URLs</a></li>
+<li><a href="customizing-automation.html#preview-rendering">Preview rendering</a></li>
+<li><a href="customizing-automation.html#spell-checking">Spell checking</a></li>
+<li><a href="customizing-automation.html#style-code">Style code</a></li>
+<li><a href="customizing-automation.html#docker-testing">Docker testing</a></li>
+</ul></li>
+<li><a href="customizing-automation.html#rendering-actions">Rendering actions</a></li>
+<li><a href="customizing-automation.html#manually-running-rendering-or-checks">Manually re-running rendering or checks</a></li>
+<li><a href="customizing-automation.html#fixing-broken-github-actions">Fixing broken GitHub actions</a></li>
+</ul></li>
 </ul>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-<p>Here’s a summary of the Github actions set up in this repository.</p>
-<p>Note: if you are not a part of jhudsl organization, you will need to set follow these instructions to set up your GitHub secrets before these actions will work.</p>
-<p>In summary, here’s what the GitHub actions do for you (when set up):</p>
-<ul>
-<li>Re-render Bookdown after merging to main</li>
-<li>Create a preview of the rendered version with changes you’ve made on a pull request</li>
-<li>Re convert files for Coursera</li>
-<li>Spell check</li>
-<li>Fix code styling</li>
-<li>Checks for broken URLs</li>
-<li>Copy over Leanpub-needed files to the Leanpub repository</li>
-<li>Re-render Leanpub files (on the other repository)</li>
-<li>Checks if Docker image changes successfully build</li>
-<li>Push changed Docker images to Dockerhub</li>
-</ul>
-<p>Here’s a diagram to summarize:
-<img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&amp;pageid=p" /></p>
-<p>These Github actions also work across repositories to support converting Bookdown content into formats ready for publishing on Coursera or Leanpub.</p>
-<p>If you are only looking to use this template for creating a Bookdown course, this diagram is not as pertinent.</p>
-<div id="preview-of-render" class="section level3" number="15.0.1">
-<h3><span class="header-section-number">15.0.1</span> Preview of render</h3>
-<p>After you open a pull request, a preview of the renders as they will appear after the pull request is accepted is run and linked to in a comment on the pull request. Upon each commit these previews will re-render and edit the comment with the time of the latest render. These Github Actions are located in <a href="https://github.com/jhudsl/OTTR_Template/tree/main/.github/workflows/render-preview.yml">render-preview.yml</a>.
-These previews do NOT incorporate any changes influenced by any changes to the Docker image if the Dockerfile is also updated in the same pull request.</p>
-</div>
-<div id="spell-check-1" class="section level3" number="15.0.2">
-<h3><span class="header-section-number">15.0.2</span> Spell check</h3>
-<p>Github actions will automatically <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml">run a spell check on all Rmds</a> whenever a pull request to the <code>main</code> branch is filed.
-Depending on your preference, you may find it easier to spell check manually on your local computer before pushing to Github.</p>
-<p>It will fail if there are more than 2 spelling errors and you’ll need to resolve those before being able to merge your pull request.</p>
-<p>To resolve those spelling errors, go to this repository’s <code>Actions</code> tab.
-Then, click on the GitHub action from the PR you just submitted.
-Scroll all the way down to <code>Artifacts</code> and click <code>spell-check-results</code>.
-This will download a zip file with a TSV that lists all the spelling errors.</p>
-<p>Some of these errors may be things that the spell check doesn’t recognize for example: <code>ITCR</code> or <code>DaSL</code>.
-If it’s a ‘word’ the spell check should recognize, you’ll need to add this to the dictionary.</p>
-<p>Go to the <code>resources/dictionary.txt</code> file.
-Open the file and add the new ‘word’ to its appropriate place (the words are in alphabetical order).
-Then commit the changes to <code>resources/dictionary.txt</code> to your branch and this should make the spell check status check pass.</p>
-</div>
-<div id="code-styling" class="section level3" number="15.0.3">
-<h3><span class="header-section-number">15.0.3</span> Code styling</h3>
-<p>Github actions will run the <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml"><code>styler</code> package to all style R in all Rmds</a> whenever a pull request to the <code>main</code> branch is filed.
-Style changes will automatically be committed back to your branch.</p>
-</div>
-<div id="url-checking" class="section level3" number="15.0.4">
-<h3><span class="header-section-number">15.0.4</span> URL Checking</h3>
-<p>GitHub actions runs a check on all the URLs upon creating a pull request to the <code>main</code> branch.
-If it fails, you’ll need to go the <code>Actions</code> tab of this repository, then find the GitHub <code>check_urls</code> job for the last commit you just pushed.
-Click on <code>check_urls</code> and the specific step of <code>Check URLs</code> to see a print out of the URLs tested.</p>
-<p>If the URL checker is failing on something that isn’t really a URL or doesn’t need to be checked, open up the GitHub actions file: <code>.github/workflows/url-checker.yml</code> and add the imposter URL on to the <code>exclude-urls:</code> argument with a comma in between.</p>
-</div>
-<div id="customizing-render-bookdown.yml" class="section level3" number="15.0.5">
-<h3><span class="header-section-number">15.0.5</span> Customizing render-bookdown.yml</h3>
-<p>If you plan on doing a lot of customizing with GitHub actions or would like to become more familiar, we recommend reading <a href="https://itnext.io/getting-started-with-github-actions-fe94167dbc6d">this article</a> to get your feet wet. Then <a href="https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions">this reference guide</a> in the GitHub actions docs is super useful.</p>
-<p>Note that <code>build-all</code> and <code>docker-build-test</code> are not something we recommend requiring for status checks because <code>docker-build-test</code> is only run if there are changes to the Dockerfile and <code>build-all</code> is only run upon the acceptance and merging of a pull request.</p>
-<p>However for simplicity purposes there are two sections this Github action that can you keep off if you won’t be making changes to the Docker image or you won’t be wanting it to sync to Google Slides automatically.</p>
-</div>
-<div id="for-a-course-that-needs-to-publish-to-the-leanpub-repository" class="section level3" number="15.0.6">
-<h3><span class="header-section-number">15.0.6</span> For a course that needs to publish to the Leanpub repository</h3>
-<p><code>transfer-rendered-files.yml</code> is a Github action that will copy over the output <code>docs/</code> files rendered by Bookdown to a parallel <code>Leanpub</code> repository.</p>
-<p>Once <code>build-all</code> is run, the <code>docs/</code> folder where the rendered files are place are copied over to the Leanpub repository and filed as a pull request.</p>
-<p>There are two edits to <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/transfer-rendered-files.yml"><code>.github/workflow/transfer-rendered-files.yml</code></a> that need to be done to turn on the automatic copying of files between these repos:</p>
-<ol style="list-style-type: decimal">
-<li>Change line 28 to the repository name you would like the <code>docs/</code> files to be transferred to.</li>
-</ol>
-<pre><code>repository: jhudsl/Course_Template_Quizzes</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li>Uncomment lines 13-18 in this file:</li>
-</ol>
-<pre><code># Only run after the render finishes running
-#workflow_run:
-#  workflows: [ &quot;Build, Render, and Push&quot; ]
-#  branches: [ main ]
-#  types:
-#    - completed</code></pre>
-</div>
-<div id="for-a-course-that-needs-to-publish-to-coursera" class="section level3" number="15.0.7">
-<h3><span class="header-section-number">15.0.7</span> For a course that needs to publish to Coursera</h3>
-<p>The <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml">render-bookdown.yml</a> github action the chapter content for Coursera by using this command within the docker image:</p>
-<pre><code>ottrpal::render_coursera()</code></pre>
-<p>You can run this same command locally if you wish to test something.
-This render the chapters without the table of Contents.
-If you do not wish to publish to Coursera and prefer this do not run, you may delete this section (but it shouldn’t hurt anything to keep as is – unless for some reason it causes you some troubles).</p>
-<p>Additionally, the Leanpub companion repository has a <a href="https://github.com/jhudsl/OTTR_Quizzes/blob/main/scripts/coursera_quiz_conversion.R">Leanpub -&gt; Coursera quiz conversion script</a> if you choose to create quizzes and publish on both Leanpub and Coursera.</p>
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<p><strong>Table of Contents</strong> <em>generated with <a href="https://github.com/thlorenz/doctoc">DocToc</a></em></p>
-<ul>
-<li><a href="automation-info-and-set-up-1.html#how-to-enroll-a-repository-to-receive-template-updates">How to enroll a repository to receive template updates</a></li>
-<li><a href="automation-info-and-set-up-1.html#how-to-tailor-incoming-sync-changes">How to tailor incoming sync changes:</a></li>
-</ul>
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-<p>This original course template: <a href="https://github.com/jhudsl/OTTR_Template" class="uri">https://github.com/jhudsl/OTTR_Template</a> is always a work in progress.
-We are working on adding more features and smoothing out bugs as we go (this is also why <a href="https://github.com/jhudsl/OTTR_Template/issues/new/choose">your feedback is greatly appreciated</a>).</p>
-<p>When updates are made to files that aren’t specific to the course content but instead run checks and other processes in the original repository, pull requests are filed automatically to any downstream repositories made from this template.</p>
-</div>
-<div id="how-to-enroll-a-repository-to-receive-template-updates" class="section level3" number="15.0.8">
-<h3><span class="header-section-number">15.0.8</span> How to enroll a repository to receive template updates</h3>
-<p><strong>To enroll in these automatic update PRs, the new course’s repository name will need to be added to <a href="https://github.com/jhudsl/OTTR_Template/edit/main/.github/sync.yml">this file in the original template</a></strong></p>
-<ul>
-<li>Use <a href="https://github.com/jhudsl/OTTR_Template/edit/main/.github/sync.yml">this link to edit the file</a>.</li>
-<li>Add your repository’s name where it says <code>#NEW REPO HERE#</code>, being careful to indent the same amount as the other repositories listed.
-<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/edit-sync.yml.png" /></li>
-<li>Choose <code>Create a new branch for this commit and start a pull request.</code> Name the branch what you like.
-<img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/add-repo-sync.png" /></li>
-<li>Name the commit <code>Add new repository to sync</code></li>
-<li>Click <code>Propose changes</code>.</li>
-<li>Write a short pull request description describing that you are adding a new repository to the sync.yml file.</li>
-<li>Click <code>Create Pull Request</code></li>
-<li>Request <code>@cansavvy</code> as a reviewer.</li>
-</ul>
-<p>If the your new course doesn’t need some of the functionality of these files or you find the automatic bothersome, you can feel free to use <a href="https://github.com/marketplace/actions/repo-file-sync-action#sync-the-same-files-to-multiple-repositories">this guide</a> to tailor which files you want updates for.
-<em>If you have any questions about the implications of any of these updates or files, please tag <code>@cansavvy</code>.</em></p>
-</div>
-<div id="how-to-tailor-incoming-sync-changes" class="section level3" number="15.0.9">
-<h3><span class="header-section-number">15.0.9</span> How to tailor incoming sync changes:</h3>
-<p>Upon a new release, a pull request is automatically filed to any repositories that are added to the <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/sync.yml">sync.yml file</a>.
-<strong>Carefully review the latest <a href="https://github.com/jhudsl/OTTR_Template/wiki/Release-Notes">release notes</a> and the <code>Files changed</code> tab of the sync PR.</strong> And again, tag <code>@cansavvy</code> with any questions.</p>
-<p>It might be that you want some of the changes from the PR but not all of them.
-Each file that is updated in a sync PR is updated in its own commit.</p>
-<ul>
-<li><p>If you don’t want the changes from a particular file, you can always <a href="https://git-scm.com/docs/git-revert">revert that particular commit</a> before merging the sync PR.<br />
-If you will not want any updates on this file in the future, you may want to remove a file from being synced in your repo <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/sync.yml">by reconfiguring the sync file</a>.</p></li>
-<li><p>If you want only some changes, but they are not on a whole file basis, you could check out the branch and make manual edits.
-To checkout the branch, navigate to your own repository you should be able to run:<br />
-</p></li>
-</ul>
-<pre><code>git checkout repo-sync/OTTR_Template/default</code></pre>
-<ul>
-<li>If you don’t want any of the changes you can close the PR entirely.
-You may want to unenroll your repository from the <a href="https://github.com/jhudsl/OTTR_Template/blob/main/.github/sync.yml">sync github actions by deleting your repo name from this file</a> if this will continue to be the case.</li>
-</ul>
-
-</div>
 </div>
 <hr>
 <center> 
@@ -498,7 +383,7 @@ You may want to unenroll your repository from the <a href="https://github.com/jh
         </div>
       </div>
 <a href="using-google-docs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="finishing-touches-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="customizing-automation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

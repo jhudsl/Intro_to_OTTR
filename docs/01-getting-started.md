@@ -2,7 +2,7 @@
 # Getting started
 
 
-For any OTTR Questions we suggest joining the [OTTR Google Group](https://github.com/jhudsl/OTTR_Template/wiki/Getting-Help-(Google-Group)) and adding a discussion there about the problems you are encountering or questions you have. 
+For any OTTR questions we suggest joining the [OTTR Google Group](https://github.com/jhudsl/OTTR_Template/wiki/Getting-Help-(Google-Group)) and adding a discussion there about the problems you are encountering or questions you have. 
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -25,7 +25,7 @@ Upon creating your repository, issues for getting your course started will be au
 
 ### 1. Create a repository from this template
 
-In the upper right of the landing page for this repository, click the green `Use this template` button and follow the steps to set up your course's GitHub repository.
+In the upper right of the [landing page for this repository](https://github.com/jhudsl/OTTR_Template/tree/1.8), click the green `Use this template` button and follow the steps to set up your course's GitHub repository.
 
 ![Where is the `Use this template` button?](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/template_button.png)
 
@@ -55,11 +55,13 @@ Choose the `write` option then click `Add jhudsl-robot to this repository`.
 
 ### 6. Set up your Github Personal access token
 
-The OTTR robots need permissions to run some of the actions. You only need to do this once as an organization (if this course is under `jhudsl` you don't need to do this step). 
+The OTTR robots need permissions to run some of the actions. 
 
-To give them permission for all the actions, you need to set a GitHub secret. Go to `Settings` > `Secrets` and scroll down to `organization secrets` or you can set this for each repository by creating a `repository secret`. [Read more about GitHub secrets here](https://docs.github.com/en/actions/security-guides/encrypted-secrets) if you have general questions. 
+To give them permission for all the actions, you need to set a GitHub secret we will call `GH_PAT`. Go to `Settings` > `Secrets` and scroll down to `Repository secrets`. [Read more about GitHub secrets here](https://docs.github.com/en/actions/security-guides/encrypted-secrets) if you have general questions. 
 
-- Click `New repository secret` button. 
+If you have organization admin privileges and plan on making multiple courses with OTTR, you can set `GH_PAT` as an organization secret so you don't have to do this again You only need to do this once as an organization (if this course is under `jhudsl` you don't need to do this step). 
+
+- Click `New repository secret`/`New organization secret` button. 
 - Under name you must use `GH_PAT`. 
 - For `value`: Create a personal access token [following these instructions](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token#creating-a-token). Underneath `Select scopes`, check both `repo` and `workflow`.
 Then copy the PAT and save as the value. Your Github actions should all be able to run smoothly now. 
@@ -77,6 +79,8 @@ Go to `Settings` > `Pages`.
 - Lastly, check the box that says `Enforce HTTPS` at the bottom of this page.   
 
 ![Enforce HTTPS](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/change_https.png)
+
+\* Note that if you go to your pages url right now (before you've pushed any file changes) you might see a 404 error because nothing has been triggered to be rendered. You can check your url pages after you file your first pull request (which we will guide you through [in the next section](https://github.com/jhudsl/OTTR_Template/wiki/Start-editing-your-course)). 
 
 ### 8. Set up branch rules
 
@@ -119,6 +123,7 @@ When updates are made to files that aren't specific to the course content but in
 ![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/add-repo-sync.png)
 - Name the commit `Add new repository to sync`
 - Click `Propose changes`.
+- [See this guide](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) for any questions you have about creating a pull request from your forked repository. 
 - Write a short pull request description describing that you are adding a new repository to the sync.yml file.
 - Click `Create Pull Request`
 - Request `@cansavvy` as a reviewer.
@@ -157,11 +162,13 @@ Now you have a course repository on GitHub and you're ready to start editing fil
 For any set of file changes, its recommended you file a pull request (which [the section below](#getting-started-with-the-github-workflow) will guide you on if you are unfamiliar). Filing a pull request initiates a series of checks done automatically by GitHub actions which will help you as you add content to your course (If you commit directly to the `main` branch, you will not reap the full benefit of these automatic checks). 
 
 These checks will do important things like:
-* Check that the all the urls actually take learners somewhere
-* Check that the code is styled using the `styler` package
-* Check that the spelling is correct using the `spelling` package
-* Create previews of the rendered versions of the course
-* Check the formatting of any quizzes
+* Check that the all the urls actually take learners somewhere (`check-urls`)
+* Check that the code is styled using the `styler` package (`style-and-sp-check`)
+* Check that the spelling is correct using the `spelling` package (`style-and-sp-check`)
+* Create previews of the rendered versions of the course (`render-preview`)
+* Check the formatting of any quizzes (`check-quizzes`)
+
+You can adjust what checks are run by editing the `config_automation.yml` file. This is further discussed in this section about [the GitHub Actions](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots). 
 
 ## File changes to be made
 
@@ -272,13 +279,21 @@ Congrats! You've just opened a pull request!
 
 With your pull request open, the series of OTTR GitHub actions checks will commence! They will print out reports in comments on your pull request. 
 
-If you need more information on failed GitHub actions you can scroll to the bottom of your pull request where the status of the checks are shown and click on `Details` for more information. If you are unsure what the error message means and have trouble addressing it, please [file an issue on the OTTR_Template repository to get help](https://github.com/jhudsl/OTTR_Template/issues/new?assignees=cansavvy&labels=bug&template=course-template-problem-report.md).
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/gha-checks.png)
 
-For more on [what to put in this pull request's description you can read this chapter](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/engaging-in-code-review---as-an-author.html)
+Read those comments to begin addressing the problems with more commits to your branch. 
+
+You can adjust what checks are run by editing the `config_automation.yml` file. This is further discussed in this section about [the GitHub Actions](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots). 
+ 
+If you need more information on failed GitHub actions you can scroll to the bottom of your pull request where the status of the checks are shown and click on `Details` for more information. If you are unsure what the error message means and have trouble addressing it, please [file an issue on the OTTR_Template repository to get help](https://github.com/jhudsl/OTTR_Template/issues/new?assignees=cansavvy&labels=bug&template=course-template-problem-report.md).
 
 To summarize, this is what this workflow looks like:
 
 <img src="https://docs.google.com/presentation/d/1IJ_uFxJud7OdIAr6p8ZOzvYs-SGDqa7g4cUHtUld03I/export/png?id=1IJ_uFxJud7OdIAr6p8ZOzvYs-SGDqa7g4cUHtUld03I&pageid=g1014c75158f_0_675" width="800"/>
+
+For more on [what to put in a pull request's description you can read this chapter](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/engaging-in-code-review---as-an-author.html)
+
+For more on [how to review a pull request, see this chapter](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/engaging-in-code-review---as-a-reviewer.html)
 
 ### More resources for learning GitHub
 
@@ -379,8 +394,10 @@ If possible find people in your target audience demographic to give you feedback
 
 ### Example courses
 Beyond our template, check out these courses we have made using this template for additional examples of how we approached content creation:
-1) [Documentation and Usability](https://jhudatascience.org/Documentation_and_Usability/)
-2) [Leadership for Cancer Informatics Research](https://jhudatascience.org/Informatics_Research_Leadership/)
+1) [Documentation and Usability](https://github.com/jhudsl/Documentation_and_Usability/)
+2) [Leadership for Cancer Informatics Research](https://github.com/jhudsl/Informatics_Research_Leadership/)
+3) [Reproducibility in Cancer Informatics](https://github.com/jhudsl/Reproducibility_in_Cancer_Informatics)
+4) [Advanced Reproducibility in Cancer Informatics](https://github.com/jhudsl/Adv_Reproducibility_in_Cancer_Informatics)
 
 # Setting up images and graphics
 

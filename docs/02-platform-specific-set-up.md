@@ -2,6 +2,16 @@
 # Choosing Publishing platforms
 
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Choosing publishing platforms](#choosing-publishing-platforms)
+- [Links to the guides for each platform:](#links-to-the-guides-for-each-platform)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Choosing publishing platforms
 
 This template helps you prepare material to publish, but there are certain steps that cannot be automated. In those instances we've provided step-by-step guides to get you started on getting your material published on the platforms.
@@ -93,11 +103,14 @@ You will need to set up your own educator profile and course shell through your 
 
 ## Converting your files for upload to Coursera
 
-The Github actions set up in the [render-coursera.yml](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-coursera.yml) render your course material in a format suitable for linking to Coursera. It depends on the successful completion of the [render-bookdown.yml](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml).
+The Github actions set up in the render-all.yml render your course material in a format suitable for linking to Coursera.
 This Coursera version is identical except that the table of contents bar on the left side has been dropped so as to not confuse Coursera users about navigating the course.
-These files can be previewed in the `docs/coursera/` folder and a link to the Coursera version is printed out in a GitHub comment in your pull request by `render-preview.yml`. 
+These files can be previewed in the `docs/no_toc` folder and a link to the Coursera version is printed out in a GitHub comment in your pull request by `render-preview.yml`. 
 
-In the Leanpub repo, Leanpub-formatted quizzes can be converted to a Coursera yaml format. Or alternatively if you do not wish to have a Leanpub version of your course, you can either manually enter your Coursera quizzes or manually write a Coursera yaml file following the format of our [Coursera template quiz](https://github.com/jhudsl/OTTR_Template/blob/main/coursera_quizzes/quiz_ch1.md.yml).
+If you have written your quizzes in Leanpub format first, `render-all.yml` github action will convert those quizzes so they are ready for upload to Coursera. 
+
+Or alternatively if you do not wish to have a Leanpub version of your course, you can write your quizzes directly on Coursera's website. 
+You can download the quiz you write on their website as a yaml and store it on your repository as well. 
 
 ## Navigating to your course on Coursera
 
@@ -133,20 +146,20 @@ Now you are ready to add a chapter!
 
 ### Adding new chapters to Coursera
 
-You'll need to link out each chapters in Coursera by providing a url built from your Github pages.
+You'll need to link out each chapters in Coursera by providing a url built from your Github pages for your course.
 
-You can see a preview of these chapters you will link to in Coursera by going to your [Github pages](https://guides.github.com/features/pages/), but adding `/coursera` at the end of your url before the chapter file name.
+You can see a preview of these chapters you will link to in Coursera by going to the [Github pages](https://guides.github.com/features/pages/) for your course, but adding `/no_toc` at the end of your url before the chapter file name.
 
 So the urls for each of your chapters which you will supply to Coursera in the next steps will look like this:
 ```
-<main-github-pages-url>/coursera/<html_filename>
+<main-github-pages-url>/no_toc/<html_filename>
 ```
 If you are unsure what the main url for your Github pages is, in your github repository, go to `Settings` > `Pages` and you'll see `Your site is published at:`
 
 So for example, the introduction chapter of this template would be linked by using this url:
 
 ```
-https://jhudatascience.org/OTTR_Template/coursera/introduction.html
+https://jhudatascience.org/OTTR_Template/no_toc/introduction.html
 ```
 
 To add this URL to Coursera, add a new lesson, click `+ More` and choose `Ungraded Plugin`.
@@ -181,7 +194,7 @@ If the url you provided was correct, you should see a preview of your chapter:
 
 You may want to edit the title at the top of this page to indicate the material being linked.
 
-Now click `Publish` in the left upper corner (don't worry it's not actually publishing publicly, its just saving your changes).
+Now click `Publish` in the left upper corner (don't worry it's not actually publishing publicly, it is just saving your changes).
 And it will ask you again to really scare you, but yes, click `Publish`.
 
 ![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-9.png)
@@ -358,12 +371,11 @@ Github actions in this repository will attempt to do the Bookdown to Leanpub con
 
 ### Setting up Leanpub-related GitHub actions
 
-\* Note that if you decide to [make your quizzes private](https://github.com/jhudsl/OTTR_Template/wiki/Making-quizzes-private) and use the `OTTR_Quizzes` repo for quiz storage, this step is not relevant to you.
-
 When you are ready to begin publishing to Leanpub, you will want to turn on a few Github Actions that are included in the template but by default, turned off. 
 
-- [ ] Uncomment the trigger noted in your `.github/workflows/render-leanpub.yml` file
-- [ ] Uncomment the trigger noted in your `.github/workflows/check-quizzes.yml` file
+In your [config_automation.yml file](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots), you will need to turn on two actions in particular: 
+- `render-leanpub: yes`
+- `check-quizzes:yes`
 
 File a pull request with these changes and merge these to main. 
 When you file a pull request, the quiz formatting will be checked automatically and reported on in a link on a comment in your pull request. 
@@ -422,7 +434,7 @@ See an [example quiz here](https://github.com/jhudsl/OTTR_Quizzes/blob/main/quiz
 ### Leanpub quizzes 
 
 Leanpub is specific about how quizzes should be formatted and it won't create a preview if any question or quiz doesn't follow these rules. 
-Our GitHub action for checking quizzes (In file, `.github/workflows/check-quizzes.yml`) will print out a list of errors for you which you can retrieve from a pull request comment that is automatically printed. This check is only run when changes are made to the `quizzes/`. 
+Our [GitHub action for checking quizzes](#setting-up-leanpub-related-github-actions) (In file, `.github/workflows/pull-request.yml` underneath `check-quizzes` section) will print out a list of errors for you which you can retrieve from a pull request comment that is automatically printed. This check is only run when changes are made to the `quizzes/`. 
 At this time, two types of questions are supported. (Short answers are not yet supported by our checks but will be added in the future).
 
 ##### Standard multiple choice: 
@@ -486,7 +498,7 @@ Additionally, the [`ottrpal`](https://github.com/jhudsl/ottrpal) package has a `
 
 ## Setting up the _Quizzes repository checklist:
 
-- [ ] A [`GH_PAT` has been set in the `_Quizzes` repository's GithHub secrets](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets). 
+- [ ] A [`GH_PAT` has been set in the main Template and the `_Quizzes` repository if you are using a separate `_Quizzes` repository](https://github.com/jhudsl/OTTR_Template/wiki/Setting-up-GitHub-secrets). 
 
 - [ ] [Your Leanpub course as been created on Leanpub](#hosting-your-course-on-leanpub) 
   - [ ] Writing mode in this course is set to `GitHub` and your main OTTR_Template repository is linked. 
@@ -503,7 +515,7 @@ Additionally, the [`ottrpal`](https://github.com/jhudsl/ottrpal) package has a `
 
 - [ ] The [`ottrpal::bookdown_to_leanpub()` ran successfully](#leanpub-rendering). 
 
-# Publishing quizzes with answers hiddens
+# Publishing quizzes with answers hidden
 
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

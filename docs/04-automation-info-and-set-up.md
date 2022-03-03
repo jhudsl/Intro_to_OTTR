@@ -2,62 +2,98 @@
 # Automation info and set up
 
 
+```
+## Warning in readLines(dest_file): incomplete final line found on 'resources/
+## other_chapters/How-to-set-up-and-customize-GitHub-actions-robots.md'
+```
+
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Preview of render](#preview-of-render)
-- [Spell check](#spell-check)
-- [Code styling](#code-styling)
-- [URL Checking](#url-checking)
-- [Customizing render-bookdown.yml](#customizing-render-bookdownyml)
-- [For a course that needs to publish to the Leanpub repository](#for-a-course-that-needs-to-publish-to-the-leanpub-repository)
-- [For a course that needs to publish to Coursera](#for-a-course-that-needs-to-publish-to-coursera)
+- [Customizing Automation](#customizing-automation)
+  - [Pull request checks:](#pull-request-checks)
+    - [Check quiz formatting](#check-quiz-formatting)
+    - [Check for broken URLs](#check-for-broken-urls)
+    - [Preview rendering](#preview-rendering)
+    - [Spell checking](#spell-checking)
+    - [Style code](#style-code)
+    - [Docker testing](#docker-testing)
+  - [Rendering actions](#rendering-actions)
+  - [Manually re-running rendering or checks](#manually-running-rendering-or-checks)
+  - [Fixing broken GitHub actions](#fixing-broken-github-actions)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+# Customizing Automation
 
-Here's a summary of the Github actions set up in this repository.
+By default, all automation steps and checks will run. But depending on the needs of your course, you can turn these on and off by going to the `config_automation.yml` file and switching options to `yes` or `no`. 
 
-Note: if you are not a part of jhudsl organization, you will need to set follow these instructions to set up your GitHub secrets before these actions will work.
+The `config_automation.yml` file looks like this:
 
-In summary, here's what the GitHub actions do for you (when set up):
+```
+# Formatting Checks (run at pull request)
+check-quizzes: yes
+url-checker: yes
+render-preview: yes
+style-and-sp-check: yes
+...
+```
 
-- Re-render Bookdown after merging to main
-- Create a preview of the rendered version with changes you've made on a pull request
-- Re convert files for Coursera
-- Spell check
-- Fix code styling
-- Checks for broken URLs
-- Copy over Leanpub-needed files to the Leanpub repository
-- Re-render Leanpub files (on the other repository)
-- Checks if Docker image changes successfully build
-- Push changed Docker images to Dockerhub
+There are two main sets of automation steps and checks run:
+- `.github/workflows/pull-request.yml` : run upon opening a pull request
+- `.github/workflows/render-all.yml`: run upon changes being merged to the `main` branch 
 
-Here's a diagram to summarize:
-![](https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=p)
+## Pull request checks: 
 
-These Github actions also work across repositories to support converting Bookdown content into formats ready for publishing on Coursera or Leanpub.
+These actions are triggered upon a pull request being opened. It's set up is in the file: `.github/workflows/pull-request.yml`/.
 
-If you are only looking to use this template for creating a Bookdown course, this diagram is not as pertinent.
+### Check quiz formatting
+In the `config_automation.yml` file it is set by:
+```
+check-quizzes: no
+```
+By default, it is set to `no`. But if you wish to [create quizzes on Leanpub](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Leanpub), you should set this to `yes`. This is not necessary if you only want quizzes for Coursera. 
+Leanpub needs a particular format for it to upload correctly. This action will look for quizzes in a `quizzes` directory and check for these items. The outcome of these quiz checks will be printed to a GitHub comment on your pull request. 
 
-### Preview of render
+### Check for broken URLs
+In the `config_automation.yml` file it is set by:
+```
+url-checker: yes
+```
 
-After you open a pull request, a preview of the renders as they will appear after the pull request is accepted is run and linked to in a comment on the pull request. Upon each commit these previews will re-render and edit the comment with the time of the latest render. These Github Actions are located in [render-preview.yml](https://github.com/jhudsl/OTTR_Template/tree/main/.github/workflows/render-preview.yml).
+GitHub actions runs a check on all the URLs upon creating a pull request to the `main` branch.
+If it fails, you'll need to go the `Actions` tab of this repository, then find the GitHub `check_urls` job for the last commit you just pushed.
+Click on `check_urls` and the specific step of `Check URLs` to see a print out of the URLs tested.
+
+If the URL checker is failing on something that isn't really a URL or doesn't need to be checked, open up the `pull-request.yml`, scroll down to the `url-check` step and add the imposter URL on to the `exclude-urls:` argument with a comma in between.
+
+### Preview rendering
+In the `config_automation.yml` file it is set by:
+```
+render-preview: yes
+```
+After you open a pull request, a preview of the renders will be linked in a automatic comment on the pull request. Upon each commit these previews will re-render and edit the comment with the latest render. 
+
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/preview_comment.png)
+
+These Github Actions are located in `render-preview` section of the `pull-request.yml`.
 These previews do NOT incorporate any changes influenced by any changes to the Docker image if the Dockerfile is also updated in the same pull request.
 
-### Spell check
 
-Github actions will automatically [run a spell check on all Rmds](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml) whenever a pull request to the `main` branch is filed.
-Depending on your preference, you may find it easier to spell check manually on your local computer before pushing to Github.
+### Spell checking
+In the `config_automation.yml` file it is set by:
+```
+spell-check: yes
+```
+Github actions will automatically [run a spell check on all Rmd's and md's](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml) whenever a pull request to the `main` branch is filed.
 
-It will fail if there are more than 2 spelling errors and you'll need to resolve those before being able to merge your pull request.
+It will fail if there are more than 2 spelling errors and you'll need to resolve those before being able to merge your pull request. Errors will be printed out on a GitHub comment on your pull request. 
 
-To resolve those spelling errors, go to this repository's `Actions` tab.
-Then, click on the GitHub action from the PR you just submitted.
-Scroll all the way down to `Artifacts` and click `spell-check-results`.
-This will download a zip file with a TSV that lists all the spelling errors.
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/spell_check_comment.png)
 
+To resolve those spelling errors, click on the link with the errors on the autogenerated comment. 
 Some of these errors may be things that the spell check doesn't recognize for example: `ITCR` or `DaSL`.
 If it's a 'word' the spell check should recognize, you'll need to add this to the dictionary.
 
@@ -65,61 +101,46 @@ Go to the `resources/dictionary.txt` file.
 Open the file and add the new 'word' to its appropriate place (the words are in alphabetical order).
 Then commit the changes to `resources/dictionary.txt` to your branch and this should make the spell check status check pass.
 
-### Code styling
-
-Github actions will run the [`styler` package to all style R in all Rmds](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml) whenever a pull request to the `main` branch is filed.
+### Style code 
+In the config_automation.yml file it is set by:
+```
+style-code: yes
+```
+The `styler` package to all style R in all Rmds.
 Style changes will automatically be committed back to your branch.
 
-### URL Checking
-
-GitHub actions runs a check on all the URLs upon creating a pull request to the `main` branch.
-If it fails, you'll need to go the `Actions` tab of this repository, then find the GitHub `check_urls` job for the last commit you just pushed.
-Click on `check_urls` and the specific step of `Check URLs` to see a print out of the URLs tested.
-
-If the URL checker is failing on something that isn't really a URL or doesn't need to be checked, open up the GitHub actions file: `.github/workflows/url-checker.yml` and add the imposter URL on to the `exclude-urls:` argument with a comma in between.
-
-### Customizing render-bookdown.yml
-
-If you plan on doing a lot of customizing with GitHub actions or would like to become more familiar, we recommend reading [this article](https://itnext.io/getting-started-with-github-actions-fe94167dbc6d) to get your feet wet. Then [this reference guide](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions) in the GitHub actions docs is super useful.
-
-Note that `build-all` and `docker-build-test` are not something we recommend requiring for status checks because `docker-build-test` is only run if there are changes to the Dockerfile and `build-all` is only run upon the acceptance and merging of a pull request.
-
-However for simplicity purposes there are two sections this Github action that can you keep off if you won't be making changes to the Docker image or you won't be wanting it to sync to Google Slides automatically.
-
-### For a course that needs to publish to the Leanpub repository
-
-`transfer-rendered-files.yml` is a Github action that will copy over the output `docs/` files rendered by Bookdown to a parallel `Leanpub` repository.
-
-Once `build-all` is run, the `docs/` folder where the rendered files are place are copied over to the Leanpub repository and filed as a pull request.
-
-There are two edits to [`.github/workflow/transfer-rendered-files.yml`](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/transfer-rendered-files.yml) that need to be done to turn on the automatic copying of files between these repos:  
-
-1) Change line 28 to the repository name you would like the `docs/` files to be transferred to.
+### Docker testing
+In the config_automation.yml file it looks like:
 ```
-repository: jhudsl/Course_Template_Quizzes
+docker-test: no
 ```
+By default it is set to `no` which means it won't run automatically unless you change this to `yes`. 
+This is only relevant if you have [your own Docker image you are managing for your course](https://github.com/jhudsl/OTTR_Template/wiki/Using-Docker#starting-a-new-docker-image). If changes are made to Docker-relevant files: `Dockerfile`, `install_github.R`, or `github_package_list.tsv`, this will test re-build the Docker image. If it is successfully built, then it makes sense to merge it to `main` but the docker image will not be pushed to `Dockerhub` automatically. [Follow these instructions to push your Docker image to Dockerhub](https://github.com/jhudsl/OTTR_Template/wiki/Using-Docker#pushing-the-docker-image). 
 
-2) Uncomment lines 13-18 in this file:
-```
-# Only run after the render finishes running
-#workflow_run:
-#  workflows: [ "Build, Render, and Push" ]
-#  branches: [ main ]
-#  types:
-#    - completed
-```
+## Rendering actions
 
-### For a course that needs to publish to Coursera
+Upon merging changes to any `Rmd` or `assets/` folder to `main`, the course material will be automatically re-rendered. 
+By default, all rendering steps will be run. But depending on the needs of your course, you can turn these on and off by going to the `config_automation.yml` file and switching options to `yes` or `no`. 
 
-The [render-bookdown.yml](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml) github action the chapter content for Coursera by using this command within the docker image:
 ```
-ottrpal::render_coursera()
+render-bookdown: yes
+render-leanpub: yes
+render-coursera: yes
 ```
-You can run this same command locally if you wish to test something.
-This render the chapters without the table of Contents.
-If you do not wish to publish to Coursera and prefer this do not run, you may delete this section (but it shouldn't hurt anything to keep as is -- unless for some reason it causes you some troubles).
+For publishing to Leanpub, make sure that the render Leanpub option is set to yes: `render-leanpub: yes`.  [See more details about publishing to Leanpub, here](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Leanpub). 
 
-Additionally, the Leanpub companion repository has a [Leanpub -> Coursera quiz conversion script](https://github.com/jhudsl/OTTR_Quizzes/blob/main/scripts/coursera_quiz_conversion.R) if you choose to create quizzes and publish on both Leanpub and Coursera.
+For publishing to Coursera, make sure render Coursera option is set to yes: `render-coursera: yes`. [See more details about publishing to Coursera, here](https://github.com/jhudsl/OTTR_Template/wiki/Publishing-on-Coursera). 
+
+## Manually running rendering or checks 
+
+From time to time, it may be useful to manually re-trigger a particular GitHub action. Most of the GitHub Actions, particularly the rendering ones, can be re-run manually. See this article about [how to manually re-run a GitHub Action](https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow#running-a-workflow). 
+
+## Fixing broken GitHub Actions
+
+GitHub action rendering or other GitHub actions may fail sometimes if the input is unexpected or for a number of other reasons. 
+To investigate why a GitHub action has failed, go to `Actions` and click on the failed action. [See this article for how to find this information](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#viewing-the-workflows-activity).
+
+If you are unsure what the error message means and have trouble addressing it, please [file an issue on the OTTR_Template repository to get help](https://github.com/jhudsl/OTTR_Template/issues/new?assignees=cansavvy&labels=bug&template=course-template-problem-report.md).
 
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

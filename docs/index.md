@@ -1,6 +1,6 @@
 ---
 title: "Intro to OTTR - Opensource Tools for Training Resources"
-date: "February, 2022"
+date: "March, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -17,6 +17,25 @@ output:
 
 # About this Course {-}
 
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Recommended background information](#recommended-background-information)
+- [How to contribute](#how-to-contribute)
+- [Basic overview of what the publishing process looks like:](#basic-overview-of-what-the-publishing-process-looks-like)
+- [Table of contents](#table-of-contents)
+    - [Getting started](#getting-started)
+    - [The tools in this template](#the-tools-in-this-template)
+    - [Platform specific set up](#platform-specific-set-up)
+    - [Automation info and set up](#automation-info-and-set-up)
+    - [Finishing touches](#finishing-touches)
+    - [Release Notes](#release-notes)
+    - [Help](#help)
+    - [How to contribute to ITN courses](#how-to-contribute-to-itn-courses)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 - Please take a look at the [code of conduct](https://github.com/jhudsl/OTTR_Template/blob/main/code_of_conduct.md).
 

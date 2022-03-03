@@ -67,6 +67,8 @@ Particularly for courses that involve running example code, it's highly recommen
 
 If your course doesn't require any additional packages to run, then you do not need to set up Docker locally but [this Docker image: jhudsl/course_template](https://hub.docker.com/repository/docker/jhudsl/course_template) will run and re-render all of your changes as you add them.
 
+We advise you use the `jhudsl/course_template:main` tagged image as opposed to the `latest`. The `main` is what is ready for use, while the `latest` may be under development. All GitHub actions by default use the `jhudsl/course_template:main`.
+
 If you are new to Docker, you may find it helpful to read this [introduction to Docker](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/launching-a-docker-image.html).
 - You will need to [sign up with a Docker account](https://hub.docker.com/) if you don't have one.  
 - If you haven't installed Docker desktop (or need to update it), you can do [so here](https://docs.docker.com/get-docker/).  
@@ -77,32 +79,32 @@ On Macs, this will be on the bar on the top of your screen; in Windows, on the b
 A Docker image is similar to a virtual machine - it contains preinstalled software in a preconfigured environment.
 Docker images can be downloaded from DockerHub, or you can create your own.
 
-We have created the `course_template` image as a starting point; you can download it from `jhudsl/course_template` on DockerHub using the docker pull command we have below.
+We have created the `course_template:main` image as a starting point; you can download it from `jhudsl/course_template:main` on DockerHub using the docker pull command we have below.
 To pull the docker image associated with this template, you can run this command below in your command line.
 This may take a while.
 
 ```
-docker pull jhudsl/course_template
+docker pull jhudsl/course_template:main
 ```
 
-This pulls the course_template image from Docker Hub and copies it to your computer.
+This pulls the course_template:main image from Docker Hub and copies it to your computer.
 It will be placed in your local collection of Docker images, managed by Docker (not in your pwd). If you get an error, it may be because you forgot to have your Docker desktop running... see above.
 
 To use the Docker image associated with the course template, first navigate to the the top of this GitHub repository.
 Now you can start up the Docker container using the command below.
 
-This runs your local copy of the course_template image (which you downloaded from DockerHub).
+This runs your local copy of the course_template:main image (which you downloaded from DockerHub).
 The option `-v $PWD:/home/rstudio` mounts pwd (this repo) and makes it available at `/home/rstudio` within the container.
 Replace all of `<CHOOSE_PASSWORD>` (including the `<` and `>`) with a password of your choosing.
 
 _On a Mac_:  
 ```
-docker run -it -v $PWD:/home/rstudio -e PASSWORD=<CHOOSE_PASSWORD> -p 8787:8787 jhudsl/course_template
+docker run -it -v $PWD:/home/rstudio -e PASSWORD=<CHOOSE_PASSWORD> -p 8787:8787 jhudsl/course_template:main
 ```
 
 _On a Windows_:  
 ```
-docker run -it -v %CD%:/home/rstudio -e PASSWORD=<CHOOSE_PASSWORD> -p 8787:8787 jhudsl/course_template
+docker run -it -v %CD%:/home/rstudio -e PASSWORD=<CHOOSE_PASSWORD> -p 8787:8787 jhudsl/course_template:main
 ```
 
 Do not close this window, but you can minimize it.
@@ -156,32 +158,23 @@ You can create this by following [these instructions](https://docs.docker.com/do
 
 ### Updating workflows for new Docker image
 
-If you will need to make any change to the Docker image specific to the course you are working on, in the file `.github/render-bookdown.yml` you should uncomment the
-`###### START OF DOCKER UPDATE CHUNK` up to the part that says `###### END OF DOCKER UPDATE CHUNK`.
+To make sure that your new Docker image is being used for rendering in the GitHub actions, you need to change the `rendering-docker-image:` from the default of `jhudsl/course_template:main` and replace it with your docker image tag.
 
-Next, we will want to update some workflow files located within the `.github/workflows/` directory called `docker-build-test.yml`, the file called `render-bookdown.yml`, and the file called `render-preview.yml`. 
+Then start a new branch so that you can submit a new pull request with your changes.
 
-We need to change the name of the docker image to reflect the image tag we just created, so that our new docker image is used in our automations instead of the template docker image to render the previews of our course, to render the bookdown version of the course, and for testing new builds of the docker image. 
-
-Thus start a new branch so that you can submit a new pull request with your changes.
-
-Then in each of the above listed files (`docker-build-test.yml`, `render-bookdown.yml` and `render-preview.yml`)  search and replace `jhudsl/course_template` with your docker image tag.
-
-Push the pull request and merge it with the main branch. 
-
-Now, when you file a pull request, the Dockerfile build for your docker image will be tested automatically by the [GitHub actions](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots).
+Now, when you file a pull request, the Dockerfile build for your docker image will be tested automatically by the [GitHub actions](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots) if `docker-test` is set to `yes`. The default is `docker-test: no`
 
 ### Modifying the Dockerfile for a new image
 
 [Read this chapter for instructions on how to modify Docker images](https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/modifying-a-docker-image.html)
 
-You will probably want to create your Docker image by using the `jhudsl/course_template` as your base -- this means that all the packages that are in our `jhudsl/course_template` image will be included in the Docker image you build. 
+You will probably want to create your Docker image by using the `jhudsl/course_template:main` as your base -- this means that all the packages that are in our `jhudsl/course_template:main` image will be included in the Docker image you build. 
 
 ```
-FROM jhudsl/course_template
+FROM jhudsl/course_template:main
 ```
 
-You can take a look at this [Dockerfile template we've set up here](https://github.com/jhudsl/OTTR_Template/blob/main/resources/Dockerfile) (note that the commands would need to be uncommented and real package names put in place of `package_name`'s).
+You can take a look at this [Dockerfile template we've set up here](https://github.com/jhudsl/OTTR_Template/blob/main/resources/TEMPLATE_Dockerfile) (note that the commands would need to be uncommented and real package names put in place of `package_name`'s).
 
 #### Template commands for adding packages to the Dockerfile
 
@@ -241,6 +234,8 @@ docker build -f Dockerfile . -t jhudsl/<TAG_FOR_COURSE>
 
 #### Pushing the Docker image
 
+For any changes you make to your Docker image to take effect in your repository's github actions and workflows, you must push your updated docker image to Dockerhub. There are two different ways you can push your Docker image. 
+
 Locally, you can push your updated image to Dockerhub using (make sure that the tag does not have upper case characters):
 
 ```
@@ -249,7 +244,7 @@ docker push jhudsl/<TAG_FOR_COURSE>
 
 OR 
 
-If you prefer to have this done online, you can go to your course's GitHub repository, go to `Actions` and then to `Test build of Dockerfile`. 
+You can use GitHub actions to do this by going to your course's GitHub repository, go to `Actions` and then to `Test build of Dockerfile`. 
 
 Click on `run workflow` type in `true` underneath `Push to Dockerhub?`. 
 
@@ -268,13 +263,12 @@ Then click `Run`. If your Dockerfile builds an image successfully it will automa
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
-Github actions will automatically [run a spell check on all Rmds](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/style-and-sp-check.yml) whenever a pull request to the `main` branch is filed.
+Github actions will automatically run a spell check on all Rmds whenever a pull request to the `main` branch is filed. [See this section about how to customize what checks are run](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots). 
 Depending on your preference, you may find it easier to spell check manually on your local computer before pushing to Github.
 
 It will fail if there are more than 3 spelling errors and you'll need to resolve those before being able to merge your pull request.
 
-Click on the GitHub comment that has the download link to spelling errors.
-This will download a zip file with a TSV. Open up this zip and look at the TSV to see all the spelling errors that need to be resolved. 
+Click on the GitHub comment that has the download link to spelling errors that need to be resolved. 
 
 Some of these errors may be things that the spell check doesn't recognize for example: `ITCR` or `DaSL`.
 If it's a 'word' the spell check should recognize, you'll need to add this to the dictionary.
@@ -312,6 +306,7 @@ Visit [`example.com`](https://www.example.com) now.
 - [Borrowing from a local file](#borrowing-from-a-local-file)
 - [Borrowing from a private repository](#borrowing-from-a-private-repository)
 - [Removing an h1 header](#removing-an-h1-header)
+- [Linking between chapters](#linking-between-chapters)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -354,6 +349,13 @@ If you want to change the title you can use an option `remove_h1` to remove the 
 Some new words after the borrowed chapter content.
 
 ````
+
+### Linking between chapters
+
+If you don't want the material from another chapter completely copied over, you might instead just want to put a link to the Bookdown chapter. You can just use the full url. A link would look something like this:
+```
+![](https://jhudatascience.org/OTTR_Template/a-new-chapter.html)
+```
 
 # Using Google Docs
 

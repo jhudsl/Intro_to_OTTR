@@ -95,7 +95,7 @@ Here you can see that by default the Data Science Lab (dasl) favicon will be use
 ```
 ---
 title: "Course Name "
-date: "February, 2022"
+date: "March, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -150,8 +150,9 @@ If you would like to change the image at the top of the Bookdown version of the 
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Adding the Credits table to Coursera](#adding-the-credits-table-to-coursera)
-- [Adding the Credits table to Leanpub](#adding-the-credits-table-to-leanpub)
+- [Adding Credits](#adding-credits)
+  - [Adding the Credits table to Coursera](#adding-the-credits-table-to-coursera)
+  - [Adding the Credits table to Leanpub](#adding-the-credits-table-to-leanpub)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -294,6 +295,15 @@ or this:
 ![Check Google Analytics](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/screenshots/GA_check.png)
 
 9) Enjoy the data about how people are using your course!
+
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Release coding](#release-coding)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
 Congrats, you are most of the way toward publishing your course!
