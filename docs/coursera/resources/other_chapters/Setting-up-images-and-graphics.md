@@ -22,7 +22,7 @@ If you are unfamiliar with [how R Markdown code chunks work, read this](https://
 
 ````markdown
 `r ''````{r, include=FALSE}
-ottr::set_knitr_image_path()
+ottrpal::set_knitr_image_path()
 ````
 
 Next, import the appropriate theme (see [this video](https://youtu.be/pNbwF263yY8) for assistance):
@@ -128,7 +128,7 @@ To add images in the text in your Rmd, use the following function within an [R c
 
 ````markdown
 `r ''````{r, fig.alt="Alternative text", echo = FALSE, outwidth = "100%"}
-ottr::include_slide(<google_slide_url>)
+ottrpal::include_slide(<google_slide_url>)
 ```
 ````
 

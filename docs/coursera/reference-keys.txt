@@ -19,7 +19,7 @@ add-jhudsl-robot-as-a-collaborator
 set-up-your-github-personal-access-token
 set-up-github-pages
 set-up-branch-rules
-enroll-your-repository-for-ottr-updates
+enroll-your-repository-for-ottrpal-updates
 start-editing-your-course
 file-changes-to-be-made
 files-that-need-edited-upon-creating-a-new-course.
@@ -80,9 +80,9 @@ converting-quizzes-from-leanpub-to-coursera-format
 setting-up-the-_quizzes-repository-checklist
 publishing-quizzes-with-answers-hiddens
 how-to-use-these-repositories
-setting-up-your-ottr_quizzes-github-repository
+setting-up-your-ottrpal_quizzes-github-repository
 set-up-branches
-linking-to-your-ottr_template-course-github-repository
+linking-to-your-ottrpal_template-course-github-repository
 citations
 citations-1
 about-docker
