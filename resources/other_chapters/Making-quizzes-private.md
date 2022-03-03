@@ -3,9 +3,9 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [How to use these repositories:](#how-to-use-these-repositories)
-- [Setting up your OTTR_Quizzes Github repository](#setting-up-your-ottr_quizzes-github-repository)
+- [Setting up your OTTR_Quizzes Github repository](#setting-up-your-ottrpal_quizzes-github-repository)
       - [Set up branches](#set-up-branches)
-- [Linking to your `OTTR_Template` course Github repository](#linking-to-your-ottr_template-course-github-repository)
+- [Linking to your `OTTR_Template` course Github repository](#linking-to-your-ottrpal_template-course-github-repository)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

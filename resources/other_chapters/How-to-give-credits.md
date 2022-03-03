@@ -49,7 +49,7 @@ These rows should be included for _all courses_:
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright]|
 |Publishing Maintenance Engineer|[Candace Savonen]|
 |Technical Publishing Stylists|[Carrie Wright], [Candace Savonen]|
-|Package Developers[ottr]|[John Muschelli], [Candace Savonen], [Carrie Wright]|
+|Package Developers[ottrpal]|[John Muschelli], [Candace Savonen], [Carrie Wright]|
 
 <!-- Author information -->
 
@@ -59,7 +59,7 @@ These rows should be included for _all courses_:
 
 <!-- Links -->
 
-[ottr]: https://github.com/jhudsl/ottr
+[ottrpal]: https://github.com/jhudsl/ottrpal
 ```
 
 These rows should be added to all _Johns Hopkins_ courses:

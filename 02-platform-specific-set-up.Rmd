@@ -35,7 +35,7 @@ cow::borrow_chapter(
 )
 ```
 
-# Publishing quizzes with answers hiddens
+# Publishing quizzes with answers hidden
 
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(

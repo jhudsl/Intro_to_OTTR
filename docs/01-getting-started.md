@@ -16,7 +16,7 @@ For any OTTR Questions we suggest joining the [OTTR Google Group](https://github
 - [6. Set up your Github Personal access token](#6-set-up-your-github-personal-access-token)
 - [7. Set up GitHub pages](#7-set-up-github-pages)
 - [8. Set up branch rules](#8-set-up-branch-rules)
-- [9. Enroll your repository for OTTR updates](#9-enroll-your-repository-for-ottr-updates)
+- [9. Enroll your repository for OTTR updates](#9-enroll-your-repository-for-ottrpal-updates)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -409,7 +409,7 @@ If you are unfamiliar with [how R Markdown code chunks work, read this](https://
 
 ````markdown
 ```{r, include=FALSE}
-ottr::set_knitr_image_path()
+ottrpal::set_knitr_image_path()
 ````
 
 Next, import the appropriate theme (see [this video](https://youtu.be/pNbwF263yY8) for assistance):
@@ -515,7 +515,7 @@ To add images in the text in your Rmd, use the following function within an [R c
 
 ````markdown
 ```{r, fig.alt="Alternative text", echo = FALSE, outwidth = "100%"}
-ottr::include_slide(<google_slide_url>)
+ottrpal::include_slide(<google_slide_url>)
 ```
 ````
 

@@ -12,7 +12,7 @@ For any OTTR Questions we suggest joining the [OTTR Google Group](https://github
 - [6. Set up your Github Personal access token](#6-set-up-your-github-personal-access-token)
 - [7. Set up GitHub pages](#7-set-up-github-pages)
 - [8. Set up branch rules](#8-set-up-branch-rules)
-- [9. Enroll your repository for OTTR updates](#9-enroll-your-repository-for-ottr-updates)
+- [9. Enroll your repository for OTTR updates](#9-enroll-your-repository-for-ottrpal-updates)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

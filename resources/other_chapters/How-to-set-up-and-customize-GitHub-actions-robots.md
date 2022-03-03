@@ -109,7 +109,7 @@ repository: jhudsl/Course_Template_Quizzes
 
 The [render-bookdown.yml](https://github.com/jhudsl/OTTR_Template/blob/main/.github/workflows/render-bookdown.yml) github action the chapter content for Coursera by using this command within the docker image:
 ```
-ottr::render_coursera()
+ottrpal::render_coursera()
 ```
 You can run this same command locally if you wish to test something.
 This render the chapters without the table of Contents.
