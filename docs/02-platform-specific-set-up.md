@@ -186,7 +186,7 @@ Replace the example url with the url of your individual chapter we discussed abo
 
 Then click on `Save Configuration`:
 
-![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/add-chapter-7.png)
+![](https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/coursera_screenshots/new-add-chapter-7.png)
 
 If the url you provided was correct, you should see a preview of your chapter:
 
